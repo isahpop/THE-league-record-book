@@ -1,153 +1,226 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#0b1020" />
-  <title>THE League — Record Book</title>
-  <meta name="description" content="THE League fantasy football history, records, franchise profiles and live-era stats." />
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#111827" />
+<title>THE League — Record Book</title>
+<meta name="description" content="THE League fantasy football history, records, franchise profiles, standings and receipts." />
+<style>
+:root{
+  --bg:#f5f7fb;--surface:#fff;--surface2:#f8fafc;--ink:#111827;--muted:#667085;--line:#e5e7eb;
+  --brand:#111827;--brand2:#1f2937;--accent:#2563eb;--accent-soft:#eff6ff;--gold:#b7791f;--gold-soft:#fff8e7;
+  --danger:#b42318;--danger-soft:#fff1f0;--success:#067647;--success-soft:#ecfdf3;--shadow:0 10px 30px rgba(17,24,39,.06);
+  --radius:18px;--radius-sm:12px;--max:1180px;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+button,input{font:inherit} button{cursor:pointer} a{color:inherit}
+.site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.header-inner{max-width:var(--max);margin:auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px;min-width:0}.brand-mark{width:40px;height:40px;border-radius:12px;background:var(--brand);color:#fff;display:grid;place-items:center;font-weight:900;font-size:14px;letter-spacing:.06em}.brand-copy{min-width:0}.brand-title{font-weight:900;letter-spacing:.06em;font-size:15px}.brand-sub{font-size:12px;color:var(--muted);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.desktop-nav{display:flex;gap:4px}.nav-btn{border:0;background:transparent;color:var(--muted);padding:9px 12px;border-radius:10px;font-weight:700}.nav-btn:hover,.nav-btn.active{background:#f1f5f9;color:var(--ink)}
+.live-badge{display:flex;align-items:center;gap:7px;border:1px solid var(--line);padding:8px 10px;border-radius:999px;font-size:12px;color:var(--muted);font-weight:700;white-space:nowrap}.live-dot{width:8px;height:8px;border-radius:999px;background:#16a34a;box-shadow:0 0 0 3px #dcfce7}
+.shell{max-width:var(--max);margin:auto;padding:26px 20px 110px}.view{display:none}.view.active{display:block}.eyebrow{margin:0 0 8px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:900}.page-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:18px}.page-head h1{font-size:clamp(28px,4vw,44px);line-height:1.02;margin:0;letter-spacing:-.035em}.page-head p{margin:8px 0 0;color:var(--muted);max-width:720px;line-height:1.55}
+.hero{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(290px,.65fr);gap:18px;margin-bottom:18px}.hero-main,.snapshot,.panel,.metric,.team-card,.record-card,.season-card{background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow)}.hero-main{border-radius:26px;padding:30px;overflow:hidden;position:relative}.hero-main:after{content:"";position:absolute;width:240px;height:240px;border-radius:50%;right:-110px;bottom:-140px;background:radial-gradient(circle,#dbeafe 0,#eff6ff 40%,transparent 70%)}.hero-main h1{position:relative;margin:0;font-size:clamp(34px,5vw,62px);line-height:.98;letter-spacing:-.055em;max-width:780px}.hero-main h1 span{color:var(--accent)}.hero-main p{position:relative;margin:16px 0 0;color:var(--muted);max-width:700px;line-height:1.6;font-size:15px}.quick-links{position:relative;display:flex;gap:8px;flex-wrap:wrap;margin-top:24px}.quick{border:1px solid var(--line);background:#fff;padding:10px 12px;border-radius:999px;color:var(--ink);font-weight:800;font-size:13px}.quick:hover{border-color:#cbd5e1;background:#f8fafc}.snapshot{border-radius:26px;padding:24px;display:flex;flex-direction:column;justify-content:space-between}.snapshot-top{display:flex;justify-content:space-between;align-items:center;gap:10px}.snapshot .week{font-size:28px;font-weight:900;letter-spacing:-.035em}.snapshot .date{font-size:12px;color:var(--muted);margin-top:4px}.snapshot-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:24px}.snapshot-stat{background:var(--surface2);border:1px solid var(--line);border-radius:14px;padding:12px 10px}.snapshot-stat strong{display:block;font-size:17px}.snapshot-stat span{display:block;margin-top:4px;color:var(--muted);font-size:11px}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0}.metric{border-radius:16px;padding:18px}.metric-value{font-size:24px;font-weight:900;letter-spacing:-.04em}.metric-label{font-size:12px;color:var(--muted);margin-top:5px;line-height:1.35}.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}.panel{border-radius:var(--radius);padding:20px;margin-bottom:18px}.panel-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;margin-bottom:14px}.panel-head h2{margin:0;font-size:20px;letter-spacing:-.025em}.pill{display:inline-flex;align-items:center;border:1px solid var(--line);background:var(--surface2);color:var(--muted);font-size:11px;padding:6px 8px;border-radius:999px;font-weight:800;white-space:nowrap}.pill.gold{background:var(--gold-soft);color:var(--gold);border-color:#f5dfa6}.pill.green{background:var(--success-soft);color:var(--success);border-color:#abefc6}.pill.red{background:var(--danger-soft);color:var(--danger);border-color:#fecdca}
+.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:14px}table{width:100%;border-collapse:collapse;min-width:520px;background:#fff}th,td{padding:11px 12px;border-bottom:1px solid var(--line);text-align:left;font-size:13px}th{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);background:var(--surface2)}tr:last-child td{border-bottom:0}.rank{width:34px;color:var(--muted);font-weight:900}.team-name{font-weight:800}.subtle{font-size:11px;color:var(--muted)}
+.champ-list{display:grid;gap:9px}.champ-row{display:grid;grid-template-columns:54px 1fr auto;gap:12px;align-items:center;border:1px solid var(--line);border-radius:14px;padding:12px}.year-chip{background:var(--brand);color:#fff;border-radius:10px;padding:8px 6px;text-align:center;font-size:12px;font-weight:900}.champ-name{font-weight:900}.champ-sub{font-size:12px;color:var(--muted);margin-top:3px}
+.bar-list{display:grid;gap:11px}.bar-row{display:grid;grid-template-columns:minmax(120px,1.2fr) 2fr 55px;align-items:center;gap:10px}.bar-label{font-size:12px;font-weight:800;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.bar-track{height:9px;background:#eef2f6;border-radius:999px;overflow:hidden}.bar-fill{height:100%;background:var(--brand);border-radius:999px}.bar-value{text-align:right;font-size:12px;font-weight:900}.bar-note{font-size:10px;color:var(--muted);font-weight:500}
+.section-gap{margin-top:22px}.record-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.record-card{border-radius:16px;padding:18px;min-height:145px}.record-card .value{font-size:30px;font-weight:950;letter-spacing:-.05em;margin:8px 0}.record-card h3{font-size:14px;margin:0 0 6px}.record-card p{font-size:12px;color:var(--muted);margin:0;line-height:1.45}.record-card.feature{background:var(--brand);color:#fff;border-color:var(--brand)}.record-card.feature p,.record-card.feature .eyebrow{color:#cbd5e1}.record-card.danger{background:var(--danger-soft);border-color:#fecdca}.filter-row{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px}.filter-btn{border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 11px;color:var(--muted);font-size:12px;font-weight:800}.filter-btn.active{background:var(--brand);color:#fff;border-color:var(--brand)}
+.player-records{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.player-record{border:1px solid var(--line);background:var(--surface2);border-radius:14px;padding:14px}.player-record .pos{font-size:10px;font-weight:900;color:var(--muted);letter-spacing:.08em}.player-record .points{font-size:24px;font-weight:950;margin:8px 0 4px}.player-record .player{font-size:12px;font-weight:900}.player-record .meta{font-size:10px;color:var(--muted);margin-top:4px;line-height:1.35}
+.timeline{display:grid;gap:8px}.timeline-row{display:grid;grid-template-columns:44px minmax(0,1fr) auto;gap:12px;align-items:center;border:1px solid var(--line);border-radius:14px;padding:12px}.timeline-rank{width:34px;height:34px;border-radius:10px;background:var(--surface2);display:grid;place-items:center;font-weight:900;font-size:12px}.timeline-title{font-size:13px;font-weight:900}.timeline-sub{font-size:11px;color:var(--muted);margin-top:3px}.timeline-value{font-size:18px;font-weight:950;color:var(--danger)}
+.search-wrap{display:flex;gap:10px;margin:0 0 16px}.search{flex:1;border:1px solid var(--line);background:#fff;border-radius:14px;padding:13px 14px;outline:none}.search:focus{border-color:#94a3b8;box-shadow:0 0 0 3px #f1f5f9}.team-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.team-card{border-radius:16px;padding:18px;text-align:left;width:100%;transition:.18s transform,.18s border-color}.team-card:hover{transform:translateY(-2px);border-color:#cbd5e1}.team-card-top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.team-card h3{margin:0;font-size:17px;letter-spacing:-.02em}.old-names{font-size:11px;color:var(--muted);margin-top:5px;line-height:1.4}.team-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:15px}.team-stat{background:var(--surface2);border-radius:10px;padding:9px}.team-stat strong{display:block;font-size:13px}.team-stat span{font-size:9px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:800}.fingerprint{margin-top:14px;display:flex;justify-content:space-between;gap:10px;font-size:11px}.fingerprint span{display:block}.good{color:var(--success);font-weight:900}.bad{color:var(--danger);font-weight:900}
+.season-tabs{display:flex;gap:8px;overflow:auto;padding-bottom:3px;margin-bottom:14px}.season-btn{flex:0 0 auto;border:1px solid var(--line);background:#fff;border-radius:12px;padding:10px 14px;font-weight:900;color:var(--muted)}.season-btn.active{background:var(--brand);color:#fff;border-color:var(--brand)}.season-summary{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:14px}.season-mini{border:1px solid var(--line);background:var(--surface2);border-radius:12px;padding:12px}.season-mini strong{display:block;font-size:16px}.season-mini span{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-weight:800}
+.drawer-backdrop{position:fixed;inset:0;background:rgba(15,23,42,.36);z-index:80;display:none}.drawer-backdrop.open{display:block}.drawer{position:fixed;z-index:90;top:0;right:0;height:100%;width:min(520px,94vw);background:#fff;transform:translateX(102%);transition:.22s ease;box-shadow:-20px 0 40px rgba(15,23,42,.16);overflow:auto;padding:24px}.drawer.open{transform:translateX(0)}.drawer-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}.close-btn{border:1px solid var(--line);background:#fff;border-radius:10px;width:38px;height:38px;font-size:20px}.drawer h2{margin:4px 0 6px;font-size:28px;letter-spacing:-.04em}.drawer .history{color:var(--muted);font-size:12px;line-height:1.5}.drawer-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:18px}.drawer-stat{border:1px solid var(--line);border-radius:14px;padding:14px}.drawer-stat strong{font-size:20px}.drawer-stat span{display:block;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.07em;margin-top:4px;font-weight:800}.position-list{display:grid;gap:8px;margin-top:12px}.position-row{display:grid;grid-template-columns:48px 1fr auto;gap:10px;align-items:center}.position-label{font-size:11px;font-weight:900}.position-track{height:8px;background:#eef2f6;border-radius:999px;overflow:hidden}.position-fill{height:100%;background:var(--accent)}.position-val{font-size:11px;font-weight:900}
+.mobile-nav{display:none;position:fixed;left:10px;right:10px;bottom:max(10px,env(safe-area-inset-bottom));z-index:60;background:rgba(17,24,39,.96);backdrop-filter:blur(14px);border-radius:18px;padding:6px;box-shadow:0 14px 36px rgba(17,24,39,.28)}.mobile-nav button{flex:1;border:0;background:transparent;color:#9ca3af;border-radius:13px;padding:9px 5px;font-size:10px;font-weight:800}.mobile-nav button span{display:block;font-size:17px;line-height:1;margin-bottom:5px}.mobile-nav button.active{background:#fff;color:#111827}
+footer{max-width:var(--max);margin:0 auto 100px;padding:0 20px;color:var(--muted);font-size:11px;display:flex;justify-content:space-between;gap:20px}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.grid-2{grid-template-columns:1fr}.record-grid{grid-template-columns:repeat(2,1fr)}.player-records{grid-template-columns:repeat(3,1fr)}.team-grid{grid-template-columns:1fr}.metrics{grid-template-columns:repeat(2,1fr)}.desktop-nav{display:none}.mobile-nav{display:flex}.header-inner{padding:12px 16px}.shell{padding:18px 14px 112px}.hero-main,.snapshot{border-radius:20px}.hero-main{padding:22px}.snapshot{padding:18px}.page-head{align-items:flex-start}.live-badge{display:none}}
+@media(max-width:560px){.brand-sub{max-width:190px}.hero-main h1{font-size:38px}.snapshot-grid{grid-template-columns:repeat(3,1fr)}.record-grid{grid-template-columns:1fr}.player-records{grid-template-columns:repeat(2,1fr)}.season-summary{grid-template-columns:repeat(2,1fr)}.bar-row{grid-template-columns:minmax(90px,1.1fr) 1.7fr 50px}.panel{padding:16px}.team-stats{grid-template-columns:repeat(2,1fr)}.drawer{padding:18px}.metrics{gap:8px}.metric{padding:14px}.metric-value{font-size:21px}footer{display:block;line-height:1.7}}
+</style>
 </head>
 <body>
-  <div class="bg-glow bg-glow-a"></div>
-  <div class="bg-glow bg-glow-b"></div>
-
-  <header class="site-header">
-    <div class="brand-wrap">
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
       <div class="brand-mark">TL</div>
-      <div>
-        <div class="brand">THE LEAGUE</div>
-        <div class="tagline">Stats · Records · History · Receipts</div>
-      </div>
+      <div class="brand-copy"><div class="brand-title">THE LEAGUE</div><div class="brand-sub">Stats · Records · History · Receipts</div></div>
     </div>
-    <nav class="nav" aria-label="Primary">
+    <nav class="desktop-nav" aria-label="Primary">
       <button class="nav-btn active" data-view="home">Home</button>
-      <button class="nav-btn" data-view="records">Record Book</button>
+      <button class="nav-btn" data-view="records">Records</button>
       <button class="nav-btn" data-view="franchises">Franchises</button>
       <button class="nav-btn" data-view="seasons">Seasons</button>
     </nav>
-  </header>
+    <div class="live-badge"><span class="live-dot"></span>2026 · Through Week 3</div>
+  </div>
+</header>
 
-  <main class="shell">
-    <section id="home" class="view active-view">
-      <div class="hero">
-        <div>
-          <p class="eyebrow">EST. 2022 · 10 FRANCHISES</p>
-          <h1>The permanent home of <span>THE League.</span></h1>
-          <p class="lede">Championships, weekly explosions, schedule luck, positional identities and every terrible bench decision worth remembering.</p>
+<main class="shell">
+  <section class="view active" id="home">
+    <div class="hero">
+      <article class="hero-main">
+        <p class="eyebrow">Est. 2022 · 10 franchises</p>
+        <h1>The permanent home of <span>THE League.</span></h1>
+        <p>Everything that matters in one place: standings, champions, all-time records, franchise history, scoring trends and every terrible bench decision worth remembering.</p>
+        <div class="quick-links">
+          <button class="quick" data-go="records">View record book</button>
+          <button class="quick" data-go="franchises">Browse franchises</button>
+          <button class="quick" data-go="seasons">Season archive</button>
         </div>
-        <div class="live-card">
-          <div class="live-head"><span class="live-dot"></span> 2026 snapshot</div>
-          <div class="live-big">Week 3 complete</div>
-          <div class="live-sub">Data through September 29, 2026</div>
-          <div class="live-grid">
-            <div><strong>130.70</strong><span>League PPG</span></div>
-            <div><strong>505.15</strong><span>Top PF</span></div>
-            <div><strong>3–0</strong><span>Best record</span></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="stat-strip" id="headline-stats"></div>
-
-      <div class="section-grid two-col">
-        <article class="panel">
-          <div class="panel-head">
-            <div>
-              <p class="eyebrow">DYNASTY OF THE ERA</p>
-              <h2>Championship résumé</h2>
-            </div>
-            <span class="pill gold">2× Champion</span>
-          </div>
-          <div class="goat-card">
-            <div class="goat-rank">01</div>
-            <div>
-              <h3>Grittying N Grinding</h3>
-              <p>2023 Champion · 2024 Runner-up · 2025 Champion</p>
-            </div>
-            <div class="goat-record">8–1<span>championship-bracket run</span></div>
-          </div>
-          <div class="mini-bars" id="goat-bars"></div>
-        </article>
-
-        <article class="panel">
-          <div class="panel-head">
-            <div>
-              <p class="eyebrow">LATEST POWER SNAPSHOT</p>
-              <h2>2026 standings</h2>
-            </div>
-            <span class="pill">Through W3</span>
-          </div>
-          <div class="table-wrap">
-            <table>
-              <thead><tr><th>#</th><th>Team</th><th>W-L</th><th>PF</th></tr></thead>
-              <tbody id="current-standings"></tbody>
-            </table>
-          </div>
-        </article>
-      </div>
-
-      <article class="panel feature-panel">
-        <div class="panel-head">
-          <div>
-            <p class="eyebrow">ALL-TIME SCORING</p>
-            <h2>Who actually scores?</h2>
-          </div>
-          <span class="pill">2022–25 regular season</span>
-        </div>
-        <div id="ppg-chart" class="rank-chart"></div>
       </article>
+      <aside class="snapshot">
+        <div><div class="snapshot-top"><p class="eyebrow">2026 snapshot</p><span class="pill green">Current</span></div><div class="week">Week 3 complete</div><div class="date">Through September 29, 2026</div></div>
+        <div class="snapshot-grid"><div class="snapshot-stat"><strong>130.70</strong><span>League PPG</span></div><div class="snapshot-stat"><strong>505.15</strong><span>Top PF</span></div><div class="snapshot-stat"><strong>3–0</strong><span>Best record</span></div></div>
+      </aside>
+    </div>
 
-      <div class="section-grid three-col">
-        <article class="panel record-flash">
-          <p class="eyebrow">HIGH SCORE</p><div class="flash-value">204.24</div><h3>Unlimited “Lets Ride!”</h3><p>2022 · Week 8</p>
-        </article>
-        <article class="panel record-flash">
-          <p class="eyebrow">CLOSEST GAME</p><div class="flash-value">0.05</div><h3>JT's Finest over Hill Hurt Me</h3><p>126.60–126.55 · 2025 W4</p>
-        </article>
-        <article class="panel record-flash danger">
-          <p class="eyebrow">BENCH DISASTER</p><div class="flash-value">52.86</div><h3>Tua Tagovailoa</h3><p>Nacua franchise · 2022 W2</p>
-        </article>
-      </div>
-    </section>
+    <div class="metrics" id="headlineMetrics"></div>
 
-    <section id="records" class="view">
-      <div class="page-title"><p class="eyebrow">THE RECEIPTS</p><h1>Record Book</h1><p>Regular-season team records cover 2022–2025 unless noted. Individual starter records are based on reconstructed historical lineups.</p></div>
-      <div id="record-grid" class="record-grid"></div>
+    <div class="grid-2">
       <article class="panel">
-        <div class="panel-head"><div><p class="eyebrow">INDIVIDUAL SINGLE-WEEK RECORDS</p><h2>Position records</h2></div></div>
-        <div id="player-records" class="player-records"></div>
+        <div class="panel-head"><div><p class="eyebrow">Current season</p><h2>2026 standings</h2></div><span class="pill">Through W3</span></div>
+        <div class="table-wrap"><table><thead><tr><th>#</th><th>Team</th><th>W-L</th><th>PF</th></tr></thead><tbody id="standings2026"></tbody></table></div>
       </article>
       <article class="panel">
-        <div class="panel-head"><div><p class="eyebrow">BENCH HALL OF SHAME</p><h2>Points nobody got credit for</h2></div></div>
-        <div id="bench-shame" class="timeline"></div>
+        <div class="panel-head"><div><p class="eyebrow">League history</p><h2>Champions</h2></div><span class="pill gold">4 completed seasons</span></div>
+        <div class="champ-list" id="champions"></div>
       </article>
-    </section>
+    </div>
 
-    <section id="franchises" class="view">
-      <div class="page-title"><p class="eyebrow">TEN FRANCHISES · ONE HISTORY</p><h1>Franchise Files</h1><p>Team-name changes stay attached to the same franchise so the history does not reset every season.</p></div>
-      <div class="filters">
-        <input id="team-search" type="search" placeholder="Search a franchise or old team name…" />
-      </div>
-      <div id="franchise-grid" class="franchise-grid"></div>
-    </section>
+    <article class="panel">
+      <div class="panel-head"><div><p class="eyebrow">2022–25 regular season</p><h2>All-time scoring average</h2></div><span class="pill">56 weeks each</span></div>
+      <div class="bar-list" id="ppgBars"></div>
+    </article>
+  </section>
 
-    <section id="seasons" class="view">
-      <div class="page-title"><p class="eyebrow">YEAR BY YEAR</p><h1>Season Archive</h1><p>League scoring has crept upward every year, which is why era-adjusted context matters when comparing teams.</p></div>
-      <article class="panel">
-        <div class="panel-head"><div><p class="eyebrow">SCORING ENVIRONMENT</p><h2>League average PPG by season</h2></div></div>
-        <div id="season-chart" class="rank-chart season-chart"></div>
-      </article>
-      <div id="season-cards" class="season-cards"></div>
-    </section>
-  </main>
+  <section class="view" id="records">
+    <div class="page-head"><div><p class="eyebrow">The receipts</p><h1>Record Book</h1><p>Team records use completed regular-season games from 2022–2025 unless noted. Player records come from reconstructed historical starting lineups.</p></div></div>
+    <div class="filter-row" id="recordFilters"></div>
+    <div class="record-grid" id="recordGrid"></div>
+    <div class="section-gap"></div>
+    <article class="panel">
+      <div class="panel-head"><div><p class="eyebrow">Single-week records</p><h2>Player records</h2></div></div>
+      <div class="player-records" id="playerRecords"></div>
+    </article>
+    <article class="panel">
+      <div class="panel-head"><div><p class="eyebrow">Bench hall of shame</p><h2>Points nobody got credit for</h2></div><span class="pill red">Pain</span></div>
+      <div class="timeline" id="benchShame"></div>
+    </article>
+  </section>
 
-  <footer>
-    <div>THE League Record Book</div>
-    <div>Historical database: 2022–present · Built for the group chat</div>
-  </footer>
+  <section class="view" id="franchises">
+    <div class="page-head"><div><p class="eyebrow">10 franchises · one history</p><h1>Franchise Files</h1><p>Team-name changes stay tied to the same franchise, so nobody gets to escape their history by rebranding.</p></div></div>
+    <div class="search-wrap"><input class="search" id="teamSearch" type="search" placeholder="Search current or old team name…" /></div>
+    <div class="team-grid" id="teamGrid"></div>
+  </section>
 
-  <script src="data.js"></script>
-  <script src="app.js"></script>
+  <section class="view" id="seasons">
+    <div class="page-head"><div><p class="eyebrow">Year by year</p><h1>Season Archive</h1><p>Tap a year to jump into that season's champion, scoring environment and final regular-season standings.</p></div></div>
+    <div class="season-tabs" id="seasonTabs"></div>
+    <article class="panel" id="seasonPanel"></article>
+  </section>
+</main>
+
+<div class="drawer-backdrop" id="drawerBackdrop"></div>
+<aside class="drawer" id="teamDrawer" aria-hidden="true"></aside>
+
+<nav class="mobile-nav" aria-label="Mobile navigation">
+  <button class="active" data-view="home"><span>⌂</span>Home</button>
+  <button data-view="records"><span>▦</span>Records</button>
+  <button data-view="franchises"><span>◎</span>Teams</button>
+  <button data-view="seasons"><span>≡</span>Seasons</button>
+</nav>
+
+<footer><div>THE League Record Book</div><div>Historical database: 2022–present · Last static refresh: Sep. 29, 2026</div></footer>
+
+<script>
+const currentStandings=[
+{id:8,name:'Grittying N Grinding',wl:'3–0',pf:505.15},{id:5,name:"Davante N' Josh",wl:'3–0',pf:406.65},{id:4,name:'Here Comes McBride',wl:'2–1',pf:475.90},{id:1,name:'Love Wins in Ohio',wl:'2–1',pf:392.90},{id:10,name:'Team Binning',wl:'1–2',pf:376.95},{id:9,name:"JT's Finest Team",wl:'1–2',pf:375.80},{id:7,name:'Hill Hurt Me We miss #10',wl:'1–2',pf:358.85},{id:6,name:'Nacua Matata',wl:'1–2',pf:311.50},{id:3,name:'Team Phillips',wl:'1–2',pf:342.85},{id:2,name:'Waddling Bowers II',wl:'0–3',pf:374.50}
+];
+const champions=[
+{year:2025,name:'Grittying N Grinding',runner:'Tets McGee',score:'189.65–116.70'},
+{year:2024,name:'Hill Hurt Me We miss #10',runner:'Tx ayesha can COOK',score:'155.32–118.48'},
+{year:2023,name:'Tx ayesha can COOK',runner:'Team Binning',score:'161.30–134.38'},
+{year:2022,name:'Team Bock',runner:'Unlimited “Lets Ride!”',score:'115.70–97.18'}
+];
+const teams=[
+{id:1,name:'Love Wins in Ohio',old:['CTESPN','Coopa Troopas','Beware of DAWGS'],record:'30–26',ppg:130.16,allplay:58.1,titles:0,finals:0,strength:'WR #1',weak:'QB #9',high:200.98,low:78.40,boom:10,sub100:6,pos:{QB:21.15,RB:30.34,WR:33.92,TE:12.46,FLEX:14.30}},
+{id:2,name:'Waddling Bowers II',old:['Waddling Bowers','It Hurts when I pee','What Can Brown Do For You?','Unlimited “Lets Ride!”'],record:'29–27',ppg:123.37,allplay:48.4,titles:0,finals:1,strength:'TE #1',weak:'RB #10',high:204.24,low:66.54,boom:7,sub100:11,pos:{QB:22.78,RB:26.78,WR:30.02,TE:13.29,FLEX:13.13}},
+{id:3,name:'Team Phillips',old:[],record:'29–27',ppg:121.25,allplay:46.7,titles:0,finals:0,strength:'FLEX #4',weak:'TE #10',high:170.90,low:78.38,boom:6,sub100:10,pos:{QB:21.64,RB:29.67,WR:30.11,TE:8.29,FLEX:13.78}},
+{id:4,name:'Here Comes McBride',old:['Mahomes Alone','Bed, Bath and Bijan','Christian Mingle','Love Hurts'],record:'31–25',ppg:126.90,allplay:52.2,titles:0,finals:0,strength:'RB #1',weak:'FLEX #9',high:184.06,low:87.90,boom:7,sub100:3,pos:{QB:23.81,RB:33.93,WR:28.72,TE:11.00,FLEX:12.44}},
+{id:5,name:"Davante N' Josh",old:['Drake N Josh','All You Need Is Love','Jackson Mahomes Off'],record:'26–30',ppg:120.79,allplay:42.9,titles:0,finals:0,strength:'RB #4',weak:'TE #9',high:179.24,low:64.54,boom:6,sub100:9,pos:{QB:22.43,RB:30.95,WR:29.01,TE:8.94,FLEX:13.25}},
+{id:6,name:'Nacua Matata',old:['Tets McGee','please GOD let me WIN','Marky Mark and the Funky Bunch','Kyler, The Creator'],record:'26–30',ppg:126.44,allplay:52.9,titles:0,finals:1,strength:'WR #2',weak:'QB #7',high:194.98,low:66.26,boom:12,sub100:10,pos:{QB:22.81,RB:30.62,WR:31.62,TE:11.41,FLEX:14.02}},
+{id:7,name:'Hill Hurt Me We miss #10',old:[],record:'24–32',ppg:128.42,allplay:54.4,titles:1,finals:1,strength:'RB #2',weak:'TE #8',high:187.50,low:89.34,boom:10,sub100:10,pos:{QB:24.29,RB:33.43,WR:29.96,TE:9.03,FLEX:14.05}},
+{id:8,name:'Grittying N Grinding',old:['Tx ayesha can COOK'],record:'30–26',ppg:128.68,allplay:55.0,titles:2,finals:3,strength:'QB #1',weak:'FLEX #8',high:189.05,low:84.75,boom:9,sub100:4,pos:{QB:25.61,RB:32.93,WR:29.14,TE:10.55,FLEX:12.87}},
+{id:9,name:"JT's Finest Team",old:['Team Bock'],record:'32–24',ppg:124.57,allplay:50.6,titles:1,finals:1,strength:'TE #3',weak:'RB #8',high:179.80,low:71.62,boom:10,sub100:9,pos:{QB:23.23,RB:28.05,WR:29.25,TE:12.13,FLEX:13.15}},
+{id:10,name:'Team Binning',old:[],record:'23–33',ppg:115.92,allplay:38.9,titles:0,finals:1,strength:'QB #4',weak:'FLEX #10',high:178.10,low:54.85,boom:7,sub100:16,pos:{QB:23.76,RB:26.99,WR:28.06,TE:10.34,FLEX:11.35}}
+];
+const records=[
+{cat:'Team',label:'Highest team score',value:'204.24',title:'Unlimited “Lets Ride!”',meta:'2022 · Week 8',feature:true},
+{cat:'Team',label:'Lowest team score',value:'54.85',title:'Team Binning',meta:'2025 · Week 12',danger:true},
+{cat:'Team',label:'Closest game',value:'0.05',title:"JT's Finest over Hill Hurt Me",meta:'126.60–126.55 · 2025 W4'},
+{cat:'Team',label:'Highest-scoring loss',value:'158.25',title:'Team Binning',meta:'Lost 158.90–158.25 · 2025 W8'},
+{cat:'Team',label:'Lowest-scoring win',value:'85.74',title:'Kyler, The Creator',meta:'Beat Team Binning 85.74–82.08 · 2022 W11'},
+{cat:'Franchise',label:'Best 4-year record',value:'32–24',title:"JT's Finest Team",meta:'2022–2025 regular season'},
+{cat:'Franchise',label:'Best historical PPG',value:'130.16',title:'Love Wins in Ohio franchise',meta:'2022–2025 regular season'},
+{cat:'Franchise',label:'Most 150+ weeks',value:'12',title:'Nacua Matata franchise',meta:'2022–2025 regular season'},
+{cat:'Franchise',label:'Most sub-100 weeks',value:'16',title:'Team Binning',meta:'2022–2025 regular season'},
+{cat:'Franchise',label:'Most titles',value:'2',title:'Grittying N Grinding',meta:'2023 + 2025 champions'},
+{cat:'Luck',label:'Unluckiest historical franchise',value:'−11.5%',title:'Hill Hurt Me',meta:'Actual win% vs all-play win%'},
+{cat:'Luck',label:'Luckiest single season',value:'+25.8%',title:'Team Phillips',meta:'2025 actual win% vs all-play'}
+];
+const playerRecords=[
+{pos:'QB',points:'58.88',player:'Josh Allen',meta:'Nacua franchise · 2024 W14'},
+{pos:'RB',points:'60.40',player:'Jahmyr Gibbs',meta:'Hill Hurt Me · 2025 W12'},
+{pos:'WR',points:'62.40',player:"Ja'Marr Chase",meta:'Team Phillips · 2024 W10'},
+{pos:'TE',points:'43.30',player:'Brock Bowers',meta:'Waddling Bowers · 2025 W9'},
+{pos:'FLEX',points:'53.00',player:'DJ Moore',meta:"Davante N' Josh franchise · 2023 W5"}
+];
+const bench=[
+{player:'Tua Tagovailoa',points:52.86,team:'Kyler, The Creator',meta:'2022 · Week 2'},
+{player:'Justin Fields',points:49.72,team:'Beware of DAWGS',meta:'2022 · Week 9'},
+{player:'Josh Jacobs',points:49.30,team:'Love Hurts',meta:'2022 · Week 12'},
+{player:'Bo Nix',points:46.75,team:'Team Phillips',meta:'2025 · Week 7'},
+{player:'Raheem Mostert',points:45.20,team:'Team Binning',meta:'2023 · Week 3'}
+];
+const seasons={
+2022:{champ:'Team Bock',runner:'Unlimited “Lets Ride!”',avg:123.29,top:'Love Hurts · 140.08 PPG',standings:[['Love Hurts','12–2','1961.10'],['Beware of DAWGS','8–6','1911.46'],['Unlimited “Lets Ride!”','9–5','1791.34'],['Team Bock','7–7','1712.66'],['Team Phillips','7–7','1703.22'],['Jackson Mahomes Off','7–7','1573.76'],['Team Binning','7–7','1554.12'],['Hill Hurt Me We miss #10','5–9','1752.94'],['Tx ayesha can COOK','4–10','1724.88'],['Kyler, The Creator','4–10','1574.70']]},
+2023:{champ:'Tx ayesha can COOK',runner:'Team Binning',avg:124.18,top:'Hill Hurt Me · 131.05 PPG',standings:[['Christian Mingle','9–5','1800.42'],['Jackson Mahomes Off','9–5','1791.66'],['Team Bock','8–6','1807.68'],['Hill Hurt Me We miss #10','7–7','1834.72'],['Tx ayesha can COOK','7–7','1766.40'],['Marky Mark and the Funky Bunch','7–7','1733.74'],['Team Binning','7–7','1644.00'],['What Can Brown Do For You?','6–8','1737.96'],['Coopa Troopas','5–9','1680.10'],['Team Phillips','5–9','1588.68']]},
+2024:{champ:'Hill Hurt Me We miss #10',runner:'Tx ayesha can COOK',avg:124.18,top:'please GOD let me WIN · 133.08 PPG',standings:[['CTESPN','10–4','1848.94'],['Tx ayesha can COOK','10–4','1816.14'],["JT's Finest Team",'8–6','1795.16'],['Hill Hurt Me We miss #10','7–7','1820.76'],['Bed, Bath and Bijan','7–7','1709.50'],['All You Need Is Love','7–7','1696.88'],['please GOD let me WIN','6–8','1863.06'],['Team Phillips','6–8','1719.12'],['It Hurts when I pee','6–8','1593.86'],['Team Binning','3–11','1522.16']]},
+2025:{champ:'Grittying N Grinding',runner:'Tets McGee',avg:126.94,top:'Tets McGee · 136.35 PPG',standings:[['Team Phillips','11–3','1779.05'],['Tets McGee','9–5','1908.90'],["JT's Finest Team",'9–5','1660.15'],['Grittying N Grinding','9–5','1898.55'],['Waddling Bowers','8–6','1785.65'],['CTESPN','7–7','1848.30'],['Team Binning','6–8','1771.05'],['Hill Hurt Me We miss #10','5–9','1782.90'],['Drake N Josh','3–11','1701.75'],['Mahomes Alone','3–11','1635.30']]},
+2026:{champ:'Season in progress',runner:'—',avg:130.70,top:'Grittying N Grinding · 168.38 PPG',standings:currentStandings.map(t=>[t.name,t.wl,t.pf.toFixed(2)])}
+};
+const baselines={QB:23.12,RB:30.28,WR:29.95,TE:10.74,FLEX:13.31};
+
+function money(n){return Number(n).toFixed(2)}
+function setView(id){document.querySelectorAll('.view').forEach(v=>v.classList.toggle('active',v.id===id));document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===id));window.scrollTo({top:0,behavior:'smooth'});history.replaceState(null,'','#'+id)}
+document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>setView(b.dataset.view)));document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>setView(b.dataset.go)));
+
+function renderHome(){
+ document.getElementById('headlineMetrics').innerHTML=[
+ ['32–24','Best 4-year record','JT’s Finest'],['130.16','Best historical PPG','Love Wins in Ohio'],['204.24','Highest week ever','2022 W8'],['2×','Most championships','Grittying N Grinding']
+ ].map(x=>`<div class="metric"><div class="metric-value">${x[0]}</div><div class="metric-label">${x[1]}<br><strong>${x[2]}</strong></div></div>`).join('');
+ document.getElementById('standings2026').innerHTML=currentStandings.map((t,i)=>`<tr><td class="rank">${i+1}</td><td><div class="team-name">${t.name}</div></td><td>${t.wl}</td><td>${money(t.pf)}</td></tr>`).join('');
+ document.getElementById('champions').innerHTML=champions.map(c=>`<div class="champ-row"><div class="year-chip">${c.year}</div><div><div class="champ-name">${c.name}</div><div class="champ-sub">over ${c.runner} · ${c.score}</div></div><span class="pill gold">Champion</span></div>`).join('');
+ const max=Math.max(...teams.map(t=>t.ppg));document.getElementById('ppgBars').innerHTML=[...teams].sort((a,b)=>b.ppg-a.ppg).map((t,i)=>`<div class="bar-row"><div class="bar-label">${i+1}. ${t.name}</div><div class="bar-track"><div class="bar-fill" style="width:${(t.ppg/max*100).toFixed(1)}%"></div></div><div class="bar-value">${t.ppg.toFixed(2)}</div></div>`).join('');
+}
+function renderRecords(filter='All'){
+ const cats=['All','Team','Franchise','Luck'];document.getElementById('recordFilters').innerHTML=cats.map(c=>`<button class="filter-btn ${c===filter?'active':''}" data-filter="${c}">${c}</button>`).join('');
+ document.querySelectorAll('[data-filter]').forEach(b=>b.onclick=()=>renderRecords(b.dataset.filter));
+ document.getElementById('recordGrid').innerHTML=records.filter(r=>filter==='All'||r.cat===filter).map(r=>`<article class="record-card ${r.feature?'feature':''} ${r.danger?'danger':''}"><p class="eyebrow">${r.label}</p><div class="value">${r.value}</div><h3>${r.title}</h3><p>${r.meta}</p></article>`).join('');
+ document.getElementById('playerRecords').innerHTML=playerRecords.map(r=>`<div class="player-record"><div class="pos">${r.pos}</div><div class="points">${r.points}</div><div class="player">${r.player}</div><div class="meta">${r.meta}</div></div>`).join('');
+ document.getElementById('benchShame').innerHTML=bench.map((b,i)=>`<div class="timeline-row"><div class="timeline-rank">${i+1}</div><div><div class="timeline-title">${b.player} · ${b.team}</div><div class="timeline-sub">${b.meta}</div></div><div class="timeline-value">${b.points.toFixed(2)}</div></div>`).join('');
+}
+function renderTeams(q=''){
+ const query=q.toLowerCase().trim();const filtered=teams.filter(t=>[t.name,...t.old].join(' ').toLowerCase().includes(query));
+ document.getElementById('teamGrid').innerHTML=filtered.map(t=>`<button class="team-card" data-team="${t.id}"><div class="team-card-top"><div><h3>${t.name}</h3><div class="old-names">${t.old.length?'Formerly: '+t.old.join(' · '):'Same franchise name since 2022'}</div></div>${t.titles?`<span class="pill gold">${t.titles}× Champ</span>`:'<span class="pill">No titles</span>'}</div><div class="team-stats"><div class="team-stat"><strong>${t.record}</strong><span>Record</span></div><div class="team-stat"><strong>${t.ppg.toFixed(2)}</strong><span>PPG</span></div><div class="team-stat"><strong>${t.allplay.toFixed(1)}%</strong><span>All-play</span></div><div class="team-stat"><strong>${t.finals}</strong><span>Finals</span></div></div><div class="fingerprint"><span>Strength <b class="good">${t.strength}</b></span><span>Weakness <b class="bad">${t.weak}</b></span></div></button>`).join('')||'<div class="panel">No matching franchise.</div>';
+ document.querySelectorAll('[data-team]').forEach(b=>b.onclick=()=>openTeam(+b.dataset.team));
+}
+function openTeam(id){const t=teams.find(x=>x.id===id);if(!t)return;const posMax=36;document.getElementById('teamDrawer').innerHTML=`<div class="drawer-head"><div><p class="eyebrow">Franchise #${t.id}</p><h2>${t.name}</h2><div class="history">${t.old.length?'Historical names: '+t.old.join(' → '):'No historical name changes in the dataset.'}</div></div><button class="close-btn" id="closeDrawer" aria-label="Close">×</button></div><div class="drawer-grid"><div class="drawer-stat"><strong>${t.record}</strong><span>Regular-season record</span></div><div class="drawer-stat"><strong>${t.ppg.toFixed(2)}</strong><span>Historical PPG</span></div><div class="drawer-stat"><strong>${t.titles}</strong><span>Championships</span></div><div class="drawer-stat"><strong>${t.finals}</strong><span>Finals</span></div><div class="drawer-stat"><strong>${t.high.toFixed(2)}</strong><span>Best week</span></div><div class="drawer-stat"><strong>${t.low.toFixed(2)}</strong><span>Worst week</span></div><div class="drawer-stat"><strong>${t.boom}</strong><span>150+ weeks</span></div><div class="drawer-stat"><strong>${t.sub100}</strong><span>Sub-100 weeks</span></div></div><div class="section-gap"><p class="eyebrow">Positional fingerprint</p><div class="position-list">${Object.entries(t.pos).map(([p,v])=>`<div class="position-row"><div class="position-label">${p}</div><div class="position-track"><div class="position-fill" style="width:${Math.min(100,v/posMax*100)}%"></div></div><div class="position-val">${v.toFixed(2)}</div></div>`).join('')}</div><p class="subtle" style="margin-top:12px">League baselines: QB ${baselines.QB}, RB ${baselines.RB}, WR ${baselines.WR}, TE ${baselines.TE}, FLEX ${baselines.FLEX}.</p></div>`;document.getElementById('teamDrawer').classList.add('open');document.getElementById('drawerBackdrop').classList.add('open');document.getElementById('teamDrawer').setAttribute('aria-hidden','false');document.getElementById('closeDrawer').onclick=closeTeam}
+function closeTeam(){document.getElementById('teamDrawer').classList.remove('open');document.getElementById('drawerBackdrop').classList.remove('open');document.getElementById('teamDrawer').setAttribute('aria-hidden','true')}document.getElementById('drawerBackdrop').onclick=closeTeam;document.addEventListener('keydown',e=>{if(e.key==='Escape')closeTeam()});
+function renderSeason(year=2026){const yrs=[2026,2025,2024,2023,2022];document.getElementById('seasonTabs').innerHTML=yrs.map(y=>`<button class="season-btn ${y===year?'active':''}" data-year="${y}">${y}</button>`).join('');document.querySelectorAll('[data-year]').forEach(b=>b.onclick=()=>renderSeason(+b.dataset.year));const s=seasons[year];document.getElementById('seasonPanel').innerHTML=`<div class="panel-head"><div><p class="eyebrow">${year} season</p><h2>${year===2026?'Season in progress':s.champ+' — Champion'}</h2></div>${year===2026?'<span class="pill green">Current</span>':'<span class="pill gold">Completed</span>'}</div><div class="season-summary"><div class="season-mini"><strong>${s.avg.toFixed(2)}</strong><span>League PPG</span></div><div class="season-mini"><strong>${s.champ}</strong><span>Champion</span></div><div class="season-mini"><strong>${s.runner}</strong><span>Runner-up</span></div><div class="season-mini"><strong>${s.top}</strong><span>Scoring leader</span></div></div><div class="table-wrap"><table><thead><tr><th>#</th><th>Team</th><th>W-L</th><th>PF</th></tr></thead><tbody>${s.standings.map((r,i)=>`<tr><td class="rank">${i+1}</td><td class="team-name">${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td></tr>`).join('')}</tbody></table></div>`}
+
+document.getElementById('teamSearch').addEventListener('input',e=>renderTeams(e.target.value));
+renderHome();renderRecords();renderTeams();renderSeason();
+const initial=location.hash.replace('#','');if(['home','records','franchises','seasons'].includes(initial))setView(initial);
+</script>
 </body>
 </html>
