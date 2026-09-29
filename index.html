@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b1020" />
+  <title>THE League — Record Book</title>
+  <meta name="description" content="THE League fantasy football history, records, franchise profiles and live-era stats." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-glow bg-glow-a"></div>
+  <div class="bg-glow bg-glow-b"></div>
+
+  <header class="site-header">
+    <div class="brand-wrap">
+      <div class="brand-mark">TL</div>
+      <div>
+        <div class="brand">THE LEAGUE</div>
+        <div class="tagline">Stats · Records · History · Receipts</div>
+      </div>
+    </div>
+    <nav class="nav" aria-label="Primary">
+      <button class="nav-btn active" data-view="home">Home</button>
+      <button class="nav-btn" data-view="records">Record Book</button>
+      <button class="nav-btn" data-view="franchises">Franchises</button>
+      <button class="nav-btn" data-view="seasons">Seasons</button>
+    </nav>
+  </header>
+
+  <main class="shell">
+    <section id="home" class="view active-view">
+      <div class="hero">
+        <div>
+          <p class="eyebrow">EST. 2022 · 10 FRANCHISES</p>
+          <h1>The permanent home of <span>THE League.</span></h1>
+          <p class="lede">Championships, weekly explosions, schedule luck, positional identities and every terrible bench decision worth remembering.</p>
+        </div>
+        <div class="live-card">
+          <div class="live-head"><span class="live-dot"></span> 2026 snapshot</div>
+          <div class="live-big">Week 3 complete</div>
+          <div class="live-sub">Data through September 29, 2026</div>
+          <div class="live-grid">
+            <div><strong>130.70</strong><span>League PPG</span></div>
+            <div><strong>505.15</strong><span>Top PF</span></div>
+            <div><strong>3–0</strong><span>Best record</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-strip" id="headline-stats"></div>
+
+      <div class="section-grid two-col">
+        <article class="panel">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">DYNASTY OF THE ERA</p>
+              <h2>Championship résumé</h2>
+            </div>
+            <span class="pill gold">2× Champion</span>
+          </div>
+          <div class="goat-card">
+            <div class="goat-rank">01</div>
+            <div>
+              <h3>Grittying N Grinding</h3>
+              <p>2023 Champion · 2024 Runner-up · 2025 Champion</p>
+            </div>
+            <div class="goat-record">8–1<span>championship-bracket run</span></div>
+          </div>
+          <div class="mini-bars" id="goat-bars"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">LATEST POWER SNAPSHOT</p>
+              <h2>2026 standings</h2>
+            </div>
+            <span class="pill">Through W3</span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>#</th><th>Team</th><th>W-L</th><th>PF</th></tr></thead>
+              <tbody id="current-standings"></tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+
+      <article class="panel feature-panel">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">ALL-TIME SCORING</p>
+            <h2>Who actually scores?</h2>
+          </div>
+          <span class="pill">2022–25 regular season</span>
+        </div>
+        <div id="ppg-chart" class="rank-chart"></div>
+      </article>
+
+      <div class="section-grid three-col">
+        <article class="panel record-flash">
+          <p class="eyebrow">HIGH SCORE</p><div class="flash-value">204.24</div><h3>Unlimited “Lets Ride!”</h3><p>2022 · Week 8</p>
+        </article>
+        <article class="panel record-flash">
+          <p class="eyebrow">CLOSEST GAME</p><div class="flash-value">0.05</div><h3>JT's Finest over Hill Hurt Me</h3><p>126.60–126.55 · 2025 W4</p>
+        </article>
+        <article class="panel record-flash danger">
+          <p class="eyebrow">BENCH DISASTER</p><div class="flash-value">52.86</div><h3>Tua Tagovailoa</h3><p>Nacua franchise · 2022 W2</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="records" class="view">
+      <div class="page-title"><p class="eyebrow">THE RECEIPTS</p><h1>Record Book</h1><p>Regular-season team records cover 2022–2025 unless noted. Individual starter records are based on reconstructed historical lineups.</p></div>
+      <div id="record-grid" class="record-grid"></div>
+      <article class="panel">
+        <div class="panel-head"><div><p class="eyebrow">INDIVIDUAL SINGLE-WEEK RECORDS</p><h2>Position records</h2></div></div>
+        <div id="player-records" class="player-records"></div>
+      </article>
+      <article class="panel">
+        <div class="panel-head"><div><p class="eyebrow">BENCH HALL OF SHAME</p><h2>Points nobody got credit for</h2></div></div>
+        <div id="bench-shame" class="timeline"></div>
+      </article>
+    </section>
+
+    <section id="franchises" class="view">
+      <div class="page-title"><p class="eyebrow">TEN FRANCHISES · ONE HISTORY</p><h1>Franchise Files</h1><p>Team-name changes stay attached to the same franchise so the history does not reset every season.</p></div>
+      <div class="filters">
+        <input id="team-search" type="search" placeholder="Search a franchise or old team name…" />
+      </div>
+      <div id="franchise-grid" class="franchise-grid"></div>
+    </section>
+
+    <section id="seasons" class="view">
+      <div class="page-title"><p class="eyebrow">YEAR BY YEAR</p><h1>Season Archive</h1><p>League scoring has crept upward every year, which is why era-adjusted context matters when comparing teams.</p></div>
+      <article class="panel">
+        <div class="panel-head"><div><p class="eyebrow">SCORING ENVIRONMENT</p><h2>League average PPG by season</h2></div></div>
+        <div id="season-chart" class="rank-chart season-chart"></div>
+      </article>
+      <div id="season-cards" class="season-cards"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div>THE League Record Book</div>
+    <div>Historical database: 2022–present · Built for the group chat</div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
