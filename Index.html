@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#171717" />
+<title>THE League — Record Book</title>
+<meta name="description" content="THE League fantasy football standings, records, managers and season history." />
+<style>
+:root{--bg:#f7f7f5;--surface:#fff;--soft:#f3f4f3;--ink:#171717;--muted:#6b7280;--line:#e3e4e1;--accent:#2563eb;--accent-soft:#eff6ff;--gold:#946b16;--gold-soft:#fff9e8;--red:#b42318;--red-soft:#fff3f2;--green:#067647;--green-soft:#ecfdf3;--max:1120px;--r:16px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}button,input{font:inherit}button{cursor:pointer}a{color:inherit}
+.site-header{position:sticky;top:0;z-index:60;background:rgba(247,247,245,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.header-inner{max-width:var(--max);margin:auto;padding:12px 18px;display:flex;align-items:center;gap:14px}.brand{display:flex;align-items:center;gap:10px;margin-right:auto;min-width:0}.brand-mark{width:34px;height:34px;border-radius:10px;background:#171717;color:white;display:grid;place-items:center;font-size:12px;font-weight:900;letter-spacing:.04em}.brand-title{font-size:14px;font-weight:900;letter-spacing:.05em}.desktop-nav{display:flex;gap:3px}.nav-btn{border:0;background:transparent;color:var(--muted);padding:8px 10px;border-radius:9px;font-weight:800;font-size:13px}.nav-btn.active,.nav-btn:hover{background:#eceeeb;color:var(--ink)}
+.update-badge{border:1px solid var(--line);background:white;border-radius:999px;padding:7px 10px;font-size:11px;font-weight:800;color:var(--muted);white-space:nowrap}.share-btn{border:1px solid var(--line);background:white;border-radius:10px;padding:8px 11px;font-size:12px;font-weight:850;color:var(--ink)}
+.shell{max-width:var(--max);margin:auto;padding:22px 18px 110px}.view{display:none}.view.active{display:block}.eyebrow{margin:0 0 6px;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:900}.page-head{display:flex;justify-content:space-between;gap:18px;align-items:end;margin:4px 0 18px}.page-head h1{margin:0;font-size:clamp(30px,4vw,42px);letter-spacing:-.04em;line-height:1}.page-head p{margin:7px 0 0;max-width:700px;color:var(--muted);line-height:1.5;font-size:14px}
+.home-intro{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin:8px 0 18px;padding:18px 0;border-bottom:1px solid var(--line)}.home-intro h1{font-size:clamp(34px,5vw,52px);letter-spacing:-.05em;line-height:.98;margin:0}.home-intro p{margin:9px 0 0;color:var(--muted);font-size:14px;max-width:630px;line-height:1.55}.home-status{text-align:right;min-width:220px}.home-status strong{display:block;font-size:13px}.home-status span{display:block;font-size:11px;color:var(--muted);margin-top:4px}
+.panel,.leader-card,.record-card,.manager-card,.mini-record{background:var(--surface);border:1px solid var(--line);border-radius:var(--r)}.panel{padding:18px;margin-bottom:18px}.panel-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:13px}.panel-head h2{margin:0;font-size:19px;letter-spacing:-.025em}.section-title{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:24px 0 10px}.section-title h2{margin:0;font-size:21px;letter-spacing:-.03em}.text-link{border:0;background:transparent;padding:4px 0;color:var(--accent);font-size:12px;font-weight:850}
+.pill{display:inline-flex;align-items:center;border:1px solid var(--line);background:var(--soft);color:var(--muted);font-size:10px;padding:5px 8px;border-radius:999px;font-weight:850;white-space:nowrap}.pill.gold{background:var(--gold-soft);color:var(--gold);border-color:#efe0ad}.pill.green{background:var(--green-soft);color:var(--green);border-color:#b7ebce}.pill.red{background:var(--red-soft);color:var(--red);border-color:#f4c7c3}
+.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:12px;background:white}.compact-table table{min-width:0}table{width:100%;border-collapse:collapse;min-width:470px}th,td{padding:10px 11px;border-bottom:1px solid var(--line);text-align:left;font-size:13px}th{background:#fafaf9;color:var(--muted);font-size:9px;letter-spacing:.09em;text-transform:uppercase}tr:last-child td{border-bottom:0}.rank{width:32px;color:var(--muted);font-weight:900}.name-main{font-weight:850}.name-sub{font-size:10px;color:var(--muted);margin-top:2px}
+.leader-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:9px}.leader-card{padding:14px;min-height:112px}.leader-value{font-size:23px;font-weight:950;letter-spacing:-.04em;margin:8px 0 3px}.leader-label{font-size:11px;color:var(--muted);line-height:1.35}.leader-owner{font-size:12px;font-weight:900;margin-top:5px}
+.notable-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}.mini-record{padding:14px}.mini-record strong{display:block;font-size:20px;letter-spacing:-.035em;margin:7px 0 5px}.mini-record .title{font-size:12px;font-weight:900}.mini-record .meta{font-size:10px;color:var(--muted);line-height:1.4;margin-top:4px}
+.manager-quick{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}.manager-quick button{text-align:left;border:1px solid var(--line);background:white;border-radius:13px;padding:12px;min-width:0}.manager-quick button:hover{border-color:#cfd2ce}.mq-name{font-size:13px;font-weight:900}.mq-team{font-size:10px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:3px}.mq-meta{display:flex;justify-content:space-between;gap:8px;font-size:10px;margin-top:10px;color:var(--muted)}.mq-meta b{color:var(--ink)}
+.champ-list{display:grid;gap:7px}.champ-row{display:grid;grid-template-columns:48px 1fr auto;gap:10px;align-items:center;padding:10px;border:1px solid var(--line);border-radius:12px}.year-chip{background:#171717;color:#fff;border-radius:8px;padding:7px 5px;text-align:center;font-size:11px;font-weight:900}.champ-name{font-size:12px;font-weight:900}.champ-sub{font-size:10px;color:var(--muted);margin-top:2px;line-height:1.35}
+.filter-row{display:flex;gap:7px;overflow:auto;padding-bottom:3px;margin-bottom:14px}.filter-btn,.season-btn{flex:0 0 auto;border:1px solid var(--line);background:white;border-radius:999px;padding:8px 11px;color:var(--muted);font-size:11px;font-weight:850}.filter-btn.active,.season-btn.active{background:#171717;color:white;border-color:#171717}.record-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.record-card{padding:16px;min-height:142px}.record-card .value{font-size:31px;font-weight:950;letter-spacing:-.05em;margin:8px 0 4px}.record-card h3{font-size:13px;margin:0 0 4px}.record-card p{font-size:10px;color:var(--muted);margin:0;line-height:1.45}.record-card.dark{background:#171717;color:white;border-color:#171717}.record-card.dark p,.record-card.dark .eyebrow{color:#bfc2c7}.record-card.danger{background:var(--red-soft);border-color:#f0cbc8}.record-runners{margin-top:13px;padding-top:11px;border-top:1px solid var(--line)}.record-card.dark .record-runners{border-top-color:#343434}.record-card.danger .record-runners{border-top-color:#efcfcc}.runner-head{font-size:8px;font-weight:950;letter-spacing:.10em;text-transform:uppercase;color:var(--muted);margin-bottom:5px}.record-card.dark .runner-head{color:#9ca3af}.runner-row{display:grid;grid-template-columns:24px 58px minmax(0,1fr);gap:7px;align-items:center;padding:6px 0;border-top:1px solid #efefec}.runner-row:first-of-type{border-top:0}.record-card.dark .runner-row{border-top-color:#2b2b2b}.record-card.danger .runner-row{border-top-color:#f3dfdd}.runner-rank{font-size:9px;font-weight:950;color:var(--muted)}.runner-value{font-size:11px;font-weight:950;letter-spacing:-.02em}.runner-main{min-width:0}.runner-name{font-size:10px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.runner-meta{font-size:8px;color:var(--muted);margin-top:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.record-card.dark .runner-rank,.record-card.dark .runner-meta{color:#9ca3af}
+.player-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:9px}.player-card{border:1px solid var(--line);background:#fafaf9;border-radius:12px;padding:12px}.player-card .pos{font-size:9px;letter-spacing:.08em;color:var(--muted);font-weight:900}.player-card .pts{font-size:21px;font-weight:950;margin:7px 0 3px}.player-card .player{font-size:11px;font-weight:900}.player-card .meta{font-size:9px;color:var(--muted);line-height:1.4;margin-top:3px}.timeline{display:grid;gap:7px}.timeline-row{display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:10px;align-items:center;border:1px solid var(--line);border-radius:12px;padding:10px}.timeline-rank{width:30px;height:30px;display:grid;place-items:center;background:#fafaf9;border-radius:8px;font-size:11px;font-weight:900}.timeline-title{font-size:12px;font-weight:900}.timeline-sub{font-size:10px;color:var(--muted);margin-top:2px}.timeline-value{font-size:17px;font-weight:950;color:var(--red)}
+.search{width:100%;border:1px solid var(--line);background:white;border-radius:12px;padding:12px 13px;outline:none;margin-bottom:12px}.search:focus{border-color:#aeb3ac;box-shadow:0 0 0 3px #eceeeb}.manager-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.manager-card{padding:15px;text-align:left;width:100%}.manager-top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.manager-card h3{font-size:17px;margin:0;letter-spacing:-.025em}.manager-current{font-size:11px;color:var(--muted);margin-top:3px}.manager-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-top:13px}.manager-stat{background:#fafaf9;border-radius:9px;padding:8px}.manager-stat strong{display:block;font-size:12px}.manager-stat span{font-size:8px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-weight:850}.manager-foot{display:flex;justify-content:space-between;gap:12px;font-size:10px;color:var(--muted);margin-top:11px}.manager-foot b{color:var(--ink)}
+.season-tabs{display:flex;gap:7px;overflow:auto;padding-bottom:3px;margin-bottom:12px}.season-summary{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:12px}.season-mini{border:1px solid var(--line);background:#fafaf9;border-radius:10px;padding:10px}.season-mini strong{display:block;font-size:14px;line-height:1.25}.season-mini span{font-size:8px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-weight:850}
+
+.week-tabs{display:flex;gap:7px;overflow:auto;padding-bottom:4px;margin:0 0 14px}.week-btn{flex:0 0 auto;border:1px solid var(--line);background:white;border-radius:999px;padding:8px 12px;color:var(--muted);font-size:11px;font-weight:850}.week-btn.active{background:#171717;color:white;border-color:#171717}
+.week-recap{margin:0 0 14px}.week-recap-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:0 0 9px}.week-recap-head h2{margin:0;font-size:18px;letter-spacing:-.025em}.week-recap-head span{font-size:10px;color:var(--muted)}.week-recap-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}.week-recap-card{border:1px solid var(--line);background:white;border-radius:13px;padding:12px;min-width:0}.week-recap-card .recap-label{font-size:8px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);font-weight:900}.week-recap-card .recap-value{font-size:20px;font-weight:950;letter-spacing:-.04em;margin:7px 0 3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.week-recap-card .recap-title{font-size:11px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.week-recap-card .recap-meta{font-size:9px;color:var(--muted);margin-top:3px;line-height:1.35}.week-recap-card.mvp{background:var(--gold-soft);border-color:#efe0ad}.week-recap-card.bench{background:var(--accent-soft);border-color:#d8e7ff}
+.matchup-list{display:grid;gap:9px}.matchup-card{width:100%;border:1px solid var(--line);background:white;border-radius:15px;padding:15px;display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:12px;align-items:center;text-align:left;transition:.15s ease}.matchup-card:hover{border-color:#c7cac5;transform:translateY(-1px)}.matchup-card:active{transform:none}.matchup-side{min-width:0}.matchup-side.right{text-align:right}.matchup-manager{font-size:15px;font-weight:950;letter-spacing:-.02em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.matchup-team{font-size:10px;color:var(--muted);margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.matchup-score{font-size:26px;font-weight:950;letter-spacing:-.05em}.matchup-side.winner .matchup-score,.matchup-side.winner .matchup-manager{color:var(--ink)}.matchup-side.loser{color:#777}.matchup-vs{font-size:9px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:900;text-align:center}.matchup-margin{font-size:9px;color:var(--muted);text-align:center;margin-top:3px}
+.matchup-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.36);z-index:120;opacity:0;pointer-events:none;transition:.18s}.matchup-backdrop.open{opacity:1;pointer-events:auto}.matchup-modal{position:fixed;z-index:130;left:50%;top:50%;width:min(940px,94vw);max-height:90vh;overflow:auto;background:white;border:1px solid var(--line);border-radius:22px;box-shadow:0 24px 70px rgba(0,0,0,.22);transform:translate(-50%,-47%) scale(.985);opacity:0;pointer-events:none;transition:.18s}.matchup-modal.open{transform:translate(-50%,-50%) scale(1);opacity:1;pointer-events:auto}.matchup-modal-inner{padding:20px}.matchup-modal-head{display:flex;justify-content:space-between;gap:14px;align-items:flex-start;padding-bottom:15px;border-bottom:1px solid var(--line)}.matchup-modal-head h2{margin:2px 0 0;font-size:24px;letter-spacing:-.04em}.modal-scoreboard{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:center;margin:17px 0}.modal-team.right{text-align:right}.modal-manager{font-size:20px;font-weight:950;letter-spacing:-.03em}.modal-team-name{font-size:11px;color:var(--muted);margin-top:3px}.modal-score{font-size:36px;font-weight:950;letter-spacing:-.06em;margin-top:6px}.modal-vs{font-size:10px;color:var(--muted);font-weight:900;letter-spacing:.1em}.insight-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:15px 0}.insight-card{border:1px solid var(--line);border-radius:12px;background:#fafaf9;padding:11px;min-width:0}.insight-card strong{display:block;font-size:16px;letter-spacing:-.025em;margin-top:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.insight-card .meta{font-size:10px;color:var(--muted);margin-top:3px;line-height:1.35}.insight-card.mvp{background:var(--gold-soft);border-color:#efe0ad}.insight-card.dud{background:var(--red-soft);border-color:#f2d2cf}.insight-card.bench-regret{background:var(--accent-soft);border-color:#d8e7ff}
+.chart-panel{border:1px solid var(--line);border-radius:14px;padding:14px;margin-top:12px}.chart-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:12px}.chart-head h3{margin:0;font-size:15px}.chart-head p{margin:3px 0 0;font-size:10px;color:var(--muted)}.donut-compare{display:grid;grid-template-columns:1fr 1fr;gap:14px}.donut-team{border:1px solid var(--line);border-radius:13px;background:#fafaf9;padding:13px;min-width:0}.donut-team-head{text-align:center;margin-bottom:9px}.donut-team-head strong{display:block;font-size:13px}.donut-team-head span{display:block;font-size:9px;color:var(--muted);margin-top:2px}.donut-chart{width:178px;height:178px;border-radius:50%;margin:6px auto 13px;position:relative;box-shadow:inset 0 0 0 1px rgba(0,0,0,.04)}.donut-hole{position:absolute;inset:27px;border-radius:50%;background:#fafaf9;display:flex;align-items:center;justify-content:center;text-align:center;border:1px solid var(--line)}.donut-hole strong{display:block;font-size:26px;letter-spacing:-.05em}.donut-hole span{display:block;font-size:8px;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;font-weight:850;margin-top:2px}.donut-list{display:grid;gap:5px}.donut-row{display:grid;grid-template-columns:42px 10px minmax(0,1fr) auto auto;gap:6px;align-items:center;border-top:1px solid #ecece9;padding-top:5px}.donut-slot{font-size:9px;font-weight:950;color:var(--muted)}.donut-dot{width:9px;height:9px;border-radius:50%}.donut-player{font-size:10px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.donut-points{font-size:10px;font-weight:900}.donut-pct{font-size:9px;color:var(--muted);width:38px;text-align:right}.negative-adjust{margin-top:8px;border-radius:9px;background:var(--red-soft);color:var(--red);padding:7px 8px;font-size:9px;font-weight:800}.chart-note{font-size:9px;color:var(--muted);line-height:1.45;margin-top:9px}.playoff-section{margin-top:18px;padding-top:17px;border-top:1px solid var(--line)}.playoff-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin-bottom:10px}.playoff-head h3{margin:0;font-size:17px;letter-spacing:-.025em}.playoff-head p{margin:3px 0 0;font-size:10px;color:var(--muted)}.bracket-scroll{overflow-x:auto;padding-bottom:4px}.bracket-grid{display:grid;grid-template-columns:repeat(3,minmax(210px,1fr));gap:12px;min-width:690px}.bracket-round{display:grid;align-content:start;gap:8px}.round-title{font-size:9px;font-weight:950;color:var(--muted);text-transform:uppercase;letter-spacing:.09em;padding:0 2px}.bracket-game{border:1px solid var(--line);border-radius:11px;background:#fafaf9;overflow:hidden}.bracket-team{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;align-items:center;padding:9px 10px}.bracket-team+.bracket-team{border-top:1px solid var(--line)}.bracket-team.winner{background:var(--gold-soft)}.bracket-manager{font-size:11px;font-weight:900}.bracket-teamname{font-size:8px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:2px}.bracket-score{font-size:12px;font-weight:950}.bracket-bye{padding:7px 10px;border-top:1px solid var(--line);font-size:8px;color:var(--muted);font-weight:900;text-transform:uppercase;letter-spacing:.08em}.bracket-champ{border-color:#e8d79f;box-shadow:0 0 0 2px #fff8df inset}.playoff-pending{border:1px dashed var(--line);border-radius:12px;padding:15px;text-align:center;color:var(--muted);font-size:11px;background:#fafaf9}
+.matchup-summary{font-size:12px;color:var(--muted);line-height:1.6;background:#fafaf9;border:1px solid var(--line);border-radius:12px;padding:12px;margin-top:12px}.record-note{display:inline-flex;align-items:center;border-radius:999px;background:var(--gold-soft);border:1px solid #efe0ad;color:var(--gold);padding:6px 9px;font-size:9px;font-weight:900;margin:7px 5px 0 0}
+.battle-table table{min-width:0}.battle-table td,.battle-table th{padding:8px 9px}.battle-edge{font-weight:900}.battle-edge.tie{color:var(--muted)}
+
+.drawer-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.28);z-index:80;display:none}.drawer-backdrop.open{display:block}.drawer{position:fixed;z-index:90;right:0;top:0;height:100%;width:min(500px,94vw);background:white;transform:translateX(102%);transition:.2s ease;overflow:auto;padding:22px;box-shadow:-10px 0 30px rgba(0,0,0,.10)}.drawer.open{transform:translateX(0)}.drawer-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.drawer h2{font-size:28px;margin:3px 0 4px;letter-spacing:-.04em}.close-btn{border:1px solid var(--line);background:white;border-radius:9px;width:36px;height:36px;font-size:20px}.history{font-size:11px;color:var(--muted);line-height:1.5}.drawer-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:15px}.drawer-stat{border:1px solid var(--line);border-radius:11px;padding:11px}.drawer-stat strong{font-size:18px}.drawer-stat span{display:block;font-size:8px;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;margin-top:3px;font-weight:850}.position-list{display:grid;gap:8px;margin-top:10px}.position-row{display:grid;grid-template-columns:44px 1fr 42px;gap:8px;align-items:center}.position-label,.position-val{font-size:10px;font-weight:900}.position-val{text-align:right}.position-track{height:7px;background:#eceeeb;border-radius:999px;overflow:hidden}.position-fill{height:100%;background:var(--accent)}
+.toast{position:fixed;left:50%;bottom:90px;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:#171717;color:white;padding:9px 12px;border-radius:999px;font-size:11px;font-weight:850;z-index:110;transition:.2s}.toast.show{opacity:1;transform:translate(-50%,0)}
+.mobile-nav{display:none;position:fixed;left:10px;right:10px;bottom:max(10px,env(safe-area-inset-bottom));z-index:70;background:#171717;border-radius:17px;padding:5px}.mobile-nav button{flex:1;border:0;background:transparent;color:#9ca3af;border-radius:12px;padding:8px 4px;font-size:10px;font-weight:850}.mobile-nav button span{display:block;font-size:15px;margin-bottom:3px}.mobile-nav button.active{background:white;color:#171717}
+footer{max-width:var(--max);margin:0 auto 90px;padding:0 18px;color:var(--muted);font-size:10px;display:flex;justify-content:space-between;gap:18px}
+@media(max-width:900px){.desktop-nav{display:none}.mobile-nav{display:flex}.shell{padding:16px 13px 108px}.header-inner{padding:10px 13px}.update-badge{display:none}.leader-grid{grid-template-columns:repeat(2,1fr)}.notable-grid{grid-template-columns:repeat(2,1fr)}.manager-quick{grid-template-columns:repeat(2,1fr)}.manager-grid{grid-template-columns:1fr}.record-grid{grid-template-columns:1fr}.player-grid{grid-template-columns:repeat(3,1fr)}.home-intro{align-items:flex-start}.week-recap-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:560px){.compact-table th,.compact-table td{padding:9px 7px}.compact-table .rank{width:25px}.compact-table th:nth-child(3),.compact-table td:nth-child(3){width:48px}.compact-table th:nth-child(4),.compact-table td:nth-child(4){width:58px}.brand-title{font-size:13px}.share-btn{padding:7px 9px}.home-intro{display:block;margin-top:0}.home-status{text-align:left;margin-top:12px;min-width:0}.leader-grid{display:flex;overflow:auto;gap:8px;padding-bottom:3px;scroll-snap-type:x proximity}.leader-card{min-width:155px;scroll-snap-align:start}.record-grid{grid-template-columns:1fr}.player-grid{grid-template-columns:repeat(2,1fr)}.season-summary{grid-template-columns:repeat(2,1fr)}.manager-stats{grid-template-columns:repeat(2,1fr)}.champ-row{grid-template-columns:44px 1fr}.champ-row .pill{display:none}footer{display:block;line-height:1.7}table{min-width:430px}}
+
+@media(max-width:720px){.matchup-modal{left:0;right:0;top:auto;bottom:0;width:100%;max-height:92vh;border-radius:20px 20px 0 0;transform:translateY(103%);border-bottom:0}.matchup-modal.open{transform:translateY(0)}.matchup-modal-inner{padding:16px 13px max(22px,env(safe-area-inset-bottom))}.modal-scoreboard{gap:8px}.modal-manager{font-size:17px}.modal-score{font-size:30px}.insight-grid{grid-template-columns:1fr}.donut-compare{grid-template-columns:1fr}.donut-chart{width:166px;height:166px}.donut-hole{inset:25px}.chart-head{display:block}.battle-table table{font-size:11px}.bracket-grid{min-width:620px;grid-template-columns:repeat(3,200px)}}
+@media(max-width:480px){.matchup-card{padding:13px 10px;gap:7px}.matchup-manager{font-size:13px}.matchup-score{font-size:23px}.matchup-team{font-size:9px}.matchup-vs{font-size:8px}.mobile-nav button{font-size:9px;padding-left:2px;padding-right:2px}.week-recap-grid{display:flex;overflow:auto;gap:8px;padding-bottom:3px;scroll-snap-type:x proximity}.week-recap-card{min-width:148px;scroll-snap-align:start}.week-recap-head{align-items:flex-start}.week-recap-head span{display:none}}
+</style>
+</head>
+<body>
+<header class="site-header"><div class="header-inner">
+  <div class="brand"><div class="brand-mark">TL</div><div><div class="brand-title">THE LEAGUE</div></div></div>
+  <nav class="desktop-nav" aria-label="Primary"><button class="nav-btn active" data-view="home">Home</button><button class="nav-btn" data-view="matchups">Matchups</button><button class="nav-btn" data-view="records">Records</button><button class="nav-btn" data-view="managers">Managers</button><button class="nav-btn" data-view="seasons">Seasons</button></nav>
+  <div class="update-badge">Updated through 2026 Week 3</div><button class="share-btn" id="shareBtn">Share</button>
+</div></header>
+<main class="shell">
+<section class="view active" id="home">
+  <div class="home-intro"><div><p class="eyebrow">League HQ · Est. 2022</p><h1>THE League</h1><p>Standings, records, manager history and the receipts that survive every team-name change.</p></div><div class="home-status"><strong>2026 Week 3 complete</strong><span>Last static update: Sep. 29, 2026</span></div></div>
+
+  <article class="panel"><div class="panel-head"><div><p class="eyebrow">Current season</p><h2>2026 standings</h2></div><div style="display:flex;gap:8px;align-items:center"><button class="text-link" data-go="matchups">View matchups →</button><span class="pill">Through W3</span></div></div><div class="table-wrap compact-table"><table><thead><tr><th>#</th><th>Manager</th><th>W-L</th><th>PF</th></tr></thead><tbody id="standings2026"></tbody></table></div></article>
+
+  <div class="section-title"><div><p class="eyebrow">At a glance</p><h2>League leaders</h2></div><button class="text-link" data-go="records">All records →</button></div><div class="leader-grid" id="leaderGrid"></div>
+
+  <div class="section-title"><div><p class="eyebrow">The receipts</p><h2>Notable records</h2></div></div><div class="notable-grid" id="notableGrid"></div>
+
+  <div class="section-title"><div><p class="eyebrow">Quick access</p><h2>Managers</h2></div><button class="text-link" data-go="managers">View all →</button></div><div class="manager-quick" id="managerQuick"></div>
+
+  <div class="section-title"><div><p class="eyebrow">History</p><h2>Recent champions</h2></div><button class="text-link" data-go="seasons">Season archive →</button></div><article class="panel"><div class="champ-list" id="champions"></div></article>
+</section>
+
+
+<section class="view" id="matchups">
+  <div class="page-head"><div><p class="eyebrow">2026 weekly results</p><h1>Matchups</h1><p>Pick a week, then tap any matchup for the full scoring breakdown, MVP, bench regret and positional battle.</p></div></div>
+  <div class="week-tabs" id="weekTabs"></div>
+  <div class="week-recap" id="weekRecap"></div>
+  <div class="matchup-list" id="matchupList"></div>
+</section>
+
+<section class="view" id="records">
+  <div class="page-head"><div><p class="eyebrow">The receipts</p><h1>Record Book</h1><p>Pick a category instead of digging through one giant stat dump.</p></div></div>
+  <div class="filter-row" id="recordFilters"></div><div id="recordContent"></div>
+</section>
+
+<section class="view" id="managers">
+  <div class="page-head"><div><p class="eyebrow">10 managers · one history</p><h1>Managers</h1><p>Manager names are the permanent identity. Team names stay underneath as the season-by-season history.</p></div></div>
+  <input class="search" id="teamSearch" type="search" placeholder="Search manager or team name…" /><div class="manager-grid" id="managerGrid"></div>
+</section>
+
+<section class="view" id="seasons">
+  <div class="page-head"><div><p class="eyebrow">Year by year</p><h1>Seasons</h1><p>Choose a season to see the champion, scoring environment and regular-season standings.</p></div></div>
+  <div class="season-tabs" id="seasonTabs"></div><article class="panel" id="seasonPanel"></article>
+</section>
+</main>
+<div class="drawer-backdrop" id="drawerBackdrop"></div><aside class="drawer" id="teamDrawer" aria-hidden="true"></aside><div class="matchup-backdrop" id="matchupBackdrop"></div><section class="matchup-modal" id="matchupModal" aria-hidden="true"></section><div class="toast" id="toast">Link copied</div>
+<nav class="mobile-nav" aria-label="Mobile navigation"><button class="active" data-view="home"><span>⌂</span>Home</button><button data-view="matchups"><span>VS</span>Matchups</button><button data-view="records"><span>▦</span>Records</button><button data-view="managers"><span>◎</span>Managers</button><button data-view="seasons"><span>≡</span>Seasons</button></nav>
+<footer><div>THE League Record Book</div><div>2022–present · Updated through 2026 Week 3</div></footer>
+<script>
+const currentStandings=[
+{id:8,manager:'Mike',name:'Grittying N Grinding',wl:'3–0',pf:505.15},{id:5,manager:'JB',name:"Davante N' Josh",wl:'3–0',pf:406.65},{id:4,manager:'Zach',name:'Here Comes McBride',wl:'2–1',pf:475.90},{id:1,manager:'Coy',name:'Love Wins in Ohio',wl:'2–1',pf:392.90},{id:10,manager:'Jazz',name:'Team Binning',wl:'1–2',pf:376.95},{id:9,manager:'JT',name:"JT's Finest Team",wl:'1–2',pf:375.80},{id:7,manager:'Austin',name:'Hill Hurt Me We miss #10',wl:'1–2',pf:358.85},{id:6,manager:'Isaiah',name:'Nacua Matata',wl:'1–2',pf:311.50},{id:3,manager:'Lance',name:'Team Phillips',wl:'1–2',pf:342.85},{id:2,manager:'Golly',name:'Waddling Bowers II',wl:'0–3',pf:374.50}
+];
+const champions=[
+{year:2025,name:'Grittying N Grinding',runner:'Tets McGee',score:'189.65–116.70'},
+{year:2024,name:'Hill Hurt Me We miss #10',runner:'Tx ayesha can COOK',score:'155.32–118.48'},
+{year:2023,name:'Tx ayesha can COOK',runner:'Team Binning',score:'161.30–134.38'},
+{year:2022,name:'Team Bock',runner:'Unlimited “Lets Ride!”',score:'115.70–97.18'}
+];
+const teams=[
+{id:1,manager:'Coy',name:'Love Wins in Ohio',old:['CTESPN','Coopa Troopas','Beware of DAWGS'],record:'30–26',ppg:130.16,allplay:58.1,titles:0,finals:0,strength:'WR #1',weak:'QB #9',high:200.98,low:78.40,boom:10,sub100:6,pos:{QB:21.15,RB:30.34,WR:33.92,TE:12.46,FLEX:14.30}},
+{id:2,manager:'Golly',name:'Waddling Bowers II',old:['Waddling Bowers','It Hurts when I pee','What Can Brown Do For You?','Unlimited “Lets Ride!”'],record:'29–27',ppg:123.37,allplay:48.4,titles:0,finals:1,strength:'TE #1',weak:'RB #10',high:204.24,low:66.54,boom:7,sub100:11,pos:{QB:22.78,RB:26.78,WR:30.02,TE:13.29,FLEX:13.13}},
+{id:3,manager:'Lance',name:'Team Phillips',old:[],record:'29–27',ppg:121.25,allplay:46.7,titles:0,finals:0,strength:'FLEX #4',weak:'TE #10',high:170.90,low:78.38,boom:6,sub100:10,pos:{QB:21.64,RB:29.67,WR:30.11,TE:8.29,FLEX:13.78}},
+{id:4,manager:'Zach',name:'Here Comes McBride',old:['Mahomes Alone','Bed, Bath and Bijan','Christian Mingle','Love Hurts'],record:'31–25',ppg:126.90,allplay:52.2,titles:0,finals:0,strength:'RB #1',weak:'FLEX #9',high:184.06,low:87.90,boom:7,sub100:3,pos:{QB:23.81,RB:33.93,WR:28.72,TE:11.00,FLEX:12.44}},
+{id:5,manager:'JB',name:"Davante N' Josh",old:['Drake N Josh','All You Need Is Love','Jackson Mahomes Off'],record:'26–30',ppg:120.79,allplay:42.9,titles:0,finals:0,strength:'RB #4',weak:'TE #9',high:179.24,low:64.54,boom:6,sub100:9,pos:{QB:22.43,RB:30.95,WR:29.01,TE:8.94,FLEX:13.25}},
+{id:6,manager:'Isaiah',name:'Nacua Matata',old:['Tets McGee','please GOD let me WIN','Marky Mark and the Funky Bunch','Kyler, The Creator'],record:'26–30',ppg:126.44,allplay:52.9,titles:0,finals:1,strength:'WR #2',weak:'QB #7',high:194.98,low:66.26,boom:12,sub100:10,pos:{QB:22.81,RB:30.62,WR:31.62,TE:11.41,FLEX:14.02}},
+{id:7,manager:'Austin',name:'Hill Hurt Me We miss #10',old:[],record:'24–32',ppg:128.42,allplay:54.4,titles:1,finals:1,strength:'RB #2',weak:'TE #8',high:187.50,low:89.34,boom:10,sub100:10,pos:{QB:24.29,RB:33.43,WR:29.96,TE:9.03,FLEX:14.05}},
+{id:8,manager:'Mike',name:'Grittying N Grinding',old:['Tx ayesha can COOK'],record:'30–26',ppg:128.68,allplay:55.0,titles:2,finals:3,strength:'QB #1',weak:'FLEX #8',high:189.05,low:84.75,boom:9,sub100:4,pos:{QB:25.61,RB:32.93,WR:29.14,TE:10.55,FLEX:12.87}},
+{id:9,manager:'JT',name:"JT's Finest Team",old:['Team Bock'],record:'32–24',ppg:124.57,allplay:50.6,titles:1,finals:1,strength:'TE #3',weak:'RB #8',high:179.80,low:71.62,boom:10,sub100:9,pos:{QB:23.23,RB:28.05,WR:29.25,TE:12.13,FLEX:13.15}},
+{id:10,manager:'Jazz',name:'Team Binning',old:[],record:'23–33',ppg:115.92,allplay:38.9,titles:0,finals:1,strength:'QB #4',weak:'FLEX #10',high:178.10,low:54.85,boom:7,sub100:16,pos:{QB:23.76,RB:26.99,WR:28.06,TE:10.34,FLEX:11.35}}
+];
+const records=[
+{cat:'Team',label:'Highest team score',value:'204.24',title:'Golly',meta:'Unlimited “Lets Ride!” · 2022 · Week 8',feature:true,runners:[
+  {value:'200.98',title:'Coy',meta:'CTESPN · 2024 · Week 11'},
+  {value:'194.98',title:'Isaiah',meta:'please GOD let me WIN · 2024 · Week 14'},
+  {value:'189.05',title:'Mike',meta:'Grittying N Grinding · 2025 · Week 7'},
+  {value:'187.50',title:'Austin',meta:'Hill Hurt Me · 2023 · Week 13'}
+]},
+{cat:'Team',label:'Lowest team score',value:'54.85',title:'Jazz',meta:'Team Binning · 2025 · Week 12',danger:true,runners:[
+  {value:'64.54',title:'JB',meta:'All You Need Is Love · 2024 · Week 10'},
+  {value:'66.26',title:'Isaiah',meta:'Kyler, The Creator · 2022 · Week 3'},
+  {value:'66.54',title:'Golly',meta:'It Hurts when I pee · 2024 · Week 3'},
+  {value:'66.94',title:'Jazz',meta:'Team Binning · 2024 · Week 10'}
+]},
+{cat:'Team',label:'Closest game',value:'0.05',title:'JT over Austin',meta:"JT's Finest over Hill Hurt Me · 126.60–126.55 · 2025 W4",runners:[
+  {value:'0.14',title:'Coy over Lance',meta:'Coopa Troopas over Team Phillips · 2023 W4'},
+  {value:'0.20',title:'JB over Austin',meta:'Jackson Mahomes Off over Hill Hurt Me · 2023 W12'},
+  {value:'0.20',title:'Isaiah over Golly',meta:'Tets McGee over Waddling Bowers · 2025 W10'},
+  {value:'0.38',title:'Golly over Coy',meta:'Unlimited “Lets Ride!” over Beware of DAWGS · 2022 W6'}
+]},
+{cat:'Team',label:'Highest-scoring loss',value:'158.25',title:'Jazz',meta:'Team Binning · Lost 158.90–158.25 · 2025 W8',runners:[
+  {value:'158.18',title:'JT',meta:'Team Bock · Lost 187.50–158.18 · 2023 W13'},
+  {value:'156.02',title:'Austin',meta:'Hill Hurt Me · Lost 204.24–156.02 · 2022 W8'},
+  {value:'152.80',title:'Mike',meta:'Tx ayesha can COOK · Lost 170.62–152.80 · 2022 W1'},
+  {value:'152.06',title:'Coy',meta:'Beware of DAWGS · Lost 157.40–152.06 · 2022 W13'}
+]},
+{cat:'Team',label:'Lowest-scoring win',value:'85.74',title:'Isaiah',meta:'Kyler, The Creator · Beat Jazz 85.74–82.08 · 2022 W11',runners:[
+  {value:'93.50',title:'JB',meta:'Jackson Mahomes Off · Beat Jazz 93.50–68.22 · 2022 W8'},
+  {value:'94.00',title:'Lance',meta:"Team Phillips · Beat JT's Finest 94.00–92.05 · 2025 W2"},
+  {value:'95.38',title:'Golly',meta:'It Hurts when I pee · Beat Isaiah 95.38–93.90 · 2024 W10'},
+  {value:'97.34',title:'JB',meta:'Jackson Mahomes Off · Beat Zach 97.34–88.70 · 2023 W6'}
+]},
+{cat:'Franchise',label:'Best 4-year record',value:'32–24',title:'JT',meta:"JT's Finest Team · 2022–2025 regular season",runners:[
+  {value:'31–25',title:'Zach',meta:'Here Comes McBride franchise'},
+  {value:'30–26',title:'Coy',meta:'Love Wins in Ohio franchise'},
+  {value:'30–26',title:'Mike',meta:'Grittying N Grinding franchise'},
+  {value:'29–27',title:'Golly / Lance',meta:'Tied for fifth-best record'}
+]},
+{cat:'Franchise',label:'Best historical PPG',value:'130.16',title:'Coy',meta:'Love Wins in Ohio franchise · 2022–2025 regular season',runners:[
+  {value:'128.68',title:'Mike',meta:'Grittying N Grinding'},
+  {value:'128.42',title:'Austin',meta:'Hill Hurt Me'},
+  {value:'126.90',title:'Zach',meta:'Here Comes McBride'},
+  {value:'126.44',title:'Isaiah',meta:'Nacua Matata franchise'}
+]},
+{cat:'Franchise',label:'Most 150+ weeks',value:'12',title:'Isaiah',meta:'Nacua Matata franchise · 2022–2025 regular season',runners:[
+  {value:'10',title:'Coy',meta:'Love Wins in Ohio'},
+  {value:'10',title:'Austin',meta:'Hill Hurt Me'},
+  {value:'10',title:'JT',meta:"JT's Finest"},
+  {value:'9',title:'Mike',meta:'Grittying N Grinding'}
+]},
+{cat:'Franchise',label:'Most sub-100 weeks',value:'16',title:'Jazz',meta:'Team Binning · 2022–2025 regular season',runners:[
+  {value:'11',title:'Golly',meta:'Waddling Bowers franchise'},
+  {value:'10',title:'Isaiah',meta:'Nacua Matata franchise'},
+  {value:'10',title:'Austin',meta:'Hill Hurt Me'},
+  {value:'10',title:'Lance',meta:'Team Phillips'}
+]},
+{cat:'Franchise',label:'Most titles',value:'2',title:'Mike',meta:'Grittying N Grinding · 2023 + 2025 champions',runners:[
+  {value:'1',title:'Austin',meta:'2024 champion'},
+  {value:'1',title:'JT',meta:'2022 champion'}
+]},
+{cat:'Luck',label:'Unluckiest historical franchise',value:'−11.5%',title:'Austin',meta:'Hill Hurt Me · Actual win% vs all-play win%',runners:[
+  {value:'−6.5%',title:'Isaiah',meta:'Nacua Matata franchise'},
+  {value:'−4.6%',title:'Coy',meta:'Love Wins in Ohio franchise'},
+  {value:'−1.4%',title:'Mike',meta:'Grittying N Grinding'},
+  {value:'+2.2%',title:'Jazz',meta:'Team Binning · next-lowest luck gap'}
+]},
+{cat:'Luck',label:'Luckiest single season',value:'+25.8%',title:'Lance',meta:'Team Phillips · 2025 actual win% vs all-play',runners:[
+  {value:'+23.0%',title:'JT',meta:"JT's Finest · 2025"},
+  {value:'+16.7%',title:'Mike',meta:'Grittying N Grinding · 2024'},
+  {value:'+15.9%',title:'JB',meta:'Jackson Mahomes Off · 2023'},
+  {value:'+15.9%',title:'Coy',meta:'CTESPN · 2024'}
+]}
+];
+const playerRecords=[
+{pos:'QB',points:'58.88',player:'Josh Allen',meta:'Isaiah · Nacua franchise · 2024 W14'},
+{pos:'RB',points:'60.40',player:'Jahmyr Gibbs',meta:'Austin · Hill Hurt Me · 2025 W12'},
+{pos:'WR',points:'62.40',player:"Ja'Marr Chase",meta:'Lance · Team Phillips · 2024 W10'},
+{pos:'TE',points:'43.30',player:'Brock Bowers',meta:'Golly · Waddling Bowers · 2025 W9'},
+{pos:'FLEX',points:'53.00',player:'DJ Moore',meta:"JB · Davante N' Josh franchise · 2023 W5"}
+];
+const bench=[
+{player:'Tua Tagovailoa',points:52.86,manager:'Isaiah',team:'Kyler, The Creator',meta:'2022 · Week 2'},
+{player:'Justin Fields',points:49.72,manager:'Coy',team:'Beware of DAWGS',meta:'2022 · Week 9'},
+{player:'Josh Jacobs',points:49.30,manager:'Zach',team:'Love Hurts',meta:'2022 · Week 12'},
+{player:'Bo Nix',points:46.75,manager:'Lance',team:'Team Phillips',meta:'2025 · Week 7'},
+{player:'Raheem Mostert',points:45.20,manager:'Jazz',team:'Team Binning',meta:'2023 · Week 3'}
+];
+const seasons={
+2022:{champ:'Team Bock',runner:'Unlimited “Lets Ride!”',avg:123.29,top:'Love Hurts · 140.08 PPG',standings:[['Love Hurts','12–2','1961.10'],['Beware of DAWGS','8–6','1911.46'],['Unlimited “Lets Ride!”','9–5','1791.34'],['Team Bock','7–7','1712.66'],['Team Phillips','7–7','1703.22'],['Jackson Mahomes Off','7–7','1573.76'],['Team Binning','7–7','1554.12'],['Hill Hurt Me We miss #10','5–9','1752.94'],['Tx ayesha can COOK','4–10','1724.88'],['Kyler, The Creator','4–10','1574.70']]},
+2023:{champ:'Tx ayesha can COOK',runner:'Team Binning',avg:124.18,top:'Hill Hurt Me · 131.05 PPG',standings:[['Christian Mingle','9–5','1800.42'],['Jackson Mahomes Off','9–5','1791.66'],['Team Bock','8–6','1807.68'],['Hill Hurt Me We miss #10','7–7','1834.72'],['Tx ayesha can COOK','7–7','1766.40'],['Marky Mark and the Funky Bunch','7–7','1733.74'],['Team Binning','7–7','1644.00'],['What Can Brown Do For You?','6–8','1737.96'],['Coopa Troopas','5–9','1680.10'],['Team Phillips','5–9','1588.68']]},
+2024:{champ:'Hill Hurt Me We miss #10',runner:'Tx ayesha can COOK',avg:124.18,top:'please GOD let me WIN · 133.08 PPG',standings:[['CTESPN','10–4','1848.94'],['Tx ayesha can COOK','10–4','1816.14'],["JT's Finest Team",'8–6','1795.16'],['Hill Hurt Me We miss #10','7–7','1820.76'],['Bed, Bath and Bijan','7–7','1709.50'],['All You Need Is Love','7–7','1696.88'],['please GOD let me WIN','6–8','1863.06'],['Team Phillips','6–8','1719.12'],['It Hurts when I pee','6–8','1593.86'],['Team Binning','3–11','1522.16']]},
+2025:{champ:'Grittying N Grinding',runner:'Tets McGee',avg:126.94,top:'Tets McGee · 136.35 PPG',standings:[['Team Phillips','11–3','1779.05'],['Tets McGee','9–5','1908.90'],["JT's Finest Team",'9–5','1660.15'],['Grittying N Grinding','9–5','1898.55'],['Waddling Bowers','8–6','1785.65'],['CTESPN','7–7','1848.30'],['Team Binning','6–8','1771.05'],['Hill Hurt Me We miss #10','5–9','1782.90'],['Drake N Josh','3–11','1701.75'],['Mahomes Alone','3–11','1635.30']]},
+2026:{champ:'Season in progress',runner:'—',avg:130.70,top:'Grittying N Grinding · 168.38 PPG',standings:currentStandings.map(t=>[t.name,t.wl,t.pf.toFixed(2)])}
+};
+const playoffs={
+2022:{r1:[{a:[4,'Love Hurts',null],bye:true},{a:[1,'Beware of DAWGS',null],bye:true},{a:[9,'Team Bock',143.20],b:[3,'Team Phillips',98.32],winner:9},{a:[2,'Unlimited "Lets Ride!"',156.56],b:[5,'Jackson Mahomes Off',90.24],winner:2}],r2:[{a:[4,'Love Hurts',119.84],b:[9,'Team Bock',173.40],winner:9},{a:[1,'Beware of DAWGS',81.26],b:[2,'Unlimited "Lets Ride!"',118.80],winner:2}],final:[{a:[2,'Unlimited "Lets Ride!"',97.18],b:[9,'Team Bock',115.70],winner:9}]},
+2023:{r1:[{a:[4,'Christian Mingle',null],bye:true},{a:[7,'Hill Hurt Me We miss #10',127.36],b:[8,'Tx ayesha can COOK',142.66],winner:8},{a:[9,'Team Bock',86.66],b:[6,'Marky Mark and the Funky Bunch',68.14],winner:9},{a:[5,'Jackson Mahomes Off',103.30],b:[10,'Team Binning',174.82],winner:10}],r2:[{a:[4,'Christian Mingle',101.80],b:[8,'Tx ayesha can COOK',133.82],winner:8},{a:[9,'Team Bock',122.94],b:[10,'Team Binning',164.12],winner:10}],final:[{a:[8,'Tx ayesha can COOK',161.30],b:[10,'Team Binning',134.38],winner:8}]},
+2024:{r1:[{a:[1,'CTESPN',null],bye:true},{a:[7,'Hill Hurt Me We miss #10',142.70],b:[4,'Bed, Bath and Bijan',111.54],winner:7},{a:[9,"JT's Finest Team",138.66],b:[5,'All You Need Is Love',193.96],winner:5},{a:[8,'Tx ayesha can COOK',170.74],b:[6,'please GOD let me WIN',132.98],winner:8}],r2:[{a:[1,'CTESPN',150.44],b:[7,'Hill Hurt Me We miss #10',150.48],winner:7},{a:[8,'Tx ayesha can COOK',151.08],b:[5,'All You Need Is Love',120.64],winner:8}],final:[{a:[8,'Tx ayesha can COOK',118.48],b:[7,'Hill Hurt Me We miss #10',155.32],winner:7}]},
+2025:{r1:[{a:[3,'Team Phillips',null],bye:true},{a:[8,'Grittying N Grinding',140.35],b:[2,'Waddling Bowers',114.90],winner:8},{a:[9,"JT's Finest Team",166.45],b:[1,'CTESPN',140.40],winner:9},{a:[6,'Tets McGee',182.25],b:[10,'Team Binning',139.45],winner:6}],r2:[{a:[3,'Team Phillips',133.35],b:[8,'Grittying N Grinding',167.60],winner:8},{a:[6,'Tets McGee',131.00],b:[9,"JT's Finest Team",125.25],winner:6}],final:[{a:[6,'Tets McGee',116.70],b:[8,'Grittying N Grinding',189.65],winner:8}]}
+};
+const matchups=[{"week":1,"a":{"id":8,"team":"Grittying N Grinding","score":183.05,"starters":[["RB","Bijan Robinson",31.3],["RB","Kenneth Walker III",37.1],["WR","Chris Olave",28.2],["WR","Tee Higgins",8.9],["FLEX","David Montgomery",28.9],["QB","Trevor Lawrence",36.55],["TE","Travis Kelce",10.1],["K","Harrison Mevis",1],["D/ST","Chargers D/ST",1]],"bench":["Dalton Kincaid",18]},"b":{"id":1,"team":"Love Wins in Ohio","score":122.05,"starters":[["WR","Amon-Ra St. Brown",28.7],["RB","Saquon Barkley",9],["FLEX","Jeremiyah Love",13],["RB","Bhayshul Tuten",9.8],["WR","DJ Moore",22],["QB","Dak Prescott",20.15],["D/ST","Patriots D/ST",9],["K","Will Reichard",7.8],["TE","Jake Ferguson",2.6]],"bench":["Malik Nabers",12.9]}},{"week":1,"a":{"id":4,"team":"Here Comes McBride","score":148.15,"starters":[["WR","Jaxon Smith-Njigba",27.2],["WR","CeeDee Lamb",15.4],["TE","Trey McBride",24.5],["RB","Cam Skattebo",14.1],["RB","D'Andre Swift",32.4],["FLEX","Rome Odunze",7.2],["QB","Matthew Stafford",5.65],["D/ST","Ravens D/ST",9],["K","Cam Little",12.7]],"bench":["Michael Wilson",10.6]},"b":{"id":6,"team":"Nacua Matata","score":108.6,"starters":[["WR","Puka Nacua",12.4],["RB","Chase Brown",18.8],["RB","Omarion Hampton",8.3],["TE","Colston Loveland",0],["FLEX","Quinshon Judkins",7],["QB","Joe Burrow",18.7],["WR","Parker Washington",19.3],["K","Chris Boswell",8.1],["D/ST","Jaguars D/ST",16]],"bench":["Caleb Williams",43.95]}},{"week":1,"a":{"id":5,"team":"Davante N' Josh","score":148.3,"starters":[["WR","Justin Jefferson",31.2],["RB","Christian McCaffrey",13.8],["RB","Javonte Williams",24.2],["WR","Emeka Egbuka",11.3],["FLEX","Davante Adams",5.6],["TE","Tyler Warren",10.3],["QB","Jaxson Dart",34.9],["K","Brandon Aubrey",1],["D/ST","Seahawks D/ST",16]],"bench":["Stefon Diggs",15.5]},"b":{"id":2,"team":"Waddling Bowers II","score":105.5,"starters":[["WR","Ja'Marr Chase",3.2],["QB","Josh Allen",44],["RB","Kyren Williams",15.5],["WR","Jaylen Waddle",1.2],["RB","Jadarian Price",7.8],["FLEX","Rico Dowdle",4.1],["D/ST","Broncos D/ST",3],["K","Cameron Dicker",2],["TE","Dallas Goedert",24.7]],"bench":["Carnell Tate",7.8]}},{"week":1,"a":{"id":10,"team":"Team Binning","score":130,"starters":[["RB","Jonathan Taylor",25.1],["RB","Derrick Henry",35.3],["WR","A.J. Brown",5.6],["WR","Tetairoa McMillan",10.5],["QB","Lamar Jackson",33.2],["FLEX","Jameson Williams",8.5],["TE","Tucker Kraft",9.5],["D/ST","Texans D/ST",-4],["K","Jake Bates",6.3]],"bench":["Christian Watson",35.7]},"b":{"id":3,"team":"Team Phillips","score":141.4,"starters":[["RB","De'Von Achane",10.6],["RB","Ashton Jeanty",32.7],["WR","Zay Flowers",29],["WR","Garrett Wilson",13.9],["FLEX","Ladd McConkey",19.2],["QB","Drake Maye",13.6],["TE","Sam LaPorta",9.8],["D/ST","Eagles D/ST",6],["K","Jason Myers",6.6]],"bench":["Chuba Hubbard",23.7]}},{"week":1,"a":{"id":7,"team":"Hill Hurt Me We miss #10","score":95.95,"starters":[["RB","James Cook III",9.9],["WR","Drake London",5.5],["WR","George Pickens",5.8],["RB","Travis Etienne Jr.",14.8],["QB","Jalen Hurts",33.75],["TE","Harold Fannin Jr.",4.1],["FLEX","Jaylen Warren",10.3],["K","Harrison Butker",6.8],["D/ST","Lions D/ST",5]],"bench":["Patrick Mahomes",27.5]},"b":{"id":9,"team":"JT's Finest Team","score":146.9,"starters":[["RB","Jahmyr Gibbs",33.6],["WR","Rashee Rice",9.9],["WR","Nico Collins",21.2],["RB","Breece Hall",19.8],["FLEX","DeVonta Smith",8.3],["QB","Jayden Daniels",23.3],["TE","Kyle Pitts Sr.",0],["D/ST","Steelers D/ST",21],["K","Ka'imi Fairbairn",9.8]],"bench":["Kyle Monangai",23.4]}},{"week":2,"a":{"id":1,"team":"Love Wins in Ohio","score":139.55,"starters":[["WR","Amon-Ra St. Brown",35.2],["RB","Saquon Barkley",3],["WR","Malik Nabers",1.1],["RB","Jeremiyah Love",7.5],["FLEX","DJ Moore",-0.1],["QB","Dak Prescott",40.55],["TE","George Kittle",18],["D/ST","Patriots D/ST",22],["K","Will Reichard",12.3]],"bench":["Bhayshul Tuten",14.2]},"b":{"id":6,"team":"Nacua Matata","score":86.7,"starters":[["RB","Chase Brown",11.2],["RB","Omarion Hampton",17.5],["TE","Colston Loveland",1.3],["WR","Terry McLaurin",7],["WR","Parker Washington",16.8],["FLEX","Josh Downs",14.2],["QB","Caleb Williams",9.1],["K","Chris Boswell",4.6],["D/ST","Buccaneers D/ST",5]],"bench":["Joe Burrow",22.25]}},{"week":2,"a":{"id":2,"team":"Waddling Bowers II","score":138.4,"starters":[["WR","Ja'Marr Chase",26.5],["QB","Josh Allen",50.3],["RB","Kyren Williams",15.7],["WR","Jaylen Waddle",21.8],["FLEX","Carnell Tate",5.7],["RB","Jadarian Price",5],["D/ST","Broncos D/ST",11],["K","Cameron Dicker",1],["TE","Dallas Goedert",1.4]],"bench":["Blake Corum",10.2]},"b":{"id":8,"team":"Grittying N Grinding","score":142.15,"starters":[["RB","Bijan Robinson",11.1],["RB","Kenneth Walker III",23.8],["WR","Chris Olave",22.6],["FLEX","David Montgomery",4.4],["WR","Mike Evans",8.4],["TE","Dalton Kincaid",22.5],["K","Harrison Mevis",3],["QB","Brock Purdy",35.35],["D/ST","49ers D/ST",11]],"bench":["Travis Kelce",25.1]}},{"week":2,"a":{"id":3,"team":"Team Phillips","score":101.8,"starters":[["FLEX","De'Von Achane",12.3],["RB","Ashton Jeanty",10.3],["WR","Garrett Wilson",16.7],["WR","Ladd McConkey",6.5],["QB","Drake Maye",10.1],["TE","Sam LaPorta",17.2],["RB","Chuba Hubbard",14.4],["D/ST","Eagles D/ST",7],["K","Jason Myers",7.3]],"bench":["Rachaad White",14.3]},"b":{"id":4,"team":"Here Comes McBride","score":182.75,"starters":[["WR","Jaxon Smith-Njigba",45.5],["WR","CeeDee Lamb",35.3],["TE","Trey McBride",18.1],["RB","Cam Skattebo",9.5],["RB","D'Andre Swift",12.9],["FLEX","Aaron Jones Sr.",10.5],["QB","Matthew Stafford",38.25],["D/ST","Ravens D/ST",6],["K","Cam Little",6.7]],"bench":["Tony Pollard",7.5]}},{"week":2,"a":{"id":9,"team":"JT's Finest Team","score":115.9,"starters":[["RB","Jahmyr Gibbs",23.3],["WR","Rashee Rice",12.3],["WR","Nico Collins",0],["RB","Breece Hall",14.2],["FLEX","DeVonta Smith",27.7],["QB","Jayden Daniels",17.7],["TE","Kyle Pitts Sr.",2.5],["D/ST","Steelers D/ST",11],["K","Ka'imi Fairbairn",7.2]],"bench":["Justin Herbert",11.8]},"b":{"id":5,"team":"Davante N' Josh","score":133.2,"starters":[["WR","Justin Jefferson",8.5],["RB","Christian McCaffrey",22.6],["RB","Javonte Williams",8],["WR","Emeka Egbuka",10.3],["FLEX","Davante Adams",39.5],["TE","Tyler Warren",14.4],["QB","Jaxson Dart",1],["K","Brandon Aubrey",16.9],["D/ST","Seahawks D/ST",12]],"bench":["Stefon Diggs",21.7]}},{"week":2,"a":{"id":7,"team":"Hill Hurt Me We miss #10","score":105.1,"starters":[["RB","James Cook III",20.9],["WR","Drake London",8.9],["WR","George Pickens",10],["RB","Travis Etienne Jr.",7.1],["QB","Jalen Hurts",22.8],["TE","Harold Fannin Jr.",10.4],["K","Harrison Butker",16.5],["FLEX","Deebo Samuel Sr.",6.5],["D/ST","Chiefs D/ST",2]],"bench":["Patrick Mahomes",38.8]},"b":{"id":10,"team":"Team Binning","score":128.85,"starters":[["RB","Jonathan Taylor",29.2],["RB","Derrick Henry",17.7],["WR","Tetairoa McMillan",15.1],["QB","Lamar Jackson",19.15],["FLEX","Bucky Irving",13],["WR","Christian Watson",14.1],["TE","Tucker Kraft",3.5],["D/ST","Texans D/ST",10],["K","Jake Bates",7.1]],"bench":["Jalen Coker",14.6]}},{"week":3,"a":{"id":2,"team":"Waddling Bowers II","score":130.6,"starters":[["WR","Ja'Marr Chase",24.8],["TE","Brock Bowers",27.6],["QB","Josh Allen",19.5],["RB","Kyren Williams",21.8],["WR","Jaylen Waddle",6.4],["FLEX","Carnell Tate",11.8],["RB","Jadarian Price",1.2],["D/ST","Broncos D/ST",9],["K","Cameron Dicker",8.5]],"bench":["Quentin Johnston",7]},"b":{"id":1,"team":"Love Wins in Ohio","score":131.3,"starters":[["WR","Amon-Ra St. Brown",11.9],["RB","Saquon Barkley",9],["WR","Malik Nabers",7.6],["RB","Jeremiyah Love",21.9],["FLEX","DJ Moore",12.7],["QB","Dak Prescott",23.7],["TE","George Kittle",26.2],["D/ST","Patriots D/ST",1],["K","Will Reichard",17.3]],"bench":["Bhayshul Tuten",17]}},{"week":3,"a":{"id":6,"team":"Nacua Matata","score":116.2,"starters":[["RB","Chase Brown",8.9],["RB","Omarion Hampton",5.6],["FLEX","Quinshon Judkins",9.9],["QB","Joe Burrow",31.4],["WR","Parker Washington",13],["WR","Josh Downs",12.7],["TE","Dalton Schultz",6],["D/ST","Vikings D/ST",22],["K","Eddy Pineiro",6.7]],"bench":["Terry McLaurin",19.7]},"b":{"id":3,"team":"Team Phillips","score":99.65,"starters":[["RB","De'Von Achane",1.7],["RB","Ashton Jeanty",12.3],["FLEX","Zay Flowers",15.4],["WR","Ladd McConkey",10.6],["TE","Sam LaPorta",7.4],["D/ST","Eagles D/ST",0],["K","Jason Myers",9.7],["WR","Drake London",28.4],["QB","Jalen Hurts",14.15]],"bench":["Jakobi Meyers",19.4]}},{"week":3,"a":{"id":8,"team":"Grittying N Grinding","score":179.95,"starters":[["RB","Bijan Robinson",35.3],["RB","Kenneth Walker III",21.3],["WR","Chris Olave",19.7],["WR","Tee Higgins",21],["FLEX","Travis Kelce",13.9],["TE","Dalton Kincaid",3.8],["QB","Brock Purdy",45.25],["K","Spencer Shrader",19.7],["D/ST","Bengals D/ST",0]],"bench":["Trevor Lawrence",27.6]},"b":{"id":9,"team":"JT's Finest Team","score":113,"starters":[["RB","Jahmyr Gibbs",41.4],["WR","Rashee Rice",15.8],["RB","Breece Hall",8.5],["FLEX","DeVonta Smith",12.5],["TE","Kyle Pitts Sr.",1.5],["QB","Justin Herbert",17],["D/ST","Steelers D/ST",5],["K","Ka'imi Fairbairn",4.4],["WR","Devaughn Vele",6.9]],"bench":["Matthew Golden",21]}},{"week":3,"a":{"id":4,"team":"Here Comes McBride","score":145,"starters":[["WR","Jaxon Smith-Njigba",35.5],["WR","CeeDee Lamb",20.2],["TE","Trey McBride",16.5],["RB","Cam Skattebo",13],["RB","D'Andre Swift",10.8],["FLEX","Aaron Jones Sr.",14.2],["QB","Matthew Stafford",29.8],["D/ST","Ravens D/ST",1],["K","Cam Little",4]],"bench":["Michael Wilson",25.9]},"b":{"id":7,"team":"Hill Hurt Me We miss #10","score":157.8,"starters":[["RB","James Cook III",19.4],["WR","George Pickens",15.2],["TE","Harold Fannin Jr.",24.1],["FLEX","Jaylen Warren",20.6],["QB","Patrick Mahomes",22.4],["K","Harrison Butker",5.4],["D/ST","Chiefs D/ST",9],["RB","Chuba Hubbard",15],["WR","Garrett Wilson",26.7]],"bench":["Tyler Shough",34.35]}},{"week":3,"a":{"id":5,"team":"Davante N' Josh","score":125.15,"starters":[["WR","Justin Jefferson",5.2],["RB","Christian McCaffrey",21.6],["RB","Javonte Williams",18.3],["FLEX","Emeka Egbuka",11.2],["WR","Davante Adams",20.7],["TE","Tyler Warren",14.7],["K","Brandon Aubrey",9.9],["D/ST","Seahawks D/ST",5],["QB","Bryce Young",18.55]],"bench":["Tre Tucker",8.3]},"b":{"id":10,"team":"Team Binning","score":118.1,"starters":[["RB","Jonathan Taylor",9.2],["RB","Derrick Henry",21.9],["WR","Tetairoa McMillan",3.7],["QB","Lamar Jackson",26.3],["FLEX","Bucky Irving",7.8],["WR","Christian Watson",22.6],["TE","Tucker Kraft",6.6],["D/ST","Texans D/ST",13],["K","Jake Bates",7]],"bench":["Mike Washington Jr.",11.4]}}];
+const baselines={QB:23.12,RB:30.28,WR:29.95,TE:10.74,FLEX:13.31};
+const draftRecords=[
+{label:'Championship draft slots',value:'4 & 9',title:'Only title-winning slots so far',meta:'2022 pick 9 · 2023 pick 4 · 2024 pick 4 · 2025 pick 9'},
+{label:'Most titles by draft slot',value:'2 each',title:'Picks 4 and 9',meta:'Small sample: four completed seasons'},
+{label:'Best ESPN projection beat',value:'+4.50',title:'JT',meta:'Average draft-day projected rank 7.75 → average regular-season rank 3.25'},
+{label:'Largest ESPN projection miss',value:'−3.75',title:'Isaiah',meta:'Average draft-day projected rank 2.50 → average regular-season rank 6.25'},
+{label:'Pick 1 championships',value:'0–4',title:'No champion from the 1.01 yet',meta:'2022–2025 completed seasons'}
+];
+function teamForName(name){return teams.find(t=>t.name===name||t.old.includes(name))}function managerForName(name){return teamForName(name)?.manager||name}function teamForManager(name){return teams.find(t=>t.manager===name)}function money(n){return Number(n).toFixed(2)}
+function bestFinish(t){return t.titles?'Champion':t.finals?'Runner-up':'No final'}
+function managerTeamHTML(manager,team){return `<div class="name-main">${manager}</div><div class="name-sub">${team}</div>`}
+function setView(id){document.querySelectorAll('.view').forEach(v=>v.classList.toggle('active',v.id===id));document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===id));window.scrollTo({top:0,behavior:'smooth'});history.replaceState(null,'','#'+id)}
+document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>setView(b.dataset.view)));document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>setView(b.dataset.go)));
+
+function renderHome(){
+ document.getElementById('standings2026').innerHTML=currentStandings.map((t,i)=>`<tr><td class="rank">${i+1}</td><td>${managerTeamHTML(t.manager,t.name)}</td><td><b>${t.wl}</b></td><td>${money(t.pf)}</td></tr>`).join('');
+ const leaders=[['2×','Most championships','Mike'],['32–24','Best 4-year record','JT'],['130.16','Best all-time PPG','Coy'],['204.24','Highest team score','Golly'],['58.1%','Best all-play rate','Coy']];
+ document.getElementById('leaderGrid').innerHTML=leaders.map(x=>`<div class="leader-card"><p class="eyebrow">${x[1]}</p><div class="leader-value">${x[0]}</div><div class="leader-owner">${x[2]}</div></div>`).join('');
+ const notable=[['0.05','Closest game','JT over Austin · 126.60–126.55 · 2025 W4'],['52.86','Bench disaster','Isaiah left Tua on the bench · 2022 W2'],['54.85','Lowest team score','Jazz · Team Binning · 2025 W12'],['+25.8%','Luckiest season','Lance · Team Phillips · 2025 actual vs all-play']];
+ document.getElementById('notableGrid').innerHTML=notable.map(x=>`<div class="mini-record"><p class="eyebrow">${x[1]}</p><strong>${x[0]}</strong><div class="meta">${x[2]}</div></div>`).join('');
+ const currentById=Object.fromEntries(currentStandings.map(x=>[x.id,x]));
+ document.getElementById('managerQuick').innerHTML=teams.map(t=>{const c=currentById[t.id];return `<button data-manager="${t.id}"><div class="mq-name">${t.manager}</div><div class="mq-team">${t.name}</div><div class="mq-meta"><span>2026 <b>${c?.wl||'—'}</b></span><span>Titles <b>${t.titles}</b></span></div></button>`}).join('');
+ document.querySelectorAll('[data-manager]').forEach(b=>b.onclick=()=>openManager(+b.dataset.manager));
+ document.getElementById('champions').innerHTML=champions.map(c=>`<div class="champ-row"><div class="year-chip">${c.year}</div><div><div class="champ-name">${managerForName(c.name)} · ${c.name}</div><div class="champ-sub">Beat ${managerForName(c.runner)} · ${c.runner} · ${c.score}</div></div><span class="pill gold">Champion</span></div>`).join('');
+}
+
+
+const lineupOrder=['QB','RB1','RB2','WR1','WR2','TE','FLEX','K','D/ST'];
+const lineupColors={'QB':'#e47a7a','RB1':'#2fb66f','RB2':'#73cf99','WR1':'#49a8dc','WR2':'#84c5e9','TE':'#eab05b','FLEX':'#9a78dc','K':'#cf58e8','D/ST':'#6f7168'};
+function managerForId(id){return teams.find(t=>t.id===id)?.manager||'Unknown'}
+function cleanScore(n){return Number(n).toFixed(2).replace(/\.00$/,'')}
+function sideWinnerClass(side,other){return side.score>other.score?'winner':'loser'}
+function weekRecapStats(week){
+  const rows=matchups.filter(m=>m.week===week);
+  const sides=rows.flatMap(m=>[{side:m.a,opp:m.b,match:m},{side:m.b,opp:m.a,match:m}]);
+  const high=[...sides].sort((x,y)=>y.side.score-x.side.score)[0];
+  const close=[...rows].sort((x,y)=>Math.abs(x.a.score-x.b.score)-Math.abs(y.a.score-y.b.score))[0];
+  const blowout=[...rows].sort((x,y)=>Math.abs(y.a.score-y.b.score)-Math.abs(x.a.score-x.b.score))[0];
+  const starters=rows.flatMap(m=>[
+    ...m.a.starters.map(p=>({p,side:m.a,match:m})),
+    ...m.b.starters.map(p=>({p,side:m.b,match:m}))
+  ]);
+  const mvp=[...starters].sort((x,y)=>y.p[2]-x.p[2])[0];
+  const bench=rows.flatMap(m=>[
+    m.a.bench?{b:m.a.bench,side:m.a,match:m}:null,
+    m.b.bench?{b:m.b.bench,side:m.b,match:m}:null
+  ]).filter(Boolean).sort((x,y)=>y.b[1]-x.b[1])[0];
+  const closeWinner=close.a.score>close.b.score?close.a:close.b;
+  const closeLoser=close.a.score>close.b.score?close.b:close.a;
+  const blowWinner=blowout.a.score>blowout.b.score?blowout.a:blowout.b;
+  const blowLoser=blowout.a.score>blowout.b.score?blowout.b:blowout.a;
+  return {
+    high:{label:'High score',value:cleanScore(high.side.score),title:managerForId(high.side.id),meta:high.side.team},
+    close:{label:'Closest game',value:cleanScore(Math.abs(close.a.score-close.b.score)),title:`${managerForId(closeWinner.id)} over ${managerForId(closeLoser.id)}`,meta:`${cleanScore(closeWinner.score)}–${cleanScore(closeLoser.score)}`},
+    mvp:{label:'Week MVP',value:cleanScore(mvp.p[2]),title:mvp.p[1],meta:`${managerForId(mvp.side.id)} · ${mvp.p[0]}`},
+    blowout:{label:'Biggest blowout',value:cleanScore(Math.abs(blowout.a.score-blowout.b.score)),title:`${managerForId(blowWinner.id)} over ${managerForId(blowLoser.id)}`,meta:`${cleanScore(blowWinner.score)}–${cleanScore(blowLoser.score)}`},
+    bench:{label:'Bench disaster',value:cleanScore(bench.b[1]),title:bench.b[0],meta:`${managerForId(bench.side.id)} · left on bench`}
+  };
+}
+function renderWeekRecap(week){
+  const r=weekRecapStats(week);
+  const cards=[[r.high,''],[r.close,''],[r.mvp,'mvp'],[r.blowout,''],[r.bench,'bench']];
+  document.getElementById('weekRecap').innerHTML=`<div class="week-recap-head"><div><p class="eyebrow">Week ${week} at a glance</p><h2>Weekly recap</h2></div><span>Five quick stories from the week</span></div><div class="week-recap-grid">${cards.map(([x,cls])=>`<div class="week-recap-card ${cls}"><div class="recap-label">${x.label}</div><div class="recap-value">${x.value}</div><div class="recap-title">${x.title}</div><div class="recap-meta">${x.meta}</div></div>`).join('')}</div>`;
+}
+function renderMatchups(week=3){
+  const weeks=[3,2,1];
+  document.getElementById('weekTabs').innerHTML=weeks.map(w=>`<button class="week-btn ${w===week?'active':''}" data-week="${w}">Week ${w}</button>`).join('');
+  document.querySelectorAll('[data-week]').forEach(b=>b.onclick=()=>renderMatchups(+b.dataset.week));
+  const rows=matchups.filter(m=>m.week===week);
+  renderWeekRecap(week);
+  document.getElementById('matchupList').innerHTML=rows.map((m,i)=>{
+    const am=managerForId(m.a.id),bm=managerForId(m.b.id),margin=Math.abs(m.a.score-m.b.score);
+    return `<button class="matchup-card" data-match="${matchups.indexOf(m)}">
+      <div class="matchup-side ${sideWinnerClass(m.a,m.b)}"><div class="matchup-manager">${am}</div><div class="matchup-team">${m.a.team}</div><div class="matchup-score">${cleanScore(m.a.score)}</div></div>
+      <div><div class="matchup-vs">Final</div></div>
+      <div class="matchup-side right ${sideWinnerClass(m.b,m.a)}"><div class="matchup-manager">${bm}</div><div class="matchup-team">${m.b.team}</div><div class="matchup-score">${cleanScore(m.b.score)}</div></div>
+    </button>`;
+  }).join('');
+  document.querySelectorAll('[data-match]').forEach(b=>b.onclick=()=>openMatchup(+b.dataset.match));
+}
+function matchupInsights(m){
+  const all=[...m.a.starters.map(p=>({side:m.a,p})),...m.b.starters.map(p=>({side:m.b,p}))];
+  const mvp=[...all].sort((x,y)=>y.p[2]-x.p[2])[0];
+  const dud=[...all].sort((x,y)=>x.p[2]-y.p[2])[0];
+  const bench=[{side:m.a,b:m.a.bench},{side:m.b,b:m.b.bench}].filter(x=>x.b).sort((x,y)=>y.b[1]-x.b[1])[0];
+  return {mvp,dud,bench}
+}
+function positionTotals(side){
+  const slots=['QB','RB','WR','TE','FLEX','K','D/ST'],o=Object.fromEntries(slots.map(s=>[s,0]));
+  side.starters.forEach(([slot,name,pts])=>{o[slot]=(o[slot]||0)+pts});return o;
+}
+function battleRows(m){
+  const slots=['QB','RB','WR','TE','FLEX','K','D/ST'],a=positionTotals(m.a),b=positionTotals(m.b);
+  return slots.map(slot=>{const d=a[slot]-b[slot];return {slot,a:a[slot],b:b[slot],edge:Math.abs(d)<.005?'Even':d>0?managerForId(m.a.id):managerForId(m.b.id),diff:Math.abs(d)}})
+}
+function recordNotes(m){
+  const allSides=matchups.flatMap(x=>[x.a,x.b]),allMargins=matchups.map(x=>Math.abs(x.a.score-x.b.score));
+  const maxScore=Math.max(...allSides.map(s=>s.score)),minMargin=Math.min(...allMargins),maxMargin=Math.max(...allMargins),margin=Math.abs(m.a.score-m.b.score),notes=[];
+  if(Math.max(m.a.score,m.b.score)===maxScore)notes.push('2026 high score');
+  if(Math.abs(margin-minMargin)<.001)notes.push('Closest game of 2026');
+  if(Math.abs(margin-maxMargin)<.001)notes.push('Largest margin of 2026');
+  if(m.a.score>=179.95||m.b.score>=179.95)notes.push('Top-10 all-time team score');
+  return notes;
+}
+function matchupSummary(m,ins,battles){
+  const winner=m.a.score>m.b.score?m.a:m.b,loser=winner===m.a?m.b:m.a,margin=Math.abs(m.a.score-m.b.score);
+  const swing=[...battles].sort((x,y)=>y.diff-x.diff)[0];
+  return `${managerForId(winner.id)} beat ${managerForId(loser.id)} by ${margin.toFixed(2)} points. The largest positional swing came at ${swing.slot}, where ${swing.edge==='Even'?'the matchup was even':swing.edge+' held a '+swing.diff.toFixed(2)+'-point edge'}. ${ins.mvp.p[1]} was the matchup MVP with ${ins.mvp.p[2].toFixed(2)} points.`;
+}
+function orderedStarterRows(side){
+  const groups={};side.starters.forEach(([slot,name,pts])=>{(groups[slot]??=[]).push({name,pts})});
+  const one=(slot,key,idx=0)=>({key,name:groups[slot]?.[idx]?.name||'—',pts:groups[slot]?.[idx]?.pts||0});
+  return [one('QB','QB'),one('RB','RB1',0),one('RB','RB2',1),one('WR','WR1',0),one('WR','WR2',1),one('TE','TE'),one('FLEX','FLEX'),one('K','K'),one('D/ST','D/ST')];
+}
+function donutHTML(side){
+  const rows=orderedStarterRows(side),positive=rows.reduce((sum,r)=>sum+Math.max(0,r.pts),0)||1;
+  let cursor=0;const stops=[];
+  rows.forEach(r=>{const pct=Math.max(0,r.pts)/positive*100;if(pct>0){stops.push(`${lineupColors[r.key]} ${cursor.toFixed(3)}% ${(cursor+pct).toFixed(3)}%`);cursor+=pct;}});
+  const bg=stops.length?`conic-gradient(from -90deg,${stops.join(',')})`:'#e6e7e4';
+  const negatives=rows.filter(r=>r.pts<0),negTotal=negatives.reduce((sum,r)=>sum+r.pts,0);
+  return `<div class="donut-team"><div class="donut-team-head"><strong>${managerForId(side.id)}</strong><span>${side.team}</span></div><div class="donut-chart" style="background:${bg}"><div class="donut-hole"><div><strong>${cleanScore(side.score)}</strong><span>team points</span></div></div></div><div class="donut-list">${rows.map(r=>{const pct=Math.max(0,r.pts)/positive*100;return `<div class="donut-row"><div class="donut-slot">${r.key}</div><span class="donut-dot" style="background:${lineupColors[r.key]}"></span><div class="donut-player">${r.name}</div><div class="donut-points">${cleanScore(r.pts)}</div><div class="donut-pct">${r.pts>0?pct.toFixed(1)+'%':r.pts<0?'NEG':'0%'}</div></div>`}).join('')}</div>${negatives.length?`<div class="negative-adjust">Negative adjustment: ${negatives.map(r=>`${r.key} ${r.name} ${cleanScore(r.pts)}`).join(' · ')} (${cleanScore(negTotal)} total)</div>`:''}</div>`;
+}
+function openMatchup(index){
+  const m=matchups[index];if(!m)return;const ins=matchupInsights(m),battles=battleRows(m),notes=recordNotes(m);
+  const winner=m.a.score>m.b.score?m.a:m.b;
+  document.getElementById('matchupModal').innerHTML=`<div class="matchup-modal-inner">
+    <div class="matchup-modal-head"><div><p class="eyebrow">2026 · Week ${m.week}</p><h2>${managerForId(m.a.id)} vs ${managerForId(m.b.id)}</h2></div><button class="close-btn" id="closeMatchup">×</button></div>
+    <div class="modal-scoreboard">
+      <div class="modal-team"><div class="modal-manager">${managerForId(m.a.id)}</div><div class="modal-team-name">${m.a.team}</div><div class="modal-score">${cleanScore(m.a.score)}</div></div>
+      <div class="modal-vs">FINAL</div>
+      <div class="modal-team right"><div class="modal-manager">${managerForId(m.b.id)}</div><div class="modal-team-name">${m.b.team}</div><div class="modal-score">${cleanScore(m.b.score)}</div></div>
+    </div>
+    <div class="insight-grid">
+      <div class="insight-card mvp"><p class="eyebrow">Matchup MVP</p><strong>${ins.mvp.p[1]}</strong><div class="meta">${managerForId(ins.mvp.side.id)} · ${ins.mvp.p[0]} · ${cleanScore(ins.mvp.p[2])} pts</div></div>
+      <div class="insight-card dud"><p class="eyebrow">Biggest dud</p><strong>${ins.dud.p[1]}</strong><div class="meta">${managerForId(ins.dud.side.id)} · ${ins.dud.p[0]} · ${cleanScore(ins.dud.p[2])} pts</div></div>
+      <div class="insight-card bench-regret"><p class="eyebrow">Bench regret</p><strong>${ins.bench.b[0]}</strong><div class="meta">${managerForId(ins.bench.side.id)} · ${cleanScore(ins.bench.b[1])} pts on the bench</div></div>
+    </div>
+    <div class="chart-panel"><div class="chart-head"><div><h3>Scoring breakdown</h3><p>Each starter has a fixed lineup position so both teams read the same way every week.</p></div><span class="pill">${managerForId(winner.id)} won by ${Math.abs(m.a.score-m.b.score).toFixed(2)}</span></div>
+      <div class="donut-compare">${donutHTML(m.a)}${donutHTML(m.b)}</div>
+      <div class="chart-note">Percentages show each starter's share of positive starter production. Negative scores are called out separately so the circle is not mathematically misleading.</div>
+    </div>
+    <div class="chart-panel battle-table"><div class="chart-head"><div><h3>Position battle</h3><p>RB and WR combine both starting slots.</p></div></div>
+      <div class="table-wrap compact-table"><table><thead><tr><th>Position</th><th>${managerForId(m.a.id)}</th><th>${managerForId(m.b.id)}</th><th>Edge</th></tr></thead><tbody>${battles.map(r=>`<tr><td><b>${r.slot}</b></td><td>${r.a.toFixed(2)}</td><td>${r.b.toFixed(2)}</td><td class="battle-edge ${r.edge==='Even'?'tie':''}">${r.edge}${r.edge==='Even'?'':' +'+r.diff.toFixed(2)}</td></tr>`).join('')}</tbody></table></div>
+    </div>
+    <div class="matchup-summary">${matchupSummary(m,ins,battles)}${notes.length?'<div>'+notes.map(n=>`<span class="record-note">${n}</span>`).join('')+'</div>':''}</div>
+  </div>`;
+  document.getElementById('matchupBackdrop').classList.add('open');document.getElementById('matchupModal').classList.add('open');document.getElementById('matchupModal').setAttribute('aria-hidden','false');document.body.style.overflow='hidden';document.getElementById('closeMatchup').onclick=closeMatchup;
+}
+function closeMatchup(){document.getElementById('matchupBackdrop').classList.remove('open');document.getElementById('matchupModal').classList.remove('open');document.getElementById('matchupModal').setAttribute('aria-hidden','true');document.body.style.overflow=''}
+document.getElementById('matchupBackdrop').onclick=closeMatchup;
+
+
+function rankedRecordCard(r,extra=''){
+ const runners=(r.runners||[]);
+ return `<article class="record-card ${extra} ${r.danger?'danger':''}">
+   <p class="eyebrow">${r.label}</p>
+   <div class="value">${r.value}</div>
+   <h3>${r.title}</h3>
+   <p>${r.meta}</p>
+   ${runners.length?`<div class="record-runners"><div class="runner-head">Runners up</div>${runners.map((x,i)=>`<div class="runner-row"><div class="runner-rank">${i+2}</div><div class="runner-value">${x.value}</div><div class="runner-main"><div class="runner-name">${x.title}</div><div class="runner-meta">${x.meta}</div></div></div>`).join('')}</div>`:''}
+ </article>`;
+}
+function renderRecords(filter='Team'){
+ const cats=['Team','Player','Luck & Schedule','Draft','Bench'];document.getElementById('recordFilters').innerHTML=cats.map(c=>`<button class="filter-btn ${c===filter?'active':''}" data-filter="${c}">${c}</button>`).join('');document.querySelectorAll('[data-filter]').forEach(b=>b.onclick=()=>renderRecords(b.dataset.filter));
+ const root=document.getElementById('recordContent');
+ if(filter==='Team'){const rows=records.filter(r=>r.cat==='Team'||r.cat==='Franchise');root.innerHTML=`<div class="record-grid">${rows.map((r,i)=>rankedRecordCard(r,i===0?'dark':'')).join('')}</div>`;}
+ else if(filter==='Player'){root.innerHTML=`<article class="panel"><div class="panel-head"><div><p class="eyebrow">Single-week records</p><h2>Position records</h2></div></div><div class="player-grid">${playerRecords.map(r=>`<div class="player-card"><div class="pos">${r.pos}</div><div class="pts">${r.points}</div><div class="player">${r.player}</div><div class="meta">${r.meta}</div></div>`).join('')}</div></article>`;}
+ else if(filter==='Luck & Schedule'){const rows=records.filter(r=>r.cat==='Luck');root.innerHTML=`<div class="record-grid">${rows.map(r=>rankedRecordCard(r)).join('')}</div><article class="panel" style="margin-top:14px"><p class="eyebrow">What this means</p><div style="font-size:13px;line-height:1.55;color:var(--muted)">All-play compares each team against every other team each week. The gap between actual winning percentage and all-play winning percentage is a useful way to show schedule fortune without pretending it explains every result.</div></article>`;}
+ else if(filter==='Draft'){root.innerHTML=`<div class="record-grid">${draftRecords.map(r=>`<article class="record-card"><p class="eyebrow">${r.label}</p><div class="value">${r.value}</div><h3>${r.title}</h3><p>${r.meta}</p></article>`).join('')}</div><article class="panel" style="margin-top:14px"><p class="eyebrow">Important</p><div style="font-size:13px;line-height:1.55;color:var(--muted)">Projection records use ESPN's draft-day projected finish, not an independent grade of every drafted player.</div></article>`;}
+ else{root.innerHTML=`<article class="panel"><div class="panel-head"><div><p class="eyebrow">Bench hall of shame</p><h2>Points nobody got credit for</h2></div><span class="pill red">Pain</span></div><div class="timeline">${bench.map((b,i)=>`<div class="timeline-row"><div class="timeline-rank">${i+1}</div><div><div class="timeline-title">${b.player} · ${b.manager}</div><div class="timeline-sub">${b.team} · ${b.meta}</div></div><div class="timeline-value">${b.points.toFixed(2)}</div></div>`).join('')}</div></article>`;}
+}
+
+function renderManagers(q=''){const query=q.toLowerCase().trim();const currentById=Object.fromEntries(currentStandings.map(x=>[x.id,x]));const filtered=teams.filter(t=>[t.manager,t.name,...t.old].join(' ').toLowerCase().includes(query));document.getElementById('managerGrid').innerHTML=filtered.map(t=>{const c=currentById[t.id];return `<button class="manager-card" data-manager="${t.id}"><div class="manager-top"><div><h3>${t.manager}</h3><div class="manager-current">${t.name}</div></div>${t.titles?`<span class="pill gold">${t.titles}× Champ</span>`:'<span class="pill">'+bestFinish(t)+'</span>'}</div><div class="manager-stats"><div class="manager-stat"><strong>${t.record}</strong><span>Record</span></div><div class="manager-stat"><strong>${t.ppg.toFixed(2)}</strong><span>PPG</span></div><div class="manager-stat"><strong>${t.titles}</strong><span>Titles</span></div><div class="manager-stat"><strong>${c?.wl||'—'}</strong><span>2026</span></div></div><div class="manager-foot"><span>Best week <b>${t.high.toFixed(2)}</b></span><span>All-play <b>${t.allplay.toFixed(1)}%</b></span></div></button>`}).join('')||'<div class="panel">No matching manager or team.</div>';document.querySelectorAll('[data-manager]').forEach(b=>b.onclick=()=>openManager(+b.dataset.manager))}
+function openManager(id){const t=teams.find(x=>x.id===id);if(!t)return;document.getElementById('teamDrawer').innerHTML=`<div class="drawer-head"><div><p class="eyebrow">Manager profile</p><h2>${t.manager}</h2><div class="history"><strong>${t.name}</strong>${t.old.length?'<br>Previous team names: '+t.old.join(' → '):'<br>Same team name since 2022.'}</div></div><button class="close-btn" id="closeDrawer">×</button></div><div class="drawer-grid"><div class="drawer-stat"><strong>${t.record}</strong><span>Regular-season record</span></div><div class="drawer-stat"><strong>${t.ppg.toFixed(2)}</strong><span>Historical PPG</span></div><div class="drawer-stat"><strong>${t.titles}</strong><span>Championships</span></div><div class="drawer-stat"><strong>${t.finals}</strong><span>Finals</span></div><div class="drawer-stat"><strong>${t.high.toFixed(2)}</strong><span>Best week</span></div><div class="drawer-stat"><strong>${t.low.toFixed(2)}</strong><span>Worst week</span></div><div class="drawer-stat"><strong>${t.boom}</strong><span>150+ weeks</span></div><div class="drawer-stat"><strong>${t.sub100}</strong><span>Sub-100 weeks</span></div></div><div style="margin-top:18px"><p class="eyebrow">Positional profile</p><div class="position-list">${Object.entries(t.pos).map(([p,v])=>`<div class="position-row"><div class="position-label">${p}</div><div class="position-track"><div class="position-fill" style="width:${Math.min(100,v/36*100)}%"></div></div><div class="position-val">${v.toFixed(2)}</div></div>`).join('')}</div><div class="history" style="margin-top:10px">League baselines: QB ${baselines.QB}, RB ${baselines.RB}, WR ${baselines.WR}, TE ${baselines.TE}, FLEX ${baselines.FLEX}.</div></div>`;document.getElementById('teamDrawer').classList.add('open');document.getElementById('drawerBackdrop').classList.add('open');document.getElementById('teamDrawer').setAttribute('aria-hidden','false');document.getElementById('closeDrawer').onclick=closeManager}
+function closeManager(){document.getElementById('teamDrawer').classList.remove('open');document.getElementById('drawerBackdrop').classList.remove('open');document.getElementById('teamDrawer').setAttribute('aria-hidden','true')}document.getElementById('drawerBackdrop').onclick=closeManager;document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeManager();closeMatchup()}});
+
+function playoffTeamHTML(t,winner){
+  if(!t)return '';
+  const [id,name,score]=t;
+  return `<div class="bracket-team ${winner===id?'winner':''}"><div><div class="bracket-manager">${managerForId(id)}</div><div class="bracket-teamname">${name}</div></div><div class="bracket-score">${score==null?'—':cleanScore(score)}</div></div>`;
+}
+function playoffGameHTML(g,isFinal=false){
+  return `<div class="bracket-game ${isFinal?'bracket-champ':''}">${playoffTeamHTML(g.a,g.winner)}${g.b?playoffTeamHTML(g.b,g.winner):'<div class="bracket-bye">First-round bye</div>'}</div>`;
+}
+function playoffHTML(year){
+  if(year===2026)return `<div class="playoff-section"><div class="playoff-head"><div><p class="eyebrow">Postseason</p><h3>Playoff bracket</h3><p>The 2026 bracket will populate after the regular season.</p></div></div><div class="playoff-pending">Playoffs have not started yet.</div></div>`;
+  const p=playoffs[year];if(!p)return '';
+  return `<div class="playoff-section"><div class="playoff-head"><div><p class="eyebrow">Postseason</p><h3>${year} playoff bracket</h3><p>Main championship bracket · winners highlighted</p></div><span class="pill gold">${managerForName(seasons[year].champ)} champion</span></div><div class="bracket-scroll"><div class="bracket-grid"><div class="bracket-round"><div class="round-title">Round 1 · Week 15</div>${p.r1.map(g=>playoffGameHTML(g)).join('')}</div><div class="bracket-round"><div class="round-title">Semifinals · Week 16</div>${p.r2.map(g=>playoffGameHTML(g)).join('')}</div><div class="bracket-round"><div class="round-title">Championship · Week 17</div>${p.final.map(g=>playoffGameHTML(g,true)).join('')}</div></div></div></div>`;
+}
+function renderSeason(year=2026){const yrs=[2026,2025,2024,2023,2022];document.getElementById('seasonTabs').innerHTML=yrs.map(y=>`<button class="season-btn ${y===year?'active':''}" data-year="${y}">${y}</button>`).join('');document.querySelectorAll('[data-year]').forEach(b=>b.onclick=()=>renderSeason(+b.dataset.year));const s=seasons[year];const championManager=year===2026?'—':managerForName(s.champ);const runnerManager=year===2026?'—':managerForName(s.runner);document.getElementById('seasonPanel').innerHTML=`<div class="panel-head"><div><p class="eyebrow">${year} season</p><h2>${year===2026?'Season in progress':championManager+' — Champion'}</h2></div>${year===2026?'<span class="pill green">Current</span>':'<span class="pill gold">Completed</span>'}</div><div class="season-summary"><div class="season-mini"><strong>${s.avg.toFixed(2)}</strong><span>League PPG</span></div><div class="season-mini"><strong>${year===2026?'—':championManager}</strong><span>Champion</span></div><div class="season-mini"><strong>${year===2026?'—':runnerManager}</strong><span>Runner-up</span></div><div class="season-mini"><strong>${s.top}</strong><span>Scoring leader</span></div></div><div class="table-wrap compact-table"><table><thead><tr><th>#</th><th>Manager</th><th>W-L</th><th>PF</th></tr></thead><tbody>${s.standings.map((r,i)=>`<tr><td class="rank">${i+1}</td><td>${managerTeamHTML(managerForName(r[0]),r[0])}</td><td>${r[1]}</td><td>${r[2]}</td></tr>`).join('')}</tbody></table></div>${playoffHTML(year)}`}
+
+document.getElementById('teamSearch').addEventListener('input',e=>renderManagers(e.target.value));
+const toast=document.getElementById('toast');function showToast(msg='Link copied'){toast.textContent=msg;toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),1600)}document.getElementById('shareBtn').onclick=async()=>{try{if(navigator.share){await navigator.share({title:'THE League Record Book',url:location.href})}else{await navigator.clipboard.writeText(location.href);showToast()}}catch(e){if(e.name!=='AbortError')showToast('Copy the address bar link')}};
+renderHome();renderMatchups();renderRecords();renderManagers();renderSeason();const initial=location.hash.replace('#','');if(['home','matchups','records','managers','seasons'].includes(initial))setView(initial);
+</script>
+</body></html>
