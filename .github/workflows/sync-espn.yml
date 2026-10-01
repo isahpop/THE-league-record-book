@@ -1,0 +1,50 @@
+name: Sync ESPN league data
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Baseline refresh every 6 hours during fantasy season.
+    - cron: '17 */6 * 9-12 *'
+    # Faster refresh during the main NFL game windows (UTC).
+    - cron: '*/15 16-23 * 9-12 0'
+    - cron: '*/15 0-5 * 9-12 1'
+    - cron: '*/15 0-5 * 9-12 2,5'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: espn-sync
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Pull THE League directly from ESPN
+        env:
+          ESPN_LEAGUE_ID: '1838057056'
+          ESPN_SEASON: '2026'
+          ESPN_SWID: ${{ secrets.ESPN_SWID }}
+          ESPN_S2: ${{ secrets.ESPN_S2 }}
+        run: python scripts/sync_espn.py
+      - name: Run integrity tests
+        run: node --test tests/stats.test.js
+      - name: Commit refreshed public data
+        run: |
+          if git diff --quiet -- data/; then
+            echo 'No league-data changes.'
+            exit 0
+          fi
+          git config user.name 'THE League Bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add data/
+          git commit -m 'Auto-sync ESPN league data'
+          git push
