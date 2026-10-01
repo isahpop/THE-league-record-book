@@ -1,0 +1,4867 @@
+{
+  "champions": [
+    {
+      "year": 2025,
+      "name": "Grittying N Grinding",
+      "runner": "Tets McGee",
+      "score": "189.65–116.70"
+    },
+    {
+      "year": 2024,
+      "name": "Hill Hurt Me We miss #10",
+      "runner": "Tx ayesha can COOK",
+      "score": "155.32–118.48"
+    },
+    {
+      "year": 2023,
+      "name": "Tx ayesha can COOK",
+      "runner": "Team Binning",
+      "score": "161.30–134.38"
+    },
+    {
+      "year": 2022,
+      "name": "Team Bock",
+      "runner": "Unlimited “Lets Ride!”",
+      "score": "115.70–97.18"
+    }
+  ],
+  "seasons": {
+    "2022": {
+      "champ": "Team Bock",
+      "runner": "Unlimited “Lets Ride!”",
+      "avg": 123.29,
+      "top": "Love Hurts · 140.08 PPG",
+      "standings": [
+        [
+          "Love Hurts",
+          "12–2",
+          "1961.10"
+        ],
+        [
+          "Beware of DAWGS",
+          "8–6",
+          "1911.46"
+        ],
+        [
+          "Unlimited “Lets Ride!”",
+          "9–5",
+          "1791.34"
+        ],
+        [
+          "Team Bock",
+          "7–7",
+          "1712.66"
+        ],
+        [
+          "Team Phillips",
+          "7–7",
+          "1703.22"
+        ],
+        [
+          "Jackson Mahomes Off",
+          "7–7",
+          "1573.76"
+        ],
+        [
+          "Team Binning",
+          "7–7",
+          "1554.12"
+        ],
+        [
+          "Hill Hurt Me We miss #10",
+          "5–9",
+          "1752.94"
+        ],
+        [
+          "Tx ayesha can COOK",
+          "4–10",
+          "1724.88"
+        ],
+        [
+          "Kyler, The Creator",
+          "4–10",
+          "1574.70"
+        ]
+      ]
+    },
+    "2023": {
+      "champ": "Tx ayesha can COOK",
+      "runner": "Team Binning",
+      "avg": 124.18,
+      "top": "Hill Hurt Me · 131.05 PPG",
+      "standings": [
+        [
+          "Christian Mingle",
+          "9–5",
+          "1800.42"
+        ],
+        [
+          "Jackson Mahomes Off",
+          "9–5",
+          "1791.66"
+        ],
+        [
+          "Team Bock",
+          "8–6",
+          "1807.68"
+        ],
+        [
+          "Hill Hurt Me We miss #10",
+          "7–7",
+          "1834.72"
+        ],
+        [
+          "Tx ayesha can COOK",
+          "7–7",
+          "1766.40"
+        ],
+        [
+          "Marky Mark and the Funky Bunch",
+          "7–7",
+          "1733.74"
+        ],
+        [
+          "Team Binning",
+          "7–7",
+          "1644.00"
+        ],
+        [
+          "What Can Brown Do For You?",
+          "6–8",
+          "1737.96"
+        ],
+        [
+          "Coopa Troopas",
+          "5–9",
+          "1680.10"
+        ],
+        [
+          "Team Phillips",
+          "5–9",
+          "1588.68"
+        ]
+      ]
+    },
+    "2024": {
+      "champ": "Hill Hurt Me We miss #10",
+      "runner": "Tx ayesha can COOK",
+      "avg": 124.18,
+      "top": "please GOD let me WIN · 133.08 PPG",
+      "standings": [
+        [
+          "CTESPN",
+          "10–4",
+          "1848.94"
+        ],
+        [
+          "Tx ayesha can COOK",
+          "10–4",
+          "1816.14"
+        ],
+        [
+          "JT's Finest Team",
+          "8–6",
+          "1795.16"
+        ],
+        [
+          "Hill Hurt Me We miss #10",
+          "7–7",
+          "1820.76"
+        ],
+        [
+          "Bed, Bath and Bijan",
+          "7–7",
+          "1709.50"
+        ],
+        [
+          "All You Need Is Love",
+          "7–7",
+          "1696.88"
+        ],
+        [
+          "please GOD let me WIN",
+          "6–8",
+          "1863.06"
+        ],
+        [
+          "Team Phillips",
+          "6–8",
+          "1719.12"
+        ],
+        [
+          "It Hurts when I pee",
+          "6–8",
+          "1593.86"
+        ],
+        [
+          "Team Binning",
+          "3–11",
+          "1522.16"
+        ]
+      ]
+    },
+    "2025": {
+      "champ": "Grittying N Grinding",
+      "runner": "Tets McGee",
+      "avg": 126.94,
+      "top": "Tets McGee · 136.35 PPG",
+      "standings": [
+        [
+          "Team Phillips",
+          "11–3",
+          "1779.05"
+        ],
+        [
+          "Tets McGee",
+          "9–5",
+          "1908.90"
+        ],
+        [
+          "JT's Finest Team",
+          "9–5",
+          "1660.15"
+        ],
+        [
+          "Grittying N Grinding",
+          "9–5",
+          "1898.55"
+        ],
+        [
+          "Waddling Bowers",
+          "8–6",
+          "1785.65"
+        ],
+        [
+          "CTESPN",
+          "7–7",
+          "1848.30"
+        ],
+        [
+          "Team Binning",
+          "6–8",
+          "1771.05"
+        ],
+        [
+          "Hill Hurt Me We miss #10",
+          "5–9",
+          "1782.90"
+        ],
+        [
+          "Drake N Josh",
+          "3–11",
+          "1701.75"
+        ],
+        [
+          "Mahomes Alone",
+          "3–11",
+          "1635.30"
+        ]
+      ]
+    }
+  },
+  "playoffs": {
+    "2022": {
+      "r1": [
+        {
+          "a": [
+            4,
+            "Love Hurts",
+            null
+          ],
+          "bye": true
+        },
+        {
+          "a": [
+            1,
+            "Beware of DAWGS",
+            null
+          ],
+          "bye": true
+        },
+        {
+          "a": [
+            9,
+            "Team Bock",
+            143.2
+          ],
+          "b": [
+            3,
+            "Team Phillips",
+            98.32
+          ],
+          "winner": 9
+        },
+        {
+          "a": [
+            2,
+            "Unlimited \"Lets Ride!\"",
+            156.56
+          ],
+          "b": [
+            5,
+            "Jackson Mahomes Off",
+            90.24
+          ],
+          "winner": 2
+        }
+      ],
+      "r2": [
+        {
+          "a": [
+            4,
+            "Love Hurts",
+            119.84
+          ],
+          "b": [
+            9,
+            "Team Bock",
+            173.4
+          ],
+          "winner": 9
+        },
+        {
+          "a": [
+            1,
+            "Beware of DAWGS",
+            81.26
+          ],
+          "b": [
+            2,
+            "Unlimited \"Lets Ride!\"",
+            118.8
+          ],
+          "winner": 2
+        }
+      ],
+      "final": [
+        {
+          "a": [
+            2,
+            "Unlimited \"Lets Ride!\"",
+            97.18
+          ],
+          "b": [
+            9,
+            "Team Bock",
+            115.7
+          ],
+          "winner": 9
+        }
+      ]
+    },
+    "2023": {
+      "r1": [
+        {
+          "a": [
+            4,
+            "Christian Mingle",
+            null
+          ],
+          "bye": true
+        },
+        {
+          "a": [
+            7,
+            "Hill Hurt Me We miss #10",
+            127.36
+          ],
+          "b": [
+            8,
+            "Tx ayesha can COOK",
+            142.66
+          ],
+          "winner": 8
+        },
+        {
+          "a": [
+            9,
+            "Team Bock",
+            86.66
+          ],
+          "b": [
+            6,
+            "Marky Mark and the Funky Bunch",
+            68.14
+          ],
+          "winner": 9
+        },
+        {
+          "a": [
+            5,
+            "Jackson Mahomes Off",
+            103.3
+          ],
+          "b": [
+            10,
+            "Team Binning",
+            174.82
+          ],
+          "winner": 10
+        }
+      ],
+      "r2": [
+        {
+          "a": [
+            4,
+            "Christian Mingle",
+            101.8
+          ],
+          "b": [
+            8,
+            "Tx ayesha can COOK",
+            133.82
+          ],
+          "winner": 8
+        },
+        {
+          "a": [
+            9,
+            "Team Bock",
+            122.94
+          ],
+          "b": [
+            10,
+            "Team Binning",
+            164.12
+          ],
+          "winner": 10
+        }
+      ],
+      "final": [
+        {
+          "a": [
+            8,
+            "Tx ayesha can COOK",
+            161.3
+          ],
+          "b": [
+            10,
+            "Team Binning",
+            134.38
+          ],
+          "winner": 8
+        }
+      ]
+    },
+    "2024": {
+      "r1": [
+        {
+          "a": [
+            1,
+            "CTESPN",
+            null
+          ],
+          "bye": true
+        },
+        {
+          "a": [
+            7,
+            "Hill Hurt Me We miss #10",
+            142.7
+          ],
+          "b": [
+            4,
+            "Bed, Bath and Bijan",
+            111.54
+          ],
+          "winner": 7
+        },
+        {
+          "a": [
+            9,
+            "JT's Finest Team",
+            138.66
+          ],
+          "b": [
+            5,
+            "All You Need Is Love",
+            193.96
+          ],
+          "winner": 5
+        },
+        {
+          "a": [
+            8,
+            "Tx ayesha can COOK",
+            170.74
+          ],
+          "b": [
+            6,
+            "please GOD let me WIN",
+            132.98
+          ],
+          "winner": 8
+        }
+      ],
+      "r2": [
+        {
+          "a": [
+            1,
+            "CTESPN",
+            150.44
+          ],
+          "b": [
+            7,
+            "Hill Hurt Me We miss #10",
+            150.48
+          ],
+          "winner": 7
+        },
+        {
+          "a": [
+            8,
+            "Tx ayesha can COOK",
+            151.08
+          ],
+          "b": [
+            5,
+            "All You Need Is Love",
+            120.64
+          ],
+          "winner": 8
+        }
+      ],
+      "final": [
+        {
+          "a": [
+            8,
+            "Tx ayesha can COOK",
+            118.48
+          ],
+          "b": [
+            7,
+            "Hill Hurt Me We miss #10",
+            155.32
+          ],
+          "winner": 7
+        }
+      ]
+    },
+    "2025": {
+      "r1": [
+        {
+          "a": [
+            3,
+            "Team Phillips",
+            null
+          ],
+          "bye": true
+        },
+        {
+          "a": [
+            8,
+            "Grittying N Grinding",
+            140.35
+          ],
+          "b": [
+            2,
+            "Waddling Bowers",
+            114.9
+          ],
+          "winner": 8
+        },
+        {
+          "a": [
+            9,
+            "JT's Finest Team",
+            166.45
+          ],
+          "b": [
+            1,
+            "CTESPN",
+            140.4
+          ],
+          "winner": 9
+        },
+        {
+          "a": [
+            6,
+            "Tets McGee",
+            182.25
+          ],
+          "b": [
+            10,
+            "Team Binning",
+            139.45
+          ],
+          "winner": 6
+        }
+      ],
+      "r2": [
+        {
+          "a": [
+            3,
+            "Team Phillips",
+            133.35
+          ],
+          "b": [
+            8,
+            "Grittying N Grinding",
+            167.6
+          ],
+          "winner": 8
+        },
+        {
+          "a": [
+            6,
+            "Tets McGee",
+            131
+          ],
+          "b": [
+            9,
+            "JT's Finest Team",
+            125.25
+          ],
+          "winner": 6
+        }
+      ],
+      "final": [
+        {
+          "a": [
+            6,
+            "Tets McGee",
+            116.7
+          ],
+          "b": [
+            8,
+            "Grittying N Grinding",
+            189.65
+          ],
+          "winner": 8
+        }
+      ]
+    }
+  },
+  "baselines": {
+    "QB": 23.12,
+    "RB": 30.28,
+    "WR": 29.95,
+    "TE": 10.74,
+    "FLEX": 13.31
+  },
+  "regularSeasonMatchups": [
+    {
+      "year": 2022,
+      "week": 1,
+      "phase": "regular",
+      "a": {
+        "id": 9,
+        "team": "Team Bock",
+        "score": 89.72
+      },
+      "b": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 153.58
+      }
+    },
+    {
+      "year": 2022,
+      "week": 1,
+      "phase": "regular",
+      "a": {
+        "id": 1,
+        "team": "Beware of DAWGS",
+        "score": 131.16
+      },
+      "b": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 127.52
+      }
+    },
+    {
+      "year": 2022,
+      "week": 1,
+      "phase": "regular",
+      "a": {
+        "id": 6,
+        "team": "Kyler, The Creator",
+        "score": 170.62
+      },
+      "b": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 152.8
+      }
+    },
+    {
+      "year": 2022,
+      "week": 1,
+      "phase": "regular",
+      "a": {
+        "id": 5,
+        "team": "Jackson  Mahomes Off",
+        "score": 132.98
+      },
+      "b": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 103.46
+      }
+    },
+    {
+      "year": 2022,
+      "week": 1,
+      "phase": "regular",
+      "a": {
+        "id": 2,
+        "team": "Unlimited \"Lets Ride!\"",
+        "score": 122.3
+      },
+      "b": {
+        "id": 4,
+        "team": "Love Hurts",
+        "score": 118.52
+      }
+    },
+    {
+      "year": 2022,
+      "week": 2,
+      "phase": "regular",
+      "a": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 157.22
+      },
+      "b": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 110.4
+      }
+    },
+    {
+      "year": 2022,
+      "week": 2,
+      "phase": "regular",
+      "a": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 131.66
+      },
+      "b": {
+        "id": 9,
+        "team": "Team Bock",
+        "score": 118.76
+      }
+    },
+    {
+      "year": 2022,
+      "week": 2,
+      "phase": "regular",
+      "a": {
+        "id": 4,
+        "team": "Love Hurts",
+        "score": 143.92
+      },
+      "b": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 132.48
+      }
+    },
+    {
+      "year": 2022,
+      "week": 2,
+      "phase": "regular",
+      "a": {
+        "id": 5,
+        "team": "Jackson  Mahomes Off",
+        "score": 119.48
+      },
+      "b": {
+        "id": 1,
+        "team": "Beware of DAWGS",
+        "score": 137.8
+      }
+    },
+    {
+      "year": 2022,
+      "week": 2,
+      "phase": "regular",
+      "a": {
+        "id": 2,
+        "team": "Unlimited \"Lets Ride!\"",
+        "score": 141.86
+      },
+      "b": {
+        "id": 6,
+        "team": "Kyler, The Creator",
+        "score": 121.48
+      }
+    },
+    {
+      "year": 2022,
+      "week": 3,
+      "phase": "regular",
+      "a": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 114.78
+      },
+      "b": {
+        "id": 4,
+        "team": "Love Hurts",
+        "score": 144.9
+      }
+    },
+    {
+      "year": 2022,
+      "week": 3,
+      "phase": "regular",
+      "a": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 120.92
+      },
+      "b": {
+        "id": 5,
+        "team": "Jackson  Mahomes Off",
+        "score": 107.22
+      }
+    },
+    {
+      "year": 2022,
+      "week": 3,
+      "phase": "regular",
+      "a": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 103.58
+      },
+      "b": {
+        "id": 2,
+        "team": "Unlimited \"Lets Ride!\"",
+        "score": 104.96
+      }
+    },
+    {
+      "year": 2022,
+      "week": 3,
+      "phase": "regular",
+      "a": {
+        "id": 9,
+        "team": "Team Bock",
+        "score": 139.2
+      },
+      "b": {
+        "id": 1,
+        "team": "Beware of DAWGS",
+        "score": 127.7
+      }
+    },
+    {
+      "year": 2022,
+      "week": 3,
+      "phase": "regular",
+      "a": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 102.6
+      },
+      "b": {
+        "id": 6,
+        "team": "Kyler, The Creator",
+        "score": 66.26
+      }
+    },
+    {
+      "year": 2022,
+      "week": 4,
+      "phase": "regular",
+      "a": {
+        "id": 5,
+        "team": "Jackson  Mahomes Off",
+        "score": 105.52
+      },
+      "b": {
+        "id": 2,
+        "team": "Unlimited \"Lets Ride!\"",
+        "score": 127.28
+      }
+    },
+    {
+      "year": 2022,
+      "week": 4,
+      "phase": "regular",
+      "a": {
+        "id": 1,
+        "team": "Beware of DAWGS",
+        "score": 135.92
+      },
+      "b": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 149.8
+      }
+    },
+    {
+      "year": 2022,
+      "week": 4,
+      "phase": "regular",
+      "a": {
+        "id": 6,
+        "team": "Kyler, The Creator",
+        "score": 104.3
+      },
+      "b": {
+        "id": 4,
+        "team": "Love Hurts",
+        "score": 106.06
+      }
+    },
+    {
+      "year": 2022,
+      "week": 4,
+      "phase": "regular",
+      "a": {
+        "id": 9,
+        "team": "Team Bock",
+        "score": 157.28
+      },
+      "b": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 114.36
+      }
+    },
+    {
+      "year": 2022,
+      "week": 4,
+      "phase": "regular",
+      "a": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 92.42
+      },
+      "b": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 130.46
+      }
+    },
+    {
+      "year": 2022,
+      "week": 5,
+      "phase": "regular",
+      "a": {
+        "id": 1,
+        "team": "Beware of DAWGS",
+        "score": 159.14
+      },
+      "b": {
+        "id": 6,
+        "team": "Kyler, The Creator",
+        "score": 88.12
+      }
+    },
+    {
+      "year": 2022,
+      "week": 5,
+      "phase": "regular",
+      "a": {
+        "id": 5,
+        "team": "Jackson  Mahomes Off",
+        "score": 108.14
+      },
+      "b": {
+        "id": 9,
+        "team": "Team Bock",
+        "score": 81.98
+      }
+    },
+    {
+      "year": 2022,
+      "week": 5,
+      "phase": "regular",
+      "a": {
+        "id": 2,
+        "team": "Unlimited \"Lets Ride!\"",
+        "score": 124.66
+      },
+      "b": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 127.56
+      }
+    },
+    {
+      "year": 2022,
+      "week": 5,
+      "phase": "regular",
+      "a": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 151.92
+      },
+      "b": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 123.36
+      }
+    },
+    {
+      "year": 2022,
+      "week": 5,
+      "phase": "regular",
+      "a": {
+        "id": 4,
+        "team": "Love Hurts",
+        "score": 184.06
+      },
+      "b": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 149.88
+      }
+    },
+    {
+      "year": 2022,
+      "week": 6,
+      "phase": "regular",
+      "a": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 121.56
+      },
+      "b": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 94.8
+      }
+    },
+    {
+      "year": 2022,
+      "week": 6,
+      "phase": "regular",
+      "a": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 115.42
+      },
+      "b": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 103.52
+      }
+    },
+    {
+      "year": 2022,
+      "week": 6,
+      "phase": "regular",
+      "a": {
+        "id": 4,
+        "team": "Love Hurts",
+        "score": 117.3
+      },
+      "b": {
+        "id": 5,
+        "team": "Jackson  Mahomes Off",
+        "score": 130.02
+      }
+    },
+    {
+      "year": 2022,
+      "week": 6,
+      "phase": "regular",
+      "a": {
+        "id": 2,
+        "team": "Unlimited \"Lets Ride!\"",
+        "score": 114.58
+      },
+      "b": {
+        "id": 1,
+        "team": "Beware of DAWGS",
+        "score": 114.2
+      }
+    },
+    {
+      "year": 2022,
+      "week": 6,
+      "phase": "regular",
+      "a": {
+        "id": 6,
+        "team": "Kyler, The Creator",
+        "score": 82.98
+      },
+      "b": {
+        "id": 9,
+        "team": "Team Bock",
+        "score": 116.5
+      }
+    },
+    {
+      "year": 2022,
+      "week": 7,
+      "phase": "regular",
+      "a": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 135.02
+      },
+      "b": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 102.02
+      }
+    },
+    {
+      "year": 2022,
+      "week": 7,
+      "phase": "regular",
+      "a": {
+        "id": 5,
+        "team": "Jackson  Mahomes Off",
+        "score": 94.02
+      },
+      "b": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 152.42
+      }
+    },
+    {
+      "year": 2022,
+      "week": 7,
+      "phase": "regular",
+      "a": {
+        "id": 1,
+        "team": "Beware of DAWGS",
+        "score": 98.34
+      },
+      "b": {
+        "id": 4,
+        "team": "Love Hurts",
+        "score": 106.26
+      }
+    },
+    {
+      "year": 2022,
+      "week": 7,
+      "phase": "regular",
+      "a": {
+        "id": 9,
+        "team": "Team Bock",
+        "score": 125.54
+      },
+      "b": {
+        "id": 2,
+        "team": "Unlimited \"Lets Ride!\"",
+        "score": 113.64
+      }
+    },
+    {
+      "year": 2022,
+      "week": 7,
+      "phase": "regular",
+      "a": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 136.3
+      },
+      "b": {
+        "id": 6,
+        "team": "Kyler, The Creator",
+        "score": 131.26
+      }
+    },
+    {
+      "year": 2022,
+      "week": 8,
+      "phase": "regular",
+      "a": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 68.22
+      },
+      "b": {
+        "id": 5,
+        "team": "Jackson  Mahomes Off",
+        "score": 93.5
+      }
+    },
+    {
+      "year": 2022,
+      "week": 8,
+      "phase": "regular",
+      "a": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 105.18
+      },
+      "b": {
+        "id": 1,
+        "team": "Beware of DAWGS",
+        "score": 158.28
+      }
+    },
+    {
+      "year": 2022,
+      "week": 8,
+      "phase": "regular",
+      "a": {
+        "id": 4,
+        "team": "Love Hurts",
+        "score": 177.2
+      },
+      "b": {
+        "id": 9,
+        "team": "Team Bock",
+        "score": 144.64
+      }
+    },
+    {
+      "year": 2022,
+      "week": 8,
+      "phase": "regular",
+      "a": {
+        "id": 2,
+        "team": "Unlimited \"Lets Ride!\"",
+        "score": 204.24
+      },
+      "b": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 156.02
+      }
+    },
+    {
+      "year": 2022,
+      "week": 8,
+      "phase": "regular",
+      "a": {
+        "id": 6,
+        "team": "Kyler, The Creator",
+        "score": 151.74
+      },
+      "b": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 115.18
+      }
+    },
+    {
+      "year": 2022,
+      "week": 9,
+      "phase": "regular",
+      "a": {
+        "id": 1,
+        "team": "Beware of DAWGS",
+        "score": 155.7
+      },
+      "b": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 114.9
+      }
+    },
+    {
+      "year": 2022,
+      "week": 9,
+      "phase": "regular",
+      "a": {
+        "id": 9,
+        "team": "Team Bock",
+        "score": 112.64
+      },
+      "b": {
+        "id": 5,
+        "team": "Jackson  Mahomes Off",
+        "score": 67.32
+      }
+    },
+    {
+      "year": 2022,
+      "week": 9,
+      "phase": "regular",
+      "a": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 119.64
+      },
+      "b": {
+        "id": 6,
+        "team": "Kyler, The Creator",
+        "score": 122.5
+      }
+    },
+    {
+      "year": 2022,
+      "week": 9,
+      "phase": "regular",
+      "a": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 162.52
+      },
+      "b": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 101.2
+      }
+    },
+    {
+      "year": 2022,
+      "week": 9,
+      "phase": "regular",
+      "a": {
+        "id": 4,
+        "team": "Love Hurts",
+        "score": 162.22
+      },
+      "b": {
+        "id": 2,
+        "team": "Unlimited \"Lets Ride!\"",
+        "score": 121.38
+      }
+    },
+    {
+      "year": 2022,
+      "week": 10,
+      "phase": "regular",
+      "a": {
+        "id": 9,
+        "team": "Team Bock",
+        "score": 131.2
+      },
+      "b": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 142.14
+      }
+    },
+    {
+      "year": 2022,
+      "week": 10,
+      "phase": "regular",
+      "a": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 92
+      },
+      "b": {
+        "id": 1,
+        "team": "Beware of DAWGS",
+        "score": 156.08
+      }
+    },
+    {
+      "year": 2022,
+      "week": 10,
+      "phase": "regular",
+      "a": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 94.58
+      },
+      "b": {
+        "id": 4,
+        "team": "Love Hurts",
+        "score": 114.2
+      }
+    },
+    {
+      "year": 2022,
+      "week": 10,
+      "phase": "regular",
+      "a": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 88.24
+      },
+      "b": {
+        "id": 5,
+        "team": "Jackson  Mahomes Off",
+        "score": 131.32
+      }
+    },
+    {
+      "year": 2022,
+      "week": 10,
+      "phase": "regular",
+      "a": {
+        "id": 6,
+        "team": "Kyler, The Creator",
+        "score": 130.46
+      },
+      "b": {
+        "id": 2,
+        "team": "Unlimited \"Lets Ride!\"",
+        "score": 131.7
+      }
+    },
+    {
+      "year": 2022,
+      "week": 11,
+      "phase": "regular",
+      "a": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 137.96
+      },
+      "b": {
+        "id": 4,
+        "team": "Love Hurts",
+        "score": 155.26
+      }
+    },
+    {
+      "year": 2022,
+      "week": 11,
+      "phase": "regular",
+      "a": {
+        "id": 9,
+        "team": "Team Bock",
+        "score": 112.7
+      },
+      "b": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 113.7
+      }
+    },
+    {
+      "year": 2022,
+      "week": 11,
+      "phase": "regular",
+      "a": {
+        "id": 2,
+        "team": "Unlimited \"Lets Ride!\"",
+        "score": 152.88
+      },
+      "b": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 114.36
+      }
+    },
+    {
+      "year": 2022,
+      "week": 11,
+      "phase": "regular",
+      "a": {
+        "id": 1,
+        "team": "Beware of DAWGS",
+        "score": 133.52
+      },
+      "b": {
+        "id": 5,
+        "team": "Jackson  Mahomes Off",
+        "score": 123.3
+      }
+    },
+    {
+      "year": 2022,
+      "week": 11,
+      "phase": "regular",
+      "a": {
+        "id": 6,
+        "team": "Kyler, The Creator",
+        "score": 85.74
+      },
+      "b": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 82.08
+      }
+    },
+    {
+      "year": 2022,
+      "week": 12,
+      "phase": "regular",
+      "a": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 134.66
+      },
+      "b": {
+        "id": 2,
+        "team": "Unlimited \"Lets Ride!\"",
+        "score": 110.76
+      }
+    },
+    {
+      "year": 2022,
+      "week": 12,
+      "phase": "regular",
+      "a": {
+        "id": 5,
+        "team": "Jackson  Mahomes Off",
+        "score": 120.9
+      },
+      "b": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 95.16
+      }
+    },
+    {
+      "year": 2022,
+      "week": 12,
+      "phase": "regular",
+      "a": {
+        "id": 4,
+        "team": "Love Hurts",
+        "score": 143.92
+      },
+      "b": {
+        "id": 6,
+        "team": "Kyler, The Creator",
+        "score": 125.38
+      }
+    },
+    {
+      "year": 2022,
+      "week": 12,
+      "phase": "regular",
+      "a": {
+        "id": 1,
+        "team": "Beware of DAWGS",
+        "score": 113.16
+      },
+      "b": {
+        "id": 9,
+        "team": "Team Bock",
+        "score": 125.8
+      }
+    },
+    {
+      "year": 2022,
+      "week": 12,
+      "phase": "regular",
+      "a": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 98.5
+      },
+      "b": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 117.02
+      }
+    },
+    {
+      "year": 2022,
+      "week": 13,
+      "phase": "regular",
+      "a": {
+        "id": 5,
+        "team": "Jackson  Mahomes Off",
+        "score": 125.14
+      },
+      "b": {
+        "id": 6,
+        "team": "Kyler, The Creator",
+        "score": 97
+      }
+    },
+    {
+      "year": 2022,
+      "week": 13,
+      "phase": "regular",
+      "a": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 157.4
+      },
+      "b": {
+        "id": 1,
+        "team": "Beware of DAWGS",
+        "score": 152.06
+      }
+    },
+    {
+      "year": 2022,
+      "week": 13,
+      "phase": "regular",
+      "a": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 115.82
+      },
+      "b": {
+        "id": 2,
+        "team": "Unlimited \"Lets Ride!\"",
+        "score": 90.4
+      }
+    },
+    {
+      "year": 2022,
+      "week": 13,
+      "phase": "regular",
+      "a": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 89.34
+      },
+      "b": {
+        "id": 9,
+        "team": "Team Bock",
+        "score": 150.74
+      }
+    },
+    {
+      "year": 2022,
+      "week": 13,
+      "phase": "regular",
+      "a": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 107.62
+      },
+      "b": {
+        "id": 4,
+        "team": "Love Hurts",
+        "score": 156.9
+      }
+    },
+    {
+      "year": 2022,
+      "week": 14,
+      "phase": "regular",
+      "a": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 129.28
+      },
+      "b": {
+        "id": 9,
+        "team": "Team Bock",
+        "score": 105.96
+      }
+    },
+    {
+      "year": 2022,
+      "week": 14,
+      "phase": "regular",
+      "a": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 122.48
+      },
+      "b": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 145.46
+      }
+    },
+    {
+      "year": 2022,
+      "week": 14,
+      "phase": "regular",
+      "a": {
+        "id": 4,
+        "team": "Love Hurts",
+        "score": 130.38
+      },
+      "b": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 102.68
+      }
+    },
+    {
+      "year": 2022,
+      "week": 14,
+      "phase": "regular",
+      "a": {
+        "id": 2,
+        "team": "Unlimited \"Lets Ride!\"",
+        "score": 130.7
+      },
+      "b": {
+        "id": 5,
+        "team": "Jackson  Mahomes Off",
+        "score": 114.9
+      }
+    },
+    {
+      "year": 2022,
+      "week": 14,
+      "phase": "regular",
+      "a": {
+        "id": 6,
+        "team": "Kyler, The Creator",
+        "score": 96.86
+      },
+      "b": {
+        "id": 1,
+        "team": "Beware of DAWGS",
+        "score": 138.4
+      }
+    },
+    {
+      "year": 2023,
+      "week": 1,
+      "phase": "regular",
+      "a": {
+        "id": 9,
+        "team": "Team Bock",
+        "score": 124.98
+      },
+      "b": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 95.54
+      }
+    },
+    {
+      "year": 2023,
+      "week": 1,
+      "phase": "regular",
+      "a": {
+        "id": 1,
+        "team": "Coopa Troopas",
+        "score": 136.94
+      },
+      "b": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 139.64
+      }
+    },
+    {
+      "year": 2023,
+      "week": 1,
+      "phase": "regular",
+      "a": {
+        "id": 6,
+        "team": "Marky Mark and the Funky Bunch",
+        "score": 83.76
+      },
+      "b": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 147.36
+      }
+    },
+    {
+      "year": 2023,
+      "week": 1,
+      "phase": "regular",
+      "a": {
+        "id": 5,
+        "team": "Jackson  Mahomes Off",
+        "score": 89.84
+      },
+      "b": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 100.8
+      }
+    },
+    {
+      "year": 2023,
+      "week": 1,
+      "phase": "regular",
+      "a": {
+        "id": 2,
+        "team": "What Can Brown Do For You?",
+        "score": 128.74
+      },
+      "b": {
+        "id": 4,
+        "team": "Christian Mingle",
+        "score": 102.16
+      }
+    },
+    {
+      "year": 2023,
+      "week": 2,
+      "phase": "regular",
+      "a": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 94.26
+      },
+      "b": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 123.6
+      }
+    },
+    {
+      "year": 2023,
+      "week": 2,
+      "phase": "regular",
+      "a": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 122.12
+      },
+      "b": {
+        "id": 9,
+        "team": "Team Bock",
+        "score": 155.28
+      }
+    },
+    {
+      "year": 2023,
+      "week": 2,
+      "phase": "regular",
+      "a": {
+        "id": 4,
+        "team": "Christian Mingle",
+        "score": 143.6
+      },
+      "b": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 117.64
+      }
+    },
+    {
+      "year": 2023,
+      "week": 2,
+      "phase": "regular",
+      "a": {
+        "id": 5,
+        "team": "Jackson  Mahomes Off",
+        "score": 114.2
+      },
+      "b": {
+        "id": 1,
+        "team": "Coopa Troopas",
+        "score": 107.54
+      }
+    },
+    {
+      "year": 2023,
+      "week": 2,
+      "phase": "regular",
+      "a": {
+        "id": 2,
+        "team": "What Can Brown Do For You?",
+        "score": 125.66
+      },
+      "b": {
+        "id": 6,
+        "team": "Marky Mark and the Funky Bunch",
+        "score": 157.08
+      }
+    },
+    {
+      "year": 2023,
+      "week": 3,
+      "phase": "regular",
+      "a": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 145.98
+      },
+      "b": {
+        "id": 4,
+        "team": "Christian Mingle",
+        "score": 134.16
+      }
+    },
+    {
+      "year": 2023,
+      "week": 3,
+      "phase": "regular",
+      "a": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 180.38
+      },
+      "b": {
+        "id": 5,
+        "team": "Jackson  Mahomes Off",
+        "score": 141.78
+      }
+    },
+    {
+      "year": 2023,
+      "week": 3,
+      "phase": "regular",
+      "a": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 123.1
+      },
+      "b": {
+        "id": 2,
+        "team": "What Can Brown Do For You?",
+        "score": 179.32
+      }
+    },
+    {
+      "year": 2023,
+      "week": 3,
+      "phase": "regular",
+      "a": {
+        "id": 9,
+        "team": "Team Bock",
+        "score": 115.14
+      },
+      "b": {
+        "id": 1,
+        "team": "Coopa Troopas",
+        "score": 139.02
+      }
+    },
+    {
+      "year": 2023,
+      "week": 3,
+      "phase": "regular",
+      "a": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 114.96
+      },
+      "b": {
+        "id": 6,
+        "team": "Marky Mark and the Funky Bunch",
+        "score": 88.78
+      }
+    },
+    {
+      "year": 2023,
+      "week": 4,
+      "phase": "regular",
+      "a": {
+        "id": 5,
+        "team": "Jackson  Mahomes Off",
+        "score": 142.52
+      },
+      "b": {
+        "id": 2,
+        "team": "What Can Brown Do For You?",
+        "score": 172.8
+      }
+    },
+    {
+      "year": 2023,
+      "week": 4,
+      "phase": "regular",
+      "a": {
+        "id": 1,
+        "team": "Coopa Troopas",
+        "score": 114.8
+      },
+      "b": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 114.66
+      }
+    },
+    {
+      "year": 2023,
+      "week": 4,
+      "phase": "regular",
+      "a": {
+        "id": 6,
+        "team": "Marky Mark and the Funky Bunch",
+        "score": 130.04
+      },
+      "b": {
+        "id": 4,
+        "team": "Christian Mingle",
+        "score": 125.62
+      }
+    },
+    {
+      "year": 2023,
+      "week": 4,
+      "phase": "regular",
+      "a": {
+        "id": 9,
+        "team": "Team Bock",
+        "score": 125.8
+      },
+      "b": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 102.28
+      }
+    },
+    {
+      "year": 2023,
+      "week": 4,
+      "phase": "regular",
+      "a": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 98.98
+      },
+      "b": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 95.28
+      }
+    },
+    {
+      "year": 2023,
+      "week": 5,
+      "phase": "regular",
+      "a": {
+        "id": 1,
+        "team": "Coopa Troopas",
+        "score": 145.68
+      },
+      "b": {
+        "id": 6,
+        "team": "Marky Mark and the Funky Bunch",
+        "score": 113.94
+      }
+    },
+    {
+      "year": 2023,
+      "week": 5,
+      "phase": "regular",
+      "a": {
+        "id": 5,
+        "team": "Jackson  Mahomes Off",
+        "score": 179.24
+      },
+      "b": {
+        "id": 9,
+        "team": "Team Bock",
+        "score": 115.64
+      }
+    },
+    {
+      "year": 2023,
+      "week": 5,
+      "phase": "regular",
+      "a": {
+        "id": 2,
+        "team": "What Can Brown Do For You?",
+        "score": 95.96
+      },
+      "b": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 141.5
+      }
+    },
+    {
+      "year": 2023,
+      "week": 5,
+      "phase": "regular",
+      "a": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 126.42
+      },
+      "b": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 143.22
+      }
+    },
+    {
+      "year": 2023,
+      "week": 5,
+      "phase": "regular",
+      "a": {
+        "id": 4,
+        "team": "Christian Mingle",
+        "score": 140.18
+      },
+      "b": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 103.16
+      }
+    },
+    {
+      "year": 2023,
+      "week": 6,
+      "phase": "regular",
+      "a": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 151.34
+      },
+      "b": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 138.58
+      }
+    },
+    {
+      "year": 2023,
+      "week": 6,
+      "phase": "regular",
+      "a": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 133.18
+      },
+      "b": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 98.2
+      }
+    },
+    {
+      "year": 2023,
+      "week": 6,
+      "phase": "regular",
+      "a": {
+        "id": 4,
+        "team": "Christian Mingle",
+        "score": 88.7
+      },
+      "b": {
+        "id": 5,
+        "team": "Jackson  Mahomes Off",
+        "score": 97.34
+      }
+    },
+    {
+      "year": 2023,
+      "week": 6,
+      "phase": "regular",
+      "a": {
+        "id": 2,
+        "team": "What Can Brown Do For You?",
+        "score": 114.56
+      },
+      "b": {
+        "id": 1,
+        "team": "Coopa Troopas",
+        "score": 100.42
+      }
+    },
+    {
+      "year": 2023,
+      "week": 6,
+      "phase": "regular",
+      "a": {
+        "id": 6,
+        "team": "Marky Mark and the Funky Bunch",
+        "score": 107.92
+      },
+      "b": {
+        "id": 9,
+        "team": "Team Bock",
+        "score": 110.7
+      }
+    },
+    {
+      "year": 2023,
+      "week": 7,
+      "phase": "regular",
+      "a": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 132.36
+      },
+      "b": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 124.24
+      }
+    },
+    {
+      "year": 2023,
+      "week": 7,
+      "phase": "regular",
+      "a": {
+        "id": 5,
+        "team": "Jackson  Mahomes Off",
+        "score": 124.06
+      },
+      "b": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 98.96
+      }
+    },
+    {
+      "year": 2023,
+      "week": 7,
+      "phase": "regular",
+      "a": {
+        "id": 1,
+        "team": "Coopa Troopas",
+        "score": 79.96
+      },
+      "b": {
+        "id": 4,
+        "team": "Christian Mingle",
+        "score": 121.78
+      }
+    },
+    {
+      "year": 2023,
+      "week": 7,
+      "phase": "regular",
+      "a": {
+        "id": 9,
+        "team": "Team Bock",
+        "score": 137.96
+      },
+      "b": {
+        "id": 2,
+        "team": "What Can Brown Do For You?",
+        "score": 125.8
+      }
+    },
+    {
+      "year": 2023,
+      "week": 7,
+      "phase": "regular",
+      "a": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 144.04
+      },
+      "b": {
+        "id": 6,
+        "team": "Marky Mark and the Funky Bunch",
+        "score": 135.48
+      }
+    },
+    {
+      "year": 2023,
+      "week": 8,
+      "phase": "regular",
+      "a": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 127.98
+      },
+      "b": {
+        "id": 5,
+        "team": "Jackson  Mahomes Off",
+        "score": 113.9
+      }
+    },
+    {
+      "year": 2023,
+      "week": 8,
+      "phase": "regular",
+      "a": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 131.52
+      },
+      "b": {
+        "id": 1,
+        "team": "Coopa Troopas",
+        "score": 134.18
+      }
+    },
+    {
+      "year": 2023,
+      "week": 8,
+      "phase": "regular",
+      "a": {
+        "id": 4,
+        "team": "Christian Mingle",
+        "score": 100.9
+      },
+      "b": {
+        "id": 9,
+        "team": "Team Bock",
+        "score": 130.12
+      }
+    },
+    {
+      "year": 2023,
+      "week": 8,
+      "phase": "regular",
+      "a": {
+        "id": 2,
+        "team": "What Can Brown Do For You?",
+        "score": 124.16
+      },
+      "b": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 127.56
+      }
+    },
+    {
+      "year": 2023,
+      "week": 8,
+      "phase": "regular",
+      "a": {
+        "id": 6,
+        "team": "Marky Mark and the Funky Bunch",
+        "score": 147.18
+      },
+      "b": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 113.26
+      }
+    },
+    {
+      "year": 2023,
+      "week": 9,
+      "phase": "regular",
+      "a": {
+        "id": 1,
+        "team": "Coopa Troopas",
+        "score": 105.58
+      },
+      "b": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 115.1
+      }
+    },
+    {
+      "year": 2023,
+      "week": 9,
+      "phase": "regular",
+      "a": {
+        "id": 9,
+        "team": "Team Bock",
+        "score": 168.52
+      },
+      "b": {
+        "id": 5,
+        "team": "Jackson  Mahomes Off",
+        "score": 86.3
+      }
+    },
+    {
+      "year": 2023,
+      "week": 9,
+      "phase": "regular",
+      "a": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 128.28
+      },
+      "b": {
+        "id": 6,
+        "team": "Marky Mark and the Funky Bunch",
+        "score": 132.78
+      }
+    },
+    {
+      "year": 2023,
+      "week": 9,
+      "phase": "regular",
+      "a": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 107.62
+      },
+      "b": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 94.98
+      }
+    },
+    {
+      "year": 2023,
+      "week": 9,
+      "phase": "regular",
+      "a": {
+        "id": 4,
+        "team": "Christian Mingle",
+        "score": 138.5
+      },
+      "b": {
+        "id": 2,
+        "team": "What Can Brown Do For You?",
+        "score": 111.72
+      }
+    },
+    {
+      "year": 2023,
+      "week": 10,
+      "phase": "regular",
+      "a": {
+        "id": 9,
+        "team": "Team Bock",
+        "score": 130.68
+      },
+      "b": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 149.46
+      }
+    },
+    {
+      "year": 2023,
+      "week": 10,
+      "phase": "regular",
+      "a": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 119.82
+      },
+      "b": {
+        "id": 1,
+        "team": "Coopa Troopas",
+        "score": 152.56
+      }
+    },
+    {
+      "year": 2023,
+      "week": 10,
+      "phase": "regular",
+      "a": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 113.38
+      },
+      "b": {
+        "id": 4,
+        "team": "Christian Mingle",
+        "score": 126.34
+      }
+    },
+    {
+      "year": 2023,
+      "week": 10,
+      "phase": "regular",
+      "a": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 90.4
+      },
+      "b": {
+        "id": 5,
+        "team": "Jackson  Mahomes Off",
+        "score": 172.32
+      }
+    },
+    {
+      "year": 2023,
+      "week": 10,
+      "phase": "regular",
+      "a": {
+        "id": 6,
+        "team": "Marky Mark and the Funky Bunch",
+        "score": 136.32
+      },
+      "b": {
+        "id": 2,
+        "team": "What Can Brown Do For You?",
+        "score": 98.38
+      }
+    },
+    {
+      "year": 2023,
+      "week": 11,
+      "phase": "regular",
+      "a": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 123.4
+      },
+      "b": {
+        "id": 4,
+        "team": "Christian Mingle",
+        "score": 144.04
+      }
+    },
+    {
+      "year": 2023,
+      "week": 11,
+      "phase": "regular",
+      "a": {
+        "id": 9,
+        "team": "Team Bock",
+        "score": 85.64
+      },
+      "b": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 135
+      }
+    },
+    {
+      "year": 2023,
+      "week": 11,
+      "phase": "regular",
+      "a": {
+        "id": 2,
+        "team": "What Can Brown Do For You?",
+        "score": 83.4
+      },
+      "b": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 141.26
+      }
+    },
+    {
+      "year": 2023,
+      "week": 11,
+      "phase": "regular",
+      "a": {
+        "id": 1,
+        "team": "Coopa Troopas",
+        "score": 91.86
+      },
+      "b": {
+        "id": 5,
+        "team": "Jackson  Mahomes Off",
+        "score": 105.48
+      }
+    },
+    {
+      "year": 2023,
+      "week": 11,
+      "phase": "regular",
+      "a": {
+        "id": 6,
+        "team": "Marky Mark and the Funky Bunch",
+        "score": 123.06
+      },
+      "b": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 90.54
+      }
+    },
+    {
+      "year": 2023,
+      "week": 12,
+      "phase": "regular",
+      "a": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 131.5
+      },
+      "b": {
+        "id": 2,
+        "team": "What Can Brown Do For You?",
+        "score": 143.16
+      }
+    },
+    {
+      "year": 2023,
+      "week": 12,
+      "phase": "regular",
+      "a": {
+        "id": 5,
+        "team": "Jackson  Mahomes Off",
+        "score": 119.82
+      },
+      "b": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 119.62
+      }
+    },
+    {
+      "year": 2023,
+      "week": 12,
+      "phase": "regular",
+      "a": {
+        "id": 4,
+        "team": "Christian Mingle",
+        "score": 149.76
+      },
+      "b": {
+        "id": 6,
+        "team": "Marky Mark and the Funky Bunch",
+        "score": 105.58
+      }
+    },
+    {
+      "year": 2023,
+      "week": 12,
+      "phase": "regular",
+      "a": {
+        "id": 1,
+        "team": "Coopa Troopas",
+        "score": 130.84
+      },
+      "b": {
+        "id": 9,
+        "team": "Team Bock",
+        "score": 177.42
+      }
+    },
+    {
+      "year": 2023,
+      "week": 12,
+      "phase": "regular",
+      "a": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 153.94
+      },
+      "b": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 105.5
+      }
+    },
+    {
+      "year": 2023,
+      "week": 13,
+      "phase": "regular",
+      "a": {
+        "id": 5,
+        "team": "Jackson  Mahomes Off",
+        "score": 178.72
+      },
+      "b": {
+        "id": 6,
+        "team": "Marky Mark and the Funky Bunch",
+        "score": 118.58
+      }
+    },
+    {
+      "year": 2023,
+      "week": 13,
+      "phase": "regular",
+      "a": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 104.62
+      },
+      "b": {
+        "id": 1,
+        "team": "Coopa Troopas",
+        "score": 93.8
+      }
+    },
+    {
+      "year": 2023,
+      "week": 13,
+      "phase": "regular",
+      "a": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 122.72
+      },
+      "b": {
+        "id": 2,
+        "team": "What Can Brown Do For You?",
+        "score": 124.98
+      }
+    },
+    {
+      "year": 2023,
+      "week": 13,
+      "phase": "regular",
+      "a": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 187.5
+      },
+      "b": {
+        "id": 9,
+        "team": "Team Bock",
+        "score": 158.18
+      }
+    },
+    {
+      "year": 2023,
+      "week": 13,
+      "phase": "regular",
+      "a": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 108.46
+      },
+      "b": {
+        "id": 4,
+        "team": "Christian Mingle",
+        "score": 135.56
+      }
+    },
+    {
+      "year": 2023,
+      "week": 14,
+      "phase": "regular",
+      "a": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 124.58
+      },
+      "b": {
+        "id": 9,
+        "team": "Team Bock",
+        "score": 71.62
+      }
+    },
+    {
+      "year": 2023,
+      "week": 14,
+      "phase": "regular",
+      "a": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 128.84
+      },
+      "b": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 106.8
+      }
+    },
+    {
+      "year": 2023,
+      "week": 14,
+      "phase": "regular",
+      "a": {
+        "id": 4,
+        "team": "Christian Mingle",
+        "score": 149.12
+      },
+      "b": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 78.38
+      }
+    },
+    {
+      "year": 2023,
+      "week": 14,
+      "phase": "regular",
+      "a": {
+        "id": 2,
+        "team": "What Can Brown Do For You?",
+        "score": 109.32
+      },
+      "b": {
+        "id": 5,
+        "team": "Jackson  Mahomes Off",
+        "score": 126.14
+      }
+    },
+    {
+      "year": 2023,
+      "week": 14,
+      "phase": "regular",
+      "a": {
+        "id": 6,
+        "team": "Marky Mark and the Funky Bunch",
+        "score": 153.24
+      },
+      "b": {
+        "id": 1,
+        "team": "Coopa Troopas",
+        "score": 146.92
+      }
+    },
+    {
+      "year": 2024,
+      "week": 1,
+      "phase": "regular",
+      "a": {
+        "id": 9,
+        "team": "JT's Finest Team",
+        "score": 122.74
+      },
+      "b": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 134.72
+      }
+    },
+    {
+      "year": 2024,
+      "week": 1,
+      "phase": "regular",
+      "a": {
+        "id": 1,
+        "team": "CTESPN",
+        "score": 102.68
+      },
+      "b": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 95.12
+      }
+    },
+    {
+      "year": 2024,
+      "week": 1,
+      "phase": "regular",
+      "a": {
+        "id": 6,
+        "team": "please GOD let me WIN",
+        "score": 161.18
+      },
+      "b": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 103.06
+      }
+    },
+    {
+      "year": 2024,
+      "week": 1,
+      "phase": "regular",
+      "a": {
+        "id": 5,
+        "team": "All You Need Is Love",
+        "score": 140.4
+      },
+      "b": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 121.08
+      }
+    },
+    {
+      "year": 2024,
+      "week": 1,
+      "phase": "regular",
+      "a": {
+        "id": 2,
+        "team": "It Hurts when I pee",
+        "score": 143.92
+      },
+      "b": {
+        "id": 4,
+        "team": "Bed, Bath and Bijan",
+        "score": 116.06
+      }
+    },
+    {
+      "year": 2024,
+      "week": 2,
+      "phase": "regular",
+      "a": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 134.78
+      },
+      "b": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 147.74
+      }
+    },
+    {
+      "year": 2024,
+      "week": 2,
+      "phase": "regular",
+      "a": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 95.86
+      },
+      "b": {
+        "id": 9,
+        "team": "JT's Finest Team",
+        "score": 158.04
+      }
+    },
+    {
+      "year": 2024,
+      "week": 2,
+      "phase": "regular",
+      "a": {
+        "id": 4,
+        "team": "Bed, Bath and Bijan",
+        "score": 120
+      },
+      "b": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 89.26
+      }
+    },
+    {
+      "year": 2024,
+      "week": 2,
+      "phase": "regular",
+      "a": {
+        "id": 5,
+        "team": "All You Need Is Love",
+        "score": 94.54
+      },
+      "b": {
+        "id": 1,
+        "team": "CTESPN",
+        "score": 163.24
+      }
+    },
+    {
+      "year": 2024,
+      "week": 2,
+      "phase": "regular",
+      "a": {
+        "id": 2,
+        "team": "It Hurts when I pee",
+        "score": 129.72
+      },
+      "b": {
+        "id": 6,
+        "team": "please GOD let me WIN",
+        "score": 122.66
+      }
+    },
+    {
+      "year": 2024,
+      "week": 3,
+      "phase": "regular",
+      "a": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 117.4
+      },
+      "b": {
+        "id": 4,
+        "team": "Bed, Bath and Bijan",
+        "score": 106.6
+      }
+    },
+    {
+      "year": 2024,
+      "week": 3,
+      "phase": "regular",
+      "a": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 119.88
+      },
+      "b": {
+        "id": 5,
+        "team": "All You Need Is Love",
+        "score": 116.64
+      }
+    },
+    {
+      "year": 2024,
+      "week": 3,
+      "phase": "regular",
+      "a": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 147.88
+      },
+      "b": {
+        "id": 2,
+        "team": "It Hurts when I pee",
+        "score": 66.54
+      }
+    },
+    {
+      "year": 2024,
+      "week": 3,
+      "phase": "regular",
+      "a": {
+        "id": 9,
+        "team": "JT's Finest Team",
+        "score": 99.08
+      },
+      "b": {
+        "id": 1,
+        "team": "CTESPN",
+        "score": 102.28
+      }
+    },
+    {
+      "year": 2024,
+      "week": 3,
+      "phase": "regular",
+      "a": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 111.62
+      },
+      "b": {
+        "id": 6,
+        "team": "please GOD let me WIN",
+        "score": 154.02
+      }
+    },
+    {
+      "year": 2024,
+      "week": 4,
+      "phase": "regular",
+      "a": {
+        "id": 5,
+        "team": "All You Need Is Love",
+        "score": 139.26
+      },
+      "b": {
+        "id": 2,
+        "team": "It Hurts when I pee",
+        "score": 102.52
+      }
+    },
+    {
+      "year": 2024,
+      "week": 4,
+      "phase": "regular",
+      "a": {
+        "id": 1,
+        "team": "CTESPN",
+        "score": 112.24
+      },
+      "b": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 137.14
+      }
+    },
+    {
+      "year": 2024,
+      "week": 4,
+      "phase": "regular",
+      "a": {
+        "id": 6,
+        "team": "please GOD let me WIN",
+        "score": 110.6
+      },
+      "b": {
+        "id": 4,
+        "team": "Bed, Bath and Bijan",
+        "score": 113.3
+      }
+    },
+    {
+      "year": 2024,
+      "week": 4,
+      "phase": "regular",
+      "a": {
+        "id": 9,
+        "team": "JT's Finest Team",
+        "score": 103
+      },
+      "b": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 154.22
+      }
+    },
+    {
+      "year": 2024,
+      "week": 4,
+      "phase": "regular",
+      "a": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 102.78
+      },
+      "b": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 135.08
+      }
+    },
+    {
+      "year": 2024,
+      "week": 5,
+      "phase": "regular",
+      "a": {
+        "id": 1,
+        "team": "CTESPN",
+        "score": 127.6
+      },
+      "b": {
+        "id": 6,
+        "team": "please GOD let me WIN",
+        "score": 114.64
+      }
+    },
+    {
+      "year": 2024,
+      "week": 5,
+      "phase": "regular",
+      "a": {
+        "id": 5,
+        "team": "All You Need Is Love",
+        "score": 130.56
+      },
+      "b": {
+        "id": 9,
+        "team": "JT's Finest Team",
+        "score": 158.84
+      }
+    },
+    {
+      "year": 2024,
+      "week": 5,
+      "phase": "regular",
+      "a": {
+        "id": 2,
+        "team": "It Hurts when I pee",
+        "score": 80.34
+      },
+      "b": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 122.46
+      }
+    },
+    {
+      "year": 2024,
+      "week": 5,
+      "phase": "regular",
+      "a": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 154.6
+      },
+      "b": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 134.92
+      }
+    },
+    {
+      "year": 2024,
+      "week": 5,
+      "phase": "regular",
+      "a": {
+        "id": 4,
+        "team": "Bed, Bath and Bijan",
+        "score": 116.14
+      },
+      "b": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 133.46
+      }
+    },
+    {
+      "year": 2024,
+      "week": 6,
+      "phase": "regular",
+      "a": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 131.54
+      },
+      "b": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 135.72
+      }
+    },
+    {
+      "year": 2024,
+      "week": 6,
+      "phase": "regular",
+      "a": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 112.72
+      },
+      "b": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 99.1
+      }
+    },
+    {
+      "year": 2024,
+      "week": 6,
+      "phase": "regular",
+      "a": {
+        "id": 4,
+        "team": "Bed, Bath and Bijan",
+        "score": 136.88
+      },
+      "b": {
+        "id": 5,
+        "team": "All You Need Is Love",
+        "score": 158.42
+      }
+    },
+    {
+      "year": 2024,
+      "week": 6,
+      "phase": "regular",
+      "a": {
+        "id": 2,
+        "team": "It Hurts when I pee",
+        "score": 99.8
+      },
+      "b": {
+        "id": 1,
+        "team": "CTESPN",
+        "score": 104.92
+      }
+    },
+    {
+      "year": 2024,
+      "week": 6,
+      "phase": "regular",
+      "a": {
+        "id": 6,
+        "team": "please GOD let me WIN",
+        "score": 158.96
+      },
+      "b": {
+        "id": 9,
+        "team": "JT's Finest Team",
+        "score": 138.3
+      }
+    },
+    {
+      "year": 2024,
+      "week": 7,
+      "phase": "regular",
+      "a": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 105.28
+      },
+      "b": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 178.1
+      }
+    },
+    {
+      "year": 2024,
+      "week": 7,
+      "phase": "regular",
+      "a": {
+        "id": 5,
+        "team": "All You Need Is Love",
+        "score": 132.9
+      },
+      "b": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 126.34
+      }
+    },
+    {
+      "year": 2024,
+      "week": 7,
+      "phase": "regular",
+      "a": {
+        "id": 1,
+        "team": "CTESPN",
+        "score": 140.2
+      },
+      "b": {
+        "id": 4,
+        "team": "Bed, Bath and Bijan",
+        "score": 113.34
+      }
+    },
+    {
+      "year": 2024,
+      "week": 7,
+      "phase": "regular",
+      "a": {
+        "id": 9,
+        "team": "JT's Finest Team",
+        "score": 135.36
+      },
+      "b": {
+        "id": 2,
+        "team": "It Hurts when I pee",
+        "score": 78.26
+      }
+    },
+    {
+      "year": 2024,
+      "week": 7,
+      "phase": "regular",
+      "a": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 138.34
+      },
+      "b": {
+        "id": 6,
+        "team": "please GOD let me WIN",
+        "score": 72.94
+      }
+    },
+    {
+      "year": 2024,
+      "week": 8,
+      "phase": "regular",
+      "a": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 95.94
+      },
+      "b": {
+        "id": 5,
+        "team": "All You Need Is Love",
+        "score": 115.04
+      }
+    },
+    {
+      "year": 2024,
+      "week": 8,
+      "phase": "regular",
+      "a": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 104.16
+      },
+      "b": {
+        "id": 1,
+        "team": "CTESPN",
+        "score": 179.7
+      }
+    },
+    {
+      "year": 2024,
+      "week": 8,
+      "phase": "regular",
+      "a": {
+        "id": 4,
+        "team": "Bed, Bath and Bijan",
+        "score": 127.6
+      },
+      "b": {
+        "id": 9,
+        "team": "JT's Finest Team",
+        "score": 114.28
+      }
+    },
+    {
+      "year": 2024,
+      "week": 8,
+      "phase": "regular",
+      "a": {
+        "id": 2,
+        "team": "It Hurts when I pee",
+        "score": 157.24
+      },
+      "b": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 140.96
+      }
+    },
+    {
+      "year": 2024,
+      "week": 8,
+      "phase": "regular",
+      "a": {
+        "id": 6,
+        "team": "please GOD let me WIN",
+        "score": 151.22
+      },
+      "b": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 133.94
+      }
+    },
+    {
+      "year": 2024,
+      "week": 9,
+      "phase": "regular",
+      "a": {
+        "id": 1,
+        "team": "CTESPN",
+        "score": 109.56
+      },
+      "b": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 78.06
+      }
+    },
+    {
+      "year": 2024,
+      "week": 9,
+      "phase": "regular",
+      "a": {
+        "id": 9,
+        "team": "JT's Finest Team",
+        "score": 145.04
+      },
+      "b": {
+        "id": 5,
+        "team": "All You Need Is Love",
+        "score": 104.72
+      }
+    },
+    {
+      "year": 2024,
+      "week": 9,
+      "phase": "regular",
+      "a": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 159.04
+      },
+      "b": {
+        "id": 6,
+        "team": "please GOD let me WIN",
+        "score": 140.86
+      }
+    },
+    {
+      "year": 2024,
+      "week": 9,
+      "phase": "regular",
+      "a": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 151
+      },
+      "b": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 117.58
+      }
+    },
+    {
+      "year": 2024,
+      "week": 9,
+      "phase": "regular",
+      "a": {
+        "id": 4,
+        "team": "Bed, Bath and Bijan",
+        "score": 129.34
+      },
+      "b": {
+        "id": 2,
+        "team": "It Hurts when I pee",
+        "score": 124.5
+      }
+    },
+    {
+      "year": 2024,
+      "week": 10,
+      "phase": "regular",
+      "a": {
+        "id": 9,
+        "team": "JT's Finest Team",
+        "score": 105.14
+      },
+      "b": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 160.22
+      }
+    },
+    {
+      "year": 2024,
+      "week": 10,
+      "phase": "regular",
+      "a": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 168.4
+      },
+      "b": {
+        "id": 1,
+        "team": "CTESPN",
+        "score": 122.54
+      }
+    },
+    {
+      "year": 2024,
+      "week": 10,
+      "phase": "regular",
+      "a": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 66.94
+      },
+      "b": {
+        "id": 4,
+        "team": "Bed, Bath and Bijan",
+        "score": 112.88
+      }
+    },
+    {
+      "year": 2024,
+      "week": 10,
+      "phase": "regular",
+      "a": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 130.24
+      },
+      "b": {
+        "id": 5,
+        "team": "All You Need Is Love",
+        "score": 64.54
+      }
+    },
+    {
+      "year": 2024,
+      "week": 10,
+      "phase": "regular",
+      "a": {
+        "id": 6,
+        "team": "please GOD let me WIN",
+        "score": 93.9
+      },
+      "b": {
+        "id": 2,
+        "team": "It Hurts when I pee",
+        "score": 95.38
+      }
+    },
+    {
+      "year": 2024,
+      "week": 11,
+      "phase": "regular",
+      "a": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 132.28
+      },
+      "b": {
+        "id": 4,
+        "team": "Bed, Bath and Bijan",
+        "score": 116.88
+      }
+    },
+    {
+      "year": 2024,
+      "week": 11,
+      "phase": "regular",
+      "a": {
+        "id": 9,
+        "team": "JT's Finest Team",
+        "score": 109.54
+      },
+      "b": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 98.9
+      }
+    },
+    {
+      "year": 2024,
+      "week": 11,
+      "phase": "regular",
+      "a": {
+        "id": 2,
+        "team": "It Hurts when I pee",
+        "score": 94.54
+      },
+      "b": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 116.84
+      }
+    },
+    {
+      "year": 2024,
+      "week": 11,
+      "phase": "regular",
+      "a": {
+        "id": 1,
+        "team": "CTESPN",
+        "score": 200.98
+      },
+      "b": {
+        "id": 5,
+        "team": "All You Need Is Love",
+        "score": 119.34
+      }
+    },
+    {
+      "year": 2024,
+      "week": 11,
+      "phase": "regular",
+      "a": {
+        "id": 6,
+        "team": "please GOD let me WIN",
+        "score": 134.48
+      },
+      "b": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 95.38
+      }
+    },
+    {
+      "year": 2024,
+      "week": 12,
+      "phase": "regular",
+      "a": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 152.52
+      },
+      "b": {
+        "id": 2,
+        "team": "It Hurts when I pee",
+        "score": 110.66
+      }
+    },
+    {
+      "year": 2024,
+      "week": 12,
+      "phase": "regular",
+      "a": {
+        "id": 5,
+        "team": "All You Need Is Love",
+        "score": 116.12
+      },
+      "b": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 99.38
+      }
+    },
+    {
+      "year": 2024,
+      "week": 12,
+      "phase": "regular",
+      "a": {
+        "id": 4,
+        "team": "Bed, Bath and Bijan",
+        "score": 159.28
+      },
+      "b": {
+        "id": 6,
+        "team": "please GOD let me WIN",
+        "score": 141.9
+      }
+    },
+    {
+      "year": 2024,
+      "week": 12,
+      "phase": "regular",
+      "a": {
+        "id": 1,
+        "team": "CTESPN",
+        "score": 109.5
+      },
+      "b": {
+        "id": 9,
+        "team": "JT's Finest Team",
+        "score": 140.56
+      }
+    },
+    {
+      "year": 2024,
+      "week": 12,
+      "phase": "regular",
+      "a": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 128.58
+      },
+      "b": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 99.66
+      }
+    },
+    {
+      "year": 2024,
+      "week": 13,
+      "phase": "regular",
+      "a": {
+        "id": 5,
+        "team": "All You Need Is Love",
+        "score": 140.46
+      },
+      "b": {
+        "id": 6,
+        "team": "please GOD let me WIN",
+        "score": 110.72
+      }
+    },
+    {
+      "year": 2024,
+      "week": 13,
+      "phase": "regular",
+      "a": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 121.26
+      },
+      "b": {
+        "id": 1,
+        "team": "CTESPN",
+        "score": 146.14
+      }
+    },
+    {
+      "year": 2024,
+      "week": 13,
+      "phase": "regular",
+      "a": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 81.9
+      },
+      "b": {
+        "id": 2,
+        "team": "It Hurts when I pee",
+        "score": 164.62
+      }
+    },
+    {
+      "year": 2024,
+      "week": 13,
+      "phase": "regular",
+      "a": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 95.28
+      },
+      "b": {
+        "id": 9,
+        "team": "JT's Finest Team",
+        "score": 118.64
+      }
+    },
+    {
+      "year": 2024,
+      "week": 13,
+      "phase": "regular",
+      "a": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 115.56
+      },
+      "b": {
+        "id": 4,
+        "team": "Bed, Bath and Bijan",
+        "score": 131.68
+      }
+    },
+    {
+      "year": 2024,
+      "week": 14,
+      "phase": "regular",
+      "a": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 133.8
+      },
+      "b": {
+        "id": 9,
+        "team": "JT's Finest Team",
+        "score": 146.6
+      }
+    },
+    {
+      "year": 2024,
+      "week": 14,
+      "phase": "regular",
+      "a": {
+        "id": 8,
+        "team": "Tx ayesha can COOK",
+        "score": 125.46
+      },
+      "b": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 120.48
+      }
+    },
+    {
+      "year": 2024,
+      "week": 14,
+      "phase": "regular",
+      "a": {
+        "id": 4,
+        "team": "Bed, Bath and Bijan",
+        "score": 109.52
+      },
+      "b": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 134.22
+      }
+    },
+    {
+      "year": 2024,
+      "week": 14,
+      "phase": "regular",
+      "a": {
+        "id": 2,
+        "team": "It Hurts when I pee",
+        "score": 145.82
+      },
+      "b": {
+        "id": 5,
+        "team": "All You Need Is Love",
+        "score": 123.94
+      }
+    },
+    {
+      "year": 2024,
+      "week": 14,
+      "phase": "regular",
+      "a": {
+        "id": 6,
+        "team": "please GOD let me WIN",
+        "score": 194.98
+      },
+      "b": {
+        "id": 1,
+        "team": "CTESPN",
+        "score": 127.36
+      }
+    },
+    {
+      "year": 2025,
+      "week": 1,
+      "phase": "regular",
+      "a": {
+        "id": 9,
+        "team": "JT's Finest Team",
+        "score": 90.9
+      },
+      "b": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 141.9
+      }
+    },
+    {
+      "year": 2025,
+      "week": 1,
+      "phase": "regular",
+      "a": {
+        "id": 1,
+        "team": "CTESPN",
+        "score": 145.15
+      },
+      "b": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 137.55
+      }
+    },
+    {
+      "year": 2025,
+      "week": 1,
+      "phase": "regular",
+      "a": {
+        "id": 6,
+        "team": "Tets McGee",
+        "score": 115.6
+      },
+      "b": {
+        "id": 8,
+        "team": "Grittying N Grinding",
+        "score": 84.75
+      }
+    },
+    {
+      "year": 2025,
+      "week": 1,
+      "phase": "regular",
+      "a": {
+        "id": 5,
+        "team": "Drake N Josh",
+        "score": 104.55
+      },
+      "b": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 115.8
+      }
+    },
+    {
+      "year": 2025,
+      "week": 1,
+      "phase": "regular",
+      "a": {
+        "id": 2,
+        "team": "Waddling Bowers",
+        "score": 141.05
+      },
+      "b": {
+        "id": 4,
+        "team": "Mahomes Alone",
+        "score": 119.5
+      }
+    },
+    {
+      "year": 2025,
+      "week": 2,
+      "phase": "regular",
+      "a": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 162.35
+      },
+      "b": {
+        "id": 8,
+        "team": "Grittying N Grinding",
+        "score": 127.2
+      }
+    },
+    {
+      "year": 2025,
+      "week": 2,
+      "phase": "regular",
+      "a": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 94
+      },
+      "b": {
+        "id": 9,
+        "team": "JT's Finest Team",
+        "score": 92.05
+      }
+    },
+    {
+      "year": 2025,
+      "week": 2,
+      "phase": "regular",
+      "a": {
+        "id": 4,
+        "team": "Mahomes Alone",
+        "score": 135.25
+      },
+      "b": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 101
+      }
+    },
+    {
+      "year": 2025,
+      "week": 2,
+      "phase": "regular",
+      "a": {
+        "id": 5,
+        "team": "Drake N Josh",
+        "score": 159.1
+      },
+      "b": {
+        "id": 1,
+        "team": "CTESPN",
+        "score": 138.05
+      }
+    },
+    {
+      "year": 2025,
+      "week": 2,
+      "phase": "regular",
+      "a": {
+        "id": 2,
+        "team": "Waddling Bowers",
+        "score": 124.1
+      },
+      "b": {
+        "id": 6,
+        "team": "Tets McGee",
+        "score": 155.7
+      }
+    },
+    {
+      "year": 2025,
+      "week": 3,
+      "phase": "regular",
+      "a": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 135.25
+      },
+      "b": {
+        "id": 4,
+        "team": "Mahomes Alone",
+        "score": 117.3
+      }
+    },
+    {
+      "year": 2025,
+      "week": 3,
+      "phase": "regular",
+      "a": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 136.3
+      },
+      "b": {
+        "id": 5,
+        "team": "Drake N Josh",
+        "score": 109.1
+      }
+    },
+    {
+      "year": 2025,
+      "week": 3,
+      "phase": "regular",
+      "a": {
+        "id": 8,
+        "team": "Grittying N Grinding",
+        "score": 134.4
+      },
+      "b": {
+        "id": 2,
+        "team": "Waddling Bowers",
+        "score": 109.85
+      }
+    },
+    {
+      "year": 2025,
+      "week": 3,
+      "phase": "regular",
+      "a": {
+        "id": 9,
+        "team": "JT's Finest Team",
+        "score": 179.8
+      },
+      "b": {
+        "id": 1,
+        "team": "CTESPN",
+        "score": 118.75
+      }
+    },
+    {
+      "year": 2025,
+      "week": 3,
+      "phase": "regular",
+      "a": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 104.95
+      },
+      "b": {
+        "id": 6,
+        "team": "Tets McGee",
+        "score": 118.5
+      }
+    },
+    {
+      "year": 2025,
+      "week": 4,
+      "phase": "regular",
+      "a": {
+        "id": 5,
+        "team": "Drake N Josh",
+        "score": 111.45
+      },
+      "b": {
+        "id": 2,
+        "team": "Waddling Bowers",
+        "score": 134.4
+      }
+    },
+    {
+      "year": 2025,
+      "week": 4,
+      "phase": "regular",
+      "a": {
+        "id": 1,
+        "team": "CTESPN",
+        "score": 142.75
+      },
+      "b": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 149.7
+      }
+    },
+    {
+      "year": 2025,
+      "week": 4,
+      "phase": "regular",
+      "a": {
+        "id": 6,
+        "team": "Tets McGee",
+        "score": 113.05
+      },
+      "b": {
+        "id": 4,
+        "team": "Mahomes Alone",
+        "score": 173
+      }
+    },
+    {
+      "year": 2025,
+      "week": 4,
+      "phase": "regular",
+      "a": {
+        "id": 9,
+        "team": "JT's Finest Team",
+        "score": 126.6
+      },
+      "b": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 126.55
+      }
+    },
+    {
+      "year": 2025,
+      "week": 4,
+      "phase": "regular",
+      "a": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 127.65
+      },
+      "b": {
+        "id": 8,
+        "team": "Grittying N Grinding",
+        "score": 160.85
+      }
+    },
+    {
+      "year": 2025,
+      "week": 5,
+      "phase": "regular",
+      "a": {
+        "id": 1,
+        "team": "CTESPN",
+        "score": 141.35
+      },
+      "b": {
+        "id": 6,
+        "team": "Tets McGee",
+        "score": 139.6
+      }
+    },
+    {
+      "year": 2025,
+      "week": 5,
+      "phase": "regular",
+      "a": {
+        "id": 5,
+        "team": "Drake N Josh",
+        "score": 103.35
+      },
+      "b": {
+        "id": 9,
+        "team": "JT's Finest Team",
+        "score": 116.7
+      }
+    },
+    {
+      "year": 2025,
+      "week": 5,
+      "phase": "regular",
+      "a": {
+        "id": 2,
+        "team": "Waddling Bowers",
+        "score": 122.3
+      },
+      "b": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 99.05
+      }
+    },
+    {
+      "year": 2025,
+      "week": 5,
+      "phase": "regular",
+      "a": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 136.4
+      },
+      "b": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 132.95
+      }
+    },
+    {
+      "year": 2025,
+      "week": 5,
+      "phase": "regular",
+      "a": {
+        "id": 4,
+        "team": "Mahomes Alone",
+        "score": 104.1
+      },
+      "b": {
+        "id": 8,
+        "team": "Grittying N Grinding",
+        "score": 151.9
+      }
+    },
+    {
+      "year": 2025,
+      "week": 6,
+      "phase": "regular",
+      "a": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 155.5
+      },
+      "b": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 91.3
+      }
+    },
+    {
+      "year": 2025,
+      "week": 6,
+      "phase": "regular",
+      "a": {
+        "id": 8,
+        "team": "Grittying N Grinding",
+        "score": 108.55
+      },
+      "b": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 113.35
+      }
+    },
+    {
+      "year": 2025,
+      "week": 6,
+      "phase": "regular",
+      "a": {
+        "id": 4,
+        "team": "Mahomes Alone",
+        "score": 109.75
+      },
+      "b": {
+        "id": 5,
+        "team": "Drake N Josh",
+        "score": 141.75
+      }
+    },
+    {
+      "year": 2025,
+      "week": 6,
+      "phase": "regular",
+      "a": {
+        "id": 2,
+        "team": "Waddling Bowers",
+        "score": 139.45
+      },
+      "b": {
+        "id": 1,
+        "team": "CTESPN",
+        "score": 167.1
+      }
+    },
+    {
+      "year": 2025,
+      "week": 6,
+      "phase": "regular",
+      "a": {
+        "id": 6,
+        "team": "Tets McGee",
+        "score": 123.8
+      },
+      "b": {
+        "id": 9,
+        "team": "JT's Finest Team",
+        "score": 108.05
+      }
+    },
+    {
+      "year": 2025,
+      "week": 7,
+      "phase": "regular",
+      "a": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 108.6
+      },
+      "b": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 162.9
+      }
+    },
+    {
+      "year": 2025,
+      "week": 7,
+      "phase": "regular",
+      "a": {
+        "id": 5,
+        "team": "Drake N Josh",
+        "score": 135.2
+      },
+      "b": {
+        "id": 8,
+        "team": "Grittying N Grinding",
+        "score": 189.05
+      }
+    },
+    {
+      "year": 2025,
+      "week": 7,
+      "phase": "regular",
+      "a": {
+        "id": 1,
+        "team": "CTESPN",
+        "score": 135.4
+      },
+      "b": {
+        "id": 4,
+        "team": "Mahomes Alone",
+        "score": 113
+      }
+    },
+    {
+      "year": 2025,
+      "week": 7,
+      "phase": "regular",
+      "a": {
+        "id": 9,
+        "team": "JT's Finest Team",
+        "score": 150.6
+      },
+      "b": {
+        "id": 2,
+        "team": "Waddling Bowers",
+        "score": 109.7
+      }
+    },
+    {
+      "year": 2025,
+      "week": 7,
+      "phase": "regular",
+      "a": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 136.8
+      },
+      "b": {
+        "id": 6,
+        "team": "Tets McGee",
+        "score": 168.3
+      }
+    },
+    {
+      "year": 2025,
+      "week": 8,
+      "phase": "regular",
+      "a": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 158.25
+      },
+      "b": {
+        "id": 5,
+        "team": "Drake N Josh",
+        "score": 158.9
+      }
+    },
+    {
+      "year": 2025,
+      "week": 8,
+      "phase": "regular",
+      "a": {
+        "id": 8,
+        "team": "Grittying N Grinding",
+        "score": 146.7
+      },
+      "b": {
+        "id": 1,
+        "team": "CTESPN",
+        "score": 78.4
+      }
+    },
+    {
+      "year": 2025,
+      "week": 8,
+      "phase": "regular",
+      "a": {
+        "id": 4,
+        "team": "Mahomes Alone",
+        "score": 114.45
+      },
+      "b": {
+        "id": 9,
+        "team": "JT's Finest Team",
+        "score": 120.75
+      }
+    },
+    {
+      "year": 2025,
+      "week": 8,
+      "phase": "regular",
+      "a": {
+        "id": 2,
+        "team": "Waddling Bowers",
+        "score": 120.7
+      },
+      "b": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 120.25
+      }
+    },
+    {
+      "year": 2025,
+      "week": 8,
+      "phase": "regular",
+      "a": {
+        "id": 6,
+        "team": "Tets McGee",
+        "score": 118.75
+      },
+      "b": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 159.15
+      }
+    },
+    {
+      "year": 2025,
+      "week": 9,
+      "phase": "regular",
+      "a": {
+        "id": 1,
+        "team": "CTESPN",
+        "score": 93.9
+      },
+      "b": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 161.45
+      }
+    },
+    {
+      "year": 2025,
+      "week": 9,
+      "phase": "regular",
+      "a": {
+        "id": 9,
+        "team": "JT's Finest Team",
+        "score": 140.4
+      },
+      "b": {
+        "id": 5,
+        "team": "Drake N Josh",
+        "score": 118.25
+      }
+    },
+    {
+      "year": 2025,
+      "week": 9,
+      "phase": "regular",
+      "a": {
+        "id": 8,
+        "team": "Grittying N Grinding",
+        "score": 139.55
+      },
+      "b": {
+        "id": 6,
+        "team": "Tets McGee",
+        "score": 132.5
+      }
+    },
+    {
+      "year": 2025,
+      "week": 9,
+      "phase": "regular",
+      "a": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 115.9
+      },
+      "b": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 149.75
+      }
+    },
+    {
+      "year": 2025,
+      "week": 9,
+      "phase": "regular",
+      "a": {
+        "id": 4,
+        "team": "Mahomes Alone",
+        "score": 114.8
+      },
+      "b": {
+        "id": 2,
+        "team": "Waddling Bowers",
+        "score": 128.4
+      }
+    },
+    {
+      "year": 2025,
+      "week": 10,
+      "phase": "regular",
+      "a": {
+        "id": 9,
+        "team": "JT's Finest Team",
+        "score": 138.5
+      },
+      "b": {
+        "id": 8,
+        "team": "Grittying N Grinding",
+        "score": 105
+      }
+    },
+    {
+      "year": 2025,
+      "week": 10,
+      "phase": "regular",
+      "a": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 120.5
+      },
+      "b": {
+        "id": 1,
+        "team": "CTESPN",
+        "score": 135.35
+      }
+    },
+    {
+      "year": 2025,
+      "week": 10,
+      "phase": "regular",
+      "a": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 134
+      },
+      "b": {
+        "id": 4,
+        "team": "Mahomes Alone",
+        "score": 104.9
+      }
+    },
+    {
+      "year": 2025,
+      "week": 10,
+      "phase": "regular",
+      "a": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 170.9
+      },
+      "b": {
+        "id": 5,
+        "team": "Drake N Josh",
+        "score": 133
+      }
+    },
+    {
+      "year": 2025,
+      "week": 10,
+      "phase": "regular",
+      "a": {
+        "id": 6,
+        "team": "Tets McGee",
+        "score": 146.2
+      },
+      "b": {
+        "id": 2,
+        "team": "Waddling Bowers",
+        "score": 146
+      }
+    },
+    {
+      "year": 2025,
+      "week": 11,
+      "phase": "regular",
+      "a": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 103.55
+      },
+      "b": {
+        "id": 4,
+        "team": "Mahomes Alone",
+        "score": 87.9
+      }
+    },
+    {
+      "year": 2025,
+      "week": 11,
+      "phase": "regular",
+      "a": {
+        "id": 9,
+        "team": "JT's Finest Team",
+        "score": 77.65
+      },
+      "b": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 106.4
+      }
+    },
+    {
+      "year": 2025,
+      "week": 11,
+      "phase": "regular",
+      "a": {
+        "id": 2,
+        "team": "Waddling Bowers",
+        "score": 89.5
+      },
+      "b": {
+        "id": 8,
+        "team": "Grittying N Grinding",
+        "score": 133.4
+      }
+    },
+    {
+      "year": 2025,
+      "week": 11,
+      "phase": "regular",
+      "a": {
+        "id": 1,
+        "team": "CTESPN",
+        "score": 142.25
+      },
+      "b": {
+        "id": 5,
+        "team": "Drake N Josh",
+        "score": 84.35
+      }
+    },
+    {
+      "year": 2025,
+      "week": 11,
+      "phase": "regular",
+      "a": {
+        "id": 6,
+        "team": "Tets McGee",
+        "score": 136.65
+      },
+      "b": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 121.25
+      }
+    },
+    {
+      "year": 2025,
+      "week": 12,
+      "phase": "regular",
+      "a": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 122.75
+      },
+      "b": {
+        "id": 2,
+        "team": "Waddling Bowers",
+        "score": 159.3
+      }
+    },
+    {
+      "year": 2025,
+      "week": 12,
+      "phase": "regular",
+      "a": {
+        "id": 5,
+        "team": "Drake N Josh",
+        "score": 120.8
+      },
+      "b": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 160.75
+      }
+    },
+    {
+      "year": 2025,
+      "week": 12,
+      "phase": "regular",
+      "a": {
+        "id": 4,
+        "team": "Mahomes Alone",
+        "score": 126.3
+      },
+      "b": {
+        "id": 6,
+        "team": "Tets McGee",
+        "score": 122.75
+      }
+    },
+    {
+      "year": 2025,
+      "week": 12,
+      "phase": "regular",
+      "a": {
+        "id": 1,
+        "team": "CTESPN",
+        "score": 125.05
+      },
+      "b": {
+        "id": 9,
+        "team": "JT's Finest Team",
+        "score": 127.15
+      }
+    },
+    {
+      "year": 2025,
+      "week": 12,
+      "phase": "regular",
+      "a": {
+        "id": 8,
+        "team": "Grittying N Grinding",
+        "score": 174.85
+      },
+      "b": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 54.85
+      }
+    },
+    {
+      "year": 2025,
+      "week": 13,
+      "phase": "regular",
+      "a": {
+        "id": 5,
+        "team": "Drake N Josh",
+        "score": 115.4
+      },
+      "b": {
+        "id": 6,
+        "team": "Tets McGee",
+        "score": 171.25
+      }
+    },
+    {
+      "year": 2025,
+      "week": 13,
+      "phase": "regular",
+      "a": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 87.75
+      },
+      "b": {
+        "id": 1,
+        "team": "CTESPN",
+        "score": 144.4
+      }
+    },
+    {
+      "year": 2025,
+      "week": 13,
+      "phase": "regular",
+      "a": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 101.35
+      },
+      "b": {
+        "id": 2,
+        "team": "Waddling Bowers",
+        "score": 131.6
+      }
+    },
+    {
+      "year": 2025,
+      "week": 13,
+      "phase": "regular",
+      "a": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 97.4
+      },
+      "b": {
+        "id": 9,
+        "team": "JT's Finest Team",
+        "score": 116.4
+      }
+    },
+    {
+      "year": 2025,
+      "week": 13,
+      "phase": "regular",
+      "a": {
+        "id": 8,
+        "team": "Grittying N Grinding",
+        "score": 133.6
+      },
+      "b": {
+        "id": 4,
+        "team": "Mahomes Alone",
+        "score": 115.65
+      }
+    },
+    {
+      "year": 2025,
+      "week": 14,
+      "phase": "regular",
+      "a": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 146.95
+      },
+      "b": {
+        "id": 9,
+        "team": "JT's Finest Team",
+        "score": 74.6
+      }
+    },
+    {
+      "year": 2025,
+      "week": 14,
+      "phase": "regular",
+      "a": {
+        "id": 8,
+        "team": "Grittying N Grinding",
+        "score": 108.75
+      },
+      "b": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 140.75
+      }
+    },
+    {
+      "year": 2025,
+      "week": 14,
+      "phase": "regular",
+      "a": {
+        "id": 4,
+        "team": "Mahomes Alone",
+        "score": 99.4
+      },
+      "b": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 129.25
+      }
+    },
+    {
+      "year": 2025,
+      "week": 14,
+      "phase": "regular",
+      "a": {
+        "id": 2,
+        "team": "Waddling Bowers",
+        "score": 129.3
+      },
+      "b": {
+        "id": 5,
+        "team": "Drake N Josh",
+        "score": 106.55
+      }
+    },
+    {
+      "year": 2025,
+      "week": 14,
+      "phase": "regular",
+      "a": {
+        "id": 6,
+        "team": "Tets McGee",
+        "score": 146.25
+      },
+      "b": {
+        "id": 1,
+        "team": "CTESPN",
+        "score": 140.4
+      }
+    }
+  ],
+  "coverage": {
+    "regularSeason": {
+      "2022": [
+        1,
+        14
+      ],
+      "2023": [
+        1,
+        14
+      ],
+      "2024": [
+        1,
+        14
+      ],
+      "2025": [
+        1,
+        14
+      ]
+    },
+    "playoffs": "Championship bracket only, 2022–25",
+    "source": "Flaim ESPN THE League",
+    "retrievedAt": "2026-09-30"
+  }
+}

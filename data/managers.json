@@ -1,0 +1,271 @@
+{
+  "teams": [
+    {
+      "id": 1,
+      "manager": "Coy",
+      "name": "Love Wins in Ohio",
+      "old": [
+        "CTESPN",
+        "Coopa Troopas",
+        "Beware of DAWGS"
+      ],
+      "record": "30–26",
+      "ppg": 130.16,
+      "allplay": 58.1,
+      "titles": 0,
+      "finals": 0,
+      "strength": "WR #1",
+      "weak": "QB #9",
+      "high": 200.98,
+      "low": 78.4,
+      "boom": 10,
+      "sub100": 6,
+      "pos": {
+        "QB": 21.15,
+        "RB": 30.34,
+        "WR": 33.92,
+        "TE": 12.46,
+        "FLEX": 14.3
+      }
+    },
+    {
+      "id": 2,
+      "manager": "Golly",
+      "name": "Waddling Bowers II",
+      "old": [
+        "Waddling Bowers",
+        "It Hurts when I pee",
+        "What Can Brown Do For You?",
+        "Unlimited “Lets Ride!”"
+      ],
+      "record": "29–27",
+      "ppg": 123.37,
+      "allplay": 48.4,
+      "titles": 0,
+      "finals": 1,
+      "strength": "TE #1",
+      "weak": "RB #10",
+      "high": 204.24,
+      "low": 66.54,
+      "boom": 7,
+      "sub100": 11,
+      "pos": {
+        "QB": 22.78,
+        "RB": 26.78,
+        "WR": 30.02,
+        "TE": 13.29,
+        "FLEX": 13.13
+      }
+    },
+    {
+      "id": 3,
+      "manager": "Lance",
+      "name": "Team Phillips",
+      "old": [],
+      "record": "29–27",
+      "ppg": 121.25,
+      "allplay": 46.7,
+      "titles": 0,
+      "finals": 0,
+      "strength": "FLEX #4",
+      "weak": "TE #10",
+      "high": 170.9,
+      "low": 78.38,
+      "boom": 6,
+      "sub100": 10,
+      "pos": {
+        "QB": 21.64,
+        "RB": 29.67,
+        "WR": 30.11,
+        "TE": 8.29,
+        "FLEX": 13.78
+      }
+    },
+    {
+      "id": 4,
+      "manager": "Zach",
+      "name": "Here Comes McBride",
+      "old": [
+        "Mahomes Alone",
+        "Bed, Bath and Bijan",
+        "Christian Mingle",
+        "Love Hurts"
+      ],
+      "record": "31–25",
+      "ppg": 126.9,
+      "allplay": 52.2,
+      "titles": 0,
+      "finals": 0,
+      "strength": "RB #1",
+      "weak": "FLEX #9",
+      "high": 184.06,
+      "low": 87.9,
+      "boom": 7,
+      "sub100": 3,
+      "pos": {
+        "QB": 23.81,
+        "RB": 33.93,
+        "WR": 28.72,
+        "TE": 11,
+        "FLEX": 12.44
+      }
+    },
+    {
+      "id": 5,
+      "manager": "JB",
+      "name": "Davante N' Josh",
+      "old": [
+        "Drake N Josh",
+        "All You Need Is Love",
+        "Jackson Mahomes Off"
+      ],
+      "record": "26–30",
+      "ppg": 120.79,
+      "allplay": 42.9,
+      "titles": 0,
+      "finals": 0,
+      "strength": "RB #4",
+      "weak": "TE #9",
+      "high": 179.24,
+      "low": 64.54,
+      "boom": 6,
+      "sub100": 9,
+      "pos": {
+        "QB": 22.43,
+        "RB": 30.95,
+        "WR": 29.01,
+        "TE": 8.94,
+        "FLEX": 13.25
+      }
+    },
+    {
+      "id": 6,
+      "manager": "Isaiah",
+      "name": "Nacua Matata",
+      "old": [
+        "Tets McGee",
+        "please GOD let me WIN",
+        "Marky Mark and the Funky Bunch",
+        "Kyler, The Creator"
+      ],
+      "record": "26–30",
+      "ppg": 126.44,
+      "allplay": 52.9,
+      "titles": 0,
+      "finals": 1,
+      "strength": "WR #2",
+      "weak": "QB #7",
+      "high": 194.98,
+      "low": 66.26,
+      "boom": 12,
+      "sub100": 10,
+      "pos": {
+        "QB": 22.81,
+        "RB": 30.62,
+        "WR": 31.62,
+        "TE": 11.41,
+        "FLEX": 14.02
+      }
+    },
+    {
+      "id": 7,
+      "manager": "Austin",
+      "name": "Hill Hurt Me We miss #10",
+      "old": [],
+      "record": "24–32",
+      "ppg": 128.42,
+      "allplay": 54.4,
+      "titles": 1,
+      "finals": 1,
+      "strength": "RB #2",
+      "weak": "TE #8",
+      "high": 187.5,
+      "low": 89.34,
+      "boom": 10,
+      "sub100": 10,
+      "pos": {
+        "QB": 24.29,
+        "RB": 33.43,
+        "WR": 29.96,
+        "TE": 9.03,
+        "FLEX": 14.05
+      }
+    },
+    {
+      "id": 8,
+      "manager": "Mike",
+      "name": "Grittying N Grinding",
+      "old": [
+        "Tx ayesha can COOK"
+      ],
+      "record": "30–26",
+      "ppg": 128.68,
+      "allplay": 55,
+      "titles": 2,
+      "finals": 3,
+      "strength": "QB #1",
+      "weak": "FLEX #8",
+      "high": 189.05,
+      "low": 84.75,
+      "boom": 9,
+      "sub100": 4,
+      "pos": {
+        "QB": 25.61,
+        "RB": 32.93,
+        "WR": 29.14,
+        "TE": 10.55,
+        "FLEX": 12.87
+      }
+    },
+    {
+      "id": 9,
+      "manager": "JT",
+      "name": "JT's Finest Team",
+      "old": [
+        "Team Bock"
+      ],
+      "record": "32–24",
+      "ppg": 124.57,
+      "allplay": 50.6,
+      "titles": 1,
+      "finals": 1,
+      "strength": "TE #3",
+      "weak": "RB #8",
+      "high": 179.8,
+      "low": 71.62,
+      "boom": 10,
+      "sub100": 9,
+      "pos": {
+        "QB": 23.23,
+        "RB": 28.05,
+        "WR": 29.25,
+        "TE": 12.13,
+        "FLEX": 13.15
+      }
+    },
+    {
+      "id": 10,
+      "manager": "Jazz",
+      "name": "Team Binning",
+      "old": [],
+      "record": "23–33",
+      "ppg": 115.92,
+      "allplay": 38.9,
+      "titles": 0,
+      "finals": 1,
+      "strength": "QB #4",
+      "weak": "FLEX #10",
+      "high": 178.1,
+      "low": 54.85,
+      "boom": 7,
+      "sub100": 16,
+      "pos": {
+        "QB": 23.76,
+        "RB": 26.99,
+        "WR": 28.06,
+        "TE": 10.34,
+        "FLEX": 11.35
+      }
+    }
+  ]
+}

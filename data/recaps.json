@@ -1,0 +1,17 @@
+{
+  "recaps": [
+    {
+      "season": 2026,
+      "week": 3,
+      "publishedAt": "2026-09-29",
+      "title": "Mike sets the pace; every decimal counts",
+      "paragraphs": [
+        "Week 3 belongs to Mike, who put up 179.95 points. Mike, JB remain unbeaten through 3 weeks. There is plenty of season left, but the scoreboard is already collecting receipts.",
+        "The closest finish: Coy edged Golly 131.30–130.60, a margin of 0.70. That is the kind of result that sends someone back through every lineup decision.",
+        "At the other end, Mike beat JT by 66.95, 179.95–113.00. No last-minute decimal rescue was coming for that one.",
+        "The biggest starter performance was Brock Purdy: 45.25 points for Mike. One monster score makes a great headline; the full lineup still has to finish the job. The next chapter is Week 4."
+      ],
+      "source": "data/season-2026.json"
+    }
+  ]
+}

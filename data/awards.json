@@ -1,0 +1,5520 @@
+{
+  "methodVersion": 1,
+  "seasons": {
+    "2025": {
+      "draftComplete": true,
+      "productionComplete": false,
+      "draft": [],
+      "players": [],
+      "sourceDraftPicks": [
+        {
+          "playerId": "4241389",
+          "managerId": 10,
+          "overallPick": 1,
+          "round": 1,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "3043078",
+          "managerId": 2,
+          "overallPick": 2,
+          "round": 1,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "3929630",
+          "managerId": 3,
+          "overallPick": 3,
+          "round": 1,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "4426515",
+          "managerId": 4,
+          "overallPick": 4,
+          "round": 1,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4362628",
+          "managerId": 6,
+          "overallPick": 5,
+          "round": 1,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4262921",
+          "managerId": 9,
+          "overallPick": 6,
+          "round": 1,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "4595348",
+          "managerId": 5,
+          "overallPick": 7,
+          "round": 1,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "4430807",
+          "managerId": 1,
+          "overallPick": 8,
+          "round": 1,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "3117251",
+          "managerId": 8,
+          "overallPick": 9,
+          "round": 1,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "3916387",
+          "managerId": 7,
+          "overallPick": 10,
+          "round": 1,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4429795",
+          "managerId": 7,
+          "overallPick": 11,
+          "round": 2,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "3915511",
+          "managerId": 8,
+          "overallPick": 12,
+          "round": 2,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "4596448",
+          "managerId": 1,
+          "overallPick": 13,
+          "round": 2,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "4426348",
+          "managerId": 5,
+          "overallPick": 14,
+          "round": 2,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4047646",
+          "managerId": 9,
+          "overallPick": 15,
+          "round": 2,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4038941",
+          "managerId": 6,
+          "overallPick": 16,
+          "round": 2,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "3139477",
+          "managerId": 4,
+          "overallPick": 17,
+          "round": 2,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "4426338",
+          "managerId": 3,
+          "overallPick": 18,
+          "round": 2,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4374302",
+          "managerId": 2,
+          "overallPick": 19,
+          "round": 2,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "3918298",
+          "managerId": 10,
+          "overallPick": 20,
+          "round": 2,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4047365",
+          "managerId": 10,
+          "overallPick": 21,
+          "round": 3,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "3917315",
+          "managerId": 2,
+          "overallPick": 22,
+          "round": 3,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "4430737",
+          "managerId": 3,
+          "overallPick": 23,
+          "round": 3,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "4890973",
+          "managerId": 4,
+          "overallPick": 24,
+          "round": 3,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4429160",
+          "managerId": 6,
+          "overallPick": 25,
+          "round": 3,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4040715",
+          "managerId": 9,
+          "overallPick": 26,
+          "round": 3,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "4241416",
+          "managerId": 5,
+          "overallPick": 27,
+          "round": 3,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "4612826",
+          "managerId": 1,
+          "overallPick": 28,
+          "round": 3,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4362238",
+          "managerId": 8,
+          "overallPick": 29,
+          "round": 3,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "4379399",
+          "managerId": 7,
+          "overallPick": 30,
+          "round": 3,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "3116406",
+          "managerId": 7,
+          "overallPick": 31,
+          "round": 4,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "3121422",
+          "managerId": 8,
+          "overallPick": 32,
+          "round": 4,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "4430878",
+          "managerId": 1,
+          "overallPick": 33,
+          "round": 4,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "4685382",
+          "managerId": 5,
+          "overallPick": 34,
+          "round": 4,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4242335",
+          "managerId": 9,
+          "overallPick": 35,
+          "round": 4,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4568490",
+          "managerId": 6,
+          "overallPick": 36,
+          "round": 4,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "3054850",
+          "managerId": 4,
+          "overallPick": 37,
+          "round": 4,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "4426502",
+          "managerId": 3,
+          "overallPick": 38,
+          "round": 4,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "3045147",
+          "managerId": 2,
+          "overallPick": 39,
+          "round": 4,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "4259545",
+          "managerId": 10,
+          "overallPick": 40,
+          "round": 4,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4239993",
+          "managerId": 10,
+          "overallPick": 41,
+          "round": 5,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4047650",
+          "managerId": 2,
+          "overallPick": 42,
+          "round": 5,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "4569618",
+          "managerId": 3,
+          "overallPick": 43,
+          "round": 5,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "16737",
+          "managerId": 4,
+          "overallPick": 44,
+          "round": 5,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4361307",
+          "managerId": 6,
+          "overallPick": 45,
+          "round": 5,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4432710",
+          "managerId": 9,
+          "overallPick": 46,
+          "round": 5,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "4432773",
+          "managerId": 5,
+          "overallPick": 47,
+          "round": 5,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "3040151",
+          "managerId": 1,
+          "overallPick": 48,
+          "round": 5,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "16800",
+          "managerId": 8,
+          "overallPick": 49,
+          "round": 5,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "4683062",
+          "managerId": 7,
+          "overallPick": 50,
+          "round": 5,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "15847",
+          "managerId": 7,
+          "overallPick": 51,
+          "round": 6,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4723086",
+          "managerId": 8,
+          "overallPick": 52,
+          "round": 6,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "3916148",
+          "managerId": 1,
+          "overallPick": 53,
+          "round": 6,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "4572680",
+          "managerId": 5,
+          "overallPick": 54,
+          "round": 6,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4036133",
+          "managerId": 9,
+          "overallPick": 55,
+          "round": 6,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "3128429",
+          "managerId": 6,
+          "overallPick": 56,
+          "round": 6,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "3116365",
+          "managerId": 4,
+          "overallPick": 57,
+          "round": 6,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "3051876",
+          "managerId": 3,
+          "overallPick": 58,
+          "round": 6,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4432665",
+          "managerId": 2,
+          "overallPick": 59,
+          "round": 6,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "4430027",
+          "managerId": 10,
+          "overallPick": 60,
+          "round": 6,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "3042519",
+          "managerId": 10,
+          "overallPick": 61,
+          "round": 7,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4372016",
+          "managerId": 2,
+          "overallPick": 62,
+          "round": 7,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "4432708",
+          "managerId": 3,
+          "overallPick": 63,
+          "round": 7,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "4567048",
+          "managerId": 4,
+          "overallPick": 64,
+          "round": 7,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "-16021",
+          "managerId": 6,
+          "overallPick": 65,
+          "round": 7,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "3915416",
+          "managerId": 9,
+          "overallPick": 66,
+          "round": 7,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "4241478",
+          "managerId": 5,
+          "overallPick": 67,
+          "round": 7,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "-16034",
+          "managerId": 1,
+          "overallPick": 68,
+          "round": 7,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4241463",
+          "managerId": 8,
+          "overallPick": 69,
+          "round": 7,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "4429615",
+          "managerId": 7,
+          "overallPick": 70,
+          "round": 7,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "-16022",
+          "managerId": 7,
+          "overallPick": 71,
+          "round": 8,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "-16033",
+          "managerId": 8,
+          "overallPick": 72,
+          "round": 8,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "3050478",
+          "managerId": 1,
+          "overallPick": 73,
+          "round": 8,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "-16017",
+          "managerId": 5,
+          "overallPick": 74,
+          "round": 8,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "-16023",
+          "managerId": 9,
+          "overallPick": 75,
+          "round": 8,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "3917232",
+          "managerId": 6,
+          "overallPick": 76,
+          "round": 8,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "-16026",
+          "managerId": 4,
+          "overallPick": 77,
+          "round": 8,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "-16016",
+          "managerId": 3,
+          "overallPick": 78,
+          "round": 8,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "-16007",
+          "managerId": 2,
+          "overallPick": 79,
+          "round": 8,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "-16009",
+          "managerId": 10,
+          "overallPick": 80,
+          "round": 8,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "3150744",
+          "managerId": 10,
+          "overallPick": 81,
+          "round": 9,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "3953687",
+          "managerId": 2,
+          "overallPick": 82,
+          "round": 9,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "4689936",
+          "managerId": 3,
+          "overallPick": 83,
+          "round": 9,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "4697745",
+          "managerId": 4,
+          "overallPick": 84,
+          "round": 9,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4685472",
+          "managerId": 6,
+          "overallPick": 85,
+          "round": 9,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4431299",
+          "managerId": 9,
+          "overallPick": 86,
+          "round": 9,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "4362081",
+          "managerId": 5,
+          "overallPick": 87,
+          "round": 9,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "4685415",
+          "managerId": 1,
+          "overallPick": 88,
+          "round": 9,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "2971573",
+          "managerId": 8,
+          "overallPick": 89,
+          "round": 9,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "3055899",
+          "managerId": 7,
+          "overallPick": 90,
+          "round": 9,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4361529",
+          "managerId": 7,
+          "overallPick": 91,
+          "round": 10,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "3925357",
+          "managerId": 8,
+          "overallPick": 92,
+          "round": 10,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "4575131",
+          "managerId": 1,
+          "overallPick": 93,
+          "round": 10,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "4426388",
+          "managerId": 5,
+          "overallPick": 94,
+          "round": 10,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4241985",
+          "managerId": 9,
+          "overallPick": 95,
+          "round": 10,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4819231",
+          "managerId": 6,
+          "overallPick": 96,
+          "round": 10,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "4035538",
+          "managerId": 4,
+          "overallPick": 97,
+          "round": 10,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "4427366",
+          "managerId": 3,
+          "overallPick": 98,
+          "round": 10,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4426354",
+          "managerId": 2,
+          "overallPick": 99,
+          "round": 10,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "4360516",
+          "managerId": 10,
+          "overallPick": 100,
+          "round": 10,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4428209",
+          "managerId": 10,
+          "overallPick": 101,
+          "round": 11,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4567750",
+          "managerId": 2,
+          "overallPick": 102,
+          "round": 11,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "2976212",
+          "managerId": 3,
+          "overallPick": 103,
+          "round": 11,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "2977187",
+          "managerId": 4,
+          "overallPick": 104,
+          "round": 11,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4701936",
+          "managerId": 6,
+          "overallPick": 105,
+          "round": 11,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4696981",
+          "managerId": 9,
+          "overallPick": 106,
+          "round": 11,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "4569987",
+          "managerId": 5,
+          "overallPick": 107,
+          "round": 11,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "4429205",
+          "managerId": 1,
+          "overallPick": 108,
+          "round": 11,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4428331",
+          "managerId": 8,
+          "overallPick": 109,
+          "round": 11,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "4685702",
+          "managerId": 7,
+          "overallPick": 110,
+          "round": 11,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4241474",
+          "managerId": 7,
+          "overallPick": 111,
+          "round": 12,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4239996",
+          "managerId": 8,
+          "overallPick": 112,
+          "round": 12,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "3128720",
+          "managerId": 1,
+          "overallPick": 113,
+          "round": 12,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "3068267",
+          "managerId": 5,
+          "overallPick": 114,
+          "round": 12,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4035687",
+          "managerId": 9,
+          "overallPick": 115,
+          "round": 12,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4569173",
+          "managerId": 6,
+          "overallPick": 116,
+          "round": 12,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "3916433",
+          "managerId": 4,
+          "overallPick": 117,
+          "round": 12,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "4373626",
+          "managerId": 3,
+          "overallPick": 118,
+          "round": 12,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "2577417",
+          "managerId": 2,
+          "overallPick": 119,
+          "round": 12,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "4361370",
+          "managerId": 10,
+          "overallPick": 120,
+          "round": 12,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4373678",
+          "managerId": 10,
+          "overallPick": 121,
+          "round": 13,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4426385",
+          "managerId": 2,
+          "overallPick": 122,
+          "round": 13,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "3116165",
+          "managerId": 3,
+          "overallPick": 123,
+          "round": 13,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "3886598",
+          "managerId": 4,
+          "overallPick": 124,
+          "round": 13,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4688813",
+          "managerId": 6,
+          "overallPick": 125,
+          "round": 13,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4361741",
+          "managerId": 9,
+          "overallPick": 126,
+          "round": 13,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "4360438",
+          "managerId": 5,
+          "overallPick": 127,
+          "round": 13,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "4427095",
+          "managerId": 1,
+          "overallPick": 128,
+          "round": 13,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4361579",
+          "managerId": 8,
+          "overallPick": 129,
+          "round": 13,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "3126486",
+          "managerId": 7,
+          "overallPick": 130,
+          "round": 13,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4040655",
+          "managerId": 7,
+          "overallPick": 131,
+          "round": 14,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4360569",
+          "managerId": 8,
+          "overallPick": 132,
+          "round": 14,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "4883647",
+          "managerId": 1,
+          "overallPick": 133,
+          "round": 14,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "4429013",
+          "managerId": 5,
+          "overallPick": 134,
+          "round": 14,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4603186",
+          "managerId": 9,
+          "overallPick": 135,
+          "round": 14,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4431459",
+          "managerId": 6,
+          "overallPick": 136,
+          "round": 14,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "3116385",
+          "managerId": 4,
+          "overallPick": 137,
+          "round": 14,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "4697815",
+          "managerId": 3,
+          "overallPick": 138,
+          "round": 14,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4711533",
+          "managerId": 2,
+          "overallPick": 139,
+          "round": 14,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "3123076",
+          "managerId": 10,
+          "overallPick": 140,
+          "round": 14,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4372019",
+          "managerId": 10,
+          "overallPick": 141,
+          "round": 15,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4360238",
+          "managerId": 2,
+          "overallPick": 142,
+          "round": 15,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "4695404",
+          "managerId": 3,
+          "overallPick": 143,
+          "round": 15,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "15818",
+          "managerId": 4,
+          "overallPick": 144,
+          "round": 15,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4258173",
+          "managerId": 6,
+          "overallPick": 145,
+          "round": 15,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4882093",
+          "managerId": 9,
+          "overallPick": 146,
+          "round": 15,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "4431452",
+          "managerId": 5,
+          "overallPick": 147,
+          "round": 15,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "3052587",
+          "managerId": 1,
+          "overallPick": 148,
+          "round": 15,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4242355",
+          "managerId": 8,
+          "overallPick": 149,
+          "round": 15,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "4385690",
+          "managerId": 7,
+          "overallPick": 150,
+          "round": 15,
+          "selectionInRound": 10
+        }
+      ],
+      "transactionsComplete": false,
+      "lineupsComplete": false,
+      "coverageNote": "Draft order imported from ESPN; complete player production in league scoring is still needed. Historical waiver transactions are unavailable through the connector."
+    },
+    "2022": {
+      "draftComplete": true,
+      "productionComplete": false,
+      "draft": [],
+      "players": [],
+      "sourceDraftPicks": [
+        {
+          "playerId": "4242335",
+          "managerId": 5,
+          "overallPick": 1,
+          "round": 1,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "3117251",
+          "managerId": 2,
+          "overallPick": 2,
+          "round": 1,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "4262921",
+          "managerId": 6,
+          "overallPick": 3,
+          "round": 1,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "2977187",
+          "managerId": 7,
+          "overallPick": 4,
+          "round": 1,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "3068267",
+          "managerId": 3,
+          "overallPick": 5,
+          "round": 1,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "3116593",
+          "managerId": 8,
+          "overallPick": 6,
+          "round": 1,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "4362628",
+          "managerId": 10,
+          "overallPick": 7,
+          "round": 1,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "3043078",
+          "managerId": 4,
+          "overallPick": 8,
+          "round": 1,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4241457",
+          "managerId": 9,
+          "overallPick": 9,
+          "round": 1,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "16800",
+          "managerId": 1,
+          "overallPick": 10,
+          "round": 1,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "2976212",
+          "managerId": 1,
+          "overallPick": 11,
+          "round": 2,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4241389",
+          "managerId": 9,
+          "overallPick": 12,
+          "round": 2,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "3116406",
+          "managerId": 4,
+          "overallPick": 13,
+          "round": 2,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "3126486",
+          "managerId": 10,
+          "overallPick": 14,
+          "round": 2,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "16737",
+          "managerId": 8,
+          "overallPick": 15,
+          "round": 2,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4239993",
+          "managerId": 3,
+          "overallPick": 16,
+          "round": 2,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "3116385",
+          "managerId": 7,
+          "overallPick": 17,
+          "round": 2,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "4259545",
+          "managerId": 6,
+          "overallPick": 18,
+          "round": 2,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "15847",
+          "managerId": 2,
+          "overallPick": 19,
+          "round": 2,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "15818",
+          "managerId": 5,
+          "overallPick": 20,
+          "round": 2,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4035687",
+          "managerId": 5,
+          "overallPick": 21,
+          "round": 3,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "3054850",
+          "managerId": 2,
+          "overallPick": 22,
+          "round": 3,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "3915416",
+          "managerId": 6,
+          "overallPick": 23,
+          "round": 3,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "3051392",
+          "managerId": 7,
+          "overallPick": 24,
+          "round": 3,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "3115364",
+          "managerId": 3,
+          "overallPick": 25,
+          "round": 3,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "3929630",
+          "managerId": 8,
+          "overallPick": 26,
+          "round": 3,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "4361579",
+          "managerId": 10,
+          "overallPick": 27,
+          "round": 3,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "3045147",
+          "managerId": 4,
+          "overallPick": 28,
+          "round": 3,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "3042519",
+          "managerId": 9,
+          "overallPick": 29,
+          "round": 3,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "3128720",
+          "managerId": 1,
+          "overallPick": 30,
+          "round": 3,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4241372",
+          "managerId": 1,
+          "overallPick": 31,
+          "round": 4,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4047646",
+          "managerId": 9,
+          "overallPick": 32,
+          "round": 4,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "3116365",
+          "managerId": 4,
+          "overallPick": 33,
+          "round": 4,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "4035538",
+          "managerId": 10,
+          "overallPick": 34,
+          "round": 4,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4360248",
+          "managerId": 8,
+          "overallPick": 35,
+          "round": 4,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "3121422",
+          "managerId": 3,
+          "overallPick": 36,
+          "round": 4,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "3045138",
+          "managerId": 7,
+          "overallPick": 37,
+          "round": 4,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "4240021",
+          "managerId": 6,
+          "overallPick": 38,
+          "round": 4,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "3128429",
+          "managerId": 2,
+          "overallPick": 39,
+          "round": 4,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "4239996",
+          "managerId": 5,
+          "overallPick": 40,
+          "round": 4,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4374302",
+          "managerId": 5,
+          "overallPick": 41,
+          "round": 5,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "16731",
+          "managerId": 2,
+          "overallPick": 42,
+          "round": 5,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "2576925",
+          "managerId": 6,
+          "overallPick": 43,
+          "round": 5,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "3117256",
+          "managerId": 7,
+          "overallPick": 44,
+          "round": 5,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "3040151",
+          "managerId": 3,
+          "overallPick": 45,
+          "round": 5,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "16799",
+          "managerId": 8,
+          "overallPick": 46,
+          "round": 5,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "3116165",
+          "managerId": 10,
+          "overallPick": 47,
+          "round": 5,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "4047365",
+          "managerId": 4,
+          "overallPick": 48,
+          "round": 5,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "3932905",
+          "managerId": 9,
+          "overallPick": 49,
+          "round": 5,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "4241985",
+          "managerId": 1,
+          "overallPick": 50,
+          "round": 5,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "2976316",
+          "managerId": 1,
+          "overallPick": 51,
+          "round": 6,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4036133",
+          "managerId": 9,
+          "overallPick": 52,
+          "round": 6,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "4047650",
+          "managerId": 4,
+          "overallPick": 53,
+          "round": 6,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "3918298",
+          "managerId": 10,
+          "overallPick": 54,
+          "round": 6,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "3139477",
+          "managerId": 8,
+          "overallPick": 55,
+          "round": 6,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4038941",
+          "managerId": 3,
+          "overallPick": 56,
+          "round": 6,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "3916387",
+          "managerId": 7,
+          "overallPick": 57,
+          "round": 6,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "3917315",
+          "managerId": 6,
+          "overallPick": 58,
+          "round": 6,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4372016",
+          "managerId": 2,
+          "overallPick": 59,
+          "round": 6,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "2330",
+          "managerId": 5,
+          "overallPick": 60,
+          "round": 6,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4427366",
+          "managerId": 5,
+          "overallPick": 61,
+          "round": 7,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "14881",
+          "managerId": 2,
+          "overallPick": 62,
+          "round": 7,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "4241463",
+          "managerId": 6,
+          "overallPick": 63,
+          "round": 7,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "3120348",
+          "managerId": 7,
+          "overallPick": 64,
+          "round": 7,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4040655",
+          "managerId": 3,
+          "overallPick": 65,
+          "round": 7,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4360438",
+          "managerId": 8,
+          "overallPick": 66,
+          "round": 7,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "3121023",
+          "managerId": 10,
+          "overallPick": 67,
+          "round": 7,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "2976499",
+          "managerId": 4,
+          "overallPick": 68,
+          "round": 7,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "3915511",
+          "managerId": 9,
+          "overallPick": 69,
+          "round": 7,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "4360238",
+          "managerId": 1,
+          "overallPick": 70,
+          "round": 7,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "15795",
+          "managerId": 1,
+          "overallPick": 71,
+          "round": 8,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4241555",
+          "managerId": 9,
+          "overallPick": 72,
+          "round": 8,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "4040715",
+          "managerId": 4,
+          "overallPick": 73,
+          "round": 8,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "4242214",
+          "managerId": 10,
+          "overallPick": 74,
+          "round": 8,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4361370",
+          "managerId": 8,
+          "overallPick": 75,
+          "round": 8,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4040761",
+          "managerId": 3,
+          "overallPick": 76,
+          "round": 8,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "3059915",
+          "managerId": 7,
+          "overallPick": 77,
+          "round": 8,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "3895856",
+          "managerId": 6,
+          "overallPick": 78,
+          "round": 8,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4360939",
+          "managerId": 2,
+          "overallPick": 79,
+          "round": 8,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "3135321",
+          "managerId": 5,
+          "overallPick": 80,
+          "round": 8,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4239934",
+          "managerId": 5,
+          "overallPick": 81,
+          "round": 9,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "3119195",
+          "managerId": 2,
+          "overallPick": 82,
+          "round": 9,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "4360294",
+          "managerId": 6,
+          "overallPick": 83,
+          "round": 9,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "3916148",
+          "managerId": 7,
+          "overallPick": 84,
+          "round": 9,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "3925347",
+          "managerId": 3,
+          "overallPick": 85,
+          "round": 9,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4045163",
+          "managerId": 8,
+          "overallPick": 86,
+          "round": 9,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "4243537",
+          "managerId": 10,
+          "overallPick": 87,
+          "round": 9,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "15807",
+          "managerId": 4,
+          "overallPick": 88,
+          "round": 9,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "3139925",
+          "managerId": 9,
+          "overallPick": 89,
+          "round": 9,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "16460",
+          "managerId": 1,
+          "overallPick": 90,
+          "round": 9,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "15835",
+          "managerId": 1,
+          "overallPick": 91,
+          "round": 10,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4241478",
+          "managerId": 9,
+          "overallPick": 92,
+          "round": 10,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "3128390",
+          "managerId": 4,
+          "overallPick": 93,
+          "round": 10,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "4052042",
+          "managerId": 10,
+          "overallPick": 94,
+          "round": 10,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4567048",
+          "managerId": 8,
+          "overallPick": 95,
+          "round": 10,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4372414",
+          "managerId": 3,
+          "overallPick": 96,
+          "round": 10,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "4046692",
+          "managerId": 7,
+          "overallPick": 97,
+          "round": 10,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "3045144",
+          "managerId": 6,
+          "overallPick": 98,
+          "round": 10,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "15880",
+          "managerId": 2,
+          "overallPick": 99,
+          "round": 10,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "3930086",
+          "managerId": 5,
+          "overallPick": 100,
+          "round": 10,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4036348",
+          "managerId": 5,
+          "overallPick": 101,
+          "round": 11,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4426502",
+          "managerId": 2,
+          "overallPick": 102,
+          "round": 11,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "2576434",
+          "managerId": 6,
+          "overallPick": 103,
+          "round": 11,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "4035004",
+          "managerId": 7,
+          "overallPick": 104,
+          "round": 11,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "2577327",
+          "managerId": 3,
+          "overallPick": 105,
+          "round": 11,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4426354",
+          "managerId": 8,
+          "overallPick": 106,
+          "round": 11,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "4430191",
+          "managerId": 10,
+          "overallPick": 107,
+          "round": 11,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "4569173",
+          "managerId": 4,
+          "overallPick": 108,
+          "round": 11,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4240600",
+          "managerId": 9,
+          "overallPick": 109,
+          "round": 11,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "14880",
+          "managerId": 1,
+          "overallPick": 110,
+          "round": 11,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4361432",
+          "managerId": 1,
+          "overallPick": 111,
+          "round": 12,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4240657",
+          "managerId": 9,
+          "overallPick": 112,
+          "round": 12,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "4361411",
+          "managerId": 4,
+          "overallPick": 113,
+          "round": 12,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "2573401",
+          "managerId": 10,
+          "overallPick": 114,
+          "round": 12,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "3916566",
+          "managerId": 8,
+          "overallPick": 115,
+          "round": 12,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "3916430",
+          "managerId": 3,
+          "overallPick": 116,
+          "round": 12,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "3046439",
+          "managerId": 7,
+          "overallPick": 117,
+          "round": 12,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "-16024",
+          "managerId": 6,
+          "overallPick": 118,
+          "round": 12,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4039359",
+          "managerId": 2,
+          "overallPick": 119,
+          "round": 12,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "2980453",
+          "managerId": 5,
+          "overallPick": 120,
+          "round": 12,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "2975674",
+          "managerId": 5,
+          "overallPick": 121,
+          "round": 13,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4371733",
+          "managerId": 2,
+          "overallPick": 122,
+          "round": 13,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "3115378",
+          "managerId": 6,
+          "overallPick": 123,
+          "round": 13,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "15683",
+          "managerId": 7,
+          "overallPick": 124,
+          "round": 13,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "-16002",
+          "managerId": 3,
+          "overallPick": 125,
+          "round": 13,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "-16033",
+          "managerId": 8,
+          "overallPick": 126,
+          "round": 13,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "4248528",
+          "managerId": 10,
+          "overallPick": 127,
+          "round": 13,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "8439",
+          "managerId": 4,
+          "overallPick": 128,
+          "round": 13,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4379399",
+          "managerId": 9,
+          "overallPick": 129,
+          "round": 13,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "4383351",
+          "managerId": 1,
+          "overallPick": 130,
+          "round": 13,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "16339",
+          "managerId": 1,
+          "overallPick": 131,
+          "round": 14,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "-16018",
+          "managerId": 9,
+          "overallPick": 132,
+          "round": 14,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "4567156",
+          "managerId": 4,
+          "overallPick": 133,
+          "round": 14,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "-16027",
+          "managerId": 10,
+          "overallPick": 134,
+          "round": 14,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4373626",
+          "managerId": 8,
+          "overallPick": 135,
+          "round": 14,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "12483",
+          "managerId": 3,
+          "overallPick": 136,
+          "round": 14,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "3052587",
+          "managerId": 7,
+          "overallPick": 137,
+          "round": 14,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "4241479",
+          "managerId": 6,
+          "overallPick": 138,
+          "round": 14,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "3917232",
+          "managerId": 2,
+          "overallPick": 139,
+          "round": 14,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "16757",
+          "managerId": 5,
+          "overallPick": 140,
+          "round": 14,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4360234",
+          "managerId": 5,
+          "overallPick": 141,
+          "round": 15,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "-16009",
+          "managerId": 2,
+          "overallPick": 142,
+          "round": 15,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "4249087",
+          "managerId": 6,
+          "overallPick": 143,
+          "round": 15,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "-16025",
+          "managerId": 7,
+          "overallPick": 144,
+          "round": 15,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "3055899",
+          "managerId": 3,
+          "overallPick": 145,
+          "round": 15,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "3051909",
+          "managerId": 8,
+          "overallPick": 146,
+          "round": 15,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "11237",
+          "managerId": 10,
+          "overallPick": 147,
+          "round": 15,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "10621",
+          "managerId": 4,
+          "overallPick": 148,
+          "round": 15,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "11122",
+          "managerId": 9,
+          "overallPick": 149,
+          "round": 15,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "-16011",
+          "managerId": 1,
+          "overallPick": 150,
+          "round": 15,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4241416",
+          "managerId": 1,
+          "overallPick": 151,
+          "round": 16,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "2577417",
+          "managerId": 9,
+          "overallPick": 152,
+          "round": 16,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "-16023",
+          "managerId": 4,
+          "overallPick": 153,
+          "round": 16,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "15965",
+          "managerId": 10,
+          "overallPick": 154,
+          "round": 16,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "16782",
+          "managerId": 8,
+          "overallPick": 155,
+          "round": 16,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "-16012",
+          "managerId": 3,
+          "overallPick": 156,
+          "round": 16,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "16725",
+          "managerId": 7,
+          "overallPick": 157,
+          "round": 16,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "3051738",
+          "managerId": 6,
+          "overallPick": 158,
+          "round": 16,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4569587",
+          "managerId": 2,
+          "overallPick": 159,
+          "round": 16,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "-16014",
+          "managerId": 5,
+          "overallPick": 160,
+          "round": 16,
+          "selectionInRound": 10
+        }
+      ],
+      "transactionsComplete": false,
+      "lineupsComplete": false,
+      "coverageNote": "Draft order imported from ESPN; complete player production in league scoring is still needed. Historical waiver transactions are unavailable through the connector."
+    },
+    "2023": {
+      "draftComplete": true,
+      "productionComplete": false,
+      "draft": [],
+      "players": [],
+      "sourceDraftPicks": [
+        {
+          "playerId": "15847",
+          "managerId": 10,
+          "overallPick": 1,
+          "round": 1,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4430807",
+          "managerId": 6,
+          "overallPick": 2,
+          "round": 1,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "3116406",
+          "managerId": 7,
+          "overallPick": 3,
+          "round": 1,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "3128720",
+          "managerId": 8,
+          "overallPick": 4,
+          "round": 1,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "16800",
+          "managerId": 3,
+          "overallPick": 5,
+          "round": 1,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4362628",
+          "managerId": 5,
+          "overallPick": 6,
+          "round": 1,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "3068267",
+          "managerId": 1,
+          "overallPick": 7,
+          "round": 1,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "3117251",
+          "managerId": 4,
+          "overallPick": 8,
+          "round": 1,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4262921",
+          "managerId": 2,
+          "overallPick": 9,
+          "round": 1,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "3043078",
+          "managerId": 9,
+          "overallPick": 10,
+          "round": 1,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "2976212",
+          "managerId": 9,
+          "overallPick": 11,
+          "round": 2,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4047646",
+          "managerId": 2,
+          "overallPick": 12,
+          "round": 2,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "4047365",
+          "managerId": 4,
+          "overallPick": 13,
+          "round": 2,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "4569618",
+          "managerId": 1,
+          "overallPick": 14,
+          "round": 2,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "3139477",
+          "managerId": 5,
+          "overallPick": 15,
+          "round": 2,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "3916148",
+          "managerId": 3,
+          "overallPick": 16,
+          "round": 2,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "4241389",
+          "managerId": 8,
+          "overallPick": 17,
+          "round": 2,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "3116385",
+          "managerId": 7,
+          "overallPick": 18,
+          "round": 2,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "3929630",
+          "managerId": 6,
+          "overallPick": 19,
+          "round": 2,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "4239996",
+          "managerId": 10,
+          "overallPick": 20,
+          "round": 2,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4372016",
+          "managerId": 10,
+          "overallPick": 21,
+          "round": 3,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4239993",
+          "managerId": 6,
+          "overallPick": 22,
+          "round": 3,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "4048244",
+          "managerId": 7,
+          "overallPick": 23,
+          "round": 3,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "3126486",
+          "managerId": 8,
+          "overallPick": 24,
+          "round": 3,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4241457",
+          "managerId": 3,
+          "overallPick": 25,
+          "round": 3,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4429795",
+          "managerId": 5,
+          "overallPick": 26,
+          "round": 3,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "4361370",
+          "managerId": 1,
+          "overallPick": 27,
+          "round": 3,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "4047650",
+          "managerId": 4,
+          "overallPick": 28,
+          "round": 3,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4374302",
+          "managerId": 2,
+          "overallPick": 29,
+          "round": 3,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "4241478",
+          "managerId": 9,
+          "overallPick": 30,
+          "round": 3,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4569173",
+          "managerId": 9,
+          "overallPick": 31,
+          "round": 4,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "3045147",
+          "managerId": 2,
+          "overallPick": 32,
+          "round": 4,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "4360238",
+          "managerId": 4,
+          "overallPick": 33,
+          "round": 4,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "2977187",
+          "managerId": 1,
+          "overallPick": 34,
+          "round": 4,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4248528",
+          "managerId": 5,
+          "overallPick": 35,
+          "round": 4,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "3925357",
+          "managerId": 3,
+          "overallPick": 36,
+          "round": 4,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "3042519",
+          "managerId": 8,
+          "overallPick": 37,
+          "round": 4,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "3040151",
+          "managerId": 7,
+          "overallPick": 38,
+          "round": 4,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "3116365",
+          "managerId": 6,
+          "overallPick": 39,
+          "round": 4,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "2976499",
+          "managerId": 10,
+          "overallPick": 40,
+          "round": 4,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4697815",
+          "managerId": 10,
+          "overallPick": 41,
+          "round": 5,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "3916387",
+          "managerId": 6,
+          "overallPick": 42,
+          "round": 5,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "3045138",
+          "managerId": 7,
+          "overallPick": 43,
+          "round": 5,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "3932905",
+          "managerId": 8,
+          "overallPick": 44,
+          "round": 5,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4040715",
+          "managerId": 3,
+          "overallPick": 45,
+          "round": 5,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4567048",
+          "managerId": 5,
+          "overallPick": 46,
+          "round": 5,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "15818",
+          "managerId": 1,
+          "overallPick": 47,
+          "round": 5,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "15795",
+          "managerId": 4,
+          "overallPick": 48,
+          "round": 5,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "3918298",
+          "managerId": 2,
+          "overallPick": 49,
+          "round": 5,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "3915511",
+          "managerId": 9,
+          "overallPick": 50,
+          "round": 5,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4036133",
+          "managerId": 9,
+          "overallPick": 51,
+          "round": 6,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4045163",
+          "managerId": 2,
+          "overallPick": 52,
+          "round": 6,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "2576925",
+          "managerId": 4,
+          "overallPick": 53,
+          "round": 6,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "4362887",
+          "managerId": 1,
+          "overallPick": 54,
+          "round": 6,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "3915416",
+          "managerId": 5,
+          "overallPick": 55,
+          "round": 6,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "3116165",
+          "managerId": 3,
+          "overallPick": 56,
+          "round": 6,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "4038941",
+          "managerId": 8,
+          "overallPick": 57,
+          "round": 6,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "3054850",
+          "managerId": 7,
+          "overallPick": 58,
+          "round": 6,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4427366",
+          "managerId": 6,
+          "overallPick": 59,
+          "round": 6,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "3121422",
+          "managerId": 10,
+          "overallPick": 60,
+          "round": 6,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4360310",
+          "managerId": 10,
+          "overallPick": 61,
+          "round": 7,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "2577327",
+          "managerId": 6,
+          "overallPick": 62,
+          "round": 7,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "4241479",
+          "managerId": 7,
+          "overallPick": 63,
+          "round": 7,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "4241985",
+          "managerId": 8,
+          "overallPick": 64,
+          "round": 7,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "3121023",
+          "managerId": 3,
+          "overallPick": 65,
+          "round": 7,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4360248",
+          "managerId": 5,
+          "overallPick": 66,
+          "round": 7,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "4361579",
+          "managerId": 1,
+          "overallPick": 67,
+          "round": 7,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "4379399",
+          "managerId": 4,
+          "overallPick": 68,
+          "round": 7,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4360294",
+          "managerId": 2,
+          "overallPick": 69,
+          "round": 7,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "16737",
+          "managerId": 9,
+          "overallPick": 70,
+          "round": 7,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4242335",
+          "managerId": 9,
+          "overallPick": 71,
+          "round": 8,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4426502",
+          "managerId": 2,
+          "overallPick": 72,
+          "round": 8,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "4035687",
+          "managerId": 4,
+          "overallPick": 73,
+          "round": 8,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "3116593",
+          "managerId": 1,
+          "overallPick": 74,
+          "round": 8,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4426354",
+          "managerId": 5,
+          "overallPick": 75,
+          "round": 8,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4035538",
+          "managerId": 3,
+          "overallPick": 76,
+          "round": 8,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "4240021",
+          "managerId": 8,
+          "overallPick": 77,
+          "round": 8,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "3895856",
+          "managerId": 7,
+          "overallPick": 78,
+          "round": 8,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4241463",
+          "managerId": 6,
+          "overallPick": 79,
+          "round": 8,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "2576414",
+          "managerId": 10,
+          "overallPick": 80,
+          "round": 8,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "2976316",
+          "managerId": 10,
+          "overallPick": 81,
+          "round": 9,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4361409",
+          "managerId": 6,
+          "overallPick": 82,
+          "round": 9,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "4361529",
+          "managerId": 7,
+          "overallPick": 83,
+          "round": 9,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "-16006",
+          "managerId": 8,
+          "overallPick": 84,
+          "round": 9,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4429205",
+          "managerId": 3,
+          "overallPick": 85,
+          "round": 9,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4239934",
+          "managerId": 5,
+          "overallPick": 86,
+          "round": 9,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "4035886",
+          "managerId": 1,
+          "overallPick": 87,
+          "round": 9,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "4360438",
+          "managerId": 4,
+          "overallPick": 88,
+          "round": 9,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "3051876",
+          "managerId": 2,
+          "overallPick": 89,
+          "round": 9,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "16731",
+          "managerId": 9,
+          "overallPick": 90,
+          "round": 9,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "3128429",
+          "managerId": 9,
+          "overallPick": 91,
+          "round": 10,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4241372",
+          "managerId": 2,
+          "overallPick": 92,
+          "round": 10,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "4259545",
+          "managerId": 4,
+          "overallPick": 93,
+          "round": 10,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "4429615",
+          "managerId": 1,
+          "overallPick": 94,
+          "round": 10,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "-16025",
+          "managerId": 5,
+          "overallPick": 95,
+          "round": 10,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "-16002",
+          "managerId": 3,
+          "overallPick": 96,
+          "round": 10,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "15683",
+          "managerId": 8,
+          "overallPick": 97,
+          "round": 10,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "4430191",
+          "managerId": 7,
+          "overallPick": 98,
+          "round": 10,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4243537",
+          "managerId": 6,
+          "overallPick": 99,
+          "round": 10,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "16733",
+          "managerId": 10,
+          "overallPick": 100,
+          "round": 10,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4240455",
+          "managerId": 10,
+          "overallPick": 101,
+          "round": 11,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4567156",
+          "managerId": 6,
+          "overallPick": 102,
+          "round": 11,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "3055899",
+          "managerId": 7,
+          "overallPick": 103,
+          "round": 11,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "4361411",
+          "managerId": 8,
+          "overallPick": 104,
+          "round": 11,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "3139925",
+          "managerId": 3,
+          "overallPick": 105,
+          "round": 11,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "3122976",
+          "managerId": 5,
+          "overallPick": 106,
+          "round": 11,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "2980453",
+          "managerId": 1,
+          "overallPick": 107,
+          "round": 11,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "4241474",
+          "managerId": 4,
+          "overallPick": 108,
+          "round": 11,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4426385",
+          "managerId": 2,
+          "overallPick": 109,
+          "round": 11,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "3116389",
+          "managerId": 9,
+          "overallPick": 110,
+          "round": 11,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4430878",
+          "managerId": 9,
+          "overallPick": 111,
+          "round": 12,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "16782",
+          "managerId": 2,
+          "overallPick": 112,
+          "round": 12,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "3122840",
+          "managerId": 4,
+          "overallPick": 113,
+          "round": 12,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "2577417",
+          "managerId": 1,
+          "overallPick": 114,
+          "round": 12,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "2473037",
+          "managerId": 5,
+          "overallPick": 115,
+          "round": 12,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "3051909",
+          "managerId": 3,
+          "overallPick": 116,
+          "round": 12,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "3123076",
+          "managerId": 8,
+          "overallPick": 117,
+          "round": 12,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "3117256",
+          "managerId": 7,
+          "overallPick": 118,
+          "round": 12,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4385690",
+          "managerId": 6,
+          "overallPick": 119,
+          "round": 12,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "4240600",
+          "managerId": 10,
+          "overallPick": 120,
+          "round": 12,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "8439",
+          "managerId": 10,
+          "overallPick": 121,
+          "round": 13,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4426386",
+          "managerId": 6,
+          "overallPick": 122,
+          "round": 13,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "3051392",
+          "managerId": 7,
+          "overallPick": 123,
+          "round": 13,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "3120348",
+          "managerId": 8,
+          "overallPick": 124,
+          "round": 13,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4040761",
+          "managerId": 3,
+          "overallPick": 125,
+          "round": 13,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4429084",
+          "managerId": 5,
+          "overallPick": 126,
+          "round": 13,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "-16018",
+          "managerId": 1,
+          "overallPick": 127,
+          "round": 13,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "-16023",
+          "managerId": 4,
+          "overallPick": 128,
+          "round": 13,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "-16021",
+          "managerId": 2,
+          "overallPick": 129,
+          "round": 13,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "-16009",
+          "managerId": 9,
+          "overallPick": 130,
+          "round": 13,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4241555",
+          "managerId": 9,
+          "overallPick": 131,
+          "round": 14,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4371733",
+          "managerId": 2,
+          "overallPick": 132,
+          "round": 14,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "2573401",
+          "managerId": 4,
+          "overallPick": 133,
+          "round": 14,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "4428085",
+          "managerId": 1,
+          "overallPick": 134,
+          "round": 14,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4258173",
+          "managerId": 5,
+          "overallPick": 135,
+          "round": 14,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "16757",
+          "managerId": 3,
+          "overallPick": 136,
+          "round": 14,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "4429025",
+          "managerId": 8,
+          "overallPick": 137,
+          "round": 14,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "3128390",
+          "managerId": 7,
+          "overallPick": 138,
+          "round": 14,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4036348",
+          "managerId": 6,
+          "overallPick": 139,
+          "round": 14,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "4360234",
+          "managerId": 10,
+          "overallPick": 140,
+          "round": 14,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4569987",
+          "managerId": 10,
+          "overallPick": 141,
+          "round": 15,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "3049899",
+          "managerId": 6,
+          "overallPick": 142,
+          "round": 15,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "14880",
+          "managerId": 7,
+          "overallPick": 143,
+          "round": 15,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "4426388",
+          "managerId": 8,
+          "overallPick": 144,
+          "round": 15,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "3115394",
+          "managerId": 3,
+          "overallPick": 145,
+          "round": 15,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4429013",
+          "managerId": 5,
+          "overallPick": 146,
+          "round": 15,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "3050478",
+          "managerId": 1,
+          "overallPick": 147,
+          "round": 15,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "12460",
+          "managerId": 4,
+          "overallPick": 148,
+          "round": 15,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "3917232",
+          "managerId": 2,
+          "overallPick": 149,
+          "round": 15,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "3917792",
+          "managerId": 9,
+          "overallPick": 150,
+          "round": 15,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "3916433",
+          "managerId": 9,
+          "overallPick": 151,
+          "round": 16,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "3930066",
+          "managerId": 2,
+          "overallPick": 152,
+          "round": 16,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "16460",
+          "managerId": 4,
+          "overallPick": 153,
+          "round": 16,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "4366031",
+          "managerId": 1,
+          "overallPick": 154,
+          "round": 16,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4258595",
+          "managerId": 5,
+          "overallPick": 155,
+          "round": 16,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "3045144",
+          "managerId": 3,
+          "overallPick": 156,
+          "round": 16,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "15807",
+          "managerId": 8,
+          "overallPick": 157,
+          "round": 16,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "-16015",
+          "managerId": 7,
+          "overallPick": 158,
+          "round": 16,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "-16020",
+          "managerId": 6,
+          "overallPick": 159,
+          "round": 16,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "-16027",
+          "managerId": 10,
+          "overallPick": 160,
+          "round": 16,
+          "selectionInRound": 10
+        }
+      ],
+      "transactionsComplete": false,
+      "lineupsComplete": false,
+      "coverageNote": "Draft order imported from ESPN; complete player production in league scoring is still needed. Historical waiver transactions are unavailable through the connector."
+    },
+    "2024": {
+      "draftComplete": true,
+      "productionComplete": false,
+      "draft": [],
+      "players": [],
+      "sourceDraftPicks": [
+        {
+          "playerId": "4362628",
+          "managerId": 3,
+          "overallPick": 1,
+          "round": 1,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4241389",
+          "managerId": 1,
+          "overallPick": 2,
+          "round": 1,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "3116406",
+          "managerId": 2,
+          "overallPick": 3,
+          "round": 1,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "4374302",
+          "managerId": 7,
+          "overallPick": 4,
+          "round": 1,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4569618",
+          "managerId": 5,
+          "overallPick": 5,
+          "round": 1,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4427366",
+          "managerId": 6,
+          "overallPick": 6,
+          "round": 1,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "4426515",
+          "managerId": 9,
+          "overallPick": 7,
+          "round": 1,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "4430807",
+          "managerId": 4,
+          "overallPick": 8,
+          "round": 1,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4047646",
+          "managerId": 10,
+          "overallPick": 9,
+          "round": 1,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "3117251",
+          "managerId": 8,
+          "overallPick": 10,
+          "round": 1,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "16800",
+          "managerId": 8,
+          "overallPick": 11,
+          "round": 2,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4262921",
+          "managerId": 10,
+          "overallPick": 12,
+          "round": 2,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "3929630",
+          "managerId": 4,
+          "overallPick": 13,
+          "round": 2,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "4429795",
+          "managerId": 9,
+          "overallPick": 14,
+          "round": 2,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4242335",
+          "managerId": 6,
+          "overallPick": 15,
+          "round": 2,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4430737",
+          "managerId": 5,
+          "overallPick": 16,
+          "round": 2,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "3043078",
+          "managerId": 7,
+          "overallPick": 17,
+          "round": 2,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "4429160",
+          "managerId": 2,
+          "overallPick": 18,
+          "round": 2,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4379399",
+          "managerId": 1,
+          "overallPick": 19,
+          "round": 2,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "4361529",
+          "managerId": 3,
+          "overallPick": 20,
+          "round": 2,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4567048",
+          "managerId": 3,
+          "overallPick": 21,
+          "round": 3,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4047365",
+          "managerId": 1,
+          "overallPick": 22,
+          "round": 3,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "4432708",
+          "managerId": 2,
+          "overallPick": 23,
+          "round": 3,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "15847",
+          "managerId": 7,
+          "overallPick": 24,
+          "round": 3,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "3116385",
+          "managerId": 5,
+          "overallPick": 25,
+          "round": 3,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "2977187",
+          "managerId": 6,
+          "overallPick": 26,
+          "round": 3,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "4239996",
+          "managerId": 9,
+          "overallPick": 27,
+          "round": 3,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "4361370",
+          "managerId": 4,
+          "overallPick": 28,
+          "round": 3,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4697815",
+          "managerId": 10,
+          "overallPick": 29,
+          "round": 3,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "3054850",
+          "managerId": 8,
+          "overallPick": 30,
+          "round": 3,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "2976212",
+          "managerId": 8,
+          "overallPick": 31,
+          "round": 4,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4361777",
+          "managerId": 10,
+          "overallPick": 32,
+          "round": 4,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "4035687",
+          "managerId": 4,
+          "overallPick": 33,
+          "round": 4,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "4426502",
+          "managerId": 9,
+          "overallPick": 34,
+          "round": 4,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4258173",
+          "managerId": 6,
+          "overallPick": 35,
+          "round": 4,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "16737",
+          "managerId": 5,
+          "overallPick": 36,
+          "round": 4,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "3126486",
+          "managerId": 7,
+          "overallPick": 37,
+          "round": 4,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "4241478",
+          "managerId": 2,
+          "overallPick": 38,
+          "round": 4,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4360438",
+          "managerId": 1,
+          "overallPick": 39,
+          "round": 4,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "4595348",
+          "managerId": 3,
+          "overallPick": 40,
+          "round": 4,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4241457",
+          "managerId": 3,
+          "overallPick": 41,
+          "round": 5,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4047650",
+          "managerId": 1,
+          "overallPick": 42,
+          "round": 5,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "3045147",
+          "managerId": 2,
+          "overallPick": 43,
+          "round": 5,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "4259545",
+          "managerId": 7,
+          "overallPick": 44,
+          "round": 5,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4372016",
+          "managerId": 5,
+          "overallPick": 45,
+          "round": 5,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "3918298",
+          "managerId": 6,
+          "overallPick": 46,
+          "round": 5,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "3139477",
+          "managerId": 9,
+          "overallPick": 47,
+          "round": 5,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "4366031",
+          "managerId": 4,
+          "overallPick": 48,
+          "round": 5,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "3042519",
+          "managerId": 10,
+          "overallPick": 49,
+          "round": 5,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "4429615",
+          "managerId": 8,
+          "overallPick": 50,
+          "round": 5,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4428331",
+          "managerId": 8,
+          "overallPick": 51,
+          "round": 6,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "2976499",
+          "managerId": 10,
+          "overallPick": 52,
+          "round": 6,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "4361307",
+          "managerId": 4,
+          "overallPick": 53,
+          "round": 6,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "4569173",
+          "managerId": 9,
+          "overallPick": 54,
+          "round": 6,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "3121422",
+          "managerId": 6,
+          "overallPick": 55,
+          "round": 6,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4430027",
+          "managerId": 5,
+          "overallPick": 56,
+          "round": 6,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "3916387",
+          "managerId": 7,
+          "overallPick": 57,
+          "round": 6,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "4040715",
+          "managerId": 2,
+          "overallPick": 58,
+          "round": 6,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4426354",
+          "managerId": 1,
+          "overallPick": 59,
+          "round": 6,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "3051876",
+          "managerId": 3,
+          "overallPick": 60,
+          "round": 6,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "15818",
+          "managerId": 3,
+          "overallPick": 61,
+          "round": 7,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4035538",
+          "managerId": 1,
+          "overallPick": 62,
+          "round": 7,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "3116365",
+          "managerId": 2,
+          "overallPick": 63,
+          "round": 7,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "3925357",
+          "managerId": 7,
+          "overallPick": 64,
+          "round": 7,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4362249",
+          "managerId": 5,
+          "overallPick": 65,
+          "round": 7,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "3116165",
+          "managerId": 6,
+          "overallPick": 66,
+          "round": 7,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "4239993",
+          "managerId": 9,
+          "overallPick": 67,
+          "round": 7,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "3068267",
+          "managerId": 4,
+          "overallPick": 68,
+          "round": 7,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4361579",
+          "managerId": 10,
+          "overallPick": 69,
+          "round": 7,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "4385690",
+          "managerId": 8,
+          "overallPick": 70,
+          "round": 7,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "2576414",
+          "managerId": 8,
+          "overallPick": 71,
+          "round": 8,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4360248",
+          "managerId": 10,
+          "overallPick": 72,
+          "round": 8,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "3916148",
+          "managerId": 4,
+          "overallPick": 73,
+          "round": 8,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "3040151",
+          "managerId": 9,
+          "overallPick": 74,
+          "round": 8,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4242355",
+          "managerId": 6,
+          "overallPick": 75,
+          "round": 8,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4569987",
+          "managerId": 5,
+          "overallPick": 76,
+          "round": 8,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "4241474",
+          "managerId": 7,
+          "overallPick": 77,
+          "round": 8,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "3895856",
+          "managerId": 2,
+          "overallPick": 78,
+          "round": 8,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "3917315",
+          "managerId": 1,
+          "overallPick": 79,
+          "round": 8,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "4429084",
+          "managerId": 3,
+          "overallPick": 80,
+          "round": 8,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "3128720",
+          "managerId": 3,
+          "overallPick": 81,
+          "round": 9,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "2577417",
+          "managerId": 1,
+          "overallPick": 82,
+          "round": 9,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "3932905",
+          "managerId": 2,
+          "overallPick": 83,
+          "round": 9,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "3055899",
+          "managerId": 7,
+          "overallPick": 84,
+          "round": 9,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4036378",
+          "managerId": 5,
+          "overallPick": 85,
+          "round": 9,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4362238",
+          "managerId": 6,
+          "overallPick": 86,
+          "round": 9,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "4430878",
+          "managerId": 9,
+          "overallPick": 87,
+          "round": 9,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "4432577",
+          "managerId": 4,
+          "overallPick": 88,
+          "round": 9,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4248528",
+          "managerId": 10,
+          "overallPick": 89,
+          "round": 9,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "3915511",
+          "managerId": 8,
+          "overallPick": 90,
+          "round": 9,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4678008",
+          "managerId": 8,
+          "overallPick": 91,
+          "round": 10,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4426388",
+          "managerId": 10,
+          "overallPick": 92,
+          "round": 10,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "4683062",
+          "managerId": 4,
+          "overallPick": 93,
+          "round": 10,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "4428557",
+          "managerId": 9,
+          "overallPick": 94,
+          "round": 10,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4372019",
+          "managerId": 6,
+          "overallPick": 95,
+          "round": 10,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4040761",
+          "managerId": 5,
+          "overallPick": 96,
+          "round": 10,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "4241985",
+          "managerId": 7,
+          "overallPick": 97,
+          "round": 10,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "3051926",
+          "managerId": 2,
+          "overallPick": 98,
+          "round": 10,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4241372",
+          "managerId": 1,
+          "overallPick": 99,
+          "round": 10,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "3128429",
+          "managerId": 3,
+          "overallPick": 100,
+          "round": 10,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "14880",
+          "managerId": 3,
+          "overallPick": 101,
+          "round": 11,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4373678",
+          "managerId": 1,
+          "overallPick": 102,
+          "round": 11,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "4035676",
+          "managerId": 2,
+          "overallPick": 103,
+          "round": 11,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "4429205",
+          "managerId": 7,
+          "overallPick": 104,
+          "round": 11,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "3123076",
+          "managerId": 5,
+          "overallPick": 105,
+          "round": 11,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4612826",
+          "managerId": 6,
+          "overallPick": 106,
+          "round": 11,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "4635008",
+          "managerId": 9,
+          "overallPick": 107,
+          "round": 11,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "3051392",
+          "managerId": 4,
+          "overallPick": 108,
+          "round": 11,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4431299",
+          "managerId": 10,
+          "overallPick": 109,
+          "round": 11,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "3121023",
+          "managerId": 8,
+          "overallPick": 110,
+          "round": 11,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4241463",
+          "managerId": 8,
+          "overallPick": 111,
+          "round": 12,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4431611",
+          "managerId": 10,
+          "overallPick": 112,
+          "round": 12,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "3045138",
+          "managerId": 4,
+          "overallPick": 113,
+          "round": 12,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "3953687",
+          "managerId": 9,
+          "overallPick": 114,
+          "round": 12,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4426348",
+          "managerId": 6,
+          "overallPick": 115,
+          "round": 12,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4432773",
+          "managerId": 5,
+          "overallPick": 116,
+          "round": 12,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "3120348",
+          "managerId": 7,
+          "overallPick": 117,
+          "round": 12,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "4038815",
+          "managerId": 2,
+          "overallPick": 118,
+          "round": 12,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4432665",
+          "managerId": 1,
+          "overallPick": 119,
+          "round": 12,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "-16025",
+          "managerId": 3,
+          "overallPick": 120,
+          "round": 12,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "15795",
+          "managerId": 3,
+          "overallPick": 121,
+          "round": 13,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "-16005",
+          "managerId": 1,
+          "overallPick": 122,
+          "round": 13,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "-16033",
+          "managerId": 2,
+          "overallPick": 123,
+          "round": 13,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "3121427",
+          "managerId": 7,
+          "overallPick": 124,
+          "round": 13,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "8439",
+          "managerId": 5,
+          "overallPick": 125,
+          "round": 13,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "-16020",
+          "managerId": 6,
+          "overallPick": 126,
+          "round": 13,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "-16023",
+          "managerId": 9,
+          "overallPick": 127,
+          "round": 13,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "3916433",
+          "managerId": 4,
+          "overallPick": 128,
+          "round": 13,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "15683",
+          "managerId": 10,
+          "overallPick": 129,
+          "round": 13,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "-16006",
+          "managerId": 8,
+          "overallPick": 130,
+          "round": 13,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "16460",
+          "managerId": 8,
+          "overallPick": 131,
+          "round": 14,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4038941",
+          "managerId": 10,
+          "overallPick": 132,
+          "round": 14,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "2971573",
+          "managerId": 4,
+          "overallPick": 133,
+          "round": 14,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "2577327",
+          "managerId": 9,
+          "overallPick": 134,
+          "round": 14,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4685247",
+          "managerId": 6,
+          "overallPick": 135,
+          "round": 14,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4429096",
+          "managerId": 5,
+          "overallPick": 136,
+          "round": 14,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "4241416",
+          "managerId": 7,
+          "overallPick": 137,
+          "round": 14,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "4360294",
+          "managerId": 2,
+          "overallPick": 138,
+          "round": 14,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4249087",
+          "managerId": 1,
+          "overallPick": 139,
+          "round": 14,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "3050478",
+          "managerId": 3,
+          "overallPick": 140,
+          "round": 14,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "3915416",
+          "managerId": 3,
+          "overallPick": 141,
+          "round": 15,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4596448",
+          "managerId": 1,
+          "overallPick": 142,
+          "round": 15,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "3124679",
+          "managerId": 2,
+          "overallPick": 143,
+          "round": 15,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "-16004",
+          "managerId": 7,
+          "overallPick": 144,
+          "round": 15,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "14993",
+          "managerId": 5,
+          "overallPick": 145,
+          "round": 15,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4372066",
+          "managerId": 6,
+          "overallPick": 146,
+          "round": 15,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "4361741",
+          "managerId": 9,
+          "overallPick": 147,
+          "round": 15,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "-16012",
+          "managerId": 4,
+          "overallPick": 148,
+          "round": 15,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "-16003",
+          "managerId": 10,
+          "overallPick": 149,
+          "round": 15,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "4360234",
+          "managerId": 8,
+          "overallPick": 150,
+          "round": 15,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "-1",
+          "managerId": 8,
+          "overallPick": 151,
+          "round": 16,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "-1",
+          "managerId": 10,
+          "overallPick": 152,
+          "round": 16,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "-1",
+          "managerId": 4,
+          "overallPick": 153,
+          "round": 16,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "-1",
+          "managerId": 9,
+          "overallPick": 154,
+          "round": 16,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "-1",
+          "managerId": 6,
+          "overallPick": 155,
+          "round": 16,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "-1",
+          "managerId": 5,
+          "overallPick": 156,
+          "round": 16,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "-1",
+          "managerId": 7,
+          "overallPick": 157,
+          "round": 16,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "-1",
+          "managerId": 2,
+          "overallPick": 158,
+          "round": 16,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "-1",
+          "managerId": 1,
+          "overallPick": 159,
+          "round": 16,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "-1",
+          "managerId": 3,
+          "overallPick": 160,
+          "round": 16,
+          "selectionInRound": 10
+        }
+      ],
+      "transactionsComplete": false,
+      "lineupsComplete": false,
+      "coverageNote": "Draft order imported from ESPN; complete player production in league scoring is still needed. Historical waiver transactions are unavailable through the connector."
+    },
+    "2026": {
+      "draftComplete": true,
+      "productionComplete": false,
+      "draft": [],
+      "players": [],
+      "sourceDraftPicks": [
+        {
+          "playerId": "4430807",
+          "managerId": 8,
+          "overallPick": 1,
+          "round": 1,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4429795",
+          "managerId": 9,
+          "overallPick": 2,
+          "round": 1,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "4362628",
+          "managerId": 2,
+          "overallPick": 3,
+          "round": 1,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "4242335",
+          "managerId": 10,
+          "overallPick": 4,
+          "round": 1,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4426515",
+          "managerId": 6,
+          "overallPick": 5,
+          "round": 1,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4374302",
+          "managerId": 1,
+          "overallPick": 6,
+          "round": 1,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "4430878",
+          "managerId": 4,
+          "overallPick": 7,
+          "round": 1,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "4379399",
+          "managerId": 7,
+          "overallPick": 8,
+          "round": 1,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4262921",
+          "managerId": 5,
+          "overallPick": 9,
+          "round": 1,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "4429160",
+          "managerId": 3,
+          "overallPick": 10,
+          "round": 1,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4890973",
+          "managerId": 3,
+          "overallPick": 11,
+          "round": 2,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "3117251",
+          "managerId": 5,
+          "overallPick": 12,
+          "round": 2,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "4426502",
+          "managerId": 7,
+          "overallPick": 13,
+          "round": 2,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "4241389",
+          "managerId": 4,
+          "overallPick": 14,
+          "round": 2,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "3929630",
+          "managerId": 1,
+          "overallPick": 15,
+          "round": 2,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4362238",
+          "managerId": 6,
+          "overallPick": 16,
+          "round": 2,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "3043078",
+          "managerId": 10,
+          "overallPick": 17,
+          "round": 2,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "4432665",
+          "managerId": 2,
+          "overallPick": 18,
+          "round": 2,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4428331",
+          "managerId": 9,
+          "overallPick": 19,
+          "round": 2,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "4567048",
+          "managerId": 8,
+          "overallPick": 20,
+          "round": 2,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4361370",
+          "managerId": 8,
+          "overallPick": 21,
+          "round": 3,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4258173",
+          "managerId": 9,
+          "overallPick": 22,
+          "round": 3,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "3918298",
+          "managerId": 2,
+          "overallPick": 23,
+          "round": 3,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "4047646",
+          "managerId": 10,
+          "overallPick": 24,
+          "round": 3,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4685382",
+          "managerId": 6,
+          "overallPick": 25,
+          "round": 3,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4595348",
+          "managerId": 1,
+          "overallPick": 26,
+          "round": 3,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "4361307",
+          "managerId": 4,
+          "overallPick": 27,
+          "round": 3,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "4426354",
+          "managerId": 7,
+          "overallPick": 28,
+          "round": 3,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4361579",
+          "managerId": 5,
+          "overallPick": 29,
+          "round": 3,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "4429615",
+          "managerId": 3,
+          "overallPick": 30,
+          "round": 3,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4569618",
+          "managerId": 3,
+          "overallPick": 31,
+          "round": 4,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4567750",
+          "managerId": 5,
+          "overallPick": 32,
+          "round": 4,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "4239996",
+          "managerId": 7,
+          "overallPick": 33,
+          "round": 4,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "4047365",
+          "managerId": 4,
+          "overallPick": 34,
+          "round": 4,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4870808",
+          "managerId": 1,
+          "overallPick": 35,
+          "round": 4,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4723086",
+          "managerId": 6,
+          "overallPick": 36,
+          "round": 4,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "4685472",
+          "managerId": 10,
+          "overallPick": 37,
+          "round": 4,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "4430737",
+          "managerId": 2,
+          "overallPick": 38,
+          "round": 4,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4427366",
+          "managerId": 9,
+          "overallPick": 39,
+          "round": 4,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "4239993",
+          "managerId": 8,
+          "overallPick": 40,
+          "round": 4,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4035538",
+          "managerId": 8,
+          "overallPick": 41,
+          "round": 5,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4241478",
+          "managerId": 9,
+          "overallPick": 42,
+          "round": 5,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "4372016",
+          "managerId": 2,
+          "overallPick": 43,
+          "round": 5,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "3916387",
+          "managerId": 10,
+          "overallPick": 44,
+          "round": 5,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "3121422",
+          "managerId": 6,
+          "overallPick": 45,
+          "round": 5,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4882093",
+          "managerId": 1,
+          "overallPick": 46,
+          "round": 5,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "4696981",
+          "managerId": 4,
+          "overallPick": 47,
+          "round": 5,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "4040715",
+          "managerId": 7,
+          "overallPick": 48,
+          "round": 5,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "16800",
+          "managerId": 5,
+          "overallPick": 49,
+          "round": 5,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "4612826",
+          "managerId": 3,
+          "overallPick": 50,
+          "round": 5,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4431452",
+          "managerId": 3,
+          "overallPick": 51,
+          "round": 6,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4431459",
+          "managerId": 5,
+          "overallPick": 52,
+          "round": 6,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "5083076",
+          "managerId": 7,
+          "overallPick": 53,
+          "round": 6,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "4259545",
+          "managerId": 4,
+          "overallPick": 54,
+          "round": 6,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "3915416",
+          "managerId": 1,
+          "overallPick": 55,
+          "round": 6,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4685702",
+          "managerId": 6,
+          "overallPick": 56,
+          "round": 6,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "4596448",
+          "managerId": 10,
+          "overallPick": 57,
+          "round": 6,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "4871023",
+          "managerId": 2,
+          "overallPick": 58,
+          "round": 6,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4426348",
+          "managerId": 9,
+          "overallPick": 59,
+          "round": 6,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "4685278",
+          "managerId": 8,
+          "overallPick": 60,
+          "round": 6,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "16737",
+          "managerId": 8,
+          "overallPick": 61,
+          "round": 7,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4360248",
+          "managerId": 9,
+          "overallPick": 62,
+          "round": 7,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "4685512",
+          "managerId": 2,
+          "overallPick": 63,
+          "round": 7,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "4426388",
+          "managerId": 10,
+          "overallPick": 64,
+          "round": 7,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "3915511",
+          "managerId": 6,
+          "overallPick": 65,
+          "round": 7,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4047650",
+          "managerId": 1,
+          "overallPick": 66,
+          "round": 7,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "4035687",
+          "managerId": 4,
+          "overallPick": 67,
+          "round": 7,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "3128429",
+          "managerId": 7,
+          "overallPick": 68,
+          "round": 7,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4689114",
+          "managerId": 5,
+          "overallPick": 69,
+          "round": 7,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "4432710",
+          "managerId": 3,
+          "overallPick": 70,
+          "round": 7,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4430027",
+          "managerId": 3,
+          "overallPick": 71,
+          "round": 8,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4432708",
+          "managerId": 5,
+          "overallPick": 72,
+          "round": 8,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "4678008",
+          "managerId": 7,
+          "overallPick": 73,
+          "round": 8,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "4431299",
+          "managerId": 4,
+          "overallPick": 74,
+          "round": 8,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "2577417",
+          "managerId": 1,
+          "overallPick": 75,
+          "round": 8,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4432620",
+          "managerId": 6,
+          "overallPick": 76,
+          "round": 8,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "4248528",
+          "managerId": 10,
+          "overallPick": 77,
+          "round": 8,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "4038815",
+          "managerId": 2,
+          "overallPick": 78,
+          "round": 8,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4569173",
+          "managerId": 9,
+          "overallPick": 79,
+          "round": 8,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "4568490",
+          "managerId": 8,
+          "overallPick": 80,
+          "round": 8,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4360310",
+          "managerId": 8,
+          "overallPick": 81,
+          "round": 9,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4360078",
+          "managerId": 9,
+          "overallPick": 82,
+          "round": 9,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "4432773",
+          "managerId": 2,
+          "overallPick": 83,
+          "round": 9,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "4572680",
+          "managerId": 10,
+          "overallPick": 84,
+          "round": 9,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "3116165",
+          "managerId": 6,
+          "overallPick": 85,
+          "round": 9,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "3040151",
+          "managerId": 1,
+          "overallPick": 86,
+          "round": 9,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "3916148",
+          "managerId": 4,
+          "overallPick": 87,
+          "round": 9,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "4429205",
+          "managerId": 7,
+          "overallPick": 88,
+          "round": 9,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4241985",
+          "managerId": 5,
+          "overallPick": 89,
+          "round": 9,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "3916433",
+          "managerId": 3,
+          "overallPick": 90,
+          "round": 9,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4241416",
+          "managerId": 3,
+          "overallPick": 91,
+          "round": 10,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4575131",
+          "managerId": 5,
+          "overallPick": 92,
+          "round": 10,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "4569987",
+          "managerId": 7,
+          "overallPick": 93,
+          "round": 10,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "4360761",
+          "managerId": 4,
+          "overallPick": 94,
+          "round": 10,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4360569",
+          "managerId": 1,
+          "overallPick": 95,
+          "round": 10,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4371733",
+          "managerId": 6,
+          "overallPick": 96,
+          "round": 10,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "4870795",
+          "managerId": 10,
+          "overallPick": 97,
+          "round": 10,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "4429025",
+          "managerId": 2,
+          "overallPick": 98,
+          "round": 10,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4608686",
+          "managerId": 9,
+          "overallPick": 99,
+          "round": 10,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "15847",
+          "managerId": 8,
+          "overallPick": 100,
+          "round": 10,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4385690",
+          "managerId": 8,
+          "overallPick": 101,
+          "round": 11,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "4701936",
+          "managerId": 9,
+          "overallPick": 102,
+          "round": 11,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "4429096",
+          "managerId": 2,
+          "overallPick": 103,
+          "round": 11,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "4686658",
+          "managerId": 10,
+          "overallPick": 104,
+          "round": 11,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4688813",
+          "managerId": 6,
+          "overallPick": 105,
+          "round": 11,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4710714",
+          "managerId": 1,
+          "overallPick": 106,
+          "round": 11,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "3042519",
+          "managerId": 4,
+          "overallPick": 107,
+          "round": 11,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "4683062",
+          "managerId": 7,
+          "overallPick": 108,
+          "round": 11,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "2976212",
+          "managerId": 5,
+          "overallPick": 109,
+          "round": 11,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "4366031",
+          "managerId": 3,
+          "overallPick": 110,
+          "round": 11,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4697815",
+          "managerId": 3,
+          "overallPick": 111,
+          "round": 12,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "3953687",
+          "managerId": 5,
+          "overallPick": 112,
+          "round": 12,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "3139477",
+          "managerId": 7,
+          "overallPick": 113,
+          "round": 12,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "12483",
+          "managerId": 4,
+          "overallPick": 114,
+          "round": 12,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4569603",
+          "managerId": 1,
+          "overallPick": 115,
+          "round": 12,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "4880281",
+          "managerId": 6,
+          "overallPick": 116,
+          "round": 12,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "-16034",
+          "managerId": 10,
+          "overallPick": 117,
+          "round": 12,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "-16007",
+          "managerId": 2,
+          "overallPick": 118,
+          "round": 12,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4038941",
+          "managerId": 9,
+          "overallPick": 119,
+          "round": 12,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "-16014",
+          "managerId": 8,
+          "overallPick": 120,
+          "round": 12,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "4426338",
+          "managerId": 8,
+          "overallPick": 121,
+          "round": 13,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "-16023",
+          "managerId": 9,
+          "overallPick": 122,
+          "round": 13,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "4362081",
+          "managerId": 2,
+          "overallPick": 123,
+          "round": 13,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "4361432",
+          "managerId": 10,
+          "overallPick": 124,
+          "round": 13,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4431611",
+          "managerId": 6,
+          "overallPick": 125,
+          "round": 13,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "-16017",
+          "managerId": 1,
+          "overallPick": 126,
+          "round": 13,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "-16033",
+          "managerId": 4,
+          "overallPick": 127,
+          "round": 13,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "3055899",
+          "managerId": 7,
+          "overallPick": 128,
+          "round": 13,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "-16026",
+          "managerId": 5,
+          "overallPick": 129,
+          "round": 13,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "-16021",
+          "managerId": 3,
+          "overallPick": 130,
+          "round": 13,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "2473037",
+          "managerId": 3,
+          "overallPick": 131,
+          "round": 14,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "3046779",
+          "managerId": 5,
+          "overallPick": 132,
+          "round": 14,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "3126486",
+          "managerId": 7,
+          "overallPick": 133,
+          "round": 14,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "4686361",
+          "managerId": 4,
+          "overallPick": 134,
+          "round": 14,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "4360234",
+          "managerId": 1,
+          "overallPick": 135,
+          "round": 14,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "-16006",
+          "managerId": 6,
+          "overallPick": 136,
+          "round": 14,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "4689936",
+          "managerId": 10,
+          "overallPick": 137,
+          "round": 14,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "4362249",
+          "managerId": 2,
+          "overallPick": 138,
+          "round": 14,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "2971573",
+          "managerId": 9,
+          "overallPick": 139,
+          "round": 14,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "4034949",
+          "managerId": 8,
+          "overallPick": 140,
+          "round": 14,
+          "selectionInRound": 10
+        },
+        {
+          "playerId": "3124679",
+          "managerId": 8,
+          "overallPick": 141,
+          "round": 15,
+          "selectionInRound": 1
+        },
+        {
+          "playerId": "16760",
+          "managerId": 9,
+          "overallPick": 142,
+          "round": 15,
+          "selectionInRound": 2
+        },
+        {
+          "playerId": "4870653",
+          "managerId": 2,
+          "overallPick": 143,
+          "round": 15,
+          "selectionInRound": 3
+        },
+        {
+          "playerId": "3116365",
+          "managerId": 10,
+          "overallPick": 144,
+          "round": 15,
+          "selectionInRound": 4
+        },
+        {
+          "playerId": "17372",
+          "managerId": 6,
+          "overallPick": 145,
+          "round": 15,
+          "selectionInRound": 5
+        },
+        {
+          "playerId": "5083315",
+          "managerId": 1,
+          "overallPick": 146,
+          "round": 15,
+          "selectionInRound": 6
+        },
+        {
+          "playerId": "3116407",
+          "managerId": 4,
+          "overallPick": 147,
+          "round": 15,
+          "selectionInRound": 7
+        },
+        {
+          "playerId": "-16025",
+          "managerId": 7,
+          "overallPick": 148,
+          "round": 15,
+          "selectionInRound": 8
+        },
+        {
+          "playerId": "4361050",
+          "managerId": 5,
+          "overallPick": 149,
+          "round": 15,
+          "selectionInRound": 9
+        },
+        {
+          "playerId": "4035671",
+          "managerId": 3,
+          "overallPick": 150,
+          "round": 15,
+          "selectionInRound": 10
+        }
+      ],
+      "transactionsComplete": false,
+      "lineupsComplete": false,
+      "coverageNote": "Draft order imported. Complete player production and ownership logs are still needed."
+    }
+  }
+}

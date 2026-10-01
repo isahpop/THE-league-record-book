@@ -1,0 +1,445 @@
+{
+  "records": [
+    {
+      "cat": "Team",
+      "label": "Highest team score",
+      "value": "204.24",
+      "title": "Golly",
+      "meta": "Unlimited “Lets Ride!” · 2022 · Week 8",
+      "feature": true,
+      "runners": [
+        {
+          "value": "200.98",
+          "title": "Coy",
+          "meta": "CTESPN · 2024 · Week 11"
+        },
+        {
+          "value": "194.98",
+          "title": "Isaiah",
+          "meta": "please GOD let me WIN · 2024 · Week 14"
+        },
+        {
+          "value": "189.05",
+          "title": "Mike",
+          "meta": "Grittying N Grinding · 2025 · Week 7"
+        },
+        {
+          "value": "187.50",
+          "title": "Austin",
+          "meta": "Hill Hurt Me · 2023 · Week 13"
+        }
+      ]
+    },
+    {
+      "cat": "Team",
+      "label": "Lowest team score",
+      "value": "54.85",
+      "title": "Jazz",
+      "meta": "Team Binning · 2025 · Week 12",
+      "danger": true,
+      "runners": [
+        {
+          "value": "64.54",
+          "title": "JB",
+          "meta": "All You Need Is Love · 2024 · Week 10"
+        },
+        {
+          "value": "66.26",
+          "title": "Isaiah",
+          "meta": "Kyler, The Creator · 2022 · Week 3"
+        },
+        {
+          "value": "66.54",
+          "title": "Golly",
+          "meta": "It Hurts when I pee · 2024 · Week 3"
+        },
+        {
+          "value": "66.94",
+          "title": "Jazz",
+          "meta": "Team Binning · 2024 · Week 10"
+        }
+      ]
+    },
+    {
+      "cat": "Team",
+      "label": "Closest game",
+      "value": "0.05",
+      "title": "JT over Austin",
+      "meta": "JT's Finest over Hill Hurt Me · 126.60–126.55 · 2025 W4",
+      "runners": [
+        {
+          "value": "0.14",
+          "title": "Coy over Lance",
+          "meta": "Coopa Troopas over Team Phillips · 2023 W4"
+        },
+        {
+          "value": "0.20",
+          "title": "JB over Austin",
+          "meta": "Jackson Mahomes Off over Hill Hurt Me · 2023 W12"
+        },
+        {
+          "value": "0.20",
+          "title": "Isaiah over Golly",
+          "meta": "Tets McGee over Waddling Bowers · 2025 W10"
+        },
+        {
+          "value": "0.38",
+          "title": "Golly over Coy",
+          "meta": "Unlimited “Lets Ride!” over Beware of DAWGS · 2022 W6"
+        }
+      ]
+    },
+    {
+      "cat": "Team",
+      "label": "Highest-scoring loss",
+      "value": "158.25",
+      "title": "Jazz",
+      "meta": "Team Binning · Lost 158.90–158.25 · 2025 W8",
+      "runners": [
+        {
+          "value": "158.18",
+          "title": "JT",
+          "meta": "Team Bock · Lost 187.50–158.18 · 2023 W13"
+        },
+        {
+          "value": "156.02",
+          "title": "Austin",
+          "meta": "Hill Hurt Me · Lost 204.24–156.02 · 2022 W8"
+        },
+        {
+          "value": "152.80",
+          "title": "Mike",
+          "meta": "Tx ayesha can COOK · Lost 170.62–152.80 · 2022 W1"
+        },
+        {
+          "value": "152.06",
+          "title": "Coy",
+          "meta": "Beware of DAWGS · Lost 157.40–152.06 · 2022 W13"
+        }
+      ]
+    },
+    {
+      "cat": "Team",
+      "label": "Lowest-scoring win",
+      "value": "85.74",
+      "title": "Isaiah",
+      "meta": "Kyler, The Creator · Beat Jazz 85.74–82.08 · 2022 W11",
+      "runners": [
+        {
+          "value": "93.50",
+          "title": "JB",
+          "meta": "Jackson Mahomes Off · Beat Jazz 93.50–68.22 · 2022 W8"
+        },
+        {
+          "value": "94.00",
+          "title": "Lance",
+          "meta": "Team Phillips · Beat JT's Finest 94.00–92.05 · 2025 W2"
+        },
+        {
+          "value": "95.38",
+          "title": "Golly",
+          "meta": "It Hurts when I pee · Beat Isaiah 95.38–93.90 · 2024 W10"
+        },
+        {
+          "value": "97.34",
+          "title": "JB",
+          "meta": "Jackson Mahomes Off · Beat Zach 97.34–88.70 · 2023 W6"
+        }
+      ]
+    },
+    {
+      "cat": "Franchise",
+      "label": "Best 4-year record",
+      "value": "32–24",
+      "title": "JT",
+      "meta": "JT's Finest Team · 2022–2025 regular season",
+      "runners": [
+        {
+          "value": "31–25",
+          "title": "Zach",
+          "meta": "Here Comes McBride franchise"
+        },
+        {
+          "value": "30–26",
+          "title": "Coy",
+          "meta": "Love Wins in Ohio franchise"
+        },
+        {
+          "value": "30–26",
+          "title": "Mike",
+          "meta": "Grittying N Grinding franchise"
+        },
+        {
+          "value": "29–27",
+          "title": "Golly / Lance",
+          "meta": "Tied for fifth-best record"
+        }
+      ]
+    },
+    {
+      "cat": "Franchise",
+      "label": "Best historical PPG",
+      "value": "130.16",
+      "title": "Coy",
+      "meta": "Love Wins in Ohio franchise · 2022–2025 regular season",
+      "runners": [
+        {
+          "value": "128.68",
+          "title": "Mike",
+          "meta": "Grittying N Grinding"
+        },
+        {
+          "value": "128.42",
+          "title": "Austin",
+          "meta": "Hill Hurt Me"
+        },
+        {
+          "value": "126.90",
+          "title": "Zach",
+          "meta": "Here Comes McBride"
+        },
+        {
+          "value": "126.44",
+          "title": "Isaiah",
+          "meta": "Nacua Matata franchise"
+        }
+      ]
+    },
+    {
+      "cat": "Franchise",
+      "label": "Most 150+ weeks",
+      "value": "12",
+      "title": "Isaiah",
+      "meta": "Nacua Matata franchise · 2022–2025 regular season",
+      "runners": [
+        {
+          "value": "10",
+          "title": "Coy",
+          "meta": "Love Wins in Ohio"
+        },
+        {
+          "value": "10",
+          "title": "Austin",
+          "meta": "Hill Hurt Me"
+        },
+        {
+          "value": "10",
+          "title": "JT",
+          "meta": "JT's Finest"
+        },
+        {
+          "value": "9",
+          "title": "Mike",
+          "meta": "Grittying N Grinding"
+        }
+      ]
+    },
+    {
+      "cat": "Franchise",
+      "label": "Most sub-100 weeks",
+      "value": "16",
+      "title": "Jazz",
+      "meta": "Team Binning · 2022–2025 regular season",
+      "runners": [
+        {
+          "value": "11",
+          "title": "Golly",
+          "meta": "Waddling Bowers franchise"
+        },
+        {
+          "value": "10",
+          "title": "Isaiah",
+          "meta": "Nacua Matata franchise"
+        },
+        {
+          "value": "10",
+          "title": "Austin",
+          "meta": "Hill Hurt Me"
+        },
+        {
+          "value": "10",
+          "title": "Lance",
+          "meta": "Team Phillips"
+        }
+      ]
+    },
+    {
+      "cat": "Franchise",
+      "label": "Most titles",
+      "value": "2",
+      "title": "Mike",
+      "meta": "Grittying N Grinding · 2023 + 2025 champions",
+      "runners": [
+        {
+          "value": "1",
+          "title": "Austin",
+          "meta": "2024 champion"
+        },
+        {
+          "value": "1",
+          "title": "JT",
+          "meta": "2022 champion"
+        }
+      ]
+    },
+    {
+      "cat": "Luck",
+      "label": "Unluckiest historical franchise",
+      "value": "−11.5%",
+      "title": "Austin",
+      "meta": "Hill Hurt Me · Actual win% vs all-play win%",
+      "runners": [
+        {
+          "value": "−6.5%",
+          "title": "Isaiah",
+          "meta": "Nacua Matata franchise"
+        },
+        {
+          "value": "−4.6%",
+          "title": "Coy",
+          "meta": "Love Wins in Ohio franchise"
+        },
+        {
+          "value": "−1.4%",
+          "title": "Mike",
+          "meta": "Grittying N Grinding"
+        },
+        {
+          "value": "+2.2%",
+          "title": "Jazz",
+          "meta": "Team Binning · next-lowest luck gap"
+        }
+      ]
+    },
+    {
+      "cat": "Luck",
+      "label": "Luckiest single season",
+      "value": "+25.8%",
+      "title": "Lance",
+      "meta": "Team Phillips · 2025 actual win% vs all-play",
+      "runners": [
+        {
+          "value": "+23.0%",
+          "title": "JT",
+          "meta": "JT's Finest · 2025"
+        },
+        {
+          "value": "+16.7%",
+          "title": "Mike",
+          "meta": "Grittying N Grinding · 2024"
+        },
+        {
+          "value": "+15.9%",
+          "title": "JB",
+          "meta": "Jackson Mahomes Off · 2023"
+        },
+        {
+          "value": "+15.9%",
+          "title": "Coy",
+          "meta": "CTESPN · 2024"
+        }
+      ]
+    }
+  ],
+  "playerRecords": [
+    {
+      "pos": "QB",
+      "points": "58.88",
+      "player": "Josh Allen",
+      "meta": "Isaiah · Nacua franchise · 2024 W14"
+    },
+    {
+      "pos": "RB",
+      "points": "60.40",
+      "player": "Jahmyr Gibbs",
+      "meta": "Austin · Hill Hurt Me · 2025 W12"
+    },
+    {
+      "pos": "WR",
+      "points": "62.40",
+      "player": "Ja'Marr Chase",
+      "meta": "Lance · Team Phillips · 2024 W10"
+    },
+    {
+      "pos": "TE",
+      "points": "43.30",
+      "player": "Brock Bowers",
+      "meta": "Golly · Waddling Bowers · 2025 W9"
+    },
+    {
+      "pos": "FLEX",
+      "points": "53.00",
+      "player": "DJ Moore",
+      "meta": "JB · Davante N' Josh franchise · 2023 W5"
+    }
+  ],
+  "bench": [
+    {
+      "player": "Tua Tagovailoa",
+      "points": 52.86,
+      "manager": "Isaiah",
+      "team": "Kyler, The Creator",
+      "meta": "2022 · Week 2"
+    },
+    {
+      "player": "Justin Fields",
+      "points": 49.72,
+      "manager": "Coy",
+      "team": "Beware of DAWGS",
+      "meta": "2022 · Week 9"
+    },
+    {
+      "player": "Josh Jacobs",
+      "points": 49.3,
+      "manager": "Zach",
+      "team": "Love Hurts",
+      "meta": "2022 · Week 12"
+    },
+    {
+      "player": "Bo Nix",
+      "points": 46.75,
+      "manager": "Lance",
+      "team": "Team Phillips",
+      "meta": "2025 · Week 7"
+    },
+    {
+      "player": "Raheem Mostert",
+      "points": 45.2,
+      "manager": "Jazz",
+      "team": "Team Binning",
+      "meta": "2023 · Week 3"
+    }
+  ],
+  "draftRecords": [
+    {
+      "label": "Championship draft slots",
+      "value": "4 & 9",
+      "title": "Only title-winning slots so far",
+      "meta": "2022 pick 9 · 2023 pick 4 · 2024 pick 4 · 2025 pick 9"
+    },
+    {
+      "label": "Most titles by draft slot",
+      "value": "2 each",
+      "title": "Picks 4 and 9",
+      "meta": "Small sample: four completed seasons"
+    },
+    {
+      "label": "Best ESPN projection beat",
+      "value": "+4.50",
+      "title": "JT",
+      "meta": "Average draft-day projected rank 7.75 → average regular-season rank 3.25"
+    },
+    {
+      "label": "Largest ESPN projection miss",
+      "value": "−3.75",
+      "title": "Isaiah",
+      "meta": "Average draft-day projected rank 2.50 → average regular-season rank 6.25"
+    },
+    {
+      "label": "Pick 1 championships",
+      "value": "0–4",
+      "title": "No champion from the 1.01 yet",
+      "meta": "2022–2025 completed seasons"
+    }
+  ]
+}
