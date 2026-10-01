@@ -1,0 +1,38 @@
+name: Validate THE League site
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Run record-book integrity tests
+        run: node --test tests/stats.test.js
+
+      - name: Verify required site files
+        run: |
+          test -f index.html
+          test -f assets/app.js
+          test -f assets/stats.js
+          test -f assets/styles.css
+          test -f data/managers.json
+          test -f data/history.json
+          test -f data/season-2026.json
+          test -f data/records.json
+          test -f data/recaps.json
+          test -f data/awards.json
