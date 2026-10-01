@@ -9643,7 +9643,7 @@
           "managerId": 9,
           "week": 4,
           "points": 0.0,
-          "started": true
+          "started": false
         },
         {
           "playerId": "4241478",
@@ -9667,7 +9667,7 @@
           "managerId": 9,
           "week": 4,
           "points": 0.0,
-          "started": true
+          "started": false
         },
         {
           "playerId": "4569173",
@@ -9675,7 +9675,7 @@
           "managerId": 9,
           "week": 4,
           "points": 0.0,
-          "started": false
+          "started": true
         },
         {
           "playerId": "4608686",
@@ -9718,16 +9718,16 @@
           "started": true
         },
         {
-          "playerId": "16760",
-          "name": "Jimmy Garoppolo",
+          "playerId": "4569559",
+          "name": "Devaughn Vele",
           "managerId": 9,
           "week": 4,
           "points": 0.0,
-          "started": false
+          "started": true
         },
         {
-          "playerId": "4569559",
-          "name": "Devaughn Vele",
+          "playerId": "4242355",
+          "name": "Jake Ferguson",
           "managerId": 9,
           "week": 4,
           "points": 0.0,
@@ -9822,14 +9822,6 @@
           "started": false
         },
         {
-          "playerId": "4597500",
-          "name": "Adonai Mitchell",
-          "managerId": 6,
-          "week": 4,
-          "points": 0.0,
-          "started": false
-        },
-        {
           "playerId": "3117256",
           "name": "Dalton Schultz",
           "managerId": 6,
@@ -9852,6 +9844,14 @@
           "week": 4,
           "points": 0.0,
           "started": true
+        },
+        {
+          "playerId": "2973405",
+          "name": "Kalif Raymond",
+          "managerId": 6,
+          "week": 4,
+          "points": 0.0,
+          "started": false
         },
         {
           "playerId": "4379399",
