@@ -10755,7 +10755,7 @@
           "managerId": 7,
           "week": 5,
           "points": 0.0,
-          "started": true
+          "started": false
         },
         {
           "playerId": "3055899",
@@ -10771,7 +10771,7 @@
           "managerId": 7,
           "week": 5,
           "points": 0.0,
-          "started": false
+          "started": true
         },
         {
           "playerId": "-16012",
@@ -10787,7 +10787,7 @@
           "managerId": 7,
           "week": 5,
           "points": 0.0,
-          "started": true
+          "started": false
         },
         {
           "playerId": "4569618",
@@ -10803,7 +10803,7 @@
           "managerId": 7,
           "week": 5,
           "points": 0.0,
-          "started": false
+          "started": true
         },
         {
           "playerId": "3929645",
@@ -11179,7 +11179,7 @@
           "managerId": 5,
           "week": 5,
           "points": 0.0,
-          "started": false
+          "started": true
         },
         {
           "playerId": "3117251",
@@ -11203,7 +11203,7 @@
           "managerId": 5,
           "week": 5,
           "points": 0.0,
-          "started": true
+          "started": false
         },
         {
           "playerId": "16800",
@@ -11243,7 +11243,7 @@
           "managerId": 5,
           "week": 5,
           "points": 0.0,
-          "started": true
+          "started": false
         },
         {
           "playerId": "3953687",
@@ -11275,7 +11275,7 @@
           "managerId": 5,
           "week": 5,
           "points": 0.0,
-          "started": false
+          "started": true
         },
         {
           "playerId": "4685720",
@@ -11451,7 +11451,7 @@
           "managerId": 4,
           "week": 5,
           "points": 0.0,
-          "started": true
+          "started": false
         },
         {
           "playerId": "4259545",
@@ -11491,7 +11491,7 @@
           "managerId": 4,
           "week": 5,
           "points": 0.0,
-          "started": false
+          "started": true
         },
         {
           "playerId": "3042519",

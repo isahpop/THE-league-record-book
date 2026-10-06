@@ -2513,13 +2513,8 @@
             0.0
           ],
           [
-            "FLEX",
+            "RB",
             "Jaylen Warren",
-            0.0
-          ],
-          [
-            "QB",
-            "Patrick Mahomes",
             0.0
           ],
           [
@@ -2528,18 +2523,23 @@
             0.0
           ],
           [
+            "FLEX",
+            "Deebo Samuel Sr.",
+            0.0
+          ],
+          [
             "D/ST",
             "Chiefs D/ST",
             0.0
           ],
           [
-            "RB",
-            "Chuba Hubbard",
+            "WR",
+            "Garrett Wilson",
             0.0
           ],
           [
-            "WR",
-            "Garrett Wilson",
+            "QB",
+            "Tyler Shough",
             0.0
           ]
         ],
@@ -2728,6 +2728,11 @@
         "score": 0.0,
         "starters": [
           [
+            "WR",
+            "Justin Jefferson",
+            0.0
+          ],
+          [
             "RB",
             "Christian McCaffrey",
             0.0
@@ -2735,11 +2740,6 @@
           [
             "RB",
             "Javonte Williams",
-            0.0
-          ],
-          [
-            "FLEX",
-            "Emeka Egbuka",
             0.0
           ],
           [
@@ -2753,11 +2753,6 @@
             0.0
           ],
           [
-            "WR",
-            "Stefon Diggs",
-            0.0
-          ],
-          [
             "K",
             "Brandon Aubrey",
             0.0
@@ -2768,13 +2763,18 @@
             0.0
           ],
           [
+            "FLEX",
+            "Isaiah Likely",
+            0.0
+          ],
+          [
             "QB",
             "Bryce Young",
             0.0
           ]
         ],
         "bench": [
-          "Justin Jefferson",
+          "Emeka Egbuka",
           0.0
         ]
       },
@@ -2859,16 +2859,16 @@
           ],
           [
             "RB",
-            "Cam Skattebo",
-            0.0
-          ],
-          [
-            "RB",
             "D'Andre Swift",
             0.0
           ],
           [
             "FLEX",
+            "Michael Wilson",
+            0.0
+          ],
+          [
+            "RB",
             "Aaron Jones Sr.",
             0.0
           ],
