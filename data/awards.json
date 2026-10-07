@@ -10843,7 +10843,7 @@
           "managerId": 3,
           "week": 5,
           "points": 0.0,
-          "started": true
+          "started": false
         },
         {
           "playerId": "4431452",
@@ -10851,7 +10851,7 @@
           "managerId": 3,
           "week": 5,
           "points": 0.0,
-          "started": false
+          "started": true
         },
         {
           "playerId": "4432710",
@@ -10875,7 +10875,7 @@
           "managerId": 3,
           "week": 5,
           "points": 0.0,
-          "started": false
+          "started": true
         },
         {
           "playerId": "4366031",
@@ -10931,7 +10931,7 @@
           "managerId": 3,
           "week": 5,
           "points": 0.0,
-          "started": true
+          "started": false
         },
         {
           "playerId": "4242335",
@@ -10963,7 +10963,7 @@
           "managerId": 10,
           "week": 5,
           "points": 0.0,
-          "started": true
+          "started": false
         },
         {
           "playerId": "3916387",
@@ -10987,7 +10987,7 @@
           "managerId": 10,
           "week": 5,
           "points": 0.0,
-          "started": false
+          "started": true
         },
         {
           "playerId": "4248528",

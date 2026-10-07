@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "completedWeek": 5,
-  "updatedAt": "2026-10-06",
+  "updatedAt": "2026-10-07",
   "currentStandings": [
     {
       "id": 8,
@@ -2564,8 +2564,8 @@
             0.0
           ],
           [
-            "WR",
-            "Ladd McConkey",
+            "QB",
+            "Drake Maye",
             0.0
           ],
           [
@@ -2576,6 +2576,11 @@
           [
             "TE",
             "Sam LaPorta",
+            0.0
+          ],
+          [
+            "WR",
+            "Jakobi Meyers",
             0.0
           ],
           [
@@ -2591,11 +2596,6 @@
           [
             "FLEX",
             "Drake London",
-            0.0
-          ],
-          [
-            "QB",
-            "Jalen Hurts",
             0.0
           ]
         ],
@@ -2623,11 +2623,6 @@
             0.0
           ],
           [
-            "WR",
-            "Tetairoa McMillan",
-            0.0
-          ],
-          [
             "QB",
             "Lamar Jackson",
             0.0
@@ -2635,6 +2630,11 @@
           [
             "FLEX",
             "Bucky Irving",
+            0.0
+          ],
+          [
+            "WR",
+            "Jameson Williams",
             0.0
           ],
           [
