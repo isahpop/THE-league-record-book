@@ -5542,7 +5542,8 @@
           "name": "Kaelon Black",
           "managerId": 5,
           "type": "waiver",
-          "startWeek": 1
+          "startWeek": 1,
+          "endWeek": 5
         },
         {
           "playerId": "-16024",
@@ -5650,6 +5651,34 @@
           "managerId": 8,
           "type": "waiver",
           "startWeek": 4
+        },
+        {
+          "playerId": "3046779",
+          "name": "Jared Goff",
+          "managerId": 5,
+          "type": "waiver",
+          "startWeek": 5
+        },
+        {
+          "playerId": "4574716",
+          "name": "Harrison Mevis",
+          "managerId": 7,
+          "type": "waiver",
+          "startWeek": 5
+        },
+        {
+          "playerId": "4711533",
+          "name": "Ollie Gordon II",
+          "managerId": 10,
+          "type": "waiver",
+          "startWeek": 5
+        },
+        {
+          "playerId": "-16020",
+          "name": "Jets D/ST",
+          "managerId": 7,
+          "type": "waiver",
+          "startWeek": 5
         }
       ],
       "lineups": [
@@ -10758,24 +10787,8 @@
           "started": false
         },
         {
-          "playerId": "3055899",
-          "name": "Harrison Butker",
-          "managerId": 7,
-          "week": 5,
-          "points": 0.0,
-          "started": true
-        },
-        {
           "playerId": "3126486",
           "name": "Deebo Samuel Sr.",
-          "managerId": 7,
-          "week": 5,
-          "points": 0.0,
-          "started": true
-        },
-        {
-          "playerId": "-16012",
-          "name": "Chiefs D/ST",
           "managerId": 7,
           "week": 5,
           "points": 0.0,
@@ -10812,6 +10825,22 @@
           "week": 5,
           "points": 0.0,
           "started": false
+        },
+        {
+          "playerId": "-16020",
+          "name": "Jets D/ST",
+          "managerId": 7,
+          "week": 5,
+          "points": 0.0,
+          "started": true
+        },
+        {
+          "playerId": "4574716",
+          "name": "Harrison Mevis",
+          "managerId": 7,
+          "week": 5,
+          "points": 0.0,
+          "started": true
         },
         {
           "playerId": "4429160",
@@ -11006,14 +11035,6 @@
           "started": true
         },
         {
-          "playerId": "4686658",
-          "name": "Mike Washington Jr.",
-          "managerId": 10,
-          "week": 5,
-          "points": 0.0,
-          "started": false
-        },
-        {
           "playerId": "-16034",
           "name": "Texans D/ST",
           "managerId": 10,
@@ -11048,6 +11069,14 @@
         {
           "playerId": "3054850",
           "name": "Alvin Kamara",
+          "managerId": 10,
+          "week": 5,
+          "points": 0.0,
+          "started": false
+        },
+        {
+          "playerId": "4711533",
+          "name": "Ollie Gordon II",
           "managerId": 10,
           "week": 5,
           "points": 0.0,
@@ -11262,14 +11291,6 @@
           "started": true
         },
         {
-          "playerId": "4696044",
-          "name": "Kaelon Black",
-          "managerId": 5,
-          "week": 5,
-          "points": 0.0,
-          "started": false
-        },
-        {
           "playerId": "4361050",
           "name": "Isaiah Likely",
           "managerId": 5,
@@ -11288,6 +11309,14 @@
         {
           "playerId": "4241474",
           "name": "Brian Robinson Jr.",
+          "managerId": 5,
+          "week": 5,
+          "points": 0.0,
+          "started": false
+        },
+        {
+          "playerId": "3046779",
+          "name": "Jared Goff",
           "managerId": 5,
           "week": 5,
           "points": 0.0,
@@ -11571,7 +11600,7 @@
           "managerId": 8,
           "week": 5,
           "points": 0.0,
-          "started": true
+          "started": false
         },
         {
           "playerId": "4685278",
@@ -11611,7 +11640,7 @@
           "managerId": 8,
           "week": 5,
           "points": 0.0,
-          "started": true
+          "started": false
         },
         {
           "playerId": "4361741",
@@ -11630,24 +11659,24 @@
           "started": true
         },
         {
-          "playerId": "3116406",
-          "name": "Tyreek Hill",
-          "managerId": 8,
-          "week": 5,
-          "points": 0.0,
-          "started": false
-        },
-        {
-          "playerId": "4685247",
-          "name": "Braelon Allen",
-          "managerId": 8,
-          "week": 5,
-          "points": 0.0,
-          "started": false
-        },
-        {
           "playerId": "-16003",
           "name": "Bears D/ST",
+          "managerId": 8,
+          "week": 5,
+          "points": 0.0,
+          "started": true
+        },
+        {
+          "playerId": "4568490",
+          "name": "RJ Harvey",
+          "managerId": 8,
+          "week": 5,
+          "points": 0.0,
+          "started": true
+        },
+        {
+          "playerId": "4036133",
+          "name": "T.J. Hockenson",
           "managerId": 8,
           "week": 5,
           "points": 0.0,
