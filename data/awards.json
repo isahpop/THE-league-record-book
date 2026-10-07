@@ -11304,7 +11304,7 @@
           "managerId": 5,
           "week": 5,
           "points": 0.0,
-          "started": true
+          "started": false
         },
         {
           "playerId": "4241474",
@@ -11320,7 +11320,7 @@
           "managerId": 5,
           "week": 5,
           "points": 0.0,
-          "started": false
+          "started": true
         },
         {
           "playerId": "4426515",
