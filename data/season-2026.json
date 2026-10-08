@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "completedWeek": 5,
-  "updatedAt": "2026-10-07",
+  "updatedAt": "2026-10-08",
   "currentStandings": [
     {
       "id": 8,
@@ -2388,11 +2388,6 @@
             0.0
           ],
           [
-            "RB",
-            "Saquon Barkley",
-            0.0
-          ],
-          [
             "WR",
             "Malik Nabers",
             0.0
@@ -2400,6 +2395,11 @@
           [
             "RB",
             "Jeremiyah Love",
+            0.0
+          ],
+          [
+            "RB",
+            "Bhayshul Tuten",
             0.0
           ],
           [
@@ -2429,7 +2429,7 @@
           ]
         ],
         "bench": [
-          "Bhayshul Tuten",
+          "Saquon Barkley",
           0.0
         ]
       },
@@ -2689,12 +2689,12 @@
             0.0
           ],
           [
-            "WR",
+            "FLEX",
             "Jaylen Waddle",
             0.0
           ],
           [
-            "FLEX",
+            "WR",
             "Carnell Tate",
             0.0
           ],

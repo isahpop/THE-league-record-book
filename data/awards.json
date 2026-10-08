@@ -10496,7 +10496,7 @@
           "managerId": 1,
           "week": 5,
           "points": 0.0,
-          "started": true
+          "started": false
         },
         {
           "playerId": "4595348",
@@ -10520,7 +10520,7 @@
           "managerId": 1,
           "week": 5,
           "points": 0.0,
-          "started": false
+          "started": true
         },
         {
           "playerId": "3915416",
@@ -10579,14 +10579,6 @@
           "started": true
         },
         {
-          "playerId": "4429023",
-          "name": "MarShawn Lloyd",
-          "managerId": 1,
-          "week": 5,
-          "points": 0.0,
-          "started": false
-        },
-        {
           "playerId": "4429086",
           "name": "Michael Mayer",
           "managerId": 1,
@@ -10597,6 +10589,14 @@
         {
           "playerId": "4429205",
           "name": "Jordan Addison",
+          "managerId": 1,
+          "week": 5,
+          "points": 0.0,
+          "started": false
+        },
+        {
+          "playerId": "4832800",
+          "name": "Denzel Boston",
           "managerId": 1,
           "week": 5,
           "points": 0.0,
