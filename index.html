@@ -7,20 +7,22 @@
 <title>THE League — Record Book</title>
 <meta name="description" content="THE League fantasy football standings, records, managers and season history." />
 <link rel="stylesheet" href="assets/styles.css" />
+<link rel="stylesheet" href="assets/pulse.css" />
 </head>
 <body>
 <header class="site-header"><div class="header-inner">
   <div class="brand"><div class="brand-mark">TL</div><div><div class="brand-title">THE LEAGUE</div></div></div>
   <nav class="desktop-nav" aria-label="Primary"><button class="nav-btn active" data-view="home">Home</button><button class="nav-btn" data-view="matchups">Matchups</button><button class="nav-btn" data-view="records">Records</button><button class="nav-btn" data-view="managers">Managers</button><button class="nav-btn" data-view="seasons">Seasons</button></nav>
-  <div class="update-badge">Updated through 2026 Week 3</div><button class="share-btn" id="shareBtn">Share</button>
+  <div class="update-badge">Checking season data…</div><button class="share-btn" id="shareBtn">Share</button>
 </div></header>
 <main class="shell">
 <section class="view active" id="home">
-  <div class="home-intro"><div><p class="eyebrow">League HQ · Est. 2022</p><h1>THE League</h1><p>Standings, records, manager history and the receipts that survive every team-name change.</p></div><div class="home-status"><strong>2026 Week 3 complete</strong><span>Last static update: Sep. 29, 2026</span></div></div>
+  <div class="home-intro"><div><p class="eyebrow">League HQ · Est. 2022</p><h1>THE League</h1><p>Standings, records, manager history and the receipts that survive every team-name change.</p></div><div class="home-status"><strong>Checking season data…</strong><span>Waiting for latest published results</span></div></div>
 
   <div id="homeColumn"></div>
+  <section id="leaguePulse" aria-label="THE League Pulse" aria-live="polite"><div class="lp-unavailable">Loading the latest completed-week report…</div></section>
 
-  <article class="panel"><div class="panel-head"><div><p class="eyebrow">Current season</p><h2>2026 standings</h2></div><div style="display:flex;gap:8px;align-items:center"><button class="text-link" data-go="matchups">View matchups →</button><span class="pill">Through W3</span></div></div><div class="table-wrap compact-table"><table><thead><tr><th>#</th><th>Manager</th><th>W-L</th><th>PF</th></tr></thead><tbody id="standings2026"></tbody></table></div></article>
+  <article class="panel"><div class="panel-head"><div><p class="eyebrow">Current season</p><h2>2026 standings</h2></div><div style="display:flex;gap:8px;align-items:center"><button class="text-link" data-go="matchups">View matchups →</button><span class="pill">Latest results</span></div></div><div class="table-wrap compact-table"><table><thead><tr><th>#</th><th>Manager</th><th>W-L</th><th>PF</th></tr></thead><tbody id="standings2026"></tbody></table></div></article>
 
   <div class="section-title"><div><p class="eyebrow">At a glance</p><h2>League leaders</h2></div><button class="text-link" data-go="records">All records →</button></div><div class="leader-grid" id="leaderGrid"></div>
 
@@ -56,7 +58,8 @@
 </main>
 <div class="drawer-backdrop" id="drawerBackdrop"></div><aside class="drawer" id="teamDrawer" aria-hidden="true"></aside><div class="matchup-backdrop" id="matchupBackdrop"></div><section class="matchup-modal" id="matchupModal" aria-hidden="true"></section><div class="toast" id="toast">Link copied</div>
 <nav class="mobile-nav" aria-label="Mobile navigation"><button class="active" data-view="home"><span>⌂</span>Home</button><button data-view="matchups"><span>VS</span>Matchups</button><button data-view="records"><span>▦</span>Records</button><button data-view="managers"><span>◎</span>Managers</button><button data-view="seasons"><span>≡</span>Seasons</button></nav>
-<footer><div>THE League Record Book</div><div>2022–present · Updated through 2026 Week 3</div></footer>
+<footer><div>THE League Record Book</div><div>2022–present · Latest completed week</div></footer>
 <script src="assets/stats.js" defer></script>
 <script src="assets/app.js" defer></script>
+<script src="assets/pulse.js" defer></script>
 </body></html>
