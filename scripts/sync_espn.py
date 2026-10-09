@@ -52,9 +52,27 @@ def side(raw, team_names):
 def main():
     meta=get([('view','mTeam'),('view','mStatus'),('view','mDraftDetail')])
     status=meta.get('status') or {}
-    completed=int(status.get('latestScoringPeriod') or 0)
-    if completed < 1: raise SystemExit('ESPN has no completed scoring period yet.')
-    teams=meta.get('teams') or []; team_names={int(t['id']):t.get('name') or f"Team {t['id']}" for t in teams}
+    latest=int(status.get('latestScoringPeriod') or 0)
+    teams=meta.get('teams') or []
+    if not teams:
+        raise SystemExit('ESPN returned no teams; refusing to replace existing data.')
+    team_names={int(t['id']):t.get('name') or f"Team {t['id']}" for t in teams}
+
+    # ESPN latestScoringPeriod may be the *in-progress* week. Official
+    # W/L/T totals are safer: each team must have a result for the week.
+    # Reject inconsistent results instead of treating a partial week as final.
+    recorded=[]
+    for t in teams:
+        rec=((t.get('record') or {}).get('overall') or {})
+        recorded.append(sum(int(rec.get(k) or 0) for k in ('wins','losses','ties')))
+    if len(set(recorded)) != 1:
+        raise SystemExit(f'ESPN teams disagree on completed-week counts: {recorded}. Leaving published data untouched.')
+    completed=recorded[0]
+    if latest and completed>latest:
+        raise SystemExit(f'ESPN completed record count ({completed}) exceeds reported period ({latest}). Leaving data untouched.')
+    if completed < 1:
+        raise SystemExit('ESPN has no completed scoring period yet.')
+
     managers=json.loads((ROOT/'data/managers.json').read_text())['teams']; manager_names={int(t['id']):t['manager'] for t in managers}
 
     standings=[]
@@ -71,6 +89,9 @@ def main():
     for week in range(1,completed+1):
         box=get([('view','mBoxscore'),('view','mMatchupScore'),('scoringPeriodId',week),('matchupPeriodId',week)])
         games=[g for g in box.get('schedule',[]) if int(g.get('matchupPeriodId') or 0)==week and g.get('home') and g.get('away')]
+        participants=[int(g[s]['teamId']) for g in games for s in ('home','away')]
+        if len(games)*2 != len(teams) or sorted(participants) != sorted(team_names):
+            raise SystemExit(f'Week {week} has incomplete or duplicate matchups. Leaving published data untouched.')
         for g in games:
             a=side(g['away'],team_names); b=side(g['home'],team_names); matchups.append({'week':week,'a':a,'b':b})
             for raw in (g['away'],g['home']):
@@ -98,7 +119,13 @@ def main():
         except Exception as e:
             tx_ok=False; print(f'warning: transactions week {week}: {e}',file=sys.stderr)
 
-    season={'season':SEASON,'completedWeek':completed,'updatedAt':date.today().isoformat(),'currentStandings':standings,'matchups':matchups}
+    leader=max(standings,key=lambda t:t['pf'])
+    summary={
+        'avg':round(sum(t['pf'] for t in standings)/(len(standings)*completed),2),
+        'top':f"{leader['manager']} · {leader['pf']/completed:.2f} PPG"
+    }
+    season={'season':SEASON,'completedWeek':completed,'updatedAt':date.today().isoformat(),
+            'summary':summary,'currentStandings':standings,'matchups':matchups}
     (ROOT/f'data/season-{SEASON}.json').write_text(json.dumps(season,ensure_ascii=False,indent=2)+'\n')
 
     awards_path=ROOT/'data/awards.json'; awards=json.loads(awards_path.read_text()); a=awards['seasons'].setdefault(str(SEASON),{})
