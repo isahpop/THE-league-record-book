@@ -1,11 +1,21 @@
 (async function(){
+  // History and the active season are required. Auxiliary awards and columns
+  // degrade gracefully so a missing optional JSON file cannot blank the site.
+  async function loadJson(filename, fallback) {
+    try {
+      const response = await fetch(`data/${filename}`, { cache: 'no-cache' });
+      if (!response.ok) throw new Error(`${filename}: HTTP ${response.status}`);
+      return await response.json();
+    } catch (error) {
+      if (fallback === undefined) throw error;
+      console.warn(`Optional ${filename} unavailable:`, error);
+      return fallback;
+    }
+  }
   const [managerData, recordData, historyData, seasonData, awardsData, recapData] = await Promise.all([
-    fetch('data/managers.json').then(r => { if(!r.ok) throw new Error('managers.json failed'); return r.json(); }),
-    fetch('data/records.json').then(r => { if(!r.ok) throw new Error('records.json failed'); return r.json(); }),
-    fetch('data/history.json').then(r => { if(!r.ok) throw new Error('history.json failed'); return r.json(); }),
-    fetch('data/season-2026.json').then(r => { if(!r.ok) throw new Error('season-2026.json failed'); return r.json(); }),
-    fetch('data/awards.json').then(r=>{if(!r.ok)throw new Error('awards.json failed');return r.json()}),
-    fetch('data/recaps.json').then(r=>{if(!r.ok)throw new Error('recaps.json failed');return r.json()})
+    loadJson('managers.json'), loadJson('records.json'), loadJson('history.json'),
+    loadJson('season-2026.json'), loadJson('awards.json', { seasons: {} }),
+    loadJson('recaps.json', { recaps: [] })
   ]);
 
   const teams = managerData.teams;
@@ -13,10 +23,25 @@
   const { champions, playoffs, baselines } = historyData;
   const currentStandings = seasonData.currentStandings;
   const matchups = seasonData.matchups;
+  // Missing summary values must never crash the whole website. The ESPN
+  // importer normally writes these; use verified published standings as fallback.
+  const count = Number(seasonData.completedWeek);
+  const validSummaryCount = Number.isInteger(count) && count > 0 && Array.isArray(currentStandings) && currentStandings.length > 0;
+  const calculatedAvg = validSummaryCount
+    ? currentStandings.reduce((sum, t) => sum + Number(t.pf || 0), 0) / (count * currentStandings.length)
+    : null;
+  const scoringLeader = validSummaryCount
+    ? [...currentStandings].sort((a, b) => Number(b.pf) - Number(a.pf))[0] : null;
+  const summaryAvg = typeof seasonData.summary?.avg === 'number' && Number.isFinite(seasonData.summary.avg)
+    ? seasonData.summary.avg : calculatedAvg;
+  const summaryTop = typeof seasonData.summary?.top === 'string' && seasonData.summary.top.trim()
+    ? seasonData.summary.top
+    : (scoringLeader ? `${scoringLeader.manager} · ${(Number(scoringLeader.pf) / count).toFixed(2)} PPG` : '—');
   const seasons = {
     ...historyData.seasons,
-    2026: {
-      ...seasonData.summary,
+    [seasonData.season]: {
+      avg: Number.isFinite(summaryAvg) ? summaryAvg : null,
+      top: summaryTop,
       standings: currentStandings.map(t => [t.name, t.wl, Number(t.pf).toFixed(2)])
     }
   };
@@ -202,7 +227,7 @@ function playoffTeamHTML(t,winner){
 function playoffGameHTML(g,isFinal=false){
   return `<div class="bracket-game ${isFinal?'bracket-champ':''}">${playoffTeamHTML(g.a,g.winner)}${g.b?playoffTeamHTML(g.b,g.winner):'<div class="bracket-bye">First-round bye</div>'}</div>`;
 }
-function renderSeason(year=2026){const yrs=[2026,2025,2024,2023,2022];document.getElementById('seasonTabs').innerHTML=yrs.map(y=>`<button class="season-btn ${y===year?'active':''}" data-year="${y}">${y}</button>`).join('');document.querySelectorAll('[data-year]').forEach(b=>b.onclick=()=>renderSeason(+b.dataset.year));const s=seasons[year];const championManager=year===2026?'—':managerForName(s.champ);const runnerManager=year===2026?'—':managerForName(s.runner);document.getElementById('seasonPanel').innerHTML=`<div class="panel-head"><div><p class="eyebrow">${year} season</p><h2>${year===2026?'Season in progress':championManager+' — Champion'}</h2></div>${year===2026?'<span class="pill green">Current</span>':'<span class="pill gold">Completed</span>'}</div><div class="season-summary"><div class="season-mini"><strong>${s.avg.toFixed(2)}</strong><span>League PPG</span></div><div class="season-mini"><strong>${year===2026?'—':championManager}</strong><span>Champion</span></div><div class="season-mini"><strong>${year===2026?'—':runnerManager}</strong><span>Runner-up</span></div><div class="season-mini"><strong>${s.top}</strong><span>Scoring leader</span></div></div><div class="table-wrap compact-table"><table><thead><tr><th>#</th><th>Manager</th><th>W-L</th><th>PF</th></tr></thead><tbody>${s.standings.map((r,i)=>`<tr><td class="rank">${i+1}</td><td>${managerTeamHTML(managerForName(r[0]),r[0])}</td><td>${r[1]}</td><td>${r[2]}</td></tr>`).join('')}</tbody></table></div>${playoffHTML(year)}${awardsHTML(year)}${recapArchiveHTML(year)}`;bindRecaps()}
+function renderSeason(year=2026){const yrs=[2026,2025,2024,2023,2022];document.getElementById('seasonTabs').innerHTML=yrs.map(y=>`<button class="season-btn ${y===year?'active':''}" data-year="${y}">${y}</button>`).join('');document.querySelectorAll('[data-year]').forEach(b=>b.onclick=()=>renderSeason(+b.dataset.year));const s=seasons[year];const championManager=year===2026?'—':managerForName(s.champ);const runnerManager=year===2026?'—':managerForName(s.runner);document.getElementById('seasonPanel').innerHTML=`<div class="panel-head"><div><p class="eyebrow">${year} season</p><h2>${year===2026?'Season in progress':championManager+' — Champion'}</h2></div>${year===2026?'<span class="pill green">Current</span>':'<span class="pill gold">Completed</span>'}</div><div class="season-summary"><div class="season-mini"><strong>${Number.isFinite(s.avg)?s.avg.toFixed(2):'—'}</strong><span>League PPG</span></div><div class="season-mini"><strong>${year===2026?'—':championManager}</strong><span>Champion</span></div><div class="season-mini"><strong>${year===2026?'—':runnerManager}</strong><span>Runner-up</span></div><div class="season-mini"><strong>${s.top}</strong><span>Scoring leader</span></div></div><div class="table-wrap compact-table"><table><thead><tr><th>#</th><th>Manager</th><th>W-L</th><th>PF</th></tr></thead><tbody>${s.standings.map((r,i)=>`<tr><td class="rank">${i+1}</td><td>${managerTeamHTML(managerForName(r[0]),r[0])}</td><td>${r[1]}</td><td>${r[2]}</td></tr>`).join('')}</tbody></table></div>${playoffHTML(year)}${awardsHTML(year)}${recapArchiveHTML(year)}`;bindRecaps()}
 
 function escapeHTML(value){return String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 const gameArchive=LeagueStats.archive(seasonData,historyData);
@@ -237,16 +262,16 @@ function playoffHTML(year){
  return `<section class="playoff-section"><div class="playoff-head"><div><p class="eyebrow">The road to the title</p><h3>${year} playoff bracket</h3><p>Winners highlighted · swipe sideways on mobile</p></div></div><div class="bracket-scroll" tabindex="0" aria-label="${year} playoff bracket, scroll horizontally"><div class="sports-bracket"><svg class="bracket-lines" viewBox="0 0 1000 560" aria-hidden="true">${lines}</svg><div class="bracket-lane"><div class="round-title">Round 1 · Week 15</div>${first.map((g,i)=>`<div class="bracket-node" style="top:${30+i*140}px">${playoffGameHTML(g)}</div>`).join('')}</div><div class="bracket-lane"><div class="round-title">Semifinals · Week 16</div>${p.r2.map((g,i)=>`<div class="bracket-node" style="top:${100+i*280}px">${playoffGameHTML(g)}</div>`).join('')}</div><div class="bracket-lane"><div class="round-title">Championship · Week 17</div><div class="bracket-node" style="top:240px">${playoffGameHTML(final,true)}</div></div><div class="bracket-lane"><div class="round-title">Champion</div><div class="bracket-node champion-node" style="top:240px"><span class="eyebrow">${year} champion</span><strong>${managerForId(winner[0])}</strong><div class="history">${escapeHTML(winner[1])}</div><span class="pill gold">${cleanScore(winner[2])} in the final</span></div></div></div></div></section>`;
 }
 function awardsHTML(year){
- const input=awardsData.seasons[year],bust=LeagueStats.draftAwards(input)[0],saver=LeagueStats.waiverAwards(input)[0];
+ const input=awardsData.seasons?.[year],bust=LeagueStats.draftAwards(input)[0],saver=LeagueStats.waiverAwards(input)[0];
  return `<section class="profile-section"><div class="panel-head"><div><p class="eyebrow">Season yearbook</p><h3>Draft & waiver awards</h3></div>${year===2026?'<span class="pill">In-season watch</span>':''}</div><div class="award-grid"><article class="award-card"><p class="eyebrow">Biggest draft bust</p><h3>${bust?escapeHTML(bust.name):(input?.sourceDraftPicks?.length?'Draft imported · scoring pending':'Awaiting draft history')}</h3><p>${bust?`${managerForId(bust.managerId)} · Pick ${bust.overallPick} · ${bust.position}${bust.finish}<br>${money(bust.points)} points · ${money(bust.deficit)} below draft-slot value<br>Missed games: ${bust.missedGames??'Not recorded'}`:(input?.sourceDraftPicks?.length?`${input.sourceDraftPicks.length} picks imported. Needs complete player production in this league’s scoring before naming a winner.`:'Needs the complete draft order and player season totals in this league’s scoring.')}</p></article><article class="award-card"><p class="eyebrow">Season saver · Waiver wire steal</p><h3>${saver?escapeHTML(saver.name):'Awaiting waiver history'}</h3><p>${saver?`${managerForId(saver.managerId)} · Added Week ${saver.startWeek}<br>${money(saver.points)} starter points · ${saver.starts} starts`:(year<2026?'Historical transactions are unavailable through ESPN’s connector. An export of pickups and weekly lineups is needed.':'Needs complete ownership and weekly starter logs. Only points delivered after the pickup count.')}</p></article></div><details class="method-details"><summary>How we decide the awards</summary><p><b>Draft bust:</b> compare the player’s season points with the points scored by the player who finished at their draft-time rank within that position. Lost value ÷ log₂(overall pick + 1) is the bust score, so an early wasted pick counts more. QB/RB/WR/TE only; missed games are shown separately so injuries have context. It measures lost draft value, not player ability. Tied season scores share a finish rank.</p><p><b>Season saver:</b> total actual starter points during waiver/free-agent ownership stints, starting with the first eligible scoring week and ending before the drop or trade. Bench points and production before acquisition do not count. Re-acquisitions count once per week. Highest delivered points wins; starts break a tie.</p><p>${year===2026?'Results remain provisional until the season ends.':'Completed-season awards require complete source logs.'}</p></details></section>`;
 }
 function recapHTML(recap){return `<article class="league-column"><div class="panel-head"><div><p class="eyebrow">The Tuesday column · ${recap.season} Week ${recap.week}</p><h2>${escapeHTML(recap.title)}</h2><p class="history">${escapeHTML(recap.publishedAt)} · THE League</p></div><span class="pill">Week ${recap.week} recap</span></div>${recap.paragraphs.map(p=>`<p>${escapeHTML(p)}</p>`).join('')}<button class="text-link" data-recap-matchups="${recap.week}">See the matchup receipts →</button></article>`;}
 function bindRecaps(){document.querySelectorAll('[data-recap-matchups]').forEach(b=>b.onclick=()=>{renderMatchups(+b.dataset.recapMatchups);setView('matchups')});}
-function renderRecaps(){const latest=[...recapData.recaps].sort((a,b)=>b.season-a.season||b.week-a.week)[0];document.getElementById('homeColumn').innerHTML=latest?recapHTML(latest):'<div class="panel"><h2>The Tuesday column</h2><p class="history">The first recap is on its way.</p></div>';bindRecaps();}
-function recapArchiveHTML(year){const rows=recapData.recaps.filter(r=>r.season===year).sort((a,b)=>b.week-a.week);return `<section class="profile-section"><h3>Weekly recaps</h3>${rows.length?rows.map(r=>`<details class="recap-archive"><summary>Week ${r.week} · ${escapeHTML(r.title)}<span>${escapeHTML(r.publishedAt)}</span></summary>${recapHTML(r)}</details>`).join(''):'<p class="history">No weekly columns have been archived for this season yet.</p>'}</section>`;}
+function renderRecaps(){const latest=[...(recapData.recaps||[])].sort((a,b)=>b.season-a.season||b.week-a.week)[0];document.getElementById('homeColumn').innerHTML=latest?recapHTML(latest):'<div class="panel"><h2>The Tuesday column</h2><p class="history">The first recap is on its way.</p></div>';bindRecaps();}
+function recapArchiveHTML(year){const rows=(recapData.recaps||[]).filter(r=>r.season===year).sort((a,b)=>b.week-a.week);return `<section class="profile-section"><h3>Weekly recaps</h3>${rows.length?rows.map(r=>`<details class="recap-archive"><summary>Week ${r.week} · ${escapeHTML(r.title)}<span>${escapeHTML(r.publishedAt)}</span></summary>${recapHTML(r)}</details>`).join(''):'<p class="history">No weekly columns have been archived for this season yet.</p>'}</section>`;}
 
 document.getElementById('teamSearch').addEventListener('input',e=>renderManagers(e.target.value));
 const toast=document.getElementById('toast');function showToast(msg='Link copied'){toast.textContent=msg;toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),1600)}document.getElementById('shareBtn').onclick=async()=>{try{if(navigator.share){await navigator.share({title:'THE League Record Book',url:location.href})}else{await navigator.clipboard.writeText(location.href);showToast()}}catch(e){if(e.name!=='AbortError')showToast('Copy the address bar link')}};
 renderHome();renderRecaps();renderMatchups();renderRecords();renderManagers();renderSeason();const initial=location.hash.replace('#','');if(['home','matchups','records','managers','seasons'].includes(initial))setView(initial);
 
-})().catch(err=>{console.error(err);document.querySelector("main").insertAdjacentHTML("afterbegin", '<div class="panel">League data could not load. Please refresh.</div>');});
+})().catch(err=>{console.error(err);document.querySelector("main")?.insertAdjacentHTML("afterbegin", '<div class="panel" role="alert"><h2>League data temporarily unavailable</h2><p>We could not load the published season data. Please try refreshing the page.</p><button class="share-btn" id="retryLeague">Retry</button></div>');document.getElementById('retryLeague')?.addEventListener('click',()=>location.reload());});

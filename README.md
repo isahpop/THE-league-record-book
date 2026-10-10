@@ -38,3 +38,26 @@ Prior-season transactions are unavailable through the current ESPN connector, so
 ## Direct ESPN sync
 
 League ID: `1838057056`. Add repository Actions secrets named `ESPN_SWID` and `ESPN_S2`. The workflow refreshes standings, completed-week box scores, starter/bench data, draft picks, and waiver/free-agent activity, runs tests, then commits changed `data/` files. The browser never receives the ESPN credentials.
+
+## THE League 2.0: League Pulse
+
+The homepage adds a completed-week League Pulse and season-long all-play rankings.
+For each completed week, every team is compared with all other teams in the same week
+(9 possible all-play opponents per team in this 10-team league). Expected wins are
+all-play wins (ties count 0.5) divided by 9. **Win gap = actual wins + 0.5 × ties −
+expected wins**; it is a descriptive schedule comparison, not proof of luck.
+
+`assets/pulse.js` validates the weekly records against official standings before
+rendering. If those records are incomplete, the Pulse panel explains that it is
+unavailable rather than showing fabricated statistics. The rest of the website
+continues to load if optional `awards.json` or `recaps.json` is unavailable.
+
+Run all tests with `node --test tests/*.test.js`. Both the ESPN data sync and
+validation workflows run these tests. Pushes to `development` also trigger the
+validation workflow; only merge to `main` after its checks pass.
+
+**Full ZIP installation:** Unzip these files *inside the repository root* (where
+`index.html` is already located), not into a nested folder. This archive includes
+all original `assets/`, `tests/`, `scripts/`, `data/` and `.github/` content so an
+extractor that replaces folders will not delete website components. Before merging
+back to `main`, ensure automated ESPN updates on `main` have been incorporated.
