@@ -2,13 +2,22 @@ name: Sync ESPN league data
 
 on:
   workflow_dispatch:
+    inputs:
+      publish_recaps:
+        description: 'Backfill missing weekly recaps now (after ESPN sync)'
+        required: false
+        type: boolean
+        default: false
   schedule:
-    # Baseline refresh every 6 hours during fantasy season.
+    # Regular sync, plus faster refreshes during NFL game windows (UTC).
     - cron: '17 */6 * 9-12 *'
-    # Faster refresh during the main NFL game windows (UTC).
     - cron: '*/15 16-23 * 9-12 0'
     - cron: '*/15 0-5 * 9-12 1'
     - cron: '*/15 0-5 * 9-12 2,5'
+    # Tuesday morning CT: covers daylight and standard time for recap release.
+    - cron: '12 13,14 * 9-12 2'
+    # Thursday daytime CT: refresh the upcoming matchup preview.
+    - cron: '15 17,18 * 9-12 4'
 
 permissions:
   contents: write
@@ -35,8 +44,21 @@ jobs:
           ESPN_SWID: ${{ secrets.ESPN_SWID }}
           ESPN_S2: ${{ secrets.ESPN_S2 }}
         run: python scripts/sync_espn.py
+      - name: Publish missing weekly recaps after Tuesday 8 AM Central
+        env:
+          PUBLISH_NOW: ${{ inputs.publish_recaps || 'false' }}
+        run: |
+          LOCAL_DOW=$(TZ=America/Chicago date +%u)
+          LOCAL_HOUR=$(TZ=America/Chicago date +%H)
+          if [[ "$PUBLISH_NOW" == "true" ]] || { [[ "$LOCAL_DOW" == "2" ]] && (( 10#$LOCAL_HOUR >= 8 )); }; then
+            python scripts/publish_recap.py
+          else
+            echo 'Not the Tuesday recap window; preserving archived columns.'
+          fi
       - name: Run integrity tests
-        run: node --test tests/stats.test.js
+        run: |
+          node --test tests/*.test.js
+          python -m unittest discover -s tests -p 'test_*.py'
       - name: Commit refreshed public data
         run: |
           if git diff --quiet -- data/; then
@@ -46,5 +68,5 @@ jobs:
           git config user.name 'THE League Bot'
           git config user.email 'actions@users.noreply.github.com'
           git add data/
-          git commit -m 'Auto-sync ESPN league data'
+          git commit -m 'Auto-sync ESPN data and weekly league content'
           git push

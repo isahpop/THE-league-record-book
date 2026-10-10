@@ -61,3 +61,20 @@ validation workflow; only merge to `main` after its checks pass.
 all original `assets/`, `tests/`, `scripts/`, `data/` and `.github/` content so an
 extractor that replaces folders will not delete website components. Before merging
 back to `main`, ensure automated ESPN updates on `main` have been incorporated.
+
+## THE League 2.1 — automatic weekly content
+
+**Recap repair:** The ESPN sync workflow now invokes `scripts/publish_recap.py` after 8 a.m. America/Chicago on Tuesdays (using two UTC schedule entries to cover daylight saving time). The script checks every included game's participants, preserves existing articles, and backfills any previously missing completed-week recaps. A manual sync has a `publish_recaps` option to run it immediately. The 2026 archive initially backfills Weeks 1, 2 and 4 while preserving the original Week 3 article. The homepage always shows the newest published recap, not a hard-coded week.
+
+**Thursday matchup preview:** `scripts/sync_espn.py` reads the following week's ESPN pairing list separately from completed matchups and writes `upcomingWeek` / `upcomingMatchups` when ALL managers are represented exactly once. `assets/preview.js` displays it on the homepage beginning Thursday noon America/Chicago through Monday night. The feature adds a headline matchup, all five matchups, recent three-week team scoring, standings, and recorded head-to-head history. Figures are backward-looking, not player projections or betting odds. If ESPN cannot supply a full upcoming slate, the site displays a pending message rather than invented matchups.
+
+**Operational notes:** GitHub's scheduled actions only run from the default branch (`main`). For preproduction validation, use Actions → Sync ESPN league data → Run workflow → `development` with `publish_recaps` enabled. This retrieves future pairings and publishes any missing reports on that branch. The workflow may commit `data/` changes, so pull them into Working Copy afterward. The site's validation workflow runs both Node and Python tests.
+
+**Development safeguard:** Since ESPN can update while the site is under development, always fetch and merge the latest `origin/main` into `development` before opening/merging a release PR. Do not overwrite more recent ESPN `data/season-2026.json` results with an old ZIP snapshot. After deploying, verify the homepage and the GitHub Actions run.
+
+## Matchups 2.1 batch
+
+- **This Week** is the default tab in Matchups and uses the same verified ESPN upcoming slate as the homepage Thursday preview. If a complete slate has not been imported, the tab shows a pending message rather than invented pairings. The homepage preview still appears Thursday noon CT through Monday.
+- **Week archives** pair saved weekly editorials with completed results and full matchup drill-downs; the Seasons page retains the yearbook recap archive.
+- **Historical rivalry rows** open the corresponding game's box-score detail. Completed 2026 matchups use saved starter scoring and ESPN-recorded bench rows from `data/awards.json`. Older historical matchups include game results but do not claim that missing 2022–25 player lineups are known. Historical lineups will require verified ESPN exports.
+- **Position profiles** show indices on a zoomed 40–160 scale, centered at 100. Values are not modified; the bars are clamped if future indices fall outside this visual window.

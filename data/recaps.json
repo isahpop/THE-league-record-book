@@ -2,6 +2,34 @@
   "recaps": [
     {
       "season": 2026,
+      "week": 1,
+      "publishedAt": "2026-10-10",
+      "title": "Mike tops Week 1 with 183.05 points",
+      "paragraphs": [
+        "Week 1's top score belonged to Mike at 183.05 points. Across all 10 teams, the scoring average was 132.99 points.",
+        "Closest finish: Lance beat Jazz 141.40–130.00, a gap of 11.40 points.",
+        "Biggest victory: Mike over Coy 183.05–122.05, a margin of 61.00 points.",
+        "Toughest high-scoring loss: Jazz put up 130.00 points and still lost.",
+        "Top individual starter: Josh Allen scored 44.00 points for Golly."
+      ],
+      "source": "data/season-2026.json"
+    },
+    {
+      "season": 2026,
+      "week": 2,
+      "publishedAt": "2026-10-10",
+      "title": "Zach tops Week 2 with 182.75 points",
+      "paragraphs": [
+        "Week 2's top score belonged to Zach at 182.75 points. Across all 10 teams, the scoring average was 127.44 points.",
+        "Closest finish: Mike beat Golly 142.15–138.40, a gap of 3.75 points.",
+        "Biggest victory: Zach over Lance 182.75–101.80, a margin of 80.95 points.",
+        "Toughest high-scoring loss: Golly put up 138.40 points and still lost.",
+        "Top individual starter: Josh Allen scored 50.30 points for Golly."
+      ],
+      "source": "data/season-2026.json"
+    },
+    {
+      "season": 2026,
       "week": 3,
       "publishedAt": "2026-09-29",
       "title": "Mike sets the pace; every decimal counts",
@@ -10,6 +38,20 @@
         "The closest finish: Coy edged Golly 131.30–130.60, a margin of 0.70. That is the kind of result that sends someone back through every lineup decision.",
         "At the other end, Mike beat JT by 66.95, 179.95–113.00. No last-minute decimal rescue was coming for that one.",
         "The biggest starter performance was Brock Purdy: 45.25 points for Mike. One monster score makes a great headline; the full lineup still has to finish the job. The next chapter is Week 4."
+      ],
+      "source": "data/season-2026.json"
+    },
+    {
+      "season": 2026,
+      "week": 4,
+      "publishedAt": "2026-10-10",
+      "title": "Mike tops Week 4 with 168.55 points",
+      "paragraphs": [
+        "Week 4's top score belonged to Mike at 168.55 points. Across all 10 teams, the scoring average was 135.28 points.",
+        "Closest finish: Zach beat JB 133.35–128.05, a gap of 5.30 points.",
+        "Biggest victory: Golly over JT 164.55–125.25, a margin of 39.30 points.",
+        "Toughest high-scoring loss: Jazz put up 161.60 points and still lost.",
+        "Top individual starter: Tetairoa McMillan scored 45.20 points for Jazz."
       ],
       "source": "data/season-2026.json"
     }

@@ -32,5 +32,13 @@
       const item=totals.get(key)||{...stint,points:0,starts:0,weeks:new Set()};for(const r of rows){if(!item.weeks.has(r.week)){item.weeks.add(r.week);item.points+=r.points;item.starts++;}}totals.set(key,item);
     }return [...totals.values()].map(({weeks,...p})=>({...p,points:round(p.points)})).filter(p=>p.starts>0).sort((a,b)=>b.points-a.points||b.starts-a.starts);
   }
-  return {round,archive,h2h,orderedFirstRound,draftAwards,waiverAwards};
+  // A zoomed display never alters the underlying index (100 is league average).
+  function positionBar(index,min=40,max=160){
+    if(!Number.isFinite(index)||!(min<100&&100<max))throw new Error('Invalid position index or chart range');
+    const visible=Math.max(min,Math.min(max,index));
+    const center=(100-min)/(max-min)*100;
+    const end=(visible-min)/(max-min)*100;
+    return {left:Math.min(end,center),width:Math.abs(end-center),below:index<100,clipped:index<min||index>max};
+  }
+  return {round,archive,h2h,orderedFirstRound,draftAwards,waiverAwards,positionBar};
 });

@@ -21,8 +21,15 @@ jobs:
         with:
           node-version: "22"
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
       - name: Run record-book integrity tests
-        run: node --test tests/*.test.js
+        run: |
+          node --test tests/*.test.js
+          python -m unittest discover -s tests -p 'test_*.py' 
 
       - name: Verify required site files
         run: |
@@ -32,6 +39,12 @@ jobs:
           test -f assets/styles.css
           test -f assets/pulse.js
           test -f assets/pulse.css
+          test -f assets/preview.js
+          test -f assets/preview.css
+          test -f scripts/publish_recap.py
+          test -f scripts/sync_espn.py
+          test -f tests/preview.test.js
+          test -f tests/test_publishing.py
           test -f tests/stats.test.js
           test -f tests/pulse.test.js
           test -f data/managers.json

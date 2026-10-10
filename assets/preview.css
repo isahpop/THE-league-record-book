@@ -1,0 +1,24 @@
+/* Upcoming matchup preview — scoped so existing site styles are unaffected. */
+#weekPreview{margin-bottom:20px}#weekPreview[hidden]{display:none}
+.wp-panel{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:18px}
+.wp-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:15px}
+.wp-heading h2{margin:0;font-size:clamp(20px,3vw,27px);letter-spacing:-.035em}
+.wp-heading p:not(.eyebrow){font-size:12px;line-height:1.5;color:var(--muted);margin:6px 0 0}
+.wp-badge{flex-shrink:0;background:var(--accent-soft);border-radius:99px;padding:7px 9px;color:var(--accent);font-size:10px;font-weight:850}
+.wp-feature{background:#171717;color:#fff;padding:17px;border-radius:12px;margin-bottom:12px}
+.wp-feature span{display:block;text-transform:uppercase;font-size:9px;letter-spacing:.11em;color:#c7cad0;font-weight:850}
+.wp-feature strong{display:block;font-size:clamp(17px,2.8vw,24px);letter-spacing:-.03em;margin-top:5px}
+.wp-feature p{font-size:11px;line-height:1.5;color:#d1d5db;margin:5px 0 0}
+.wp-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.wp-card{background:#fafaf9;border:1px solid var(--line);border-radius:12px;padding:13px;min-width:0}
+.wp-card.wp-featured{border-color:#9dbff0;background:#f7faff}
+.wp-card-label{font-size:9px;text-transform:uppercase;letter-spacing:.08em;font-weight:850;color:var(--muted);margin-bottom:10px}
+.wp-versus{display:flex;gap:9px;align-items:center;justify-content:space-between}
+.wp-manager{flex:1;min-width:0}.wp-manager strong{display:block;font-size:13px;font-weight:900}.wp-manager span{display:block;font-size:10px;color:var(--muted);margin:3px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.wp-manager small{display:block;font-size:9px;line-height:1.55;color:var(--muted)}
+.wp-vs{font-size:9px;color:var(--muted);font-weight:900}
+.wp-series{font-size:10px;line-height:1.5;color:var(--muted);padding-top:10px;margin-top:10px;border-top:1px solid var(--line)}
+.wp-disclaimer{font-size:10px;line-height:1.5;color:var(--muted);margin:13px 0 0}
+.wp-pending{border:1px solid var(--line);background:#fff;border-radius:var(--r);padding:17px;margin:0 0 20px}
+.wp-pending strong{font-size:14px}.wp-pending p{font-size:11px;color:var(--muted);margin:6px 0 0}
+@media(max-width:620px){.wp-heading{display:block}.wp-badge{display:inline-block;margin-top:10px}.wp-grid{grid-template-columns:1fr}.wp-card{padding:12px}.wp-versus{gap:8px}.wp-manager strong{font-size:12px}}

@@ -49,6 +49,25 @@ def side(raw, team_names):
     return {'id':tid,'team':team_names.get(tid,f'Team {tid}'),'score':round(float(raw.get('totalPoints') or 0),2),'starters':starters,'bench':[best[0],round(best[1],2)]}
 
 
+
+def upcoming_matchups(schedule, week, team_names):
+    """Extract only verified upcoming pairings; NEVER treat them as final scores.
+
+    If ESPN has not supplied a complete 10-team slate, omit the preview.
+    """
+    games = [g for g in schedule if int(g.get('matchupPeriodId') or 0) == week
+             and g.get('home') and g.get('away')]
+    expected = sorted(team_names)
+    found = [int(g[side]['teamId']) for g in games for side in ('away', 'home')]
+    if len(found) != len(expected) or sorted(found) != expected:
+        return []
+    return [{'a': {'id': int(g['away']['teamId']),
+                    'team': team_names[int(g['away']['teamId'])]},
+             'b': {'id': int(g['home']['teamId']),
+                    'team': team_names[int(g['home']['teamId'])]}}
+            for g in games]
+
+
 def main():
     meta=get([('view','mTeam'),('view','mStatus'),('view','mDraftDetail')])
     status=meta.get('status') or {}
@@ -119,13 +138,30 @@ def main():
         except Exception as e:
             tx_ok=False; print(f'warning: transactions week {week}: {e}',file=sys.stderr)
 
+    # Read the NEXT week from ESPN separately from completed box scores.
+    # Schedule data can be absent or inaccessible; keep the finished season
+    # intact rather than guessing pairings or failing the whole sync.
+    next_week = completed + 1
+    upcoming = []
+    if next_week <= 18:
+        try:
+            future = get([('view', 'mMatchupScore'),
+                          ('scoringPeriodId', next_week),
+                          ('matchupPeriodId', next_week)])
+            upcoming = upcoming_matchups(future.get('schedule') or [], next_week, team_names)
+            if not upcoming:
+                print(f'warning: complete Week {next_week} ESPN schedule not yet available', file=sys.stderr)
+        except (Exception, SystemExit) as e:
+            print(f'warning: could not retrieve upcoming Week {next_week}: {e}', file=sys.stderr)
+
     leader=max(standings,key=lambda t:t['pf'])
     summary={
         'avg':round(sum(t['pf'] for t in standings)/(len(standings)*completed),2),
         'top':f"{leader['manager']} · {leader['pf']/completed:.2f} PPG"
     }
     season={'season':SEASON,'completedWeek':completed,'updatedAt':date.today().isoformat(),
-            'summary':summary,'currentStandings':standings,'matchups':matchups}
+            'summary':summary,'currentStandings':standings,'matchups':matchups,
+            'upcomingWeek':next_week,'upcomingMatchups':upcoming}
     (ROOT/f'data/season-{SEASON}.json').write_text(json.dumps(season,ensure_ascii=False,indent=2)+'\n')
 
     awards_path=ROOT/'data/awards.json'; awards=json.loads(awards_path.read_text()); a=awards['seasons'].setdefault(str(SEASON),{})
