@@ -2,7 +2,7 @@ name: Validate THE League site
 
 on:
   push:
-    branches: [main]
+    branches: [main, development]
   pull_request:
     branches: [main]
 
@@ -22,7 +22,7 @@ jobs:
           node-version: "22"
 
       - name: Run record-book integrity tests
-        run: node --test tests/stats.test.js
+        run: node --test tests/*.test.js
 
       - name: Verify required site files
         run: |
@@ -30,6 +30,10 @@ jobs:
           test -f assets/app.js
           test -f assets/stats.js
           test -f assets/styles.css
+          test -f assets/pulse.js
+          test -f assets/pulse.css
+          test -f tests/stats.test.js
+          test -f tests/pulse.test.js
           test -f data/managers.json
           test -f data/history.json
           test -f data/season-2026.json
