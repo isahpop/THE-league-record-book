@@ -8,6 +8,7 @@
 <meta name="description" content="THE League fantasy football standings, records, managers and season history." />
 <link rel="stylesheet" href="assets/styles.css" />
 <link rel="stylesheet" href="assets/pulse.css" />
+<link rel="stylesheet" href="assets/preview.css" />
 </head>
 <body>
 <header class="site-header"><div class="header-inner">
@@ -19,6 +20,7 @@
 <section class="view active" id="home">
   <div class="home-intro"><div><p class="eyebrow">League HQ · Est. 2022</p><h1>THE League</h1><p>Standings, records, manager history and the receipts that survive every team-name change.</p></div><div class="home-status"><strong>Loading season data…</strong><span>Waiting for published results</span></div></div>
 
+  <section id="weekPreview" hidden aria-label="Upcoming fantasy matchups"></section>
   <div id="homeColumn"></div>
   <section id="leaguePulse" aria-label="THE League Pulse"><div class="lp-unavailable">Loading League Pulse…</div></section>
 
@@ -37,6 +39,7 @@
 <section class="view" id="matchups">
   <div class="page-head"><div><p class="eyebrow">2026 weekly results</p><h1>Matchups</h1><p>Pick a week, then tap any matchup for the full scoring breakdown, MVP, bench regret and positional battle.</p></div></div>
   <div class="week-tabs" id="weekTabs"></div>
+  <section id="matchupWeekPreview" aria-label="This week's matchup scouting report"><div class="wp-pending"><strong>Loading this week's ESPN schedule…</strong></div></section>
   <div class="week-recap" id="weekRecap"></div>
   <div class="matchup-list" id="matchupList"></div>
 </section>
@@ -62,4 +65,5 @@
 <script src="assets/stats.js" defer></script>
 <script src="assets/app.js" defer></script>
 <script src="assets/pulse.js" defer></script>
+<script src="assets/preview.js" defer></script>
 </body></html>
