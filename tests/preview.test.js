@@ -35,19 +35,35 @@ test('Upcoming ESPN slate builds five previews from completed stats',()=>{
  const h=model.matchups[0].series;
  assert.ok(h.games>=0);
  const output=P.renderPreview(model);
- assert.match(output,/Week 5 · Matchup Preview/);
+ assert.ok(output.includes(`Week ${model.week} · Matchup Preview`));
  assert.match(output,/ESPN-confirmed pairings/);
  assert.ok(output.includes('Historical series'));
 });
 
 test('No incorrect or speculative pairings published',()=>{
- assert.throws(()=>P.calculatePreview(current,history,S),/No complete ESPN/);
+ // Simulate a missing ESPN schedule explicitly. The real season data may
+ // already have verified upcomingMatchups after an automatic sync.
+ const missing=structuredClone(current);
+ delete missing.upcomingMatchups;
+ assert.throws(()=>P.calculatePreview(missing,history,S),/No complete ESPN/);
+ const noGames=structuredClone(current);
+ noGames.upcomingWeek=noGames.completedWeek+1;
+ noGames.upcomingMatchups=[];
+ assert.throws(()=>P.calculatePreview(noGames,history,S),/No complete ESPN/);
  let data=scheduleFixture();data.upcomingMatchups.pop();
  assert.throws(()=>P.calculatePreview(data,history,S),/No complete ESPN/);
  data=scheduleFixture();data.upcomingMatchups[1].b.id=data.upcomingMatchups[0].a.id;
  assert.throws(()=>P.calculatePreview(data,history,S),/Duplicate or unknown/);
  data=scheduleFixture();data.upcomingWeek++;
  assert.throws(()=>P.calculatePreview(data,history,S),/No complete ESPN/);
+});
+
+test('ESPN-confirmed upcoming pairings are valid when available',()=>{
+ if (!Array.isArray(current.upcomingMatchups) || current.upcomingMatchups.length===0) return;
+ const model=P.calculatePreview(current,history,S);
+ assert.equal(model.week,current.completedWeek+1);
+ assert.equal(model.matchups.length,current.currentStandings.length/2);
+ assert.equal(new Set(model.matchups.flatMap(x=>[x.a.id,x.b.id])).size,current.currentStandings.length);
 });
 
 test('Untrusted ESPN/team names cannot inject markup',()=>{
