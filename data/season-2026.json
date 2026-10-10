@@ -2379,5 +2379,58 @@
         ]
       }
     }
+  ],
+  "upcomingWeek": 5,
+  "upcomingMatchups": [
+    {
+      "a": {
+        "id": 1,
+        "team": "Love Wins in Ohio"
+      },
+      "b": {
+        "id": 9,
+        "team": "JT's Finest Team"
+      }
+    },
+    {
+      "a": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10"
+      },
+      "b": {
+        "id": 3,
+        "team": "Team Phillips"
+      }
+    },
+    {
+      "a": {
+        "id": 10,
+        "team": "Team Binning"
+      },
+      "b": {
+        "id": 2,
+        "team": "Waddling Bowers II"
+      }
+    },
+    {
+      "a": {
+        "id": 5,
+        "team": "Davante N' Josh"
+      },
+      "b": {
+        "id": 6,
+        "team": "Nacua Matata"
+      }
+    },
+    {
+      "a": {
+        "id": 4,
+        "team": "Here Comes McBride"
+      },
+      "b": {
+        "id": 8,
+        "team": "Grittying N Grinding "
+      }
+    }
   ]
 }
