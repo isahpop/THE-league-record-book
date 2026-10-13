@@ -1,81 +1,81 @@
 {
   "season": 2026,
-  "completedWeek": 4,
+  "completedWeek": 5,
   "updatedAt": "2026-10-13",
   "summary": {
-    "avg": 131.85,
-    "top": "Mike · 168.43 PPG"
+    "avg": 135.04,
+    "top": "Mike · 157.41 PPG"
   },
   "currentStandings": [
     {
       "id": 8,
       "manager": "Mike",
       "name": "Grittying N Grinding ",
-      "wl": "4–0",
-      "pf": 673.7
+      "wl": "4–1",
+      "pf": 787.05
     },
     {
       "id": 4,
       "manager": "Zach",
       "name": "Here Comes McBride",
-      "wl": "3–1",
-      "pf": 609.25
+      "wl": "4–1",
+      "pf": 753.15
     },
     {
       "id": 5,
       "manager": "JB",
       "name": "Davante N' Josh",
-      "wl": "3–1",
-      "pf": 534.7
+      "wl": "4–1",
+      "pf": 715.65
     },
     {
       "id": 1,
       "manager": "Coy",
       "name": "Love Wins in Ohio",
-      "wl": "3–1",
-      "pf": 512.25
-    },
-    {
-      "id": 6,
-      "manager": "Isaiah",
-      "name": "Nacua Matata",
-      "wl": "2–2",
-      "pf": 437.3
-    },
-    {
-      "id": 2,
-      "manager": "Golly",
-      "name": "Waddling Bowers II",
-      "wl": "1–3",
-      "pf": 539.05
+      "wl": "3–2",
+      "pf": 624.45
     },
     {
       "id": 10,
       "manager": "Jazz",
       "name": "Team Binning",
-      "wl": "1–3",
-      "pf": 538.55
+      "wl": "2–3",
+      "pf": 722.0
     },
     {
       "id": 9,
       "manager": "JT",
       "name": "JT's Finest Team",
-      "wl": "1–3",
-      "pf": 501.05
+      "wl": "2–3",
+      "pf": 652.8
     },
     {
-      "id": 7,
-      "manager": "Austin",
-      "name": "Hill Hurt Me We miss #10",
-      "wl": "1–3",
-      "pf": 473.6
+      "id": 6,
+      "manager": "Isaiah",
+      "name": "Nacua Matata",
+      "wl": "2–3",
+      "pf": 592.1
     },
     {
       "id": 3,
       "manager": "Lance",
       "name": "Team Phillips",
-      "wl": "1–3",
-      "pf": 454.4
+      "wl": "2–3",
+      "pf": 608.0
+    },
+    {
+      "id": 2,
+      "manager": "Golly",
+      "name": "Waddling Bowers II",
+      "wl": "1–4",
+      "pf": 679.75
+    },
+    {
+      "id": 7,
+      "manager": "Austin",
+      "name": "Hill Hurt Me We miss #10",
+      "wl": "1–4",
+      "pf": 617.3
     }
   ],
   "matchups": [
@@ -2378,54 +2378,629 @@
           25.7
         ]
       }
-    }
-  ],
-  "upcomingWeek": 5,
-  "upcomingMatchups": [
+    },
     {
+      "week": 5,
       "a": {
         "id": 1,
-        "team": "Love Wins in Ohio"
+        "team": "Love Wins in Ohio",
+        "score": 112.2,
+        "starters": [
+          [
+            "WR",
+            "Amon-Ra St. Brown",
+            12.9
+          ],
+          [
+            "WR",
+            "Malik Nabers",
+            29.1
+          ],
+          [
+            "RB",
+            "Jeremiyah Love",
+            2.2
+          ],
+          [
+            "RB",
+            "Bhayshul Tuten",
+            11.6
+          ],
+          [
+            "FLEX",
+            "DK Metcalf",
+            5.3
+          ],
+          [
+            "QB",
+            "Dak Prescott",
+            17.8
+          ],
+          [
+            "TE",
+            "George Kittle",
+            7.4
+          ],
+          [
+            "D/ST",
+            "Patriots D/ST",
+            9.0
+          ],
+          [
+            "K",
+            "Will Reichard",
+            16.9
+          ]
+        ],
+        "bench": [
+          "Denzel Boston",
+          13.6
+        ]
       },
       "b": {
         "id": 9,
-        "team": "JT's Finest Team"
+        "team": "JT's Finest Team",
+        "score": 151.75,
+        "starters": [
+          [
+            "RB",
+            "Jahmyr Gibbs",
+            37.7
+          ],
+          [
+            "FLEX",
+            "Nico Collins",
+            10.6
+          ],
+          [
+            "QB",
+            "Jayden Daniels",
+            34.25
+          ],
+          [
+            "RB",
+            "Rhamondre Stevenson",
+            17.5
+          ],
+          [
+            "WR",
+            "Matthew Golden",
+            20.3
+          ],
+          [
+            "D/ST",
+            "Steelers D/ST",
+            2.0
+          ],
+          [
+            "K",
+            "Ka'imi Fairbairn",
+            17.9
+          ],
+          [
+            "WR",
+            "Devaughn Vele",
+            6.6
+          ],
+          [
+            "TE",
+            "Jake Ferguson",
+            4.9
+          ]
+        ],
+        "bench": [
+          "Kyle Pitts Sr.",
+          15.2
+        ]
       }
     },
+    {
+      "week": 5,
+      "a": {
+        "id": 7,
+        "team": "Hill Hurt Me We miss #10",
+        "score": 143.7,
+        "starters": [
+          [
+            "RB",
+            "James Cook III",
+            22.8
+          ],
+          [
+            "WR",
+            "George Pickens",
+            28.0
+          ],
+          [
+            "TE",
+            "Harold Fannin Jr.",
+            1.4
+          ],
+          [
+            "RB",
+            "Jaylen Warren",
+            42.8
+          ],
+          [
+            "FLEX",
+            "Deebo Samuel Sr.",
+            2.5
+          ],
+          [
+            "WR",
+            "Garrett Wilson",
+            23.4
+          ],
+          [
+            "QB",
+            "Tyler Shough",
+            0.8
+          ],
+          [
+            "D/ST",
+            "Jets D/ST",
+            20.0
+          ],
+          [
+            "K",
+            "Harrison Mevis",
+            2.0
+          ]
+        ],
+        "bench": [
+          "Courtland Sutton",
+          9.8
+        ]
+      },
+      "b": {
+        "id": 3,
+        "team": "Team Phillips",
+        "score": 153.6,
+        "starters": [
+          [
+            "RB",
+            "Ashton Jeanty",
+            10.7
+          ],
+          [
+            "WR",
+            "Zay Flowers",
+            14.6
+          ],
+          [
+            "QB",
+            "Drake Maye",
+            51.2
+          ],
+          [
+            "RB",
+            "TreVeyon Henderson",
+            4.8
+          ],
+          [
+            "TE",
+            "Sam LaPorta",
+            19.8
+          ],
+          [
+            "WR",
+            "Jakobi Meyers",
+            5.7
+          ],
+          [
+            "D/ST",
+            "Eagles D/ST",
+            3.0
+          ],
+          [
+            "K",
+            "Jason Myers",
+            25.0
+          ],
+          [
+            "FLEX",
+            "Drake London",
+            18.8
+          ]
+        ],
+        "bench": [
+          "Tyler Huntley",
+          30.05
+        ]
+      }
+    },
+    {
+      "week": 5,
+      "a": {
+        "id": 10,
+        "team": "Team Binning",
+        "score": 183.45,
+        "starters": [
+          [
+            "RB",
+            "Jonathan Taylor",
+            11.2
+          ],
+          [
+            "RB",
+            "Derrick Henry",
+            21.0
+          ],
+          [
+            "FLEX",
+            "Bucky Irving",
+            31.5
+          ],
+          [
+            "WR",
+            "Jameson Williams",
+            18.7
+          ],
+          [
+            "WR",
+            "Christian Watson",
+            36.3
+          ],
+          [
+            "TE",
+            "Tucker Kraft",
+            11.6
+          ],
+          [
+            "D/ST",
+            "Texans D/ST",
+            17.0
+          ],
+          [
+            "K",
+            "Jake Bates",
+            10.6
+          ],
+          [
+            "QB",
+            "C.J. Stroud",
+            25.55
+          ]
+        ],
+        "bench": [
+          "Ollie Gordon II",
+          14.8
+        ]
+      },
+      "b": {
+        "id": 2,
+        "team": "Waddling Bowers II",
+        "score": 140.7,
+        "starters": [
+          [
+            "WR",
+            "Ja'Marr Chase",
+            20.7
+          ],
+          [
+            "TE",
+            "Brock Bowers",
+            23.0
+          ],
+          [
+            "QB",
+            "Josh Allen",
+            34.6
+          ],
+          [
+            "RB",
+            "Kyren Williams",
+            19.6
+          ],
+          [
+            "FLEX",
+            "Jaylen Waddle",
+            4.8
+          ],
+          [
+            "WR",
+            "Carnell Tate",
+            1.6
+          ],
+          [
+            "D/ST",
+            "Broncos D/ST",
+            17.0
+          ],
+          [
+            "K",
+            "Cameron Dicker",
+            6.2
+          ],
+          [
+            "RB",
+            "Emanuel Wilson",
+            13.2
+          ]
+        ],
+        "bench": [
+          "Blake Corum",
+          16.2
+        ]
+      }
+    },
+    {
+      "week": 5,
+      "a": {
+        "id": 5,
+        "team": "Davante N' Josh",
+        "score": 180.95,
+        "starters": [
+          [
+            "WR",
+            "Justin Jefferson",
+            18.8
+          ],
+          [
+            "RB",
+            "Christian McCaffrey",
+            17.3
+          ],
+          [
+            "RB",
+            "Javonte Williams",
+            14.2
+          ],
+          [
+            "WR",
+            "Davante Adams",
+            22.1
+          ],
+          [
+            "TE",
+            "Tyler Warren",
+            21.4
+          ],
+          [
+            "K",
+            "Brandon Aubrey",
+            5.1
+          ],
+          [
+            "D/ST",
+            "Seahawks D/ST",
+            12.0
+          ],
+          [
+            "FLEX",
+            "Isaiah Likely",
+            32.4
+          ],
+          [
+            "QB",
+            "Jared Goff",
+            37.65
+          ]
+        ],
+        "bench": [
+          "Emeka Egbuka",
+          17.2
+        ]
+      },
+      "b": {
+        "id": 6,
+        "team": "Nacua Matata",
+        "score": 154.8,
+        "starters": [
+          [
+            "WR",
+            "Puka Nacua",
+            37.7
+          ],
+          [
+            "RB",
+            "Chase Brown",
+            7.0
+          ],
+          [
+            "TE",
+            "Colston Loveland",
+            3.9
+          ],
+          [
+            "RB",
+            "Quinshon Judkins",
+            8.0
+          ],
+          [
+            "QB",
+            "Joe Burrow",
+            35.5
+          ],
+          [
+            "WR",
+            "Parker Washington",
+            33.4
+          ],
+          [
+            "FLEX",
+            "Josh Downs",
+            7.7
+          ],
+          [
+            "D/ST",
+            "Vikings D/ST",
+            15.0
+          ],
+          [
+            "K",
+            "Evan McPherson",
+            6.6
+          ]
+        ],
+        "bench": [
+          "Terry McLaurin",
+          12.2
+        ]
+      }
+    },
+    {
+      "week": 5,
+      "a": {
+        "id": 4,
+        "team": "Here Comes McBride",
+        "score": 143.9,
+        "starters": [
+          [
+            "WR",
+            "Jaxon Smith-Njigba",
+            22.8
+          ],
+          [
+            "WR",
+            "CeeDee Lamb",
+            2.9
+          ],
+          [
+            "TE",
+            "Trey McBride",
+            21.6
+          ],
+          [
+            "RB",
+            "D'Andre Swift",
+            17.3
+          ],
+          [
+            "FLEX",
+            "Michael Wilson",
+            7.35
+          ],
+          [
+            "RB",
+            "Aaron Jones Sr.",
+            18.7
+          ],
+          [
+            "QB",
+            "Matthew Stafford",
+            37.15
+          ],
+          [
+            "K",
+            "Cam Little",
+            9.1
+          ],
+          [
+            "D/ST",
+            "Jaguars D/ST",
+            7.0
+          ]
+        ],
+        "bench": [
+          "Braelon Allen",
+          18.6
+        ]
+      },
+      "b": {
+        "id": 8,
+        "team": "Grittying N Grinding ",
+        "score": 113.35,
+        "starters": [
+          [
+            "RB",
+            "Bijan Robinson",
+            15.8
+          ],
+          [
+            "WR",
+            "Chris Olave",
+            8.6
+          ],
+          [
+            "WR",
+            "Luther Burden III",
+            8.9
+          ],
+          [
+            "FLEX",
+            "Mike Evans",
+            26.3
+          ],
+          [
+            "QB",
+            "Trevor Lawrence",
+            32.05
+          ],
+          [
+            "K",
+            "Spencer Shrader",
+            21.3
+          ],
+          [
+            "D/ST",
+            "Bears D/ST",
+            -2.0
+          ],
+          [
+            "RB",
+            "RJ Harvey",
+            0.7
+          ],
+          [
+            "TE",
+            "T.J. Hockenson",
+            1.7
+          ]
+        ],
+        "bench": [
+          "Brock Purdy",
+          22.05
+        ]
+      }
+    }
+  ],
+  "upcomingWeek": 6,
+  "upcomingMatchups": [
     {
       "a": {
         "id": 7,
         "team": "Hill Hurt Me We miss #10"
       },
       "b": {
-        "id": 3,
-        "team": "Team Phillips"
+        "id": 1,
+        "team": "Love Wins in Ohio"
       }
     },
     {
       "a": {
+        "id": 9,
+        "team": "JT's Finest Team"
+      },
+      "b": {
         "id": 10,
         "team": "Team Binning"
-      },
-      "b": {
-        "id": 2,
-        "team": "Waddling Bowers II"
       }
     },
     {
       "a": {
+        "id": 3,
+        "team": "Team Phillips"
+      },
+      "b": {
         "id": 5,
         "team": "Davante N' Josh"
-      },
-      "b": {
-        "id": 6,
-        "team": "Nacua Matata"
       }
     },
     {
       "a": {
+        "id": 2,
+        "team": "Waddling Bowers II"
+      },
+      "b": {
         "id": 4,
         "team": "Here Comes McBride"
+      }
+    },
+    {
+      "a": {
+        "id": 6,
+        "team": "Nacua Matata"
       },
       "b": {
         "id": 8,
