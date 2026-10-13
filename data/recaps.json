@@ -54,6 +54,20 @@
         "Top individual starter: Tetairoa McMillan scored 45.20 points for Jazz."
       ],
       "source": "data/season-2026.json"
+    },
+    {
+      "season": 2026,
+      "week": 5,
+      "publishedAt": "2026-10-13",
+      "title": "Jazz tops Week 5 with 183.45 points",
+      "paragraphs": [
+        "Week 5's top score belonged to Jazz at 183.45 points. Across all 10 teams, the scoring average was 147.84 points.",
+        "Closest finish: Lance beat Austin 153.60–143.70, a gap of 9.90 points.",
+        "Biggest victory: Jazz over Golly 183.45–140.70, a margin of 42.75 points.",
+        "Toughest high-scoring loss: Isaiah put up 154.80 points and still lost.",
+        "Top individual starter: Drake Maye scored 51.20 points for Lance."
+      ],
+      "source": "data/season-2026.json"
     }
   ]
 }
