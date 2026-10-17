@@ -2,7 +2,7 @@
 """Sync THE League current-season data directly from ESPN Fantasy.
 Secrets stay in the runner environment; only derived public league data is committed.
 """
-import json, os, sys
+import json, math, os, sys
 from datetime import date
 from pathlib import Path
 from urllib.parse import urlencode
@@ -68,6 +68,45 @@ def upcoming_matchups(schedule, week, team_names):
             for g in games]
 
 
+def validate_snapshot(season, previous, expected_ids):
+    """Reject degraded snapshots before touching any published files.
+
+    This importer supports this league's single-week regular-season games.
+    Postseason ingestion needs a separate phase-aware implementation.
+    """
+    if previous and (season['season'] != previous['season'] or
+                     season['completedWeek'] < previous['completedWeek']):
+        raise ValueError('Refusing to regress the published season or completed week.')
+    ids = [row['id'] for row in season['currentStandings']]
+    if sorted(ids) != sorted(expected_ids):
+        raise ValueError('Standings do not match the permanent manager IDs.')
+    totals = {tid: 0 for tid in ids}
+    records = {tid: [0, 0, 0] for tid in ids}
+    for week in range(1, season['completedWeek'] + 1):
+        games = [g for g in season['matchups'] if g['week'] == week]
+        if sorted(s['id'] for g in games for s in (g['a'], g['b'])) != sorted(ids):
+            raise ValueError(f'Week {week}: incomplete or duplicate participants.')
+        for g in games:
+            for side, opponent in ((g['a'], g['b']), (g['b'], g['a'])):
+                score = side['score']
+                starters = side['starters']
+                if not math.isfinite(score) or not starters or any(
+                        not math.isfinite(p[2]) for p in starters):
+                    raise ValueError(f'Week {week}: missing or invalid scoring/lineups.')
+                if abs(sum(p[2] for p in starters) - score) > 0.1:
+                    raise ValueError(f'Week {week}: starter points do not reconcile.')
+                totals[side['id']] += score
+                outcome = 0 if score > opponent['score'] else 1 if score < opponent['score'] else 2
+                records[side['id']][outcome] += 1
+    for row in season['currentStandings']:
+        if not math.isfinite(row['pf']) or abs(totals[row['id']] - row['pf']) > 0.1:
+            raise ValueError('Standings points do not reconcile with completed games.')
+        wins, losses, ties = records[row['id']]
+        expected = f'{wins}–{losses}' + (f'–{ties}' if ties else '')
+        if row['wl'] != expected:
+            raise ValueError('Standings records do not reconcile with completed games.')
+
+
 def main():
     meta=get([('view','mTeam'),('view','mStatus'),('view','mDraftDetail')])
     status=meta.get('status') or {}
@@ -120,7 +159,9 @@ def main():
                     lineup_log.append({'playerId':pid,'name':name,'managerId':tid,'week':week,'points':round(pts,2),'started':slot not in BENCH})
         try:
             tx=get([('view','mTransactions2'),('scoringPeriodId',week)])
-            rows=sorted(tx.get('transactions',[]),key=lambda x:x.get('processDate') or 0)
+            if not isinstance(tx.get('transactions'), list):
+                raise ValueError('ESPN transaction coverage is unavailable')
+            rows=sorted(tx['transactions'],key=lambda x:x.get('processDate') or 0)
             for tr in rows:
                 if tr.get('status')!='EXECUTED' or tr.get('type') not in ('WAIVER','FREE_AGENT'): continue
                 typ='waiver' if tr['type']=='WAIVER' else 'free-agent'
@@ -135,7 +176,7 @@ def main():
                     elif action=='DROP' and it.get('fromTeamId'):
                         tid=int(it['fromTeamId']); key=(tid,pid)
                         if key in open_stints: open_stints.pop(key)['endWeek']=week
-        except Exception as e:
+        except (Exception, SystemExit) as e:
             tx_ok=False; print(f'warning: transactions week {week}: {e}',file=sys.stderr)
 
     # Read the NEXT week from ESPN separately from completed box scores.
@@ -162,16 +203,29 @@ def main():
     season={'season':SEASON,'completedWeek':completed,'updatedAt':date.today().isoformat(),
             'summary':summary,'currentStandings':standings,'matchups':matchups,
             'upcomingWeek':next_week,'upcomingMatchups':upcoming}
-    (ROOT/f'data/season-{SEASON}.json').write_text(json.dumps(season,ensure_ascii=False,indent=2)+'\n')
+    season_path = ROOT/f'data/season-{SEASON}.json'
+    previous = json.loads(season_path.read_text()) if season_path.exists() else None
+    validate_snapshot(season, previous, manager_names)
 
     awards_path=ROOT/'data/awards.json'; awards=json.loads(awards_path.read_text()); a=awards['seasons'].setdefault(str(SEASON),{})
     picks=(meta.get('draftDetail') or {}).get('picks') or []
     if picks:
         a['draftComplete']=True
         a['sourceDraftPicks']=[{'playerId':str(p['playerId']),'managerId':int(p['teamId']),'overallPick':int(p['overallPickNumber']),'round':int(p['roundId']),'selectionInRound':int(p['roundPickNumber'])} for p in picks]
-    a['transactionsComplete']=tx_ok; a['lineupsComplete']=True; a['acquisitions']=acquisitions; a['lineups']=lineup_log
+    a['transactionsComplete']=tx_ok; a['lineupsComplete']=True; a['lineups']=lineup_log
+    if tx_ok:
+        a['acquisitions']=acquisitions
+    # Keep the last saved ownership evidence on an optional-source failure.
+    # The false coverage flag prevents awards from using it as a complete log.
     a['coverageNote']=f'Direct ESPN sync through Week {completed}. Draft, weekly lineups and waiver/free-agent transactions are refreshed automatically.'
-    awards_path.write_text(json.dumps(awards,ensure_ascii=False,indent=2)+'\n')
+    if not tx_ok:
+        a['coverageNote'] += ' Transaction refresh incomplete; previously saved acquisitions retained and waiver awards withheld.'
+    # Serialize both payloads before writing either; malformed awards cannot
+    # leave a newly written season paired with an unprepared awards payload.
+    season_text=json.dumps(season,ensure_ascii=False,indent=2,allow_nan=False)+'\n'
+    awards_text=json.dumps(awards,ensure_ascii=False,indent=2,allow_nan=False)+'\n'
+    season_path.write_text(season_text)
+    awards_path.write_text(awards_text)
     print(f'Synced ESPN league {LEAGUE_ID}: {len(standings)} teams, Weeks 1–{completed}, {len(acquisitions)} acquisition stints.')
 
 if __name__=='__main__': main()
