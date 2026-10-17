@@ -53,11 +53,13 @@ function managerTeamHTML(manager,team){return `<div class="name-main">${escapeHT
 let routeReady=false, applyingRoute=false;
 let selectedView='home', selectedWeek='upcoming', selectedYear=seasonData.season;
 let selectedManager=null, selectedRival=null, selectedGame=null;
+let huddleUI=null, selectedHuddleWeek=seasonData.completedWeek, selectedHuddleFocus='all';
 function writeRoute(replace=false){
  if(!routeReady||applyingRoute)return;
  const params=new URLSearchParams();
  if(selectedView==='matchups'&&selectedWeek!=='upcoming')params.set('week',selectedWeek);
  if(selectedView==='seasons')params.set('year',selectedYear);
+ if(selectedView==='huddle'){params.set('week',selectedHuddleWeek);if(selectedHuddleFocus!=='all')params.set('focus',selectedHuddleFocus);}
  if(selectedManager!==null)params.set('manager',selectedManager);
  if(selectedRival!==null)params.set('rival',selectedRival);
  if(selectedGame)params.set('game',selectedGame);
@@ -66,10 +68,11 @@ function writeRoute(replace=false){
 }
 function gameKey(g){return [g.year,g.week,g.phase,g.a.id,g.b.id].join(':')}
 function setView(id){
- if(!['home','matchups','records','managers','seasons'].includes(id))id='home';
+ if(!['home','huddle','matchups','records','managers','seasons'].includes(id))id='home';
  // Switching sections also dismisses overlays without creating intermediate URLs.
  const wasApplying=applyingRoute;applyingRoute=true;closeManager();closeMatchup();applyingRoute=wasApplying;
  selectedView=id;
+ if(id==='huddle'&&!applyingRoute)huddleUI?.render(selectedHuddleWeek,selectedHuddleFocus);
  document.querySelectorAll('.view').forEach(v=>v.classList.toggle('active',v.id===id));
  document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===id));
  window.scrollTo({top:0,behavior:'smooth'});writeRoute();
@@ -81,6 +84,11 @@ function applyRoute(){
   setView(view);
   const week=Number(params.get('week'));
   renderMatchups(matchups.some(m=>m.week===week)?week:'upcoming');
+  if(selectedView==='huddle'){
+   selectedHuddleWeek=matchups.some(m=>m.week===week)?week:seasonData.completedWeek;
+   selectedHuddleFocus=params.has('focus')&&teams.some(t=>String(t.id)===params.get('focus'))?params.get('focus'):'all';
+   huddleUI?.render(selectedHuddleWeek,selectedHuddleFocus);
+  }
   const year=Number(params.get('year'));
   renderSeason(Object.hasOwn(seasons,year)?year:seasonData.season);
   const manager=Number(params.get('manager')),rival=Number(params.get('rival'));
@@ -361,6 +369,13 @@ function recapArchiveHTML(year){const rows=(recapData.recaps||[]).filter(r=>r.se
 
 document.getElementById('teamSearch').addEventListener('input',e=>renderManagers(e.target.value));
 const toast=document.getElementById('toast');function showToast(msg='Link copied'){toast.textContent=msg;toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),1600)}document.getElementById('shareBtn').onclick=async()=>{try{if(navigator.share){await navigator.share({title:'THE League Record Book',url:location.href})}else{await navigator.clipboard.writeText(location.href);showToast()}}catch(e){if(e.name!=='AbortError')showToast('Copy the address bar link')}};
+if(typeof LeagueHuddle!=='undefined'&&typeof HuddleUI!=='undefined'){
+ try{
+  const model=LeagueHuddle.build(seasonData,historyData,teams);
+  huddleUI=HuddleUI.mount(model,(week,focus)=>{const active=document.activeElement?.id;selectedHuddleWeek=week;selectedHuddleFocus=focus;writeRoute();huddleUI.render(week,focus);if(active)document.getElementById(active)?.focus();});
+  huddleUI.render(selectedHuddleWeek,selectedHuddleFocus);
+ }catch(error){console.warn('Huddle unavailable:',error);document.getElementById('huddleContent').innerHTML='<div class="hd-empty"><h2>The receipts are being checked.</h2><p>We could not reconcile this archive. Published matchups remain available while the Huddle waits for a complete snapshot.</p><a href="#matchups">Open matchups →</a></div>';}
+}
 renderHome();renderRecaps();renderMatchups();renderRecords();renderManagers();renderSeason();routeReady=true;applyRoute();
 
 })().catch(err=>{console.error(err);document.querySelector("main")?.insertAdjacentHTML("afterbegin", '<div class="panel" role="alert"><h2>League data temporarily unavailable</h2><p>We could not load the published season data. Please try refreshing the page.</p><button class="share-btn" id="retryLeague">Retry</button></div>');document.getElementById('retryLeague')?.addEventListener('click',()=>location.reload());});

@@ -9,7 +9,8 @@ async function app(hash='',data=load()){
  const nodes=new Map(),listeners={};
  const node=key=>{if(!nodes.has(key))nodes.set(key,{innerHTML:'',classList:{add(){},remove(){},toggle(){}},style:{},setAttribute(){},addEventListener(){},querySelectorAll(){return []},querySelector:node});return nodes.get(key)};
  const location={hash};
- const context={document:{getElementById:node,querySelector:node,querySelectorAll:()=>[],addEventListener(){},body:{style:{}}},window:{scrollTo(){},addEventListener:(name,fn)=>listeners[name]=fn},location,history:{pushState:(_,__,url)=>location.hash=url,replaceState:(_,__,url)=>location.hash=url},URLSearchParams,setTimeout,console:{warn(){},error(e){throw e}},LeagueStats:require('../assets/stats.js'),fetch:async url=>({ok:true,json:async()=>structuredClone(data[url.split('/').pop()])})};
+ const context={document:{getElementById:node,querySelector:node,querySelectorAll:()=>[],addEventListener(){},body:{style:{}}},window:{scrollTo(){},addEventListener:(name,fn)=>listeners[name]=fn},location,history:{pushState:(_,__,url)=>location.hash=url,replaceState:(_,__,url)=>location.hash=url},URLSearchParams,setTimeout,console:{warn(){},error(e){throw e}},LeagueStats:require('../assets/stats.js'),LeagueHuddle:require('../assets/huddle.js'),fetch:async url=>({ok:true,json:async()=>structuredClone(data[url.split('/').pop()])})};
+ vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../assets/huddle-ui.js'),'utf8'),context);
  const expose='window.testAPI={setView,renderMatchups,renderRecords,renderSeason,openManager,openRivalry,openMatchup,openArchivedGame,closeMatchup,closeManager,applyRoute};';
  await vm.runInNewContext(source.replace('renderHome();renderRecaps();',expose+'renderHome();renderRecaps();'),context);
  return {nodes,node,location,api:context.window.testAPI,listeners};
@@ -56,4 +57,19 @@ test('late preview response never unhides an archived week tab',async()=>{
  const data=load();global.fetch=async url=>({ok:true,json:async()=>data[url.split('/').pop()]});
  try{await preview.mount();assert.equal(matchup.hidden,true);assert.match(matchup.innerHTML,/Matchup Preview/)}
  finally{for(const [k,v] of Object.entries(previous)){if(v===undefined)delete global[k];else global[k]=v}}
+});
+
+test('Huddle links restore week and manager, with safe invalid-filter fallbacks',async()=>{
+ const a=await app('#huddle?week=3&focus=6');
+ assert.equal(a.location.hash,'#huddle?week=3&focus=6');
+ assert.match(a.node('huddleContent').innerHTML,/Isaiah&#39;s weekly receipt/);
+ assert.match(a.node('huddleContent').innerHTML,/Through W3/);
+ a.location.hash='#matchups?week=1';a.listeners.hashchange();a.api.setView('huddle');
+ assert.equal(a.location.hash,'#huddle?week=3&focus=6');
+ assert.match(a.node('huddleContent').innerHTML,/Through W3/);
+ const b=await app('#huddle?week=999&focus=999');
+ assert.equal(b.location.hash,'#huddle?week=5');
+ b.location.hash='#huddle?week=2&focus=1';b.listeners.popstate();
+ assert.match(b.node('huddleContent').innerHTML,/Coy&#39;s weekly receipt/);
+ assert.match(b.node('huddleContent').innerHTML,/Through W2/);
 });

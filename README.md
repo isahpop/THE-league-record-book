@@ -99,3 +99,36 @@ back to `main`, ensure automated ESPN updates on `main` have been incorporated.
 Existing league JSON is unchanged by this release. Before deploying, incorporate
 newer data from main; do not replace it with a stale local snapshot. Run all Node
 and Python tests, then verify a shared week and matchup URL after deployment.
+
+
+## The Huddle — weekly receipts and rivalry room
+
+Open `#huddle` for weekly stories, personal receipts, Schedule Court, interactive
+rivalries, and a living team-score record book. Week and manager filters survive
+sharing and reload (`#huddle?week=3&focus=6`). Home features the latest edition.
+
+- Weekly highs, closest games, highest losing scores, personal bests and winning
+  streaks are computed from saved results. Personal receipts cover every manager.
+- Schedule Court compares same-week scores against every other manager. Expected
+  wins use all-play win/tie credit divided by opponent count; it is descriptive,
+  not a forecast or a simulation of a complete legal season schedule.
+- Rivalries include recorded regular-season and championship-bracket games.
+  Living records support regular/playoff filters and shared competition ranks.
+  Raw points are not adjusted for historical changes in scoring rules.
+- Copy receipt includes the source link; Save image creates a local PNG using
+  the browser canvas. Nothing is posted or sent automatically. Clipboard failure
+  exposes selectable text. Very long receipts offer text instead of clipped art.
+
+`assets/huddle.js` is a pure calculation module with injected season, archive and
+manager data. `assets/huddle-ui.js` renders that model without additional data
+requests. The existing Pulse reconciliation gates current results; duplicate or
+invalid historical games disable the Huddle rather than inventing results.
+Historical completeness still depends on the imported archive. The main app's
+existing views continue if the Huddle cannot reconcile its inputs.
+
+This is the first single-league product prototype, not a multi-tenant service.
+The calculations support different manager IDs, team counts and season years
+(tests include a four-team league with ties). Future multi-league hosting still
+requires tenant isolation, configurable site branding, licensed import adapters,
+commissioner controls, monitoring, and billing; those are not implemented here.
+No provider requests, league data changes, or new external services are introduced.
