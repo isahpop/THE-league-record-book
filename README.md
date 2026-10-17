@@ -78,3 +78,24 @@ back to `main`, ensure automated ESPN updates on `main` have been incorporated.
 - **Week archives** pair saved weekly editorials with completed results and full matchup drill-downs; the Seasons page retains the yearbook recap archive.
 - **Historical rivalry rows** open the corresponding game's box-score detail. Completed 2026 matchups use saved starter scoring and ESPN-recorded bench rows from `data/awards.json`. Older historical matchups include game results but do not claim that missing 2022–25 player lineups are known. Historical lineups will require verified ESPN exports.
 - **Position profiles** show indices on a zoomed 40–160 scale, centered at 100. Values are not modified; the bars are clamped if future indices fall outside this visual window.
+
+## Launch reliability and sharing update
+
+- Share now retains the selected week, season, manager, rivalry and game. For example,
+  `#matchups?week=3` opens Week 3. Game links use season/week/phase/permanent manager
+  IDs, so reordering the archive or changing a team name does not change identity.
+  Back/forward restores selections; invalid parameters fall back to valid views.
+- Records and homepage historical highlights explicitly cover 2022–25. Current
+  matchups no longer claim a top-ten all-time ranking from a fixed score threshold.
+- Main-app text rendering escapes imported names, aliases, record copy and player
+  names. `tests/app.test.js` exercises render output with hostile text and checks
+  route restoration with a lightweight document harness. Browser smoke checks are
+  still necessary for layout, focus and real navigation behavior.
+- The preview loader preserves the tab's visibility state, including when its
+  response arrives after the user selects an archived week.
+- Import safety changes reject regressed or inconsistent snapshots and preserve
+  saved acquisition evidence when optional transaction retrieval fails.
+
+Existing league JSON is unchanged by this release. Before deploying, incorporate
+newer data from main; do not replace it with a stale local snapshot. Run all Node
+and Python tests, then verify a shared week and matchup URL after deployment.

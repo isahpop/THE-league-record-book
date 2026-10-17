@@ -114,10 +114,10 @@
       if (!seasonResponse.ok || !historyResponse.ok) throw Error('League schedule is unavailable');
       const data = await seasonResponse.json(), history = await historyResponse.json();
       const report = calculatePreview(data, history, window.LeagueStats);
-      nodes.forEach(node=>{node.innerHTML = renderPreview(report);node.hidden = false;});
+      nodes.forEach(node=>{node.innerHTML = renderPreview(report);if(node===home)node.hidden = false;});
     } catch (err) {
       console.warn('Upcoming matchups not ready:',err);
-      nodes.forEach(node=>{node.innerHTML = '<div class="wp-pending"><strong>Week preview coming soon</strong><p>The next slate is awaiting complete ESPN matchup data. We’ll publish it when the schedule is confirmed.</p></div>';node.hidden = false;});
+      nodes.forEach(node=>{node.innerHTML = '<div class="wp-pending"><strong>Week preview coming soon</strong><p>The next slate is awaiting complete ESPN matchup data. We’ll publish it when the schedule is confirmed.</p></div>';if(node===home)node.hidden = false;});
     }
   }
   return {previewWindow,calculatePreview,renderPreview,mount};

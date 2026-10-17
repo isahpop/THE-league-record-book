@@ -62,7 +62,8 @@ test('HTML output safely escapes manager names', () => {
 test('Integrated homepage references existing scripts/styles and avoids stale Week 3 copy', () => {
   const file = fs.readFileSync(path.join(__dirname, '../index.html'), 'utf8');
   for (const asset of ['assets/stats.js', 'assets/app.js', 'assets/pulse.js', 'assets/styles.css', 'assets/pulse.css']) {
-    assert.ok(file.includes(`"${asset}"`), `Missing ${asset} reference`);
+    const references = [...file.matchAll(/(?:src|href)="([^"]+)"/g)].map(m => m[1].split('?')[0]);
+    assert.ok(references.includes(asset), `Missing ${asset} reference`);
     assert.ok(fs.existsSync(path.join(__dirname, '..', asset)), `Missing ${asset} file`);
   }
   assert.ok(file.includes('id="leaguePulse"'));
