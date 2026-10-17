@@ -3,23 +3,24 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<meta name="theme-color" content="#171717" />
+<meta name="theme-color" content="#14232b" />
 <title>THE League — Record Book</title>
 <meta name="description" content="THE League fantasy football standings, records, managers and season history." />
 <link rel="stylesheet" href="assets/styles.css" />
 <link rel="stylesheet" href="assets/pulse.css" />
 <link rel="stylesheet" href="assets/preview.css" />
 <link rel="stylesheet" href="assets/huddle.css?v=1" />
+<link rel="stylesheet" href="assets/design.css?v=1" />
 </head>
 <body>
 <header class="site-header"><div class="header-inner">
-  <div class="brand"><div class="brand-mark">TL</div><div><div class="brand-title">THE LEAGUE</div></div></div>
+  <div class="brand"><div class="brand-mark">TL</div><div><div class="brand-title">THE LEAGUE</div><div class="brand-subtitle">Fantasy football. Forever recorded.</div></div></div>
   <nav class="desktop-nav" aria-label="Primary"><button class="nav-btn active" data-view="home">Home</button><button class="nav-btn" data-view="huddle">The Huddle</button><button class="nav-btn" data-view="matchups">Matchups</button><button class="nav-btn" data-view="records">Records</button><button class="nav-btn" data-view="managers">Managers</button><button class="nav-btn" data-view="seasons">Seasons</button></nav>
   <div class="update-badge">Loading latest results…</div><button class="share-btn" id="shareBtn">Share</button>
 </div></header>
 <main class="shell">
 <section class="view active" id="home">
-  <div class="home-intro"><div><p class="eyebrow">League HQ · Est. 2022</p><h1>THE League</h1><p>Standings, records, manager history and the receipts that survive every team-name change.</p></div><div class="home-status"><strong>Loading season data…</strong><span>Waiting for published results</span></div></div>
+  <div class="home-intro"><div><p class="eyebrow">League HQ · Est. 2022</p><h1>THE League</h1><p>The wins. The rivalries. The receipts. Everything that makes this league yours.</p></div><div class="home-status"><strong>Loading season data…</strong><span>Waiting for published results</span></div></div>
 
   <section id="huddleTeaser" aria-label="The Huddle"></section>
   <section id="weekPreview" hidden aria-label="Upcoming fantasy matchups"></section>
@@ -44,7 +45,7 @@
 </section>
 
 <section class="view" id="matchups">
-  <div class="page-head"><div><p class="eyebrow">2026 weekly results</p><h1>Matchups</h1><p>Pick a week, then tap any matchup for the full scoring breakdown, MVP, bench regret and positional battle.</p></div></div>
+  <div class="page-head" data-index="01"><div><p class="eyebrow">2026 weekly results</p><h1>Matchups</h1><p>Pick a week, then tap any matchup for the full scoring breakdown, MVP, bench regret and positional battle.</p></div></div>
   <div class="week-tabs" id="weekTabs"></div>
   <section id="matchupWeekPreview" aria-label="This week's matchup scouting report"><div class="wp-pending"><strong>Loading this week's ESPN schedule…</strong></div></section>
   <div class="week-recap" id="weekRecap"></div>
@@ -52,17 +53,17 @@
 </section>
 
 <section class="view" id="records">
-  <div class="page-head"><div><p class="eyebrow">The receipts</p><h1>Record Book</h1><p>Preserved 2022–25 leaderboards. These records do not yet include 2026 results; current-season statistics are in Home and Matchups.</p></div></div>
+  <div class="page-head" data-index="02"><div><p class="eyebrow">The receipts</p><h1>Record Book</h1><p>Preserved 2022–25 leaderboards. These records do not yet include 2026 results; current-season statistics are in Home and Matchups.</p></div></div>
   <div class="filter-row" id="recordFilters"></div><div id="recordContent"></div>
 </section>
 
 <section class="view" id="managers">
-  <div class="page-head"><div><p class="eyebrow">10 managers · one history</p><h1>Managers</h1><p>Manager names are the permanent identity. Team names stay underneath as the season-by-season history.</p></div></div>
-  <input class="search" id="teamSearch" type="search" placeholder="Search manager or team name…" /><div class="manager-grid" id="managerGrid"></div>
+  <div class="page-head" data-index="03"><div><p class="eyebrow">10 managers · one history</p><h1>Managers</h1><p>Meet the competition. Explore the careers, championship runs, and rivalries behind every name.</p></div></div>
+  <label class="sr-only" for="teamSearch">Search managers or team names</label><input class="search" id="teamSearch" type="search" placeholder="Search manager or team name…" /><div class="manager-grid" id="managerGrid"></div>
 </section>
 
 <section class="view" id="seasons">
-  <div class="page-head"><div><p class="eyebrow">Year by year</p><h1>Seasons</h1><p>The yearbook: standings, the road to the title, draft and waiver awards, and weekly columns.</p></div></div>
+  <div class="page-head" data-index="04"><div><p class="eyebrow">Year by year</p><h1>Seasons</h1><p>Every season has a story. Revisit the standings, playoff runs, and moments that made it.</p></div></div>
   <div class="season-tabs" id="seasonTabs"></div><article class="panel" id="seasonPanel"></article>
 </section>
 </main>
@@ -73,6 +74,6 @@
 <script src="assets/pulse.js" defer></script>
 <script src="assets/huddle.js?v=1" defer></script>
 <script src="assets/huddle-ui.js?v=1" defer></script>
-<script src="assets/app.js?v=huddle-1" defer></script>
+<script src="assets/app.js?v=editorial-1" defer></script>
 <script src="assets/preview.js?v=launch-2" defer></script>
 </body></html>
