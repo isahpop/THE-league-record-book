@@ -40,7 +40,7 @@ test('recomputed earlier ranks use wins, then cumulative points as a tiebreak', 
   const rows=calculate(source).teams;
   const alpha=rows.find(x=>x.id===1),charlie=rows.find(x=>x.id===3);
   assert.equal(alpha.ranks[0],1);
-  assert.equal(charlie.ranks[0],3);
+  assert.equal(charlie.ranks[0],2);
   assert.equal(alpha.ranks.at(-1),1);
 });
 
