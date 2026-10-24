@@ -25,8 +25,12 @@ test('40–160 position scale widens actual differences without changing indexes
 test('All completed 2026 games have individually recorded starting players',()=>{
   assert.equal(season.matchups.length,season.completedWeek*5);
   for(const game of season.matchups)for(const side of [game.a,game.b]){
-    assert.ok(side.starters.length>=8);
+    // ESPN permits managers to leave roster slots empty. Validate the actual
+    // recorded players and their official sum, not an assumed slot count.
+    assert.ok(side.starters.length>0,`Missing recorded starters for ${side.team} in Week ${game.week}`);
     assert.ok(side.starters.every(p=>p.length===3&&typeof p[1]==='string'&&Number.isFinite(p[2])));
+    const total=side.starters.reduce((sum,p)=>sum+p[2],0);
+    assert.ok(Math.abs(total-side.score)<=0.1,`Starter total differs from ESPN game score for ${side.team} in Week ${game.week}`);
   }
 });
 

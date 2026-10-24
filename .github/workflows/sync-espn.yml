@@ -1,6 +1,15 @@
 name: Sync ESPN league data
 
 on:
+  # Publish a fresh snapshot as soon as a sync/import repair reaches main.
+  # Bot-generated data commits use GITHUB_TOKEN and do not recursively trigger this.
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/sync_espn.py'
+      - 'scripts/publish_recap.py'
+      - 'tests/**'
+      - '.github/workflows/sync-espn.yml'
   workflow_dispatch:
     inputs:
       publish_recaps:

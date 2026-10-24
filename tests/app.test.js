@@ -68,7 +68,7 @@ test('Huddle links restore week and manager, with safe invalid-filter fallbacks'
  assert.equal(a.location.hash,'#huddle?week=3&focus=6');
  assert.match(a.node('huddleContent').innerHTML,/Through W3/);
  const b=await app('#huddle?week=999&focus=999');
- assert.equal(b.location.hash,'#huddle?week=5');
+ assert.equal(b.location.hash,`#huddle?week=${load()['season-2026.json'].completedWeek}`);
  b.location.hash='#huddle?week=2&focus=1';b.listeners.popstate();
  assert.match(b.node('huddleContent').innerHTML,/Coy&#39;s weekly receipt/);
  assert.match(b.node('huddleContent').innerHTML,/Through W2/);
