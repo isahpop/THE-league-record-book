@@ -114,6 +114,7 @@ tbody tr { transition: background-color .12s ease; }
   stroke-linejoin: round;
   flex-shrink: 0;
 }
+.mobile-nav button span { display: block; margin: 0; font-size: inherit; line-height: 1.15; }
 .mobile-nav button.active { font-weight: 900; }
 .mobile-nav button:focus-visible,
 .week-btn:focus-visible, .filter-btn:focus-visible,
