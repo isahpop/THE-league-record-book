@@ -9,8 +9,10 @@ async function app(hash='',data=load()){
  const nodes=new Map(),listeners={};
  const node=key=>{if(!nodes.has(key))nodes.set(key,{innerHTML:'',classList:{add(){},remove(){},toggle(){}},style:{},setAttribute(){},addEventListener(){},querySelectorAll(){return []},querySelector:node});return nodes.get(key)};
  const location={hash};
- const context={document:{getElementById:node,querySelector:node,querySelectorAll:()=>[],addEventListener(){},body:{style:{}}},window:{scrollTo(){},addEventListener:(name,fn)=>listeners[name]=fn},location,history:{pushState:(_,__,url)=>location.hash=url,replaceState:(_,__,url)=>location.hash=url},URLSearchParams,setTimeout,console:{warn(){},error(e){throw e}},LeagueStats:require('../assets/stats.js'),LeagueHuddle:require('../assets/huddle.js'),LeagueStandingTrend:require('../assets/standings-chart.js'),fetch:async url=>({ok:true,json:async()=>structuredClone(data[url.split('/').pop()])})};
+ const context={document:{getElementById:node,querySelector:node,querySelectorAll:()=>[],addEventListener(){},body:{style:{}}},window:{scrollTo(){},addEventListener:(name,fn)=>listeners[name]=fn},location,history:{pushState:(_,__,url)=>location.hash=url,replaceState:(_,__,url)=>location.hash=url},URLSearchParams,setTimeout,console:{warn(){},error(e){throw e}},LeagueStats:require('../assets/stats.js'),LeagueHuddle:require('../assets/huddle.js'),fetch:async url=>({ok:true,json:async()=>structuredClone(data[url.split('/').pop()])})};
  vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../assets/huddle-ui.js'),'utf8'),context);
+ // Evaluate chart in the browser-like VM: CommonJS loading binds to Node's global document.
+ vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../assets/standings-chart.js'),'utf8'),context);
  const expose='window.testAPI={setView,renderMatchups,renderRecords,renderSeason,openManager,openRivalry,openMatchup,openArchivedGame,closeMatchup,closeManager,applyRoute};';
  await vm.runInNewContext(source.replace('renderHome();renderRecaps();',expose+'renderHome();renderRecaps();'),context);
  return {nodes,node,location,api:context.window.testAPI,listeners};
