@@ -109,8 +109,10 @@ function renderHome(){
  // Optional visual module: a chart error must never block standings or matchups.
  try {
   if (typeof LeagueStandingTrend !== 'undefined') LeagueStandingTrend.mount(seasonData);
+  else document.getElementById('standingsTrend').innerHTML='<p class="home-pending">Standings trend is temporarily unavailable. Reload to try again.</p>';
  } catch (error) {
   console.warn('Standings chart unavailable:',error);
+  document.getElementById('standingsTrend').innerHTML='<p class="home-pending">Standings trend is temporarily unavailable. Reload to try again.</p>';
  }
  document.querySelector('.update-badge').textContent=`Updated through ${seasonData.season} Week ${seasonData.completedWeek}`;
  document.querySelector('.home-status strong').textContent=`${seasonData.season} Week ${seasonData.completedWeek} complete`;
@@ -416,4 +418,12 @@ if(typeof LeagueHuddle!=='undefined'&&typeof HuddleUI!=='undefined'){
 }
 renderHome();renderRecaps();renderMatchups();renderRecords();renderManagers();renderSeason();routeReady=true;applyRoute();
 
-})().catch(err=>{console.error(err);document.querySelector("main")?.insertAdjacentHTML("afterbegin", '<div class="panel" role="alert"><h2>League data temporarily unavailable</h2><p>We could not load the published season data. Please try refreshing the page.</p><button class="share-btn" id="retryLeague">Retry</button></div>');document.getElementById('retryLeague')?.addEventListener('click',()=>location.reload());});
+})().catch(err=>{
+ console.error(err);
+ document.querySelector("main")?.insertAdjacentHTML("afterbegin", '<div class="panel" role="alert"><h2>League data temporarily unavailable</h2><p>We could not load the published season data. Please try refreshing the page.</p><button class="share-btn" id="retryLeague">Retry</button></div>');
+ for(const id of ['homeLatestGames','standingsTrend','homeTicker']){
+  const host=document.getElementById(id);
+  if(host) host.innerHTML='<p class="home-pending" role="status">League results could not load. Refresh this page to try again.</p>';
+ }
+ document.getElementById('retryLeague')?.addEventListener('click',()=>location.reload());
+});

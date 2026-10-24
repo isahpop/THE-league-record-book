@@ -65,7 +65,7 @@ test('homepage offers official-standings table and visible weekly trajectory con
   const app=fs.readFileSync(path.join(__dirname,'../assets/app.js'),'utf8');
   assert.match(html,/id="standings2026"/);
   assert.match(html,/id="standingsTrend"/);
-  assert.match(html,/assets\/standings-chart\.js\?v=1/);
+  assert.match(html,/assets\/standings-chart\.js\?v=dashboard-20261024-1/);
   assert.match(app,/LeagueStandingTrend\.mount\(seasonData\)/);
   assert.match(css,/\.st-scroll/);
   assert.match(css,/\.st-legend/);

@@ -11,6 +11,8 @@ async function app(hash='',data=load()){
  const location={hash};
  const context={document:{getElementById:node,querySelector:node,querySelectorAll:()=>[],addEventListener(){},body:{style:{}}},window:{scrollTo(){},addEventListener:(name,fn)=>listeners[name]=fn},location,history:{pushState:(_,__,url)=>location.hash=url,replaceState:(_,__,url)=>location.hash=url},URLSearchParams,setTimeout,console:{warn(){},error(e){throw e}},LeagueStats:require('../assets/stats.js'),LeagueHuddle:require('../assets/huddle.js'),fetch:async url=>({ok:true,json:async()=>structuredClone(data[url.split('/').pop()])})};
  vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../assets/huddle-ui.js'),'utf8'),context);
+ // Evaluate chart in the browser-like VM: CommonJS loading binds to Node's global document.
+ vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../assets/standings-chart.js'),'utf8'),context);
  const expose='window.testAPI={setView,renderMatchups,renderRecords,renderSeason,openManager,openRivalry,openMatchup,openArchivedGame,closeMatchup,closeManager,applyRoute};';
  await vm.runInNewContext(source.replace('renderHome();renderRecaps();',expose+'renderHome();renderRecaps();'),context);
  return {nodes,node,location,api:context.window.testAPI,listeners};
@@ -72,4 +74,16 @@ test('Huddle links restore week and manager, with safe invalid-filter fallbacks'
  b.location.hash='#huddle?week=2&focus=1';b.listeners.popstate();
  assert.match(b.node('huddleContent').innerHTML,/Coy&#39;s weekly receipt/);
  assert.match(b.node('huddleContent').innerHTML,/Through W2/);
+});
+
+test('homepage hydrates scores, league snapshot and standings chart (no hanging placeholders)',async()=>{
+ const a=await app();
+ assert.match(a.node('homeLatestGames').innerHTML,/home-game/);
+ assert.doesNotMatch(a.node('homeLatestGames').innerHTML,/Loading the latest games/);
+ assert.match(a.node('homeTicker').innerHTML,/FIRST PLACE/);
+ assert.match(a.node('homeTicker').innerHTML,/LEAGUE AVERAGE/);
+ assert.match(a.node('standings2026').innerHTML,/name-main/);
+ assert.match(a.node('standingsTrend').innerHTML,/st-svg/);
+ assert.match(a.node('standingsTrend').innerHTML,/data-st-team/);
+ assert.doesNotMatch(a.node('standingsTrend').innerHTML,/Reconstructing weekly standings/);
 });

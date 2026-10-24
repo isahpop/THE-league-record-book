@@ -21,7 +21,7 @@ test('six mobile destinations keep text labels and decorative accessible icons',
 
 test('responsive polish loads last and preserves reduced-motion and keyboard styles', () => {
   const sheets = [...html.matchAll(/<link rel="stylesheet" href="([^"]+)"\s*\/>/g)].map(match => match[1]);
-  assert.deepEqual(sheets.slice(-2), ['assets/polish.css?v=1','assets/home.css?v=1']);
+  assert.deepEqual(sheets.slice(-2), ['assets/polish.css?v=1','assets/home.css?v=dashboard-20261024-1']);
   assert.match(polish, /@media \(max-width: 390px\)/);
   assert.match(polish, /prefers-reduced-motion: reduce/);
   assert.match(polish, /\.mobile-nav button:focus-visible/);
