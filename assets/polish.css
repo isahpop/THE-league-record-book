@@ -1,0 +1,225 @@
+/* THE League — visual polish, October 2026
+   Presentation-only overrides. Loaded after the editorial design system.
+   Keep imported ESPN data, statistics, routing, and editorial components intact. */
+
+:root {
+  --r: 14px;
+}
+
+/* Shared rhythm and card hierarchy */
+.shell { padding-bottom: 120px; }
+.panel,
+.leader-card,
+.mini-record,
+.record-card,
+.manager-card,
+.week-recap-card,
+.matchup-card,
+.lp-panel,
+.wp-panel {
+  border-radius: 12px;
+}
+.panel,
+.lp-panel,
+.wp-panel,
+.hd-court,
+.hd-rivalry,
+.hd-records {
+  box-shadow: 0 4px 24px rgba(20, 35, 43, .035);
+}
+.section-title { gap: 16px; }
+.section-title h2,
+.panel-head h2,
+.lp-heading h2,
+.wp-heading h2 { line-height: 1.16; }
+.section-title .text-link,
+.panel-head .text-link { flex-shrink: 0; }
+.text-link { min-height: 44px; display: inline-flex; align-items: center; }
+.eyebrow { line-height: 1.5; }
+.history, .record-card p, .champ-sub, .manager-current { line-height: 1.55; }
+.leader-card, .mini-record, .week-recap-card { overflow-wrap: anywhere; }
+.leader-value, .mini-record strong, .recap-value,
+.matchup-score, .manager-stat strong, .season-mini strong,
+.lp-stat strong, .hd-story-value, .hd-leaderboard strong {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Desktop navigation and subtle feedback */
+.site-header { box-shadow: 0 4px 20px rgba(9, 22, 27, .09); }
+.nav-btn, .share-btn, .text-link,
+.week-btn, .filter-btn, .season-btn {
+  transition: background-color .16s ease, color .16s ease, border-color .16s ease;
+}
+.nav-btn { white-space: nowrap; }
+.brand-mark { flex-shrink: 0; }
+.update-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 10px;
+  color: #dbe6de;
+  background: #263b3b;
+  border-color: #405658;
+  font-size: 10px;
+}
+.share-btn { white-space: nowrap; }
+
+/* Stat density and scannability */
+.table-wrap, .lp-table-wrap { scrollbar-color: #bbc8b9 transparent; }
+th { white-space: nowrap; }
+td { vertical-align: middle; }
+tbody tr { transition: background-color .12s ease; }
+.compact-table td:nth-child(3),
+.compact-table th:nth-child(3),
+.lp-table-wrap td:not(:nth-child(2)) {
+  font-variant-numeric: tabular-nums;
+}
+.leader-card { display: flex; flex-direction: column; }
+.leader-card .leader-owner { margin-top: auto; padding-top: 8px; }
+.manager-quick button, .matchup-card, .manager-card, .hd-rival-facts a {
+  outline-offset: 3px;
+}
+.week-tabs, .filter-row, .season-tabs {
+  overscroll-behavior-inline: contain;
+  scrollbar-width: thin;
+  scrollbar-color: #b9c5b3 transparent;
+}
+.week-btn, .filter-btn, .season-btn { white-space: nowrap; }
+.search { max-width: 100%; }
+
+/* Unified six-item navigation; icons are decorative and labels remain readable */
+.mobile-nav {
+  gap: 2px;
+  padding: 6px;
+  border-radius: 15px;
+}
+.mobile-nav button {
+  min-width: 0;
+  min-height: 58px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  line-height: 1.15;
+  letter-spacing: -.01em;
+}
+.mobile-nav button svg {
+  display: block;
+  width: 19px;
+  height: 19px;
+  stroke: currentColor;
+  stroke-width: 1.85;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+}
+.mobile-nav button.active { font-weight: 900; }
+.mobile-nav button:focus-visible,
+.week-btn:focus-visible, .filter-btn:focus-visible,
+.season-btn:focus-visible, .text-link:focus-visible {
+  outline: 2px solid #7ca36f;
+  outline-offset: 2px;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .leader-card, .mini-record, .manager-quick button, .matchup-card {
+    transition: border-color .16s ease, transform .16s ease, box-shadow .16s ease;
+  }
+  .manager-quick button:hover, .matchup-card:hover {
+    box-shadow: 0 9px 26px rgba(20, 35, 43, .07);
+  }
+}
+
+/* On compact laptops, keep the header from wrapping or crowding. */
+@media (max-width: 1199px) {
+  .update-badge { display: none; }
+}
+@media (min-width: 901px) and (max-width: 1050px) {
+  .header-inner { gap: 8px; padding-left: 14px; padding-right: 14px; }
+  .brand-subtitle { display: none; }
+  .nav-btn { padding: 9px 9px; }
+}
+
+/* Tablet and phone refinements */
+@media (max-width: 900px) {
+  .shell { padding-bottom: calc(116px + env(safe-area-inset-bottom)); }
+  .mobile-nav {
+    left: 10px;
+    right: 10px;
+    bottom: max(9px, env(safe-area-inset-bottom));
+  }
+  .page-head { min-height: 0; }
+  .home-intro { min-height: 0; }
+  .manager-quick button { min-height: 105px; }
+}
+@media (max-width: 650px) {
+  .shell { padding: 18px 14px calc(118px + env(safe-area-inset-bottom)); }
+  .header-inner { min-height: 64px; padding: 10px 14px; }
+  .brand-mark { width: 35px; height: 38px; font-size: 14px; }
+  .brand-title { font-size: 14px; letter-spacing: .025em; }
+  .brand-subtitle { font-size: 8px; letter-spacing: .08em; }
+  .share-btn { min-height: 40px; padding: 8px 12px; }
+  .home-intro { padding: 27px 22px; margin-bottom: 18px; }
+  .home-intro h1 { font-size: clamp(43px, 12vw, 54px); margin: 12px 0; }
+  .home-intro p { font-size: 13px; line-height: 1.6; max-width: 100%; }
+  .home-status { margin-top: 22px; }
+  .page-head { padding: 8px 0 20px; margin-bottom: 16px; }
+  .page-head h1 { font-size: clamp(37px, 10vw, 44px); }
+  .page-head p:not(.eyebrow) { margin-top: 9px; line-height: 1.6; }
+  .section-title { margin: 28px 0 12px; align-items: start; }
+  .section-title h2 { font-size: 21px; }
+  .section-title .text-link { font-size: 11px; min-height: 34px; }
+  .panel, .wp-panel { padding: 18px 15px; margin-bottom: 18px; }
+  .panel-head { align-items: start; margin-bottom: 14px; }
+  .panel-head h2 { font-size: 20px; }
+  .panel-head .pill { display: none; }
+  .leader-grid, .notable-grid, .manager-quick { gap: 9px; }
+  .leader-card { padding: 15px; min-height: 120px; }
+  .leader-value { font-size: 27px; }
+  .mini-record { padding: 15px; }
+  .mini-record strong { font-size: 26px; }
+  .manager-quick button { min-height: 105px; padding: 14px; }
+  .week-tabs, .filter-row, .season-tabs { margin-bottom: 18px; }
+  .week-btn, .filter-btn, .season-btn { min-height: 44px; padding: 10px 13px; }
+  .matchup-list { gap: 10px; margin-top: 15px; }
+  .matchup-card { padding: 18px 13px; }
+  .matchup-manager { font-size: 16px; }
+  .matchup-score { font-size: 29px; }
+  .matchup-vs { padding: 6px; }
+  .record-card { padding: 18px; }
+  .record-card .value { font-size: 34px; overflow-wrap: anywhere; }
+  .week-recap-card { padding: 15px 13px; min-height: 120px; }
+  .week-recap-card .recap-value { font-size: 25px; }
+  .hd-hero { padding: 26px 20px; }
+  .hd-hero h1 { font-size: clamp(43px, 11vw, 54px); }
+  .hd-hero-strip { flex-wrap: wrap; gap: 8px 14px; line-height: 1.5; }
+  .hd-home-feature h2 { font-size: clamp(31px, 9vw, 38px); }
+  .hd-rival-score { gap: 6px; }
+  .hd-rival-score strong { font-size: clamp(39px, 11vw, 53px); }
+  .hd-rival-score>div>b { overflow-wrap: anywhere; }
+  .hd-court, .hd-rivalry, .hd-records { padding: 21px 16px; }
+  .lp-heading { gap: 10px; }
+  .lp-heading h2 { font-size: 22px; }
+  .mobile-nav button { font-size: 10px; padding: 6px 1px; }
+  footer { padding-left: 14px; padding-right: 14px; }
+}
+@media (max-width: 390px) {
+  .header-inner { gap: 8px; }
+  .brand-subtitle { display: none; }
+  .mobile-nav { left: 7px; right: 7px; gap: 0; padding: 4px; }
+  .mobile-nav button { font-size: 9px; min-height: 58px; gap: 3px; }
+  .mobile-nav button svg { width: 18px; height: 18px; }
+  .matchup-card { padding: 14px 10px; gap: 6px; }
+  .matchup-manager { font-size: 13px; }
+  .matchup-score { font-size: 23px; }
+  .matchup-vs { font-size: 8px; padding: 5px 4px; }
+  .manager-stat span { font-size: 8px; }
+  .manager-stat { padding: 11px 6px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .nav-btn, .share-btn, .text-link,
+  .week-btn, .filter-btn, .season-btn,
+  .leader-card, .mini-record, .manager-quick button,
+  .matchup-card, tbody tr { transition: none !important; }
+}
