@@ -106,6 +106,12 @@ window.addEventListener('hashchange',applyRoute);
 document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>setView(b.dataset.view)));document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>setView(b.dataset.go)));
 
 function renderHome(){
+ // Optional visual module: a chart error must never block standings or matchups.
+ try {
+  if (typeof LeagueStandingTrend !== 'undefined') LeagueStandingTrend.mount(seasonData);
+ } catch (error) {
+  console.warn('Standings chart unavailable:',error);
+ }
  document.querySelector('.update-badge').textContent=`Updated through ${seasonData.season} Week ${seasonData.completedWeek}`;
  document.querySelector('.home-status strong').textContent=`${seasonData.season} Week ${seasonData.completedWeek} complete`;
  document.querySelector('.home-status span').textContent=`Results updated: ${seasonData.updatedAt}`;
