@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="assets/huddle.css?v=1" />
 <link rel="stylesheet" href="assets/design.css?v=1" />
 <link rel="stylesheet" href="assets/polish.css?v=1" />
+<link rel="stylesheet" href="assets/home.css?v=1" />
 </head>
 <body>
 <header class="site-header"><div class="header-inner">
@@ -21,24 +22,83 @@
 </div></header>
 <main class="shell">
 <section class="view active" id="home">
-  <div class="home-intro"><div><p class="eyebrow">League HQ · Est. 2022</p><h1>THE League</h1><p>The wins. The rivalries. The receipts. Everything that makes this league yours.</p></div><div class="home-status"><strong>Loading season data…</strong><span>Waiting for published results</span></div></div>
+  <header class="home-masthead">
+    <div class="home-masthead-copy">
+      <p class="eyebrow">THE LEAGUE <span aria-hidden="true">/</span> 2026 SEASON</p>
+      <h1>League HQ<span>.</span></h1>
+      <p>Scores, standings and all the reasons the group chat is talking.</p>
+    </div>
+    <div class="home-status" aria-live="polite"><strong>Loading season data…</strong><span>Waiting for published results</span></div>
+  </header>
 
-  <section id="huddleTeaser" aria-label="The Huddle"></section>
+  <div class="home-ticker" id="homeTicker" aria-label="Season at a glance">
+    <div class="home-ticker-cell"><span>League snapshot</span><strong>Loading results…</strong></div>
+  </div>
+
+  <div class="home-dashboard-grid">
+    <article class="panel home-standings" aria-labelledby="homeStandingsTitle">
+      <div class="home-section-head">
+        <div><p class="eyebrow">THE RACE</p><h2 id="homeStandingsTitle">2026 Standings</h2></div>
+        <span class="pill">Latest results</span>
+      </div>
+      <div class="table-wrap compact-table">
+        <table aria-label="2026 league standings">
+          <thead><tr><th scope="col">#</th><th scope="col">Manager</th><th scope="col">W–L</th><th scope="col">PF</th></tr></thead>
+          <tbody id="standings2026"></tbody>
+        </table>
+      </div>
+      <button type="button" class="home-standings-toggle" id="standingsToggle" aria-expanded="false" aria-controls="standings2026">Show all 10 teams <span aria-hidden="true">↓</span></button>
+    </article>
+
+    <section class="home-scoreboard" aria-labelledby="homeResultsTitle">
+      <div class="home-section-head">
+        <div><p class="eyebrow" id="homeResultsEyebrow">LATEST ROUND</p><h2 id="homeResultsTitle">Final scores</h2></div>
+        <a href="#matchups" class="home-more-link">All matchups <span aria-hidden="true">↗</span></a>
+      </div>
+      <div id="homeLatestGames" class="home-game-list"><p class="home-pending">Loading the latest games…</p></div>
+    </section>
+  </div>
+
+  <section class="home-chart-panel" aria-labelledby="standingTrendHeading">
+    <div class="home-section-head">
+      <div><p class="eyebrow">THE STANDINGS RACE</p><h2 id="standingTrendHeading">Who’s climbing. Who’s falling.</h2><p>Track every manager’s position as the season unfolds.</p></div>
+      <span class="home-chart-season">2026 · WEEK BY WEEK</span>
+    </div>
+    <div id="standingsTrend" class="st-root"><p class="home-pending">Reconstructing weekly standings…</p></div>
+  </section>
+
   <section id="weekPreview" hidden aria-label="Upcoming fantasy matchups"></section>
-  <div id="homeColumn"></div>
-  <section id="leaguePulse" aria-label="THE League Pulse"><div class="lp-unavailable">Loading League Pulse…</div></section>
 
-  <article class="panel"><div class="panel-head"><div><p class="eyebrow">Current season</p><h2>2026 standings</h2></div><div style="display:flex;gap:8px;align-items:center"><button class="text-link" data-go="matchups">View matchups →</button><span class="pill">Latest results</span></div></div><div class="table-wrap compact-table"><table><thead><tr><th>#</th><th>Manager</th><th>W-L</th><th>PF</th></tr></thead><tbody id="standings2026"></tbody></table></div></article>
+  <div class="home-editorial-grid">
+    <section id="huddleTeaser" aria-label="The Huddle"></section>
+    <details class="home-recap">
+      <summary><span><span class="home-feature-kicker">FROM THE PRESS BOX</span><strong>The weekly report</strong><small>The results, the storylines, the receipts.</small></span><span class="home-recap-action" aria-hidden="true">Read report ↗</span></summary>
+      <div id="homeColumn"></div>
+    </details>
+  </div>
 
-  <div class="section-title"><div><p class="eyebrow">At a glance</p><h2>Historical league leaders</h2><p class="history">2022–25 archive · Current-season results appear above.</p></div><button class="text-link" data-go="records">All records →</button></div><div class="leader-grid" id="leaderGrid"></div>
+  <details class="home-deep-dive">
+    <summary><span><span class="home-feature-kicker">DIG DEEPER</span><strong>League Pulse &amp; all-play</strong><small>Scoring trends, schedule luck and league-wide comparisons.</small></span><span class="home-expand-icon" aria-hidden="true">+</span></summary>
+    <section id="leaguePulse" aria-label="THE League Pulse"><div class="lp-unavailable">Loading League Pulse…</div></section>
+  </details>
 
-  <div class="section-title"><div><p class="eyebrow">The receipts</p><h2>Notable historical records</h2><p class="history">Preserved 2022–25 records.</p></div></div><div class="notable-grid" id="notableGrid"></div>
+  <details class="home-deep-dive home-archive">
+    <summary><span><span class="home-feature-kicker">THE HISTORY</span><strong>Explore the record book</strong><small>Legends, records, manager profiles and champions.</small></span><span class="home-expand-icon" aria-hidden="true">+</span></summary>
+    <div class="home-archive-inner">
+      <div class="section-title"><div><p class="eyebrow">AT A GLANCE</p><h2>Historical league leaders</h2><p class="history">2022–25 archive · Current-season results appear above.</p></div><button class="text-link" data-go="records">All records →</button></div>
+      <div class="leader-grid" id="leaderGrid"></div>
 
-  <div class="section-title"><div><p class="eyebrow">Quick access</p><h2>Managers</h2></div><button class="text-link" data-go="managers">View all →</button></div><div class="manager-quick" id="managerQuick"></div>
+      <div class="section-title"><div><p class="eyebrow">THE RECEIPTS</p><h2>Notable historical records</h2><p class="history">Preserved 2022–25 records.</p></div></div>
+      <div class="notable-grid" id="notableGrid"></div>
 
-  <div class="section-title"><div><p class="eyebrow">History</p><h2>Recent champions</h2></div><button class="text-link" data-go="seasons">Season archive →</button></div><article class="panel"><div class="champ-list" id="champions"></div></article>
+      <div class="section-title"><div><p class="eyebrow">THE ROSTER</p><h2>Managers</h2></div><button class="text-link" data-go="managers">View all →</button></div>
+      <div class="manager-quick" id="managerQuick"></div>
+
+      <div class="section-title"><div><p class="eyebrow">HALL OF FAME</p><h2>Recent champions</h2></div><button class="text-link" data-go="seasons">Season archive →</button></div>
+      <article class="panel"><div class="champ-list" id="champions"></div></article>
+    </div>
+  </details>
 </section>
-
 
 <section class="view" id="huddle">
   <header class="hd-hero"><p class="eyebrow">THE League / The stories behind the scores</p><h1>The Huddle.</h1><p>For the grudges, the glory, and the group chat that never sleeps. Your league has history. Put it on the record.</p><div class="hd-hero-strip"><span>01 / Weekly receipts</span><span>02 / Schedule Court</span><span>03 / Rivalry room</span></div></header>
@@ -75,6 +135,7 @@
 <script src="assets/pulse.js" defer></script>
 <script src="assets/huddle.js?v=1" defer></script>
 <script src="assets/huddle-ui.js?v=1" defer></script>
+<script src="assets/standings-chart.js?v=1" defer></script>
 <script src="assets/app.js?v=editorial-1" defer></script>
 <script src="assets/preview.js?v=launch-2" defer></script>
 </body></html>

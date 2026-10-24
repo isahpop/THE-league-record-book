@@ -106,12 +106,50 @@ window.addEventListener('hashchange',applyRoute);
 document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>setView(b.dataset.view)));document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>setView(b.dataset.go)));
 
 function renderHome(){
+ // Optional visual module: a chart error must never block standings or matchups.
+ try {
+  if (typeof LeagueStandingTrend !== 'undefined') LeagueStandingTrend.mount(seasonData);
+ } catch (error) {
+  console.warn('Standings chart unavailable:',error);
+ }
  document.querySelector('.update-badge').textContent=`Updated through ${seasonData.season} Week ${seasonData.completedWeek}`;
  document.querySelector('.home-status strong').textContent=`${seasonData.season} Week ${seasonData.completedWeek} complete`;
  document.querySelector('.home-status span').textContent=`Results updated: ${seasonData.updatedAt}`;
  document.querySelector('footer div:last-child').textContent=`2022–present · Updated through ${seasonData.season} Week ${seasonData.completedWeek}`;
  document.querySelector('#home article.panel .pill').textContent=`Through W${seasonData.completedWeek}`;
  document.getElementById('standings2026').innerHTML=currentStandings.map((t,i)=>`<tr><td class="rank">${i+1}</td><td>${managerTeamHTML(t.manager,t.name)}</td><td><b>${escapeHTML(t.wl)}</b></td><td>${money(t.pf)}</td></tr>`).join('');
+ // Dashboard metrics come only from the verified published ESPN snapshot.
+ const latestWeek=Number(seasonData.completedWeek);
+ const latestGames=matchups.filter(g=>Number(g.week)===latestWeek);
+ const weekHigh=latestGames.flatMap(g=>[g.a,g.b]).sort((a,b)=>Number(b.score)-Number(a.score))[0];
+ const firstPlace=currentStandings[0];
+ const snapshot=[
+   ['FIRST PLACE',firstPlace?.manager||'—',firstPlace?.wl||'Official standings'],
+   ['LEAGUE AVERAGE',Number.isFinite(summaryAvg)?money(summaryAvg):'—','Points / team / week'],
+   [`WEEK ${latestWeek} HIGH`,weekHigh?cleanScore(weekHigh.score):'—',weekHigh?managerForId(weekHigh.id):'Awaiting results']
+ ];
+ document.getElementById('homeTicker').innerHTML=snapshot.map(([label,value,context])=>
+   `<div class="home-ticker-cell"><span>${escapeHTML(label)}</span><strong>${escapeHTML(value)}</strong><small>${escapeHTML(context)}</small></div>`
+ ).join('');
+ document.getElementById('homeResultsEyebrow').textContent=`WEEK ${latestWeek} · FINAL`;
+ document.getElementById('homeLatestGames').innerHTML=latestGames.length
+   ?latestGames.map(g=>{
+     const aWins=Number(g.a.score)>Number(g.b.score),bWins=Number(g.b.score)>Number(g.a.score);
+     return `<a class="home-game" href="#matchups?week=${latestWeek}" aria-label="Week ${latestWeek}: ${escapeHTML(managerForId(g.a.id))} ${cleanScore(g.a.score)} versus ${escapeHTML(managerForId(g.b.id))} ${cleanScore(g.b.score)}. View full matchup results.">
+       <span class="home-game-team ${aWins?'is-winner':''}"><span class="home-game-name">${escapeHTML(managerForId(g.a.id))}</span><strong>${cleanScore(g.a.score)}</strong></span>
+       <span class="home-game-team ${bWins?'is-winner':''}"><span class="home-game-name">${escapeHTML(managerForId(g.b.id))}</span><strong>${cleanScore(g.b.score)}</strong></span>
+     </a>`;
+   }).join('')
+   :'<p class="home-pending">Completed games will appear after ESPN confirms the week.</p>';
+ const standingsPanel=document.querySelector('.home-standings');
+ const standingsToggle=document.getElementById('standingsToggle');
+ standingsToggle.textContent=`Show all ${currentStandings.length} teams ↓`;
+ standingsToggle.onclick=()=>{
+   const expanded=standingsPanel.classList.toggle('expanded');
+   standingsToggle.setAttribute('aria-expanded',String(Boolean(expanded)));
+   standingsToggle.textContent=expanded?'Show fewer teams ↑':`Show all ${currentStandings.length} teams ↓`;
+ };
+
  const leaders=[['2×','Most championships','Mike'],['32–24','Best 4-year record','JT'],['130.16','Best historical PPG','Coy'],['204.24','Highest team score','Golly'],['58.1%','Best all-play rate','Coy']];
  document.getElementById('leaderGrid').innerHTML=leaders.map(x=>`<div class="leader-card"><p class="eyebrow">${x[1]}</p><div class="leader-value">${x[0]}</div><div class="leader-owner">${x[2]}</div></div>`).join('');
  const notable=[['0.05','Closest game','JT over Austin · 126.60–126.55 · 2025 W4'],['52.86','Bench disaster','Isaiah left Tua on the bench · 2022 W2'],['54.85','Lowest team score','Jazz · Team Binning · 2025 W12'],['+25.8%','Largest schedule win gap','Lance · Team Phillips · 2025 actual vs all-play']];
