@@ -45,7 +45,7 @@
     {
       "id": 10,
       "manager": "Jazz",
-      "name": "Team Binning",
+      "name": "Benchwarmers",
       "wl": "2–4",
       "pf": 836.5
     },
@@ -484,7 +484,7 @@
       },
       "b": {
         "id": 10,
-        "team": "Team Binning",
+        "team": "Benchwarmers",
         "score": 130.0,
         "starters": [
           [
@@ -1118,7 +1118,7 @@
       "week": 2,
       "a": {
         "id": 10,
-        "team": "Team Binning",
+        "team": "Benchwarmers",
         "score": 128.85,
         "starters": [
           [
@@ -1693,7 +1693,7 @@
       "week": 3,
       "a": {
         "id": 10,
-        "team": "Team Binning",
+        "team": "Benchwarmers",
         "score": 118.1,
         "starters": [
           [
@@ -2209,7 +2209,7 @@
       },
       "b": {
         "id": 10,
-        "team": "Team Binning",
+        "team": "Benchwarmers",
         "score": 161.6,
         "starters": [
           [
@@ -2613,7 +2613,7 @@
       "week": 5,
       "a": {
         "id": 10,
-        "team": "Team Binning",
+        "team": "Benchwarmers",
         "score": 183.45,
         "starters": [
           [
@@ -3119,7 +3119,7 @@
       },
       "b": {
         "id": 10,
-        "team": "Team Binning",
+        "team": "Benchwarmers",
         "score": 114.5,
         "starters": [
           [
@@ -3529,7 +3529,7 @@
       },
       "b": {
         "id": 10,
-        "team": "Team Binning"
+        "team": "Benchwarmers"
       }
     },
     {
