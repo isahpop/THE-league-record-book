@@ -68,6 +68,34 @@
         "Top individual starter: Drake Maye scored 51.20 points for Lance."
       ],
       "source": "data/season-2026.json"
+    },
+    {
+      "season": 2026,
+      "week": 6,
+      "publishedAt": "2026-10-27",
+      "title": "JT tops Week 6 with 135.50 points",
+      "paragraphs": [
+        "Week 6's top score belonged to JT at 135.50 points. Across all 10 teams, the scoring average was 115.45 points.",
+        "Closest finish: Austin beat Coy 117.40–98.40, a gap of 19.00 points.",
+        "Biggest victory: Zach over Golly 127.40–95.45, a margin of 31.95 points.",
+        "Toughest high-scoring loss: Jazz put up 114.50 points and still lost.",
+        "Top individual starter: Drake Maye scored 33.15 points for Lance."
+      ],
+      "source": "data/season-2026.json"
+    },
+    {
+      "season": 2026,
+      "week": 7,
+      "publishedAt": "2026-10-27",
+      "title": "Zach tops Week 7 with 176.65 points",
+      "paragraphs": [
+        "Week 7's top score belonged to Zach at 176.65 points. Across all 10 teams, the scoring average was 123.97 points.",
+        "Closest finish: Isaiah beat Golly 133.20–121.60, a gap of 11.60 points.",
+        "Biggest victory: Zach over JT 176.65–107.20, a margin of 69.45 points.",
+        "Toughest high-scoring loss: Mike put up 122.40 points and still lost.",
+        "Top individual starter: Joe Burrow scored 39.80 points for Isaiah."
+      ],
+      "source": "data/season-2026.json"
     }
   ]
 }
