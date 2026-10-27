@@ -5514,7 +5514,7 @@
       ],
       "transactionsComplete": true,
       "lineupsComplete": true,
-      "coverageNote": "Direct ESPN sync through Week 6. Draft, weekly lineups and waiver/free-agent transactions are refreshed automatically.",
+      "coverageNote": "Direct ESPN sync through Week 7. Draft, weekly lineups and waiver/free-agent transactions are refreshed automatically.",
       "acquisitions": [
         {
           "playerId": "4428557",
@@ -5702,7 +5702,8 @@
           "name": "Pat Freiermuth",
           "managerId": 6,
           "type": "waiver",
-          "startWeek": 6
+          "startWeek": 6,
+          "endWeek": 7
         },
         {
           "playerId": "-16012",
@@ -5716,7 +5717,8 @@
           "name": "Ravens D/ST",
           "managerId": 6,
           "type": "waiver",
-          "startWeek": 6
+          "startWeek": 6,
+          "endWeek": 7
         },
         {
           "playerId": "4361432",
@@ -5731,6 +5733,55 @@
           "managerId": 8,
           "type": "waiver",
           "startWeek": 6
+        },
+        {
+          "playerId": "4685261",
+          "name": "Germie Bernard",
+          "managerId": 6,
+          "type": "waiver",
+          "startWeek": 7
+        },
+        {
+          "playerId": "-16016",
+          "name": "Vikings D/ST",
+          "managerId": 1,
+          "type": "waiver",
+          "startWeek": 7
+        },
+        {
+          "playerId": "3917315",
+          "name": "Kyler Murray",
+          "managerId": 2,
+          "type": "waiver",
+          "startWeek": 7
+        },
+        {
+          "playerId": "17372",
+          "name": "Chris Boswell",
+          "managerId": 2,
+          "type": "waiver",
+          "startWeek": 7
+        },
+        {
+          "playerId": "4599739",
+          "name": "Kendre Miller",
+          "managerId": 6,
+          "type": "waiver",
+          "startWeek": 7
+        },
+        {
+          "playerId": "-16005",
+          "name": "Browns D/ST",
+          "managerId": 6,
+          "type": "waiver",
+          "startWeek": 7
+        },
+        {
+          "playerId": "4426385",
+          "name": "Player 4426385",
+          "managerId": 6,
+          "type": "waiver",
+          "startWeek": 7
         }
       ],
       "lineups": [
@@ -12933,6 +12984,1206 @@
           "week": 6,
           "points": 3.0,
           "started": false
+        },
+        {
+          "playerId": "4374302",
+          "name": "Amon-Ra St. Brown",
+          "managerId": 1,
+          "week": 7,
+          "points": 24.2,
+          "started": true
+        },
+        {
+          "playerId": "3929630",
+          "name": "Saquon Barkley",
+          "managerId": 1,
+          "week": 7,
+          "points": 15.1,
+          "started": true
+        },
+        {
+          "playerId": "4595348",
+          "name": "Malik Nabers",
+          "managerId": 1,
+          "week": 7,
+          "points": 18.1,
+          "started": true
+        },
+        {
+          "playerId": "4870808",
+          "name": "Jeremiyah Love",
+          "managerId": 1,
+          "week": 7,
+          "points": 0.0,
+          "started": false
+        },
+        {
+          "playerId": "4882093",
+          "name": "Bhayshul Tuten",
+          "managerId": 1,
+          "week": 7,
+          "points": 0.0,
+          "started": false
+        },
+        {
+          "playerId": "3915416",
+          "name": "DJ Moore",
+          "managerId": 1,
+          "week": 7,
+          "points": 0.0,
+          "started": false
+        },
+        {
+          "playerId": "4047650",
+          "name": "DK Metcalf",
+          "managerId": 1,
+          "week": 7,
+          "points": 7.6,
+          "started": true
+        },
+        {
+          "playerId": "2577417",
+          "name": "Dak Prescott",
+          "managerId": 1,
+          "week": 7,
+          "points": 31.4,
+          "started": true
+        },
+        {
+          "playerId": "3040151",
+          "name": "George Kittle",
+          "managerId": 1,
+          "week": 7,
+          "points": 14.8,
+          "started": true
+        },
+        {
+          "playerId": "4360569",
+          "name": "Jordan Mason",
+          "managerId": 1,
+          "week": 7,
+          "points": 6.8,
+          "started": true
+        },
+        {
+          "playerId": "4567104",
+          "name": "Will Reichard",
+          "managerId": 1,
+          "week": 7,
+          "points": 12.7,
+          "started": true
+        },
+        {
+          "playerId": "4429205",
+          "name": "Jordan Addison",
+          "managerId": 1,
+          "week": 7,
+          "points": 4.3,
+          "started": false
+        },
+        {
+          "playerId": "4832800",
+          "name": "Denzel Boston",
+          "managerId": 1,
+          "week": 7,
+          "points": 5.7,
+          "started": false
+        },
+        {
+          "playerId": "-16016",
+          "name": "Vikings D/ST",
+          "managerId": 1,
+          "week": 7,
+          "points": 13.0,
+          "started": true
+        },
+        {
+          "playerId": "4373626",
+          "name": "Tyler Allgeier",
+          "managerId": 1,
+          "week": 7,
+          "points": 7.9,
+          "started": false
+        },
+        {
+          "playerId": "4242335",
+          "name": "Jonathan Taylor",
+          "managerId": 10,
+          "week": 7,
+          "points": 19.0,
+          "started": true
+        },
+        {
+          "playerId": "3043078",
+          "name": "Derrick Henry",
+          "managerId": 10,
+          "week": 7,
+          "points": 5.9,
+          "started": true
+        },
+        {
+          "playerId": "4047646",
+          "name": "A.J. Brown",
+          "managerId": 10,
+          "week": 7,
+          "points": 7.8,
+          "started": true
+        },
+        {
+          "playerId": "4685472",
+          "name": "Tetairoa McMillan",
+          "managerId": 10,
+          "week": 7,
+          "points": 8.0,
+          "started": true
+        },
+        {
+          "playerId": "3916387",
+          "name": "Lamar Jackson",
+          "managerId": 10,
+          "week": 7,
+          "points": 0.0,
+          "started": false
+        },
+        {
+          "playerId": "4596448",
+          "name": "Bucky Irving",
+          "managerId": 10,
+          "week": 7,
+          "points": 24.0,
+          "started": false
+        },
+        {
+          "playerId": "4426388",
+          "name": "Jameson Williams",
+          "managerId": 10,
+          "week": 7,
+          "points": 26.1,
+          "started": false
+        },
+        {
+          "playerId": "4248528",
+          "name": "Christian Watson",
+          "managerId": 10,
+          "week": 7,
+          "points": 10.7,
+          "started": true
+        },
+        {
+          "playerId": "4572680",
+          "name": "Tucker Kraft",
+          "managerId": 10,
+          "week": 7,
+          "points": 14.8,
+          "started": true
+        },
+        {
+          "playerId": "-16034",
+          "name": "Texans D/ST",
+          "managerId": 10,
+          "week": 7,
+          "points": 0.0,
+          "started": true
+        },
+        {
+          "playerId": "4695883",
+          "name": "Jalen Coker",
+          "managerId": 10,
+          "week": 7,
+          "points": 1.9,
+          "started": false
+        },
+        {
+          "playerId": "4711533",
+          "name": "Ollie Gordon II",
+          "managerId": 10,
+          "week": 7,
+          "points": 17.3,
+          "started": false
+        },
+        {
+          "playerId": "4432577",
+          "name": "C.J. Stroud",
+          "managerId": 10,
+          "week": 7,
+          "points": 22.05,
+          "started": true
+        },
+        {
+          "playerId": "4723820",
+          "name": "Omar Cooper Jr.",
+          "managerId": 10,
+          "week": 7,
+          "points": 22.5,
+          "started": false
+        },
+        {
+          "playerId": "4363538",
+          "name": "Chad Ryland",
+          "managerId": 10,
+          "week": 7,
+          "points": 10.7,
+          "started": true
+        },
+        {
+          "playerId": "4262921",
+          "name": "Justin Jefferson",
+          "managerId": 5,
+          "week": 7,
+          "points": 8.4,
+          "started": true
+        },
+        {
+          "playerId": "3117251",
+          "name": "Christian McCaffrey",
+          "managerId": 5,
+          "week": 7,
+          "points": 22.0,
+          "started": true
+        },
+        {
+          "playerId": "4361579",
+          "name": "Javonte Williams",
+          "managerId": 5,
+          "week": 7,
+          "points": 21.5,
+          "started": true
+        },
+        {
+          "playerId": "4567750",
+          "name": "Emeka Egbuka",
+          "managerId": 5,
+          "week": 7,
+          "points": 0.0,
+          "started": false
+        },
+        {
+          "playerId": "16800",
+          "name": "Davante Adams",
+          "managerId": 5,
+          "week": 7,
+          "points": 0.0,
+          "started": false
+        },
+        {
+          "playerId": "4431459",
+          "name": "Tyler Warren",
+          "managerId": 5,
+          "week": 7,
+          "points": 0.0,
+          "started": false
+        },
+        {
+          "playerId": "4432708",
+          "name": "Marvin Harrison Jr.",
+          "managerId": 5,
+          "week": 7,
+          "points": 7.6,
+          "started": true
+        },
+        {
+          "playerId": "2976212",
+          "name": "Stefon Diggs",
+          "managerId": 5,
+          "week": 7,
+          "points": 0.0,
+          "started": false
+        },
+        {
+          "playerId": "3953687",
+          "name": "Brandon Aubrey",
+          "managerId": 5,
+          "week": 7,
+          "points": 13.6,
+          "started": true
+        },
+        {
+          "playerId": "-16026",
+          "name": "Seahawks D/ST",
+          "managerId": 5,
+          "week": 7,
+          "points": 11.0,
+          "started": true
+        },
+        {
+          "playerId": "4361050",
+          "name": "Isaiah Likely",
+          "managerId": 5,
+          "week": 7,
+          "points": 3.2,
+          "started": true
+        },
+        {
+          "playerId": "4685720",
+          "name": "Bryce Young",
+          "managerId": 5,
+          "week": 7,
+          "points": 12.05,
+          "started": false
+        },
+        {
+          "playerId": "4241474",
+          "name": "Brian Robinson Jr.",
+          "managerId": 5,
+          "week": 7,
+          "points": 0.0,
+          "started": false
+        },
+        {
+          "playerId": "3046779",
+          "name": "Jared Goff",
+          "managerId": 5,
+          "week": 7,
+          "points": 25.05,
+          "started": true
+        },
+        {
+          "playerId": "15818",
+          "name": "Keenan Allen",
+          "managerId": 5,
+          "week": 7,
+          "points": 6.1,
+          "started": true
+        },
+        {
+          "playerId": "4379399",
+          "name": "James Cook III",
+          "managerId": 7,
+          "week": 7,
+          "points": 0.0,
+          "started": false
+        },
+        {
+          "playerId": "4426354",
+          "name": "George Pickens",
+          "managerId": 7,
+          "week": 7,
+          "points": 15.7,
+          "started": true
+        },
+        {
+          "playerId": "4239996",
+          "name": "Travis Etienne Jr.",
+          "managerId": 7,
+          "week": 7,
+          "points": 0.0,
+          "started": false
+        },
+        {
+          "playerId": "5083076",
+          "name": "Harold Fannin Jr.",
+          "managerId": 7,
+          "week": 7,
+          "points": 13.1,
+          "started": true
+        },
+        {
+          "playerId": "4569987",
+          "name": "Jaylen Warren",
+          "managerId": 7,
+          "week": 7,
+          "points": 16.7,
+          "started": true
+        },
+        {
+          "playerId": "4683062",
+          "name": "Xavier Worthy",
+          "managerId": 7,
+          "week": 7,
+          "points": 4.1,
+          "started": true
+        },
+        {
+          "playerId": "3139477",
+          "name": "Patrick Mahomes",
+          "managerId": 7,
+          "week": 7,
+          "points": 7.65,
+          "started": true
+        },
+        {
+          "playerId": "3126486",
+          "name": "Deebo Samuel Sr.",
+          "managerId": 7,
+          "week": 7,
+          "points": 0.0,
+          "started": false
+        },
+        {
+          "playerId": "4241416",
+          "name": "Chuba Hubbard",
+          "managerId": 7,
+          "week": 7,
+          "points": 10.0,
+          "started": true
+        },
+        {
+          "playerId": "4569618",
+          "name": "Garrett Wilson",
+          "managerId": 7,
+          "week": 7,
+          "points": 4.6,
+          "started": true
+        },
+        {
+          "playerId": "4360689",
+          "name": "Tyler Shough",
+          "managerId": 7,
+          "week": 7,
+          "points": 18.6,
+          "started": false
+        },
+        {
+          "playerId": "3929645",
+          "name": "Juwan Johnson",
+          "managerId": 7,
+          "week": 7,
+          "points": 1.7,
+          "started": false
+        },
+        {
+          "playerId": "3055899",
+          "name": "Harrison Butker",
+          "managerId": 7,
+          "week": 7,
+          "points": 3.0,
+          "started": true
+        },
+        {
+          "playerId": "-16012",
+          "name": "Chiefs D/ST",
+          "managerId": 7,
+          "week": 7,
+          "points": 1.0,
+          "started": true
+        },
+        {
+          "playerId": "4361432",
+          "name": "Romeo Doubs",
+          "managerId": 7,
+          "week": 7,
+          "points": 0.0,
+          "started": false
+        },
+        {
+          "playerId": "4430878",
+          "name": "Jaxon Smith-Njigba",
+          "managerId": 4,
+          "week": 7,
+          "points": 31.3,
+          "started": true
+        },
+        {
+          "playerId": "4241389",
+          "name": "CeeDee Lamb",
+          "managerId": 4,
+          "week": 7,
+          "points": 24.4,
+          "started": true
+        },
+        {
+          "playerId": "4361307",
+          "name": "Trey McBride",
+          "managerId": 4,
+          "week": 7,
+          "points": 27.1,
+          "started": true
+        },
+        {
+          "playerId": "4047365",
+          "name": "Josh Jacobs",
+          "managerId": 4,
+          "week": 7,
+          "points": 20.1,
+          "started": false
+        },
+        {
+          "playerId": "4696981",
+          "name": "Cam Skattebo",
+          "managerId": 4,
+          "week": 7,
+          "points": 19.1,
+          "started": false
+        },
+        {
+          "playerId": "4259545",
+          "name": "D'Andre Swift",
+          "managerId": 4,
+          "week": 7,
+          "points": 19.0,
+          "started": true
+        },
+        {
+          "playerId": "4431299",
+          "name": "Rome Odunze",
+          "managerId": 4,
+          "week": 7,
+          "points": 10.9,
+          "started": false
+        },
+        {
+          "playerId": "3916148",
+          "name": "Tony Pollard",
+          "managerId": 4,
+          "week": 7,
+          "points": 36.5,
+          "started": true
+        },
+        {
+          "playerId": "4360761",
+          "name": "Michael Wilson",
+          "managerId": 4,
+          "week": 7,
+          "points": 10.6,
+          "started": false
+        },
+        {
+          "playerId": "3042519",
+          "name": "Aaron Jones Sr.",
+          "managerId": 4,
+          "week": 7,
+          "points": 3.6,
+          "started": true
+        },
+        {
+          "playerId": "12483",
+          "name": "Matthew Stafford",
+          "managerId": 4,
+          "week": 7,
+          "points": 25.45,
+          "started": true
+        },
+        {
+          "playerId": "4569587",
+          "name": "Wan'Dale Robinson",
+          "managerId": 4,
+          "week": 7,
+          "points": 4.7,
+          "started": false
+        },
+        {
+          "playerId": "4685247",
+          "name": "Braelon Allen",
+          "managerId": 4,
+          "week": 7,
+          "points": 19.4,
+          "started": false
+        },
+        {
+          "playerId": "4249087",
+          "name": "Matt Gay",
+          "managerId": 4,
+          "week": 7,
+          "points": 8.3,
+          "started": true
+        },
+        {
+          "playerId": "-16020",
+          "name": "Jets D/ST",
+          "managerId": 4,
+          "week": 7,
+          "points": 1.0,
+          "started": true
+        },
+        {
+          "playerId": "4429795",
+          "name": "Jahmyr Gibbs",
+          "managerId": 9,
+          "week": 7,
+          "points": 17.3,
+          "started": true
+        },
+        {
+          "playerId": "4428331",
+          "name": "Rashee Rice",
+          "managerId": 9,
+          "week": 7,
+          "points": 0.0,
+          "started": false
+        },
+        {
+          "playerId": "4258173",
+          "name": "Nico Collins",
+          "managerId": 9,
+          "week": 7,
+          "points": 2.6,
+          "started": true
+        },
+        {
+          "playerId": "4427366",
+          "name": "Breece Hall",
+          "managerId": 9,
+          "week": 7,
+          "points": 0.0,
+          "started": true
+        },
+        {
+          "playerId": "4241478",
+          "name": "DeVonta Smith",
+          "managerId": 9,
+          "week": 7,
+          "points": 0.0,
+          "started": false
+        },
+        {
+          "playerId": "4426348",
+          "name": "Jayden Daniels",
+          "managerId": 9,
+          "week": 7,
+          "points": 0.0,
+          "started": false
+        },
+        {
+          "playerId": "4360248",
+          "name": "Kyle Pitts Sr.",
+          "managerId": 9,
+          "week": 7,
+          "points": 13.2,
+          "started": true
+        },
+        {
+          "playerId": "4569173",
+          "name": "Rhamondre Stevenson",
+          "managerId": 9,
+          "week": 7,
+          "points": 23.5,
+          "started": true
+        },
+        {
+          "playerId": "4608686",
+          "name": "Kyle Monangai",
+          "managerId": 9,
+          "week": 7,
+          "points": 0.0,
+          "started": false
+        },
+        {
+          "playerId": "4701936",
+          "name": "Matthew Golden",
+          "managerId": 9,
+          "week": 7,
+          "points": 9.9,
+          "started": true
+        },
+        {
+          "playerId": "-16023",
+          "name": "Steelers D/ST",
+          "managerId": 9,
+          "week": 7,
+          "points": 11.0,
+          "started": true
+        },
+        {
+          "playerId": "2971573",
+          "name": "Ka'imi Fairbairn",
+          "managerId": 9,
+          "week": 7,
+          "points": 12.5,
+          "started": true
+        },
+        {
+          "playerId": "4569559",
+          "name": "Devaughn Vele",
+          "managerId": 9,
+          "week": 7,
+          "points": 16.4,
+          "started": false
+        },
+        {
+          "playerId": "4360238",
+          "name": "Dameon Pierce",
+          "managerId": 9,
+          "week": 7,
+          "points": 11.8,
+          "started": false
+        },
+        {
+          "playerId": "8439",
+          "name": "Aaron Rodgers",
+          "managerId": 9,
+          "week": 7,
+          "points": 17.2,
+          "started": true
+        },
+        {
+          "playerId": "4430807",
+          "name": "Bijan Robinson",
+          "managerId": 8,
+          "week": 7,
+          "points": 17.2,
+          "started": true
+        },
+        {
+          "playerId": "4567048",
+          "name": "Kenneth Walker III",
+          "managerId": 8,
+          "week": 7,
+          "points": 9.7,
+          "started": true
+        },
+        {
+          "playerId": "4361370",
+          "name": "Chris Olave",
+          "managerId": 8,
+          "week": 7,
+          "points": 11.6,
+          "started": true
+        },
+        {
+          "playerId": "4239993",
+          "name": "Tee Higgins",
+          "managerId": 8,
+          "week": 7,
+          "points": 26.8,
+          "started": true
+        },
+        {
+          "playerId": "4685278",
+          "name": "Luther Burden III",
+          "managerId": 8,
+          "week": 7,
+          "points": 23.7,
+          "started": true
+        },
+        {
+          "playerId": "16737",
+          "name": "Mike Evans",
+          "managerId": 8,
+          "week": 7,
+          "points": 0.0,
+          "started": false
+        },
+        {
+          "playerId": "4360310",
+          "name": "Trevor Lawrence",
+          "managerId": 8,
+          "week": 7,
+          "points": 0.0,
+          "started": false
+        },
+        {
+          "playerId": "15847",
+          "name": "Travis Kelce",
+          "managerId": 8,
+          "week": 7,
+          "points": 8.4,
+          "started": true
+        },
+        {
+          "playerId": "4361741",
+          "name": "Brock Purdy",
+          "managerId": 8,
+          "week": 7,
+          "points": 16.9,
+          "started": false
+        },
+        {
+          "playerId": "4571557",
+          "name": "Spencer Shrader",
+          "managerId": 8,
+          "week": 7,
+          "points": 3.3,
+          "started": true
+        },
+        {
+          "playerId": "4036378",
+          "name": "Jordan Love",
+          "managerId": 8,
+          "week": 7,
+          "points": 23.7,
+          "started": true
+        },
+        {
+          "playerId": "4429059",
+          "name": "Woody Marks",
+          "managerId": 8,
+          "week": 7,
+          "points": 9.1,
+          "started": false
+        },
+        {
+          "playerId": "4432710",
+          "name": "TreVeyon Henderson",
+          "managerId": 8,
+          "week": 7,
+          "points": 4.3,
+          "started": false
+        },
+        {
+          "playerId": "4428718",
+          "name": "Tre Tucker",
+          "managerId": 8,
+          "week": 7,
+          "points": 21.3,
+          "started": false
+        },
+        {
+          "playerId": "-16029",
+          "name": "Panthers D/ST",
+          "managerId": 8,
+          "week": 7,
+          "points": -2.0,
+          "started": true
+        },
+        {
+          "playerId": "4429160",
+          "name": "De'Von Achane",
+          "managerId": 3,
+          "week": 7,
+          "points": 0.0,
+          "started": false
+        },
+        {
+          "playerId": "4890973",
+          "name": "Ashton Jeanty",
+          "managerId": 3,
+          "week": 7,
+          "points": 21.6,
+          "started": true
+        },
+        {
+          "playerId": "4429615",
+          "name": "Zay Flowers",
+          "managerId": 3,
+          "week": 7,
+          "points": 28.7,
+          "started": true
+        },
+        {
+          "playerId": "4612826",
+          "name": "Ladd McConkey",
+          "managerId": 3,
+          "week": 7,
+          "points": 0.0,
+          "started": false
+        },
+        {
+          "playerId": "4431452",
+          "name": "Drake Maye",
+          "managerId": 3,
+          "week": 7,
+          "points": 35.65,
+          "started": true
+        },
+        {
+          "playerId": "4430027",
+          "name": "Sam LaPorta",
+          "managerId": 3,
+          "week": 7,
+          "points": 2.8,
+          "started": true
+        },
+        {
+          "playerId": "3916433",
+          "name": "Jakobi Meyers",
+          "managerId": 3,
+          "week": 7,
+          "points": 0.0,
+          "started": false
+        },
+        {
+          "playerId": "4366031",
+          "name": "Tank Dell",
+          "managerId": 3,
+          "week": 7,
+          "points": 5.5,
+          "started": false
+        },
+        {
+          "playerId": "4697815",
+          "name": "Rachaad White",
+          "managerId": 3,
+          "week": 7,
+          "points": 0.0,
+          "started": false
+        },
+        {
+          "playerId": "2473037",
+          "name": "Jason Myers",
+          "managerId": 3,
+          "week": 7,
+          "points": 8.0,
+          "started": true
+        },
+        {
+          "playerId": "4426502",
+          "name": "Drake London",
+          "managerId": 3,
+          "week": 7,
+          "points": 19.6,
+          "started": true
+        },
+        {
+          "playerId": "4040715",
+          "name": "Jalen Hurts",
+          "managerId": 3,
+          "week": 7,
+          "points": 0.0,
+          "started": false
+        },
+        {
+          "playerId": "4241985",
+          "name": "J.K. Dobbins",
+          "managerId": 3,
+          "week": 7,
+          "points": 8.3,
+          "started": true
+        },
+        {
+          "playerId": "4568490",
+          "name": "RJ Harvey",
+          "managerId": 3,
+          "week": 7,
+          "points": 17.0,
+          "started": true
+        },
+        {
+          "playerId": "-16010",
+          "name": "Titans D/ST",
+          "managerId": 3,
+          "week": 7,
+          "points": 0.0,
+          "started": true
+        },
+        {
+          "playerId": "4426515",
+          "name": "Puka Nacua",
+          "managerId": 6,
+          "week": 7,
+          "points": 21.8,
+          "started": true
+        },
+        {
+          "playerId": "4362238",
+          "name": "Chase Brown",
+          "managerId": 6,
+          "week": 7,
+          "points": 9.8,
+          "started": true
+        },
+        {
+          "playerId": "4685382",
+          "name": "Omarion Hampton",
+          "managerId": 6,
+          "week": 7,
+          "points": 0.0,
+          "started": false
+        },
+        {
+          "playerId": "4723086",
+          "name": "Colston Loveland",
+          "managerId": 6,
+          "week": 7,
+          "points": 19.9,
+          "started": true
+        },
+        {
+          "playerId": "4685702",
+          "name": "Quinshon Judkins",
+          "managerId": 6,
+          "week": 7,
+          "points": 23.4,
+          "started": true
+        },
+        {
+          "playerId": "3915511",
+          "name": "Joe Burrow",
+          "managerId": 6,
+          "week": 7,
+          "points": 39.8,
+          "started": true
+        },
+        {
+          "playerId": "4432620",
+          "name": "Parker Washington",
+          "managerId": 6,
+          "week": 7,
+          "points": 0.0,
+          "started": false
+        },
+        {
+          "playerId": "4688813",
+          "name": "Josh Downs",
+          "managerId": 6,
+          "week": 7,
+          "points": 3.8,
+          "started": false
+        },
+        {
+          "playerId": "4880281",
+          "name": "Jordyn Tyson",
+          "managerId": 6,
+          "week": 7,
+          "points": 0.0,
+          "started": false
+        },
+        {
+          "playerId": "4431611",
+          "name": "Caleb Williams",
+          "managerId": 6,
+          "week": 7,
+          "points": 29.2,
+          "started": false
+        },
+        {
+          "playerId": "5082424",
+          "name": "Dominic Zvada",
+          "managerId": 6,
+          "week": 7,
+          "points": 1.0,
+          "started": true
+        },
+        {
+          "playerId": "4685261",
+          "name": "Germie Bernard",
+          "managerId": 6,
+          "week": 7,
+          "points": 5.7,
+          "started": true
+        },
+        {
+          "playerId": "4599739",
+          "name": "Kendre Miller",
+          "managerId": 6,
+          "week": 7,
+          "points": 5.8,
+          "started": true
+        },
+        {
+          "playerId": "-16005",
+          "name": "Browns D/ST",
+          "managerId": 6,
+          "week": 7,
+          "points": 6.0,
+          "started": true
+        },
+        {
+          "playerId": "4710855",
+          "name": "Konata Mumpfield",
+          "managerId": 6,
+          "week": 7,
+          "points": 2.5,
+          "started": false
+        },
+        {
+          "playerId": "4362628",
+          "name": "Ja'Marr Chase",
+          "managerId": 2,
+          "week": 7,
+          "points": 17.2,
+          "started": true
+        },
+        {
+          "playerId": "4432665",
+          "name": "Brock Bowers",
+          "managerId": 2,
+          "week": 7,
+          "points": 13.3,
+          "started": true
+        },
+        {
+          "playerId": "3918298",
+          "name": "Josh Allen",
+          "managerId": 2,
+          "week": 7,
+          "points": 0.0,
+          "started": false
+        },
+        {
+          "playerId": "4430737",
+          "name": "Kyren Williams",
+          "managerId": 2,
+          "week": 7,
+          "points": 18.1,
+          "started": true
+        },
+        {
+          "playerId": "4372016",
+          "name": "Jaylen Waddle",
+          "managerId": 2,
+          "week": 7,
+          "points": 8.8,
+          "started": true
+        },
+        {
+          "playerId": "4871023",
+          "name": "Carnell Tate",
+          "managerId": 2,
+          "week": 7,
+          "points": 9.9,
+          "started": true
+        },
+        {
+          "playerId": "4685512",
+          "name": "Jadarian Price",
+          "managerId": 2,
+          "week": 7,
+          "points": 0.0,
+          "started": false
+        },
+        {
+          "playerId": "4038815",
+          "name": "Rico Dowdle",
+          "managerId": 2,
+          "week": 7,
+          "points": 14.6,
+          "started": false
+        },
+        {
+          "playerId": "4432773",
+          "name": "Brian Thomas Jr.",
+          "managerId": 2,
+          "week": 7,
+          "points": 0.0,
+          "started": false
+        },
+        {
+          "playerId": "4429096",
+          "name": "Blake Corum",
+          "managerId": 2,
+          "week": 7,
+          "points": 17.1,
+          "started": false
+        },
+        {
+          "playerId": "-16007",
+          "name": "Broncos D/ST",
+          "managerId": 2,
+          "week": 7,
+          "points": 6.0,
+          "started": true
+        },
+        {
+          "playerId": "4362249",
+          "name": "Jayden Reed",
+          "managerId": 2,
+          "week": 7,
+          "points": 0.0,
+          "started": false
+        },
+        {
+          "playerId": "4887558",
+          "name": "Emanuel Wilson",
+          "managerId": 2,
+          "week": 7,
+          "points": 18.5,
+          "started": true
+        },
+        {
+          "playerId": "3917315",
+          "name": "Kyler Murray",
+          "managerId": 2,
+          "week": 7,
+          "points": 17.4,
+          "started": true
+        },
+        {
+          "playerId": "17372",
+          "name": "Chris Boswell",
+          "managerId": 2,
+          "week": 7,
+          "points": 12.4,
+          "started": true
         }
       ]
     }
