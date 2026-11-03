@@ -96,6 +96,20 @@
         "Top individual starter: Joe Burrow scored 39.80 points for Isaiah."
       ],
       "source": "data/season-2026.json"
+    },
+    {
+      "season": 2026,
+      "week": 8,
+      "publishedAt": "2026-11-03",
+      "title": "Zach tops Week 8 with 183.75 points",
+      "paragraphs": [
+        "Week 8's top score belonged to Zach at 183.75 points. Across all 10 teams, the scoring average was 128.27 points.",
+        "Closest finish: Austin beat Mike 156.95–134.30, a gap of 22.65 points.",
+        "Biggest victory: Zach over Jazz 183.75–110.00, a margin of 73.75 points.",
+        "Toughest high-scoring loss: Mike put up 134.30 points and still lost.",
+        "Top individual starter: Joe Burrow scored 55.10 points for Isaiah."
+      ],
+      "source": "data/season-2026.json"
     }
   ]
 }
