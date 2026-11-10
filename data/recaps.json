@@ -110,6 +110,20 @@
         "Top individual starter: Joe Burrow scored 55.10 points for Isaiah."
       ],
       "source": "data/season-2026.json"
+    },
+    {
+      "season": 2026,
+      "week": 9,
+      "publishedAt": "2026-11-10",
+      "title": "Mike tops Week 9 with 189.40 points",
+      "paragraphs": [
+        "Week 9's top score belonged to Mike at 189.40 points. Across all 10 teams, the scoring average was 126.66 points.",
+        "Closest finish: Zach beat Coy 111.10–110.85, a gap of 0.25 points.",
+        "Biggest victory: Mike over JB 189.40–115.00, a margin of 74.40 points.",
+        "Toughest high-scoring loss: Jazz put up 144.05 points and still lost.",
+        "Top individual starter: C.J. Stroud scored 55.20 points for Jazz."
+      ],
+      "source": "data/season-2026.json"
     }
   ]
 }
