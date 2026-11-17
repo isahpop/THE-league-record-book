@@ -124,6 +124,20 @@
         "Top individual starter: C.J. Stroud scored 55.20 points for Jazz."
       ],
       "source": "data/season-2026.json"
+    },
+    {
+      "season": 2026,
+      "week": 10,
+      "publishedAt": "2026-11-17",
+      "title": "Austin tops Week 10 with 217.40 points",
+      "paragraphs": [
+        "Week 10's top score belonged to Austin at 217.40 points. Across all 10 teams, the scoring average was 148.86 points.",
+        "Closest finish: Mike beat Coy 160.10–157.45, a gap of 2.65 points.",
+        "Biggest victory: Austin over JT 217.40–158.95, a margin of 58.45 points.",
+        "Toughest high-scoring loss: JT put up 158.95 points and still lost.",
+        "Top individual starter: Christian McCaffrey scored 52.30 points for JB."
+      ],
+      "source": "data/season-2026.json"
     }
   ]
 }
