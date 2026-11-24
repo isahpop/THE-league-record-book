@@ -138,6 +138,20 @@
         "Top individual starter: Christian McCaffrey scored 52.30 points for JB."
       ],
       "source": "data/season-2026.json"
+    },
+    {
+      "season": 2026,
+      "week": 11,
+      "publishedAt": "2026-11-24",
+      "title": "Coy tops Week 11 with 144.55 points",
+      "paragraphs": [
+        "Week 11's top score belonged to Coy at 144.55 points. Across all 10 teams, the scoring average was 123.57 points.",
+        "Closest finish: Austin beat Jazz 134.40–124.70, a gap of 9.70 points.",
+        "Biggest victory: Mike over Golly 140.35–94.20, a margin of 46.15 points.",
+        "Toughest high-scoring loss: Isaiah put up 134.40 points and still lost.",
+        "Top individual starter: Dak Prescott scored 47.15 points for Coy."
+      ],
+      "source": "data/season-2026.json"
     }
   ]
 }
